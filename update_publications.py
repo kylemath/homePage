@@ -182,8 +182,8 @@ def update_html_with_publications(publications, html_file="index.html"):
             publications_html = '    <li><em>Publications are automatically updated from <a href="https://scholar.google.com/citations?user=wgK6LCYAAAAJ" target="_blank">Google Scholar</a>. If this section appears empty, the automated script may need to be run.</em></li>\n'
         
         # Replace the publications section
-        pattern = r'(<h2 id="publications">Recent Publications</h2>\s*<ul>)(.*?)(</ul>)'
-        replacement = rf'\1\n{publications_html}\3'
+        pattern = r'(<h2 id="publications">Recent Publications</h2>\s*<)(ul|ol reversed)(>)(.*?)(</)(ul|ol)(>)'
+        replacement = rf'\1ol reversed\3\n{publications_html}\5ol\7'
         
         new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
         

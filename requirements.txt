@@ -1,2 +1,10 @@
+# Dependencies for update_projects.py
 requests==2.31.0
-beautifulsoup4==4.12.2 
+beautifulsoup4==4.12.2
+
+# Additional dependencies for update_publications.py
+lxml>=4.6.3
+
+# Optional: For more robust Google Scholar scraping
+# Uncomment the line below if you want to use the scholarly library
+# scholarly>=1.7.11 

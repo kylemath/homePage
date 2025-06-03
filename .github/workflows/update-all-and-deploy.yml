@@ -16,6 +16,11 @@ on:
         required: false
         default: true
         type: boolean
+      update_contributor_projects:
+        description: 'Update contributor projects list'
+        required: false
+        default: true
+        type: boolean
   push:
     branches: [ main ]  # Also run on pushes to main
 
@@ -52,6 +57,17 @@ jobs:
         run: |
           echo "Updating projects list..."
           python update_projects.py
+        
+      - name: Update contributor projects list
+        if: |
+          (github.event_name == 'schedule' && github.event.schedule == '0 1 * * *') ||
+          github.event_name == 'push' ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.update_contributor_projects == 'true')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Updating contributor projects list..."
+          python update_contributor_projects.py
         
       - name: Update publications list
         if: |
@@ -90,27 +106,36 @@ jobs:
           # Create a more descriptive commit message
           PROJECTS_UPDATED=""
           PUBLICATIONS_UPDATED=""
+          CONTRIBUTOR_PROJECTS_UPDATED=""
           
           if git diff --cached --name-only | grep -q "index.html"; then
             if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 1 * * *" ]; then
               PROJECTS_UPDATED="projects"
+              CONTRIBUTOR_PROJECTS_UPDATED="contributor-projects"
             elif [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 2 * * 0" ]; then
               PUBLICATIONS_UPDATED="publications"
             else
               PROJECTS_UPDATED="projects"
+              CONTRIBUTOR_PROJECTS_UPDATED="contributor-projects"
               PUBLICATIONS_UPDATED="publications"
             fi
           fi
           
-          if [ -n "$PROJECTS_UPDATED" ] && [ -n "$PUBLICATIONS_UPDATED" ]; then
-            git commit -m "Update projects and publications lists [skip ci]"
-          elif [ -n "$PROJECTS_UPDATED" ]; then
-            git commit -m "Update projects list [skip ci]"
-          elif [ -n "$PUBLICATIONS_UPDATED" ]; then
-            git commit -m "Update publications list [skip ci]"
+          # Build commit message based on what was updated
+          UPDATES=()
+          [ -n "$PROJECTS_UPDATED" ] && UPDATES+=("projects")
+          [ -n "$CONTRIBUTOR_PROJECTS_UPDATED" ] && UPDATES+=("contributor projects")
+          [ -n "$PUBLICATIONS_UPDATED" ] && UPDATES+=("publications")
+          
+          if [ ${#UPDATES[@]} -gt 1 ]; then
+            COMMIT_MSG="Update $(IFS=', '; echo "${UPDATES[*]%,*}") and ${UPDATES[-1]} lists [skip ci]"
+          elif [ ${#UPDATES[@]} -eq 1 ]; then
+            COMMIT_MSG="Update ${UPDATES[0]} list [skip ci]"
           else
-            git commit -m "Update homepage content [skip ci]"
+            COMMIT_MSG="Update homepage content [skip ci]"
           fi
+          
+          git commit -m "$COMMIT_MSG"
           
       - name: Push changes
         if: steps.verify-changed-files.outputs.changed == 'true'

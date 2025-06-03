@@ -5,8 +5,27 @@ from bs4 import BeautifulSoup
 import os
 import time
 
-def get_google_scholar_publications(author_query, max_results=20):
-    """Fetch publications from Google Scholar using web scraping."""
+def parse_first_author(authors_string):
+    """Parse authors string to extract first author and add 'et al.' if multiple authors."""
+    if not authors_string or authors_string == 'Unknown Authors':
+        return 'Unknown Authors'
+    
+    # Split by common separators
+    authors = re.split(r'[,;&]|\sand\s', authors_string.strip())
+    
+    if len(authors) == 0:
+        return 'Unknown Authors'
+    
+    first_author = authors[0].strip()
+    
+    # If there's more than one author, add "et al."
+    if len(authors) > 1:
+        return f"{first_author} et al."
+    else:
+        return first_author
+
+def get_google_scholar_publications(author_query):
+    """Fetch ALL publications from Google Scholar using web scraping."""
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
@@ -26,188 +45,190 @@ def get_google_scholar_publications(author_query, max_results=20):
         soup = BeautifulSoup(response.text, 'html.parser')
         
         # Find the first author result
-        author_links = soup.select('h3.gs_ai_name a')
+        author_links = soup.find_all('a', href=re.compile(r'user='))
         if not author_links:
             print(f"No author found for query: {author_query}")
             return []
         
         # Extract author ID from the first result
-        author_url = author_links[0]['href']
-        author_id = None
-        if 'user=' in author_url:
-            author_id = author_url.split('user=')[1].split('&')[0]
-        
-        if not author_id:
+        author_href = author_links[0]['href']
+        author_id_match = re.search(r'user=([^&]+)', author_href)
+        if not author_id_match:
             print("Could not extract author ID")
             return []
         
+        author_id = author_id_match.group(1)
         print(f"Found author ID: {author_id}")
         
-        # Now get the author's publications
-        publications_url = "https://scholar.google.com/citations"
-        pub_params = {
-            'user': author_id,
-            'hl': 'en',
-            'cstart': 0,
-            'pagesize': max_results
-        }
+        # Fetch all publications by iterating through pages
+        all_publications = []
+        start = 0
+        page_size = 100  # Maximum publications per page
         
-        time.sleep(2)  # Be respectful to Google's servers
-        pub_response = requests.get(publications_url, params=pub_params, headers=headers, timeout=30)
-        pub_response.raise_for_status()
-        
-        pub_soup = BeautifulSoup(pub_response.text, 'html.parser')
-        
-        publications = []
-        
-        # Extract publication information
-        pub_rows = pub_soup.select('tr.gsc_a_tr')
-        
-        for row in pub_rows[:max_results]:
-            try:
-                title_elem = row.select_one('a.gsc_a_at')
-                if not title_elem:
-                    continue
-                
-                title = title_elem.get_text().strip()
-                link = "https://scholar.google.com" + title_elem['href']
-                
-                # Get authors and venue
-                details = row.select('div.gs_gray')
-                authors = details[0].get_text().strip() if len(details) > 0 else ""
-                venue = details[1].get_text().strip() if len(details) > 1 else ""
-                
-                # Get year and citations
-                year_elem = row.select_one('span.gsc_a_y')
-                year = year_elem.get_text().strip() if year_elem else ""
-                
-                citations_elem = row.select_one('a.gsc_a_c')
-                citations = citations_elem.get_text().strip() if citations_elem else "0"
-                
-                # Parse year for sorting
+        while True:
+            # Get publications page with pagination
+            publications_url = f"https://scholar.google.com/citations?user={author_id}&hl=en&oi=ao&cstart={start}&pagesize={page_size}"
+            
+            # Add delay to be respectful
+            if start > 0:
+                time.sleep(2)
+            
+            response = requests.get(publications_url, headers=headers, timeout=30)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Find all publication entries on this page
+            pub_rows = soup.find_all('tr', class_='gsc_a_tr')
+            
+            if not pub_rows:
+                print(f"No more publications found. Total fetched: {len(all_publications)}")
+                break
+            
+            print(f"Processing page starting at {start}, found {len(pub_rows)} publications...")
+            
+            page_publications = []
+            for i, row in enumerate(pub_rows):
                 try:
-                    year_int = int(year) if year else 0
-                except ValueError:
-                    year_int = 0
-                
-                publications.append({
-                    'title': title,
-                    'link': link,
-                    'authors': authors,
-                    'venue': venue,
-                    'year': year,
-                    'year_int': year_int,
-                    'citations': citations
-                })
-                
-            except Exception as e:
-                print(f"Error parsing publication: {e}")
-                continue
+                    # Extract title and link
+                    title_cell = row.find('td', class_='gsc_a_t')
+                    if not title_cell:
+                        continue
+                        
+                    title_link = title_cell.find('a')
+                    title = title_link.text.strip() if title_link else 'Unknown Title'
+                    
+                    # Extract authors and venue info
+                    author_venue = title_cell.find('div', class_='gs_gray')
+                    authors = author_venue.text.strip() if author_venue else 'Unknown Authors'
+                    
+                    # Parse to get first author et al.
+                    first_author = parse_first_author(authors)
+                    
+                    # Extract year
+                    year_cell = row.find('td', class_='gsc_a_y')
+                    year_span = year_cell.find('span') if year_cell else None
+                    year = year_span.text.strip() if year_span else 'Unknown Year'
+                    
+                    # Parse year for sorting
+                    try:
+                        year_int = int(year) if year and year != 'Unknown Year' else 0
+                    except (ValueError, TypeError):
+                        year_int = 0
+                    
+                    # Try to get the full publication URL
+                    citation_link = title_link.get('href', '') if title_link else ''
+                    full_url = f"https://scholar.google.com{citation_link}" if citation_link else ''
+                    
+                    page_publications.append({
+                        'title': title,
+                        'authors': authors,
+                        'first_author': first_author,
+                        'year': year,
+                        'year_int': year_int,
+                        'venue': '',  # Basic scraping doesn't easily get venue separately
+                        'url': full_url
+                    })
+                    
+                    print(f"Processed: {title} ({year}) - {first_author}")
+                    
+                except Exception as e:
+                    print(f"Error processing publication {i}: {e}")
+                    continue
+            
+            all_publications.extend(page_publications)
+            
+            # Check if we should continue to next page
+            if len(pub_rows) < page_size:
+                print(f"Reached last page. Total publications: {len(all_publications)}")
+                break
+            
+            start += page_size
         
-        # Sort by year (most recent first)
-        publications.sort(key=lambda x: x['year_int'], reverse=True)
+        # Sort publications by year (most recent first)
+        all_publications.sort(key=lambda x: x['year_int'], reverse=True)
         
-        return publications
+        print(f"\nFetched and sorted {len(all_publications)} total publications:")
+        for i, pub in enumerate(all_publications[:10], 1):  # Show first 10 as preview
+            print(f"{i}. {pub['title']} ({pub['year']}) - {pub['first_author']}")
+        if len(all_publications) > 10:
+            print(f"... and {len(all_publications) - 10} more")
         
-    except requests.RequestException as e:
+        return all_publications
+        
+    except requests.exceptions.RequestException as e:
         print(f"Error fetching data from Google Scholar: {e}")
         return []
     except Exception as e:
         print(f"Error parsing Google Scholar data: {e}")
         return []
 
-def update_html_with_publications(publications, html_file):
-    """Update the index.html file with publications section."""
-    with open(html_file, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # Create the publications section HTML
-    pub_items = []
-    for pub in publications:
-        # Format the publication entry
-        authors_text = pub['authors'] if pub['authors'] else "Authors not available"
-        venue_text = pub['venue'] if pub['venue'] else ""
-        year_text = f" ({pub['year']})" if pub['year'] else ""
-        citations_text = f" - Cited by {pub['citations']}" if pub['citations'] and pub['citations'] != "0" else ""
+def update_html_with_publications(publications, html_file="index.html"):
+    """Update the HTML file with publications data."""
+    try:
+        with open(html_file, 'r', encoding='utf-8') as f:
+            content = f.read()
         
-        # Create publication description
-        description_parts = []
-        if authors_text:
-            description_parts.append(authors_text)
-        if venue_text:
-            description_parts.append(venue_text)
-        
-        description = " - ".join(description_parts) + year_text + citations_text
-        
-        pub_item = f'<li><a href="{pub["link"]}" target="_blank">{pub["title"]}</a> - {description}</li>'
-        pub_items.append(pub_item)
-    
-    publications_html = f'''<h2 id="publications">Recent Publications</h2>
-<ul>
-    {chr(10).join([f"    {item}" for item in pub_items])}
-</ul>'''
-    
-    # Find where to insert the publications section (after projects, before research)
-    projects_end_pattern = r'</ul>\s*<hr>\s*<h2 id="research">'
-    
-    if re.search(projects_end_pattern, content):
-        # Insert publications section between projects and research
-        new_content = re.sub(
-            projects_end_pattern,
-            f'</ul>\n\n<hr>\n\n{publications_html}\n\n<hr>\n\n<h2 id="research">',
-            content,
-            count=1
-        )
-    else:
-        # Fallback: insert after projects section
-        projects_pattern = r'(<h2 id="projects">Recent Projects</h2>\s*<ul>.*?</ul>)'
-        if re.search(projects_pattern, content, flags=re.DOTALL):
-            new_content = re.sub(
-                projects_pattern,
-                f'\\1\n\n<hr>\n\n{publications_html}',
-                content,
-                flags=re.DOTALL,
-                count=1
-            )
+        # Create publications HTML
+        if publications:
+            publications_html = ""
+            for pub in publications:
+                venue_text = f" {pub['venue']}" if pub['venue'] else ""
+                if pub['url']:
+                    publications_html += f'    <li><a href="{pub["url"]}" target="_blank">{pub["title"]}</a> - {pub["first_author"]} ({pub["year"]}){venue_text}</li>\n'
+                else:
+                    publications_html += f'    <li>{pub["title"]} - {pub["first_author"]} ({pub["year"]}){venue_text}</li>\n'
         else:
-            print("Could not find suitable location to insert publications section")
-            return
-    
-    # Update navigation to include publications
-    nav_pattern = r'(<li><a href="#projects">Recent Projects</a></li>)'
-    nav_replacement = '\\1\n    <li><a href="#publications">Recent Publications</a></li>'
-    new_content = re.sub(nav_pattern, nav_replacement, new_content)
-    
-    # Write the updated content back to the file
-    with open(html_file, 'w', encoding='utf-8') as f:
-        f.write(new_content)
+            publications_html = '    <li><em>Publications are automatically updated from <a href="https://scholar.google.com/citations?user=wgK6LCYAAAAJ" target="_blank">Google Scholar</a>. If this section appears empty, the automated script may need to be run.</em></li>\n'
+        
+        # Replace the publications section
+        pattern = r'(<h2 id="publications">Recent Publications</h2>\s*<ul>)(.*?)(</ul>)'
+        replacement = rf'\1\n{publications_html}\3'
+        
+        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        
+        if new_content != content:
+            with open(html_file, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+            print(f"Successfully updated {html_file} with {len(publications)} publications")
+            return True
+        else:
+            print("No publications section found in HTML file")
+            return False
+            
+    except Exception as e:
+        print(f"Error updating HTML file: {e}")
+        return False
 
-if __name__ == '__main__':
-    # Author query - you can modify this to match your Google Scholar profile
-    AUTHOR_QUERY = 'Kyle Mathewson University of Alberta'
+def main():
+    import sys
     
-    # Path to your index.html file
-    HTML_FILE = 'index.html'
+    # Default author query
+    author_query = "Kyle Mathewson University of Alberta"
     
-    # Maximum number of publications to fetch
-    MAX_RESULTS = 15
+    # Override with command line argument if provided
+    if len(sys.argv) > 1:
+        author_query = sys.argv[1]
     
-    print(f"Fetching publications for: {AUTHOR_QUERY}")
+    print(f"Fetching ALL publications for: {author_query}")
+    print("Note: This may take a while as we fetch all publication information...")
     
-    # Get publications from Google Scholar
-    publications = get_google_scholar_publications(AUTHOR_QUERY, MAX_RESULTS)
+    # Fetch all publications
+    publications = get_google_scholar_publications(author_query)
     
     if publications:
-        print(f"Found {len(publications)} publications")
+        print(f"\nFound {len(publications)} total publications")
         
-        # Update the HTML file
-        update_html_with_publications(publications, HTML_FILE)
-        
-        print(f"Updated {HTML_FILE} with {len(publications)} publications.")
-        
-        # Print first few publications for verification
-        print("\nFirst few publications:")
-        for i, pub in enumerate(publications[:3]):
-            print(f"{i+1}. {pub['title']} ({pub['year']})")
+        # Update HTML file
+        success = update_html_with_publications(publications)
+        if success:
+            print(f"\nSuccessfully updated index.html with all {len(publications)} publications!")
+        else:
+            print("\nFailed to update HTML file")
     else:
-        print("No publications found. Please check the author query or try again later.") 
+        print("No publications found. Please check the author query or try again later.")
+        # Still update HTML with placeholder
+        update_html_with_publications([])
+
+if __name__ == "__main__":
+    main() 

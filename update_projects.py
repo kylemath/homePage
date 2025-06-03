@@ -21,8 +21,11 @@ def get_github_repos(username, token=None):
         repos.extend(response.json())
         page += 1
 
+    # Filter out forked repositories
+    original_repos = [repo for repo in repos if not repo.get('fork', False)]
+
     # Get last commit date for each repository
-    for repo in repos:
+    for repo in original_repos:
         commits_url = f'https://api.github.com/repos/{username}/{repo["name"]}/commits'
         response = requests.get(commits_url, headers=headers)
         if response.status_code == 200 and response.json():
@@ -32,7 +35,7 @@ def get_github_repos(username, token=None):
             repo['last_commit_date'] = datetime.min
 
     # Sort repositories by last commit date
-    return sorted(repos, key=lambda x: x['last_commit_date'], reverse=True)
+    return sorted(original_repos, key=lambda x: x['last_commit_date'], reverse=True)
 
 def update_html_file(repos, html_file):
     """Update the index.html file with sorted repositories."""

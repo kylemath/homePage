@@ -24,42 +24,15 @@ def parse_first_author(authors_string):
     else:
         return first_author
 
-def get_google_scholar_publications(author_query):
-    """Fetch ALL publications from Google Scholar using web scraping."""
+def get_google_scholar_publications(author_query, author_id="wgK6LCYAAAAJ"):
+    """Fetch ALL publications from Google Scholar using basic web scraping."""
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     
-    # Search for the author first to get their author ID
-    search_url = "https://scholar.google.com/citations"
-    params = {
-        'view_op': 'search_authors',
-        'mauthors': author_query,
-        'hl': 'en'
-    }
+    print(f"Using known author ID: {author_id}")
     
     try:
-        response = requests.get(search_url, params=params, headers=headers, timeout=30)
-        response.raise_for_status()
-        
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Find the first author result
-        author_links = soup.find_all('a', href=re.compile(r'user='))
-        if not author_links:
-            print(f"No author found for query: {author_query}")
-            return []
-        
-        # Extract author ID from the first result
-        author_href = author_links[0]['href']
-        author_id_match = re.search(r'user=([^&]+)', author_href)
-        if not author_id_match:
-            print("Could not extract author ID")
-            return []
-        
-        author_id = author_id_match.group(1)
-        print(f"Found author ID: {author_id}")
-        
         # Fetch all publications by iterating through pages
         all_publications = []
         start = 0
@@ -68,6 +41,8 @@ def get_google_scholar_publications(author_query):
         while True:
             # Get publications page with pagination
             publications_url = f"https://scholar.google.com/citations?user={author_id}&hl=en&oi=ao&cstart={start}&pagesize={page_size}"
+            
+            print(f"Fetching page starting at {start}: {publications_url}")
             
             # Add delay to be respectful
             if start > 0:
@@ -130,7 +105,7 @@ def get_google_scholar_publications(author_query):
                         'url': full_url
                     })
                     
-                    print(f"Processed: {title} ({year}) - {first_author}")
+                    print(f"Processed: {title[:50]}... ({year}) - {first_author}")
                     
                 except Exception as e:
                     print(f"Error processing publication {i}: {e}")
@@ -216,19 +191,20 @@ def main():
     # Fetch all publications
     publications = get_google_scholar_publications(author_query)
     
-    if publications:
+    if publications and len(publications) >= 50:  # Require at least 50 publications (Kyle has ~102)
         print(f"\nFound {len(publications)} total publications")
         
         # Update HTML file
         success = update_html_with_publications(publications)
         if success:
             print(f"\nSuccessfully updated index.html with all {len(publications)} publications!")
+            sys.exit(0)  # Success
         else:
             print("\nFailed to update HTML file")
+            sys.exit(1)  # Failure
     else:
-        print("No publications found. Please check the author query or try again later.")
-        # Still update HTML with placeholder
-        update_html_with_publications([])
+        print(f"Insufficient publications found ({len(publications) if publications else 0}). Not updating to prevent overwriting good content.")
+        sys.exit(1)  # Failure
 
 if __name__ == "__main__":
     main() 

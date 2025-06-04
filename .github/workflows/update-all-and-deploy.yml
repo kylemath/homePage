@@ -86,46 +86,46 @@ jobs:
           CURRENT_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
           echo "Current publications count: $CURRENT_COUNT"
           
-          # Try scholarly version first with timeout
-          SCHOLARLY_SUCCESS=false
-          echo "Trying scholarly version with 5 minute timeout..."
-          if timeout 300 python update_publications_scholarly.py; then
-            echo "Scholarly script completed successfully"
+          # Try basic scraping first (more reliable in GitHub Actions environment)
+          BASIC_SUCCESS=false
+          echo "Trying basic scraping version first with 4 minute timeout..."
+          if timeout 240 python update_publications.py; then
+            echo "Basic script completed successfully"
             # Count new publications
             NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
-            echo "New publications count from scholarly: $NEW_COUNT"
+            echo "New publications count from basic scraping: $NEW_COUNT"
             
-            # Validate the update (should have at least 50 publications for Kyle's profile)
+            # Validate the update
             if [ "$NEW_COUNT" -ge 50 ]; then
-              echo "Scholarly update successful with $NEW_COUNT publications"
-              SCHOLARLY_SUCCESS=true
+              echo "Basic scraping update successful with $NEW_COUNT publications"
+              BASIC_SUCCESS=true
             else
-              echo "Scholarly update produced too few publications ($NEW_COUNT), restoring backup"
+              echo "Basic scraping produced too few publications ($NEW_COUNT), restoring backup"
               cp index.html.backup index.html
             fi
           else
-            echo "Scholarly script failed or timed out, restoring backup"
+            echo "Basic scraping failed or timed out, restoring backup"
             cp index.html.backup index.html
           fi
           
-          # If scholarly failed, try basic version with timeout
-          if [ "$SCHOLARLY_SUCCESS" = false ]; then
-            echo "Trying basic scraping version with 3 minute timeout..."
-            if timeout 180 python update_publications.py; then
-              echo "Basic script completed successfully"
+          # If basic scraping failed, try scholarly version as fallback
+          if [ "$BASIC_SUCCESS" = false ]; then
+            echo "Trying scholarly version as fallback with 3 minute timeout..."
+            if timeout 180 python update_publications_scholarly.py; then
+              echo "Scholarly script completed successfully"
               # Count new publications
               NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
-              echo "New publications count from basic scraping: $NEW_COUNT"
+              echo "New publications count from scholarly: $NEW_COUNT"
               
               # Validate the update
               if [ "$NEW_COUNT" -ge 50 ]; then
-                echo "Basic scraping update successful with $NEW_COUNT publications"
+                echo "Scholarly update successful with $NEW_COUNT publications"
               else
-                echo "Basic scraping also produced too few publications ($NEW_COUNT), restoring backup"
+                echo "Scholarly update also produced too few publications ($NEW_COUNT), restoring backup"
                 cp index.html.backup index.html
               fi
             else
-              echo "Basic scraping also failed or timed out, restoring backup"
+              echo "Scholarly script also failed or timed out, restoring backup"
               cp index.html.backup index.html
             fi
           fi

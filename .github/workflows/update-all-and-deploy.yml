@@ -3,7 +3,7 @@ name: Update All Content and Deploy
 on:
   schedule:
     - cron: '0 1 * * *'  # Run daily at 1 AM (projects)
-    - cron: '0 2 * * 0'  # Run weekly on Sunday at 2 AM (publications)
+    - cron: '0 2 1 * *'  # Run monthly on 1st day at 2 AM (publications)
   workflow_dispatch:  # Allow manual trigger
     inputs:
       update_projects:
@@ -71,18 +71,138 @@ jobs:
         
       - name: Update publications list
         if: |
-          (github.event_name == 'schedule' && github.event.schedule == '0 2 * * 0') ||
+          (github.event_name == 'schedule' && github.event.schedule == '0 2 1 * *') ||
           github.event_name == 'push' ||
           (github.event_name == 'workflow_dispatch' && github.event.inputs.update_publications == 'true')
         run: |
           echo "Updating publications list..."
-          # Try scholarly version first, fall back to basic if it fails
+          
+          # Create backup of current publications section
+          echo "Creating backup of current publications..."
+          cp index.html index.html.backup
+          
+          # Count current publications to ensure we don't replace a good list with fewer items
+          CURRENT_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
+          echo "Current publications count: $CURRENT_COUNT"
+          
+          # Try scholarly version first
+          SCHOLARLY_SUCCESS=false
           if python update_publications_scholarly.py; then
-            echo "Publications updated using scholarly library"
+            echo "Scholarly script ran successfully"
+            # Count new publications
+            NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
+            echo "New publications count from scholarly: $NEW_COUNT"
+            
+            # Validate the update (should have at least 50 publications for Kyle's profile)
+            if [ "$NEW_COUNT" -ge 50 ]; then
+              echo "Scholarly update successful with $NEW_COUNT publications"
+              SCHOLARLY_SUCCESS=true
+            else
+              echo "Scholarly update produced too few publications ($NEW_COUNT), restoring backup"
+              cp index.html.backup index.html
+            fi
           else
-            echo "Scholarly version failed, trying basic version"
-            python update_publications.py
+            echo "Scholarly script failed, restoring backup"
+            cp index.html.backup index.html
           fi
+          
+          # If scholarly failed, try basic version
+          if [ "$SCHOLARLY_SUCCESS" = false ]; then
+            echo "Trying basic scraping version..."
+            if python update_publications.py; then
+              echo "Basic script ran successfully"
+              # Count new publications
+              NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
+              echo "New publications count from basic scraping: $NEW_COUNT"
+              
+              # Validate the update
+              if [ "$NEW_COUNT" -ge 50 ]; then
+                echo "Basic scraping update successful with $NEW_COUNT publications"
+              else
+                echo "Basic scraping also produced too few publications ($NEW_COUNT), restoring backup"
+                cp index.html.backup index.html
+              fi
+            else
+              echo "Basic scraping also failed, restoring backup"
+              cp index.html.backup index.html
+            fi
+          fi
+          
+          # Clean up backup file
+          rm -f index.html.backup
+          
+          # Final validation
+          FINAL_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
+          echo "Final publications count: $FINAL_COUNT"
+          
+          # Set output for notification step
+          if [ "$FINAL_COUNT" -lt 50 ]; then
+            echo "PUBLICATIONS_UPDATE_FAILED=true" >> $GITHUB_ENV
+            echo "Publications update failed - final count: $FINAL_COUNT"
+          else
+            echo "PUBLICATIONS_UPDATE_FAILED=false" >> $GITHUB_ENV
+            echo "Publications update successful - final count: $FINAL_COUNT"
+          fi
+        
+      - name: Notify on publications failure
+        if: env.PUBLICATIONS_UPDATE_FAILED == 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Publications Update Failed';
+            const body = `
+            ## Publications Update Failed
+            
+            The automated publications update failed during the scheduled run.
+            
+            **Possible causes:**
+            - Google Scholar is blocking requests
+            - Network connectivity issues
+            - Changes to Google Scholar's structure
+            - Rate limiting
+            
+            **Action needed:**
+            - Check the [workflow logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details
+            - Consider running the update manually
+            - The current publications list has been preserved and not overwritten
+            
+            **Workflow run:** ${{ github.run_id }}
+            **Trigger:** ${{ github.event_name }}
+            **Time:** ${{ github.event.repository.updated_at }}
+            `;
+            
+            // Check if an issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'automation,publications'
+            });
+            
+            const existingIssue = issues.data.find(issue => 
+              issue.title.includes('Publications Update Failed')
+            );
+            
+            if (!existingIssue) {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['automation', 'publications', 'bug']
+              });
+              console.log('Created new issue for publications update failure');
+            } else {
+              // Update existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: `Publications update failed again on ${new Date().toISOString()}\n\nWorkflow run: ${{ github.run_id }}`
+              });
+              console.log('Updated existing issue with new failure');
+            }
         
       - name: Check for changes
         id: verify-changed-files
@@ -112,7 +232,7 @@ jobs:
             if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 1 * * *" ]; then
               PROJECTS_UPDATED="projects"
               CONTRIBUTOR_PROJECTS_UPDATED="contributor-projects"
-            elif [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 2 * * 0" ]; then
+            elif [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 2 1 * *" ]; then
               PUBLICATIONS_UPDATED="publications"
             else
               PROJECTS_UPDATED="projects"

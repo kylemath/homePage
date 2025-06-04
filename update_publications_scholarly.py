@@ -169,19 +169,20 @@ def main():
     # Fetch all publications
     publications = get_google_scholar_publications_scholarly(author_name, author_id=author_id)
     
-    if publications:
+    if publications and len(publications) >= 50:  # Require at least 50 publications (Kyle has ~102)
         print(f"\nFound {len(publications)} total publications")
         
         # Update HTML file
         success = update_html_with_publications(publications)
         if success:
             print(f"\nSuccessfully updated index.html with all {len(publications)} publications!")
+            sys.exit(0)  # Success
         else:
             print("\nFailed to update HTML file")
+            sys.exit(1)  # Failure
     else:
-        print("No publications found. Please check the author name or try again later.")
-        # Still update HTML with placeholder
-        update_html_with_publications([])
+        print(f"Insufficient publications found ({len(publications) if publications else 0}). Not updating to prevent overwriting good content.")
+        sys.exit(1)  # Failure
 
 if __name__ == "__main__":
     main() 

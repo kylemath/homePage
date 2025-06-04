@@ -36,10 +36,14 @@ def parse_first_author(authors_string):
 
 def get_google_scholar_publications_scholarly(author_name, author_id=None):
     """Fetch ALL publications from Google Scholar using the scholarly library."""
+    print(f"[DEBUG] Entered get_google_scholar_publications_scholarly()", flush=True)
+    
     try:
+        print(f"[DEBUG] About to import scholarly inside function...", flush=True)
         from scholarly import scholarly
+        print(f"[DEBUG] Successfully imported scholarly inside function", flush=True)
         
-        print(f"[DEBUG] Starting search for author: {author_name}")
+        print(f"[DEBUG] Starting search for author: {author_name}", flush=True)
         
         # Set timeout for the entire operation (4 minutes)
         signal.alarm(240)
@@ -205,6 +209,11 @@ def update_html_with_publications(publications, html_file="index.html"):
 def main():
     import sys
     
+    # Force unbuffered output for GitHub Actions
+    sys.stdout.reconfigure(line_buffering=True)
+    
+    print("[DEBUG] Script started - main() called", flush=True)
+    
     # Default author name
     author_name = "Kyle E Mathewson"
     author_id = "wgK6LCYAAAAJ"  # Kyle's Google Scholar ID
@@ -217,13 +226,28 @@ def main():
     if len(sys.argv) > 2:
         author_id = sys.argv[2]
     
-    print(f"Fetching ALL publications for: {author_name}")
+    print(f"[DEBUG] Configuration: author={author_name}, id={author_id}", flush=True)
+    print(f"[DEBUG] Fetching ALL publications for: {author_name}", flush=True)
     if author_id:
-        print(f"Using Google Scholar ID: {author_id}")
-    print("Note: This may take a while as we fetch all publication information...")
+        print(f"[DEBUG] Using Google Scholar ID: {author_id}", flush=True)
+    print("[DEBUG] Note: This may take a while as we fetch all publication information...", flush=True)
+    
+    # Test if scholarly library can be imported
+    try:
+        print("[DEBUG] Attempting to import scholarly library...", flush=True)
+        from scholarly import scholarly
+        print("[DEBUG] Scholarly library imported successfully", flush=True)
+    except ImportError as e:
+        print(f"[ERROR] Cannot import scholarly: {e}", flush=True)
+        sys.exit(1)
+    except Exception as e:
+        print(f"[ERROR] Unexpected error importing scholarly: {e}", flush=True)
+        sys.exit(1)
     
     # Fetch all publications
+    print("[DEBUG] About to call get_google_scholar_publications_scholarly()", flush=True)
     publications = get_google_scholar_publications_scholarly(author_name, author_id=author_id)
+    print(f"[DEBUG] Returned from get_google_scholar_publications_scholarly() with {len(publications) if publications else 0} publications", flush=True)
     
     if publications and len(publications) >= 50:  # Require at least 50 publications (Kyle has ~102)
         print(f"\nFound {len(publications)} total publications")

@@ -1,6 +1,19 @@
 import re
 from bs4 import BeautifulSoup
 import os
+import signal
+import sys
+import time
+
+# Add timeout handling
+class TimeoutError(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutError("Operation timed out")
+
+# Set up signal handler for timeout
+signal.signal(signal.SIGALRM, timeout_handler)
 
 def parse_first_author(authors_string):
     """Parse authors string to extract first author and add 'et al.' if multiple authors."""
@@ -26,87 +39,130 @@ def get_google_scholar_publications_scholarly(author_name, author_id=None):
     try:
         from scholarly import scholarly
         
-        print(f"Searching for author: {author_name}")
+        print(f"[DEBUG] Starting search for author: {author_name}")
+        
+        # Set timeout for the entire operation (4 minutes)
+        signal.alarm(240)
         
         if author_id:
             # Use specific author ID if provided
-            print(f"Using author ID: {author_id}")
+            print(f"[DEBUG] Using author ID: {author_id}")
             try:
+                print(f"[DEBUG] Calling scholarly.search_author_id...")
                 author = scholarly.search_author_id(author_id)
+                print(f"[DEBUG] Got author object, calling scholarly.fill...")
                 author = scholarly.fill(author)
+                print(f"[DEBUG] Author filled successfully")
             except Exception as e:
-                print(f"Error with author ID {author_id}: {e}")
-                print("Falling back to name search...")
+                print(f"[DEBUG] Error with author ID {author_id}: {e}")
+                print("[DEBUG] Falling back to name search...")
                 search_query = scholarly.search_author(author_name)
                 author = next(search_query)
                 author = scholarly.fill(author)
         else:
             # Search for the author by name
+            print(f"[DEBUG] Calling scholarly.search_author...")
             search_query = scholarly.search_author(author_name)
+            print(f"[DEBUG] Getting first result...")
             author = next(search_query)
+            print(f"[DEBUG] Filling author details...")
             author = scholarly.fill(author)
         
-        print(f"Found author: {author.get('name', 'Unknown')}")
+        print(f"[DEBUG] Found author: {author.get('name', 'Unknown')}")
         
         publications = []
         
         # Fetch ALL publications
         total_publications = len(author.get('publications', []))
-        print(f"Fetching all {total_publications} publications...")
+        print(f"[DEBUG] Total publications to process: {total_publications}")
         
-        # Process all publications
-        for i, pub in enumerate(author.get('publications', [])):
-            try:
-                # Fill publication details
-                pub_filled = scholarly.fill(pub)
-                
-                title = pub_filled.get('bib', {}).get('title', 'Unknown Title')
-                authors = pub_filled.get('bib', {}).get('author', 'Unknown Authors')
-                year = pub_filled.get('bib', {}).get('pub_year', 'Unknown Year')
-                venue = pub_filled.get('bib', {}).get('venue', '')
-                url = pub_filled.get('pub_url', pub_filled.get('eprint_url', ''))
-                
-                # Parse to get first author et al.
-                first_author = parse_first_author(authors)
-                
-                # Parse year for sorting
+        # Process publications in smaller batches to identify problematic ones
+        batch_size = 10
+        for batch_start in range(0, total_publications, batch_size):
+            batch_end = min(batch_start + batch_size, total_publications)
+            print(f"[DEBUG] Processing batch {batch_start}-{batch_end-1} of {total_publications}")
+            
+            batch_pubs = author.get('publications', [])[batch_start:batch_end]
+            
+            for i, pub in enumerate(batch_pubs):
+                pub_index = batch_start + i
                 try:
-                    year_int = int(year) if year and year != 'Unknown Year' else 0
-                except (ValueError, TypeError):
-                    year_int = 0
-                
-                publications.append({
-                    'title': title,
-                    'authors': authors,
-                    'first_author': first_author,
-                    'year': year,
-                    'year_int': year_int,
-                    'venue': venue,
-                    'url': url
-                })
-                
-                print(f"Processed {i+1}/{total_publications}: {title} ({year}) - {first_author}")
-                
-            except Exception as e:
-                print(f"Error processing publication {i}: {e}")
-                continue
+                    print(f"[DEBUG] Processing publication {pub_index+1}/{total_publications}")
+                    
+                    # Get basic info first
+                    title_preview = pub.get('bib', {}).get('title', 'Unknown Title')[:50]
+                    print(f"[DEBUG] Publication preview: {title_preview}...")
+                    
+                    # Fill publication details - this is where it might hang
+                    print(f"[DEBUG] Calling scholarly.fill for publication {pub_index+1}...")
+                    pub_filled = scholarly.fill(pub)
+                    print(f"[DEBUG] Publication {pub_index+1} filled successfully")
+                    
+                    title = pub_filled.get('bib', {}).get('title', 'Unknown Title')
+                    authors = pub_filled.get('bib', {}).get('author', 'Unknown Authors')
+                    year = pub_filled.get('bib', {}).get('pub_year', 'Unknown Year')
+                    venue = pub_filled.get('bib', {}).get('venue', '')
+                    url = pub_filled.get('pub_url', pub_filled.get('eprint_url', ''))
+                    
+                    # Parse to get first author et al.
+                    first_author = parse_first_author(authors)
+                    
+                    # Parse year for sorting
+                    try:
+                        year_int = int(year) if year and year != 'Unknown Year' else 0
+                    except (ValueError, TypeError):
+                        year_int = 0
+                    
+                    publications.append({
+                        'title': title,
+                        'authors': authors,
+                        'first_author': first_author,
+                        'year': year,
+                        'year_int': year_int,
+                        'venue': venue,
+                        'url': url
+                    })
+                    
+                    print(f"[DEBUG] Successfully processed {pub_index+1}/{total_publications}: {title[:50]}... ({year}) - {first_author}")
+                    
+                    # Add small delay between publications to be respectful
+                    time.sleep(0.5)
+                    
+                except Exception as e:
+                    print(f"[ERROR] Failed to process publication {pub_index+1}: {e}")
+                    print(f"[ERROR] Publication that failed: {pub}")
+                    continue
+            
+            # Add delay between batches
+            print(f"[DEBUG] Completed batch {batch_start}-{batch_end-1}, pausing...")
+            time.sleep(2)
         
         # Sort publications by year (most recent first)
         publications.sort(key=lambda x: x['year_int'], reverse=True)
         
-        print(f"\nFetched and sorted {len(publications)} total publications:")
-        for i, pub in enumerate(publications[:10], 1):  # Show first 10 as preview
-            print(f"{i}. {pub['title']} ({pub['year']}) - {pub['first_author']}")
-        if len(publications) > 10:
-            print(f"... and {len(publications) - 10} more")
+        print(f"\n[DEBUG] Successfully fetched and sorted {len(publications)} total publications:")
+        for i, pub in enumerate(publications[:5], 1):  # Show first 5 as preview
+            print(f"  {i}. {pub['title'][:60]}... ({pub['year']}) - {pub['first_author']}")
+        if len(publications) > 5:
+            print(f"  ... and {len(publications) - 5} more")
         
+        # Clear the alarm
+        signal.alarm(0)
         return publications
         
     except ImportError:
-        print("Error: 'scholarly' library not installed. Install with: pip install scholarly")
+        print("[ERROR] 'scholarly' library not installed. Install with: pip install scholarly")
+        signal.alarm(0)
+        return []
+    except TimeoutError:
+        print("[ERROR] Google Scholar request timed out after 4 minutes")
+        signal.alarm(0)
         return []
     except Exception as e:
-        print(f"Error fetching data from Google Scholar: {e}")
+        print(f"[ERROR] Error fetching data from Google Scholar: {e}")
+        import traceback
+        print(f"[ERROR] Full traceback: {traceback.format_exc()}")
+        signal.alarm(0)
         return []
 
 def update_html_with_publications(publications, html_file="index.html"):

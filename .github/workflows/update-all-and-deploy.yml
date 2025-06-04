@@ -74,6 +74,7 @@ jobs:
           (github.event_name == 'schedule' && github.event.schedule == '0 2 1 * *') ||
           github.event_name == 'push' ||
           (github.event_name == 'workflow_dispatch' && github.event.inputs.update_publications == 'true')
+        timeout-minutes: 10
         run: |
           echo "Updating publications list..."
           
@@ -85,10 +86,11 @@ jobs:
           CURRENT_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
           echo "Current publications count: $CURRENT_COUNT"
           
-          # Try scholarly version first
+          # Try scholarly version first with timeout
           SCHOLARLY_SUCCESS=false
-          if python update_publications_scholarly.py; then
-            echo "Scholarly script ran successfully"
+          echo "Trying scholarly version with 5 minute timeout..."
+          if timeout 300 python update_publications_scholarly.py; then
+            echo "Scholarly script completed successfully"
             # Count new publications
             NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
             echo "New publications count from scholarly: $NEW_COUNT"
@@ -102,15 +104,15 @@ jobs:
               cp index.html.backup index.html
             fi
           else
-            echo "Scholarly script failed, restoring backup"
+            echo "Scholarly script failed or timed out, restoring backup"
             cp index.html.backup index.html
           fi
           
-          # If scholarly failed, try basic version
+          # If scholarly failed, try basic version with timeout
           if [ "$SCHOLARLY_SUCCESS" = false ]; then
-            echo "Trying basic scraping version..."
-            if python update_publications.py; then
-              echo "Basic script ran successfully"
+            echo "Trying basic scraping version with 3 minute timeout..."
+            if timeout 180 python update_publications.py; then
+              echo "Basic script completed successfully"
               # Count new publications
               NEW_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
               echo "New publications count from basic scraping: $NEW_COUNT"
@@ -123,7 +125,7 @@ jobs:
                 cp index.html.backup index.html
               fi
             else
-              echo "Basic scraping also failed, restoring backup"
+              echo "Basic scraping also failed or timed out, restoring backup"
               cp index.html.backup index.html
             fi
           fi

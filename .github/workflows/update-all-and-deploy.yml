@@ -223,7 +223,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add index.html
+          git add index.html catalogue_data.json
           
           # Create a more descriptive commit message
           PROJECTS_UPDATED=""

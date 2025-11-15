@@ -23,6 +23,216 @@
             margin: 0 0 20px 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .catalogue-preview {
+            margin-top: 36px;
+            padding: 20px;
+            background: #f7f8fa;
+            border: 1px solid #dadfe6;
+            border-radius: 10px;
+        }
+        .catalogue-grid {
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+        @media (min-width: 960px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        :root {
+            --card-light-default-x: 50%;
+            --card-light-default-y: 32%;
+            --card-light-default-strength: 0.35;
+        }
+        .catalogue-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.22);
+            padding: 3px;
+            background: #0f0f10;
+            box-shadow: inset 0 1px 1px rgba(255,255,255,0.12),
+                inset 0 -1px 3px rgba(0,0,0,0.35),
+                0 10px 26px rgba(0,0,0,0.18);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+        .catalogue-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+        }
+        .catalogue-card-thumb {
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #e8ecf3;
+        }
+        .catalogue-card-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .catalogue-card-body {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 12px 14px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background:
+                radial-gradient(circle at var(--card-light-x, var(--card-light-default-x)) var(--card-light-y, var(--card-light-default-y)),
+                    rgba(255,255,255,calc(0.15 + var(--card-light-intensity, var(--card-light-default-strength)))) 0%,
+                    rgba(255,255,255,0.02) 70%),
+                linear-gradient(180deg,
+                    rgba(255,255,255,0) 0%,
+                    rgba(237,237,237,0.92) 58%,
+                    rgba(210,210,210,0.96) 100%);
+            color: #111;
+            transform: translateY(calc(100% - var(--collapsed-height, 52px) - 2.2em));
+            transition: transform 0.25s ease;
+            border-top: 1px solid rgba(255,255,255,0.6);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+            border-radius: 22px 22px 0 0;
+            overflow: hidden;
+            position: absolute;
+        }
+        .catalogue-card-body::before,
+        .catalogue-card-body::after {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            border-radius: 18px;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .catalogue-card-body::before {
+            background-image:
+                radial-gradient(circle at 30% 18%, rgba(255,255,255,0.35), transparent 45%),
+                radial-gradient(circle at 74% 32%, rgba(200,200,200,0.32), transparent 55%),
+                repeating-linear-gradient(135deg, rgba(140,140,140,0.18) 0px, rgba(140,140,140,0.18) 12px, rgba(255,255,255,0.06) 12px, rgba(255,255,255,0.06) 26px);
+            opacity: 0.5;
+            mix-blend-mode: screen;
+            filter: blur(0.4px);
+        }
+        .catalogue-card-body::after {
+            background-image:
+                linear-gradient(120deg, rgba(80,80,80,0.25), transparent 32%),
+                linear-gradient(65deg, rgba(60,60,60,0.23), transparent 36%),
+                linear-gradient(160deg, rgba(255,255,255,0.18), transparent 45%);
+            opacity: 0.3;
+            mix-blend-mode: multiply;
+        }
+        .catalogue-card-body > * {
+            position: relative;
+            z-index: 1;
+        }
+        .catalogue-card:hover .catalogue-card-body {
+            transform: translateY(0);
+        }
+        .catalogue-card-title {
+            margin: 0;
+            font-size: 1.05em;
+            font-weight: 600;
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 999px;
+            background: linear-gradient(145deg,
+                rgba(255,255,255,0.95),
+                rgba(210,210,210,0.85));
+            color: #0f172a;
+            line-height: 1.3;
+            border: 1px solid rgba(255,255,255,0.5);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
+                inset 0 -1px 0 rgba(0,0,0,0.08),
+                0 2px 6px rgba(0,0,0,0.18);
+            text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+        }
+        .catalogue-card:hover .catalogue-card-title {
+            background: linear-gradient(145deg,
+                rgba(255,255,255,0.98),
+                rgba(230,230,230,0.95));
+        }
+        .catalogue-card-description {
+            margin: 0;
+            font-size: 0.85em;
+            color: rgba(17,24,39,0.85);
+            text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+        }
+        .catalogue-tags {
+            display: none;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.75em;
+            color: #0f172a;
+        }
+        .catalogue-card:hover .catalogue-tags {
+            display: flex;
+        }
+        .catalogue-tags span {
+            background: linear-gradient(145deg,
+                rgba(255,255,255,0.95),
+                rgba(210,210,210,0.85));
+            border-radius: 999px;
+            padding: 2px 9px;
+            border: 1px solid rgba(255,255,255,0.45);
+            font-weight: 500;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
+                inset 0 -1px 0 rgba(0,0,0,0.12),
+                0 1px 3px rgba(0,0,0,0.15);
+        }
+        .catalogue-badge {
+            display: none;
+        }
+        .catalogue-links {
+            margin-top: 4px;
+            display: flex;
+            gap: 10px;
+            font-size: 0.8em;
+        }
+        .catalogue-links span {
+            text-decoration: none;
+            background: linear-gradient(145deg,
+                rgba(255,255,255,0.95),
+                rgba(210,210,210,0.85));
+            border-radius: 999px;
+            padding: 2px 10px;
+            border: 1px solid rgba(255,255,255,0.45);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
+                inset 0 -1px 0 rgba(0,0,0,0.12),
+                0 1px 3px rgba(0,0,0,0.2);
+            color: #111;
+        }
+        .catalogue-links span::after {
+            content: ' →';
+            font-weight: 700;
+        }
+        .catalogue-links a {
+            color: #0056b3;
+            text-decoration: none;
+            background: linear-gradient(145deg,
+                rgba(255,255,255,0.95),
+                rgba(210,210,210,0.85));
+            border-radius: 999px;
+            padding: 2px 10px;
+            border: 1px solid rgba(255,255,255,0.45);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
+                inset 0 -1px 0 rgba(0,0,0,0.12),
+                0 1px 3px rgba(0,0,0,0.2);
+            color: #0a2540;
+            font-weight: 600;
+        }
+        .catalogue-empty {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .catalogue-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +278,151 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://sites.psych.ualberta.ca/kylemathewson/" target="_blank">APPLab Website</a></li>
     <li><a href="https://apps.ualberta.ca/directory/person/kmathews" target="_blank">University Directory</a></li>
 </ul>
+
+<div class="catalogue-preview" id="catalogue-preview">
+    <h3>Catalogue Preview</h3>
+    <p>This experimental grid tests the upcoming “app arcade” catalogue design using the three most recent additions from the list above. Each card loads from structured data so it can expand into its own React/Vite experience later.</p>
+    <div class="catalogue-grid" id="catalogue-grid">
+        <noscript>Enable JavaScript to preview the catalogue cards.</noscript>
+    </div>
+</div>
+
+<div class="catalogue-preview" id="longform-preview">
+    <h3>Long Form Catalogue</h3>
+    <p>Feature-length essays, zines, and interactive writing experiments drawn from dedicated repositories.</p>
+    <div class="catalogue-grid" id="catalogue-longform-grid"></div>
+</div>
+
+<div class="catalogue-preview" id="pages-preview">
+    <h3>Independent Sites & Apps</h3>
+    <p>Standalone experiences like EEGEdu, the Juventus club site, and other lab or community projects.</p>
+    <div class="catalogue-grid" id="catalogue-pages-grid"></div>
+</div>
+
+<script>
+(()=> {
+    const DATA_URL = 'catalogue_data.json';
+    const DISPLAY_LIMITS = {
+        preview: 9,
+        pages: 9
+    };
+    const grids = {
+        preview: document.getElementById('catalogue-grid'),
+        longform: document.getElementById('catalogue-longform-grid'),
+        pages: document.getElementById('catalogue-pages-grid')
+    };
+
+    function createCard(project) {
+        const displayTitle = (project.title || project.id || 'Untitled')
+            .replace(/([a-z0-9])([A-Z])/g, '$1<wbr>$2');
+        const card = document.createElement('article');
+        card.className = 'catalogue-card';
+        card.innerHTML = `
+            <a class="catalogue-card-thumb" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">
+                <img src="${project.screenshot}" alt="${project.title} screenshot" loading="lazy">
+            </a>
+            <div class="catalogue-card-body">
+                <h4 class="catalogue-card-title">${displayTitle}</h4>
+                <p class="catalogue-card-description">${project.oneLiner || ''}</p>
+                ${project.tags && project.tags.length ? `<div class="catalogue-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : ''}
+                <div class="catalogue-links">
+                    <span>Open Demo</span>
+                    <a class="github-link" href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        `;
+        card.dataset.demoUrl = project.demoUrl || project.githubUrl;
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('.github-link')) {
+                event.stopPropagation();
+                return;
+            }
+            if (card.dataset.demoUrl) {
+                window.open(card.dataset.demoUrl, '_blank');
+            }
+        });
+        const titleElement = card.querySelector('.catalogue-card-title');
+        if (titleElement) {
+            const collapsedHeight = titleElement.offsetHeight + 28;
+            card.style.setProperty('--collapsed-height', `${collapsedHeight}px`);
+        }
+
+        const DEFAULT_LIGHT = {
+            x: 50,
+            y: 32,
+            intensity: 0.35
+        };
+
+        const setDefaultLight = () => {
+            card.style.setProperty('--card-light-x', `${DEFAULT_LIGHT.x}%`);
+            card.style.setProperty('--card-light-y', `${DEFAULT_LIGHT.y}%`);
+            card.style.setProperty('--card-light-intensity', DEFAULT_LIGHT.intensity.toString());
+        };
+
+        const updateLightFromPointer = (event) => {
+            const rect = card.getBoundingClientRect();
+            const relativeX = ((event.clientX - rect.left) / rect.width) * 100;
+            const relativeY = ((event.clientY - rect.top) / rect.height) * 100;
+            const intensity = 0.25 + (1 - Math.min(relativeY / 100, 1)) * 0.4;
+            card.style.setProperty('--card-light-x', `${relativeX.toFixed(2)}%`);
+            card.style.setProperty('--card-light-y', `${relativeY.toFixed(2)}%`);
+            card.style.setProperty('--card-light-intensity', intensity.toFixed(2));
+        };
+
+        setDefaultLight();
+        card.addEventListener('pointermove', updateLightFromPointer);
+        card.addEventListener('pointerleave', setDefaultLight);
+
+        return card;
+    }
+
+    function renderItems(items, grid, limit=null) {
+        if (!grid) return;
+        grid.innerHTML = '';
+        const renderList = limit ? items.slice(0, limit) : items;
+        if (!renderList.length) {
+            const empty = document.createElement('div');
+            empty.className = 'catalogue-empty';
+            empty.textContent = 'No entries yet—add a catalogue.json file to any repo to feature it here.';
+            grid.appendChild(empty);
+            return;
+        }
+        renderList.forEach(item => grid.appendChild(createCard(item)));
+    }
+
+    function groupItems(items) {
+        const groups = {};
+        items.forEach(item => {
+            const kind = (item.kind || 'project').toLowerCase();
+            if (!groups[kind]) groups[kind] = [];
+            groups[kind].push(item);
+        });
+        return groups;
+    }
+
+    if (!window.fetch) {
+        renderItems([], grids.preview);
+        renderItems([], grids.longform);
+        renderItems([], grids.pages);
+        return;
+    }
+
+    fetch(DATA_URL)
+        .then(resp => resp.ok ? resp.json() : Promise.reject(resp.status))
+        .then(data => {
+            const items = data.items || [];
+            const grouped = groupItems(items);
+            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview);
+            renderItems(grouped.longform || [], grids.longform);
+            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages);
+        })
+        .catch(() => {
+            renderItems([], grids.preview);
+            renderItems([], grids.longform);
+            renderItems([], grids.pages);
+        });
+})();
+</script>
 
 <hr>
 <h2 id="about">About</h2>
@@ -121,6 +476,9 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 
 <h2 id="projects">Recent Projects</h2>
 <ul>
+    <li><a href="https://github.com/kylemath/homePage" target="_blank">homePage</a> - Main homepage for kylemathewson.com and helper scripts</li>
+    <li><a href="https://github.com/kylemath/IllumiStack" target="_blank">IllumiStack</a> - 3d Printing with Stacked colour layers web app</li>
+    <li><a href="https://github.com/kylemath/NeuroimagingClass" target="_blank">NeuroimagingClass</a> - Class materials for 2025 403 - Neuroimaging and Neurostim</li>
     <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Nehiyawewin trail signs for Edmonton</li>
     <li><a href="https://github.com/kylemath/MidiRapper" target="_blank">MidiRapper</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - GitHub repository</li>
@@ -129,7 +487,6 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://github.com/kylemath/BrainCraft" target="_blank">BrainCraft</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/digitalClock" target="_blank">digitalClock</a> - 3d printed digital clock for esphome and homeassistant</li>
     <li><a href="https://github.com/kylemath/flir" target="_blank">flir</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/homePage" target="_blank">homePage</a> - Main homepage for kylemathewson.com and helper scripts</li>
     <li><a href="https://github.com/kylemath/ClashRoyale" target="_blank">ClashRoyale</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/FractalViewerWebpage" target="_blank">FractalViewerWebpage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/WordSelectionLLM" target="_blank">WordSelectionLLM</a> - GitHub repository</li>
@@ -145,8 +502,6 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://github.com/kylemath/3dprint" target="_blank">3dprint</a> - set of .stl files and other 3d files I find useful, no credit claimed</li>
     <li><a href="https://github.com/kylemath/artOfSoccerWarPlanning" target="_blank">artOfSoccerWarPlanning</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/YoutubeMusicAlbumFilterChromePlugin" target="_blank">YoutubeMusicAlbumFilterChromePlugin</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/NeuroimagingClass" target="_blank">NeuroimagingClass</a> - Class materials for 2025 403 - Neuroimaging and Neurostim</li>
-    <li><a href="https://github.com/kylemath/IllumiStack" target="_blank">IllumiStack</a> - 3d Printing with Stacked colour layers web app</li>
     <li><a href="https://github.com/kylemath/voice2print" target="_blank">voice2print</a> - From my voice to plastic</li>
     <li><a href="https://github.com/kylemath/artOfSoccerWar" target="_blank">artOfSoccerWar</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/FreethrowEEG" target="_blank">FreethrowEEG</a> - Recording EEG during freethrow basketball shooting</li>

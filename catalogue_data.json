@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2025-11-15T02:59:34.051828Z",
+  "generatedAt": "2025-11-16T01:35:38.198593Z",
   "items": [
+    {
+      "id": "voice2print",
+      "title": "Voice2print",
+      "oneLiner": "An AI-assisted parametric 3D modeling project that uses voice prompting and natural language to generate custom OpenSCAD designs and 3D printable models. This repository contains a diverse collection of functional 3D printed parts created through conversational design with AI.",
+      "categories": [
+        "3dPrinting",
+        "AI"
+      ],
+      "tags": [
+        "3dPrinting",
+        "AI"
+      ],
+      "demoUrl": "https://github.com/kylemath/voice2print",
+      "githubUrl": "https://github.com/kylemath/voice2print",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/voice2print/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-15T18:20:24",
+      "createdAt": "2025-01-05T06:32:01Z"
+    },
+    {
+      "id": "SoraVideoGen",
+      "title": "SoraVideoGen",
+      "oneLiner": "Generate Sora videos using the API on local webpage",
+      "categories": [
+        "AI",
+        "videos",
+        "generative"
+      ],
+      "tags": [
+        "AI",
+        "videos",
+        "generative"
+      ],
+      "demoUrl": "https://github.com/kylemath/Sora",
+      "githubUrl": "https://github.com/kylemath/Sora",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Sora/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-15T17:42:30",
+      "createdAt": "2025-11-15T17:39:37Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +60,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-11-15T02:57:41",
+      "lastCommit": "2025-11-15T03:03:08",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -450,22 +496,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-04T16:56:43",
       "createdAt": "2025-11-04T16:58:07Z"
-    },
-    {
-      "id": "voice2print",
-      "title": "voice2print",
-      "oneLiner": "From my voice to plastic",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/voice2print",
-      "githubUrl": "https://github.com/kylemath/voice2print",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/voice2print/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-08-25T17:41:27",
-      "createdAt": "2025-01-05T06:32:01Z"
     },
     {
       "id": "artOfSoccerWar",

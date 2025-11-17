@@ -1,6 +1,103 @@
 {
-  "generatedAt": "2025-11-16T01:35:38.198593Z",
+  "generatedAt": "2025-11-17T01:35:57.866189Z",
   "items": [
+    {
+      "id": "soccerSim",
+      "title": "SoccerSim",
+      "oneLiner": "Soccer simulator to find optimal positions given random variables and real interactions",
+      "categories": [
+        "soccer",
+        "simulator",
+        "webpage"
+      ],
+      "tags": [
+        "soccer",
+        "simulator",
+        "webpage"
+      ],
+      "demoUrl": "https://soccersim.up.railway.app",
+      "githubUrl": "https://github.com/kylemath/soccerSim",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/soccerSim/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-17T01:23:18",
+      "createdAt": "2025-11-17T00:56:53Z"
+    },
+    {
+      "id": "instaFaceReadX",
+      "title": "InstaFaceReadX",
+      "oneLiner": "The world's first **gamified, youth-focused social media platform** that combines the best features of Instagram, Facebook, YouTube, Twitter, Reddit, TikTok, and Snapchat while giving users complete control over their algorithms through an engaging game-like experience designed specifically for Gen Z and Gen Alpha",
+      "categories": [
+        "socialMedia",
+        "webpage",
+        "demo"
+      ],
+      "tags": [
+        "socialMedia",
+        "webpage",
+        "demo"
+      ],
+      "demoUrl": "https://kylemath.github.io/InstaFaceReadX",
+      "githubUrl": "https://github.com/kylemath/InstaFaceReadX",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/InstaFaceReadX/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-16T23:40:36",
+      "createdAt": "2025-11-16T23:24:08Z"
+    },
+    {
+      "id": "groupPaint",
+      "title": "GroupPaint",
+      "oneLiner": "I web app example to make an IP based group paint app on web",
+      "categories": [
+        "paint",
+        "web",
+        "paint",
+        "art"
+      ],
+      "tags": [
+        "paint",
+        "web",
+        "art"
+      ],
+      "demoUrl": "https://github.com/kylemath/GroupPaint",
+      "githubUrl": "https://github.com/kylemath/GroupPaint",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GroupPaint/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-16T23:18:47",
+      "createdAt": "2025-11-16T23:18:52Z"
+    },
+    {
+      "id": "todoManager",
+      "title": "todoManager",
+      "oneLiner": "I simple lightweight html todo list manager example using localStorage or can be hosted locally with database",
+      "categories": [
+        "todo",
+        "work",
+        "schedule"
+      ],
+      "tags": [
+        "todo",
+        "work",
+        "schedule"
+      ],
+      "demoUrl": "https://kylemath.github.io/todoManager",
+      "githubUrl": "https://github.com/kylemath/todoManager",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/todoManager/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-16T23:05:57",
+      "createdAt": "2025-11-16T23:04:03Z"
+    },
     {
       "id": "voice2print",
       "title": "Voice2print",
@@ -20,8 +117,24 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-11-15T18:20:24",
+      "lastCommit": "2025-11-16T22:53:11",
       "createdAt": "2025-01-05T06:32:01Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-16T01:36:15",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "SoraVideoGen",
@@ -46,22 +159,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-15T17:42:30",
       "createdAt": "2025-11-15T17:39:37Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-15T03:03:08",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "IllumiStack",

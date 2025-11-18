@@ -1,6 +1,66 @@
 {
-  "generatedAt": "2025-11-17T01:35:57.866189Z",
+  "generatedAt": "2025-11-18T01:35:35.139253Z",
   "items": [
+    {
+      "id": "biophotons",
+      "title": "Biophotons",
+      "oneLiner": "Exploring measuring of human biophotons with PMTs",
+      "categories": [
+        "test"
+      ],
+      "tags": [
+        "test"
+      ],
+      "demoUrl": "https://kylemath.github.io.biophotons",
+      "githubUrl": "https://github.com/kylemath/biophotons",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/biophotons/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-17T18:48:22",
+      "createdAt": "2025-11-17T18:48:14Z"
+    },
+    {
+      "id": "gitBash",
+      "title": "GitBash",
+      "oneLiner": "terminal command gir to init or edit a repo and make catelogue for webpagee'",
+      "categories": [
+        "terminal",
+        "github",
+        "productive"
+      ],
+      "tags": [
+        "terminal",
+        "github",
+        "productive"
+      ],
+      "demoUrl": "https://github.com/kylemath/gitBash",
+      "githubUrl": "https://github.com/kylemath/gitBash",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/gitBash/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-17T01:36:55",
+      "createdAt": "2025-11-17T01:37:00Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-17T01:36:41",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "soccerSim",
       "title": "SoccerSim",
@@ -119,22 +179,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-16T22:53:11",
       "createdAt": "2025-01-05T06:32:01Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-16T01:36:15",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "SoraVideoGen",

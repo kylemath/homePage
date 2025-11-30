@@ -25,49 +25,98 @@
         }
         .catalogue-preview {
             margin-top: 36px;
-            padding: 20px;
-            background: #f7f8fa;
-            border: 1px solid #dadfe6;
-            border-radius: 10px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+        }
+        .catalogue-preview h3 {
+            padding: 0 0 8px;
+            margin: 0;
+            color: #111;
+            font-size: 18px;
+        }
+        .catalogue-preview p {
+            padding: 0 0 16px;
+            margin: 0;
+            color: #555;
+            font-size: 14px;
         }
         .catalogue-grid {
-            margin-top: 16px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 14px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            max-height: 900px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        @media (min-width: 960px) {
+        .catalogue-grid::-webkit-scrollbar {
+            width: 8px;
+        }
+        .catalogue-grid::-webkit-scrollbar-track {
+            background: #f3f4f6;
+            border-radius: 4px;
+        }
+        .catalogue-grid::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+        .catalogue-grid::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+        @media (min-width: 640px) {
             .catalogue-grid {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(3, 1fr);
             }
         }
-        :root {
-            --card-light-default-x: 50%;
-            --card-light-default-y: 32%;
-            --card-light-default-strength: 0.35;
+        @media (min-width: 900px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (min-width: 1200px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+        @media (min-width: 1500px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+        @media (min-width: 1800px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(7, 1fr);
+            }
+        }
+        @media (min-width: 2100px) {
+            .catalogue-grid {
+                grid-template-columns: repeat(8, 1fr);
+            }
         }
         .catalogue-card {
             position: relative;
-            border-radius: 12px;
+            border-radius: 0;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.22);
-            padding: 3px;
-            background: #0f0f10;
-            box-shadow: inset 0 1px 1px rgba(255,255,255,0.12),
-                inset 0 -1px 3px rgba(0,0,0,0.35),
-                0 10px 26px rgba(0,0,0,0.18);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+            padding: 0;
+            background: white;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, z-index 0s;
             cursor: pointer;
         }
         .catalogue-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 14px 28px rgba(0,0,0,0.16);
+            transform: scale(1.03);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            z-index: 10;
         }
         .catalogue-card-thumb {
             display: block;
             width: 100%;
-            aspect-ratio: 1 / 1;
-            background: #e8ecf3;
+            aspect-ratio: 9 / 16;
+            background: #f3f4f6;
         }
         .catalogue-card-thumb img {
             width: 100%;
@@ -80,52 +129,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 12px 14px 16px;
+            padding: 12px 10px 14px;
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 5px;
             background:
-                radial-gradient(circle at var(--card-light-x, var(--card-light-default-x)) var(--card-light-y, var(--card-light-default-y)),
-                    rgba(255,255,255,calc(0.15 + var(--card-light-intensity, var(--card-light-default-strength)))) 0%,
-                    rgba(255,255,255,0.02) 70%),
                 linear-gradient(180deg,
-                    rgba(255,255,255,0) 0%,
-                    rgba(237,237,237,0.92) 58%,
-                    rgba(210,210,210,0.96) 100%);
-            color: #111;
-            transform: translateY(calc(100% - var(--collapsed-height, 52px) - 2.2em));
-            transition: transform 0.25s ease;
-            border-top: 1px solid rgba(255,255,255,0.6);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-            border-radius: 22px 22px 0 0;
+                    rgba(0,0,0,0) 0%,
+                    rgba(0,0,0,0.65) 35%,
+                    rgba(0,0,0,0.92) 100%);
+            color: white;
+            transform: translateY(calc(100% - var(--collapsed-height, 38px) - 1.6em));
+            transition: transform 0.18s ease;
+            border-top: none;
+            box-shadow: none;
+            border-radius: 0;
             overflow: hidden;
-            position: absolute;
-        }
-        .catalogue-card-body::before,
-        .catalogue-card-body::after {
-            content: '';
-            position: absolute;
-            inset: 8px;
-            border-radius: 18px;
-            pointer-events: none;
-            z-index: 0;
-        }
-        .catalogue-card-body::before {
-            background-image:
-                radial-gradient(circle at 30% 18%, rgba(255,255,255,0.35), transparent 45%),
-                radial-gradient(circle at 74% 32%, rgba(200,200,200,0.32), transparent 55%),
-                repeating-linear-gradient(135deg, rgba(140,140,140,0.18) 0px, rgba(140,140,140,0.18) 12px, rgba(255,255,255,0.06) 12px, rgba(255,255,255,0.06) 26px);
-            opacity: 0.5;
-            mix-blend-mode: screen;
-            filter: blur(0.4px);
-        }
-        .catalogue-card-body::after {
-            background-image:
-                linear-gradient(120deg, rgba(80,80,80,0.25), transparent 32%),
-                linear-gradient(65deg, rgba(60,60,60,0.23), transparent 36%),
-                linear-gradient(160deg, rgba(255,255,255,0.18), transparent 45%);
-            opacity: 0.3;
-            mix-blend-mode: multiply;
         }
         .catalogue-card-body > * {
             position: relative;
@@ -136,102 +155,90 @@
         }
         .catalogue-card-title {
             margin: 0;
-            font-size: 1.05em;
-            font-weight: 600;
+            font-size: 0.9em;
+            font-weight: 700;
             display: inline-block;
-            padding: 2px 12px;
-            border-radius: 999px;
-            background: linear-gradient(145deg,
-                rgba(255,255,255,0.95),
-                rgba(210,210,210,0.85));
-            color: #0f172a;
-            line-height: 1.3;
-            border: 1px solid rgba(255,255,255,0.5);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
-                inset 0 -1px 0 rgba(0,0,0,0.08),
-                0 2px 6px rgba(0,0,0,0.18);
-            text-shadow: 0 1px 0 rgba(255,255,255,0.7);
-        }
-        .catalogue-card:hover .catalogue-card-title {
-            background: linear-gradient(145deg,
-                rgba(255,255,255,0.98),
-                rgba(230,230,230,0.95));
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            color: white;
+            line-height: 1.25;
+            border: none;
+            box-shadow: none;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
         }
         .catalogue-card-description {
             margin: 0;
-            font-size: 0.85em;
-            color: rgba(17,24,39,0.85);
-            text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+            font-size: 0.72em;
+            color: rgba(255,255,255,0.85);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+            line-height: 1.35;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         .catalogue-tags {
             display: none;
             flex-wrap: wrap;
-            gap: 6px;
-            font-size: 0.75em;
-            color: #0f172a;
+            gap: 4px;
+            font-size: 0.62em;
+            color: white;
         }
         .catalogue-card:hover .catalogue-tags {
             display: flex;
         }
         .catalogue-tags span {
-            background: linear-gradient(145deg,
-                rgba(255,255,255,0.95),
-                rgba(210,210,210,0.85));
-            border-radius: 999px;
-            padding: 2px 9px;
-            border: 1px solid rgba(255,255,255,0.45);
-            font-weight: 500;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
-                inset 0 -1px 0 rgba(0,0,0,0.12),
-                0 1px 3px rgba(0,0,0,0.15);
+            background: rgba(255,255,255,0.22);
+            backdrop-filter: blur(6px);
+            border-radius: 3px;
+            padding: 3px 7px;
+            border: 1px solid rgba(255,255,255,0.35);
+            font-weight: 600;
         }
         .catalogue-badge {
             display: none;
         }
         .catalogue-links {
-            margin-top: 4px;
+            margin-top: 5px;
             display: flex;
-            gap: 10px;
-            font-size: 0.8em;
+            gap: 6px;
+            font-size: 0.68em;
         }
         .catalogue-links span {
-            text-decoration: none;
-            background: linear-gradient(145deg,
-                rgba(255,255,255,0.95),
-                rgba(210,210,210,0.85));
-            border-radius: 999px;
-            padding: 2px 10px;
-            border: 1px solid rgba(255,255,255,0.45);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
-                inset 0 -1px 0 rgba(0,0,0,0.12),
-                0 1px 3px rgba(0,0,0,0.2);
-            color: #111;
-        }
-        .catalogue-links span::after {
-            content: ' →';
-            font-weight: 700;
+            display: none;
         }
         .catalogue-links a {
-            color: #0056b3;
+            color: white;
             text-decoration: none;
-            background: linear-gradient(145deg,
-                rgba(255,255,255,0.95),
-                rgba(210,210,210,0.85));
-            border-radius: 999px;
-            padding: 2px 10px;
-            border: 1px solid rgba(255,255,255,0.45);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8),
-                inset 0 -1px 0 rgba(0,0,0,0.12),
-                0 1px 3px rgba(0,0,0,0.2);
-            color: #0a2540;
-            font-weight: 600;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(6px);
+            border-radius: 5px;
+            padding: 4px 9px;
+            border: 1px solid rgba(255,255,255,0.35);
+            font-weight: 700;
+            transition: all 0.15s ease;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .catalogue-links a:hover {
+            background: rgba(255,255,255,0.28);
+            transform: translateY(-1px);
         }
         .catalogue-empty {
             font-size: 0.9em;
-            color: #555;
+            color: #6b7280;
+            padding: 40px 20px;
+            text-align: center;
+            background: white;
         }
-        .catalogue-links a:hover {
-            text-decoration: underline;
+        .catalogue-count {
+            font-size: 0.85em;
+            color: #6b7280;
+            margin: 0;
+            padding: 12px 0;
+            text-align: center;
+            background: transparent;
         }
     </style>
 </head>
@@ -281,7 +288,7 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 
 <div class="catalogue-preview" id="catalogue-preview">
     <h3>Catalogue Preview</h3>
-    <p>This experimental grid tests the upcoming “app arcade” catalogue design using the three most recent additions from the list above. Each card loads from structured data so it can expand into its own React/Vite experience later.</p>
+    <p>Mobile-optimized "app arcade" catalogue featuring all projects with structured entries. Scroll through portrait cards that scale from 2 columns on mobile to 8+ on ultra-wide displays. Each card expands on hover and loads from structured data for future React/Vite experiences.</p>
     <div class="catalogue-grid" id="catalogue-grid">
         <noscript>Enable JavaScript to preview the catalogue cards.</noscript>
     </div>
@@ -289,13 +296,13 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 
 <div class="catalogue-preview" id="longform-preview">
     <h3>Long Form Catalogue</h3>
-    <p>Feature-length essays, zines, and interactive writing experiments drawn from dedicated repositories.</p>
+    <p>Feature-length essays, zines, and interactive writing experiments from dedicated repositories.</p>
     <div class="catalogue-grid" id="catalogue-longform-grid"></div>
 </div>
 
 <div class="catalogue-preview" id="pages-preview">
     <h3>Independent Sites & Apps</h3>
-    <p>Standalone experiences like EEGEdu, the Juventus club site, and other lab or community projects.</p>
+    <p>Standalone experiences including EEGEdu, Juventus club site, and other lab or community projects.</p>
     <div class="catalogue-grid" id="catalogue-pages-grid"></div>
 </div>
 
@@ -303,14 +310,69 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 (()=> {
     const DATA_URL = 'catalogue_data.json';
     const DISPLAY_LIMITS = {
-        preview: 9,
-        pages: 9
+        preview: null,  // Show all cards
+        pages: null     // Show all cards
     };
     const grids = {
         preview: document.getElementById('catalogue-grid'),
         longform: document.getElementById('catalogue-longform-grid'),
         pages: document.getElementById('catalogue-pages-grid')
     };
+
+    function generatePlaceholder(project) {
+        // Generate a unique color scheme based on project title
+        const title = project.title || project.id || 'Project';
+        const hash = title.split('').reduce((acc, char) => char.charCodeAt(0) + ((acc << 5) - acc), 0);
+        const hue1 = Math.abs(hash % 360);
+        const hue2 = (hue1 + 137) % 360; // Golden angle for pleasing color harmony
+        
+        // Get first letters of title for the icon
+        const words = title.split(/(?=[A-Z])|[\s_-]+/);
+        const initials = words.slice(0, 2).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+        
+        // Create category-based icon
+        const categories = project.categories || project.tags || [];
+        const categoryIcons = {
+            'eeg': '🧠', 'brain': '🧠', 'neuroscience': '🧠',
+            'game': '🎮', 'soccer': '⚽', 'sport': '⚽',
+            '3dprinting': '🖨️', '3d': '🖨️', 'print': '🖨️',
+            'ai': '🤖', 'ml': '🤖', 'learning': '🤖',
+            'music': '🎵', 'audio': '🎵',
+            'web': '🌐', 'webpage': '🌐',
+            'paint': '🎨', 'art': '🎨', 'creative': '🎨',
+            'terminal': '⌨️', 'cli': '⌨️',
+            'course': '📚', 'education': '📚', 'tutorial': '📚'
+        };
+        
+        let icon = '';
+        for (const cat of categories) {
+            const key = cat.toLowerCase();
+            if (categoryIcons[key]) {
+                icon = categoryIcons[key];
+                break;
+            }
+        }
+        
+        return `data:image/svg+xml,${encodeURIComponent(`
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <defs>
+                    <linearGradient id="grad${hash}" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:hsl(${hue1}, 70%, 60%);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:hsl(${hue2}, 70%, 45%);stop-opacity:1" />
+                    </linearGradient>
+                    <pattern id="grid${hash}" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="400" height="400" fill="url(#grad${hash})"/>
+                <rect width="400" height="400" fill="url(#grid${hash})"/>
+                <circle cx="200" cy="150" r="80" fill="rgba(255,255,255,0.2)"/>
+                <text x="200" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="white" text-anchor="middle">${icon || initials}</text>
+                <text x="200" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="white" text-anchor="middle" opacity="0.9">${title.length > 20 ? title.substring(0, 18) + '...' : title}</text>
+                <text x="200" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.7">${project.kind || 'project'}</text>
+            </svg>
+        `)}`;
+    }
 
     function createCard(project) {
         const displayTitle = (project.title || project.id || 'Untitled')
@@ -332,6 +394,15 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
             </div>
         `;
         card.dataset.demoUrl = project.demoUrl || project.githubUrl;
+        
+        // Add image error handler for placeholder
+        const img = card.querySelector('img');
+        if (img) {
+            img.addEventListener('error', function() {
+                this.src = generatePlaceholder(project);
+            }, { once: true });
+        }
+        
         card.addEventListener('click', (event) => {
             if (event.target.closest('.github-link')) {
                 event.stopPropagation();
@@ -343,41 +414,20 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
         });
         const titleElement = card.querySelector('.catalogue-card-title');
         if (titleElement) {
-            const collapsedHeight = titleElement.offsetHeight + 28;
+            const collapsedHeight = titleElement.offsetHeight + 24;
             card.style.setProperty('--collapsed-height', `${collapsedHeight}px`);
         }
-
-        const DEFAULT_LIGHT = {
-            x: 50,
-            y: 32,
-            intensity: 0.35
-        };
-
-        const setDefaultLight = () => {
-            card.style.setProperty('--card-light-x', `${DEFAULT_LIGHT.x}%`);
-            card.style.setProperty('--card-light-y', `${DEFAULT_LIGHT.y}%`);
-            card.style.setProperty('--card-light-intensity', DEFAULT_LIGHT.intensity.toString());
-        };
-
-        const updateLightFromPointer = (event) => {
-            const rect = card.getBoundingClientRect();
-            const relativeX = ((event.clientX - rect.left) / rect.width) * 100;
-            const relativeY = ((event.clientY - rect.top) / rect.height) * 100;
-            const intensity = 0.25 + (1 - Math.min(relativeY / 100, 1)) * 0.4;
-            card.style.setProperty('--card-light-x', `${relativeX.toFixed(2)}%`);
-            card.style.setProperty('--card-light-y', `${relativeY.toFixed(2)}%`);
-            card.style.setProperty('--card-light-intensity', intensity.toFixed(2));
-        };
-
-        setDefaultLight();
-        card.addEventListener('pointermove', updateLightFromPointer);
-        card.addEventListener('pointerleave', setDefaultLight);
 
         return card;
     }
 
-    function renderItems(items, grid, limit=null) {
+    function renderItems(items, grid, limit=null, showCount=false) {
         if (!grid) return;
+        const parentSection = grid.parentElement;
+        // Remove any existing count element
+        const existingCount = parentSection.querySelector('.catalogue-count');
+        if (existingCount) existingCount.remove();
+        
         grid.innerHTML = '';
         const renderList = limit ? items.slice(0, limit) : items;
         if (!renderList.length) {
@@ -388,6 +438,14 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
             return;
         }
         renderList.forEach(item => grid.appendChild(createCard(item)));
+        
+        // Add count if requested
+        if (showCount && renderList.length > 0) {
+            const countDiv = document.createElement('div');
+            countDiv.className = 'catalogue-count';
+            countDiv.textContent = `Showing ${renderList.length} project${renderList.length !== 1 ? 's' : ''}`;
+            parentSection.appendChild(countDiv);
+        }
     }
 
     function groupItems(items) {
@@ -412,14 +470,14 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
         .then(data => {
             const items = data.items || [];
             const grouped = groupItems(items);
-            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview);
-            renderItems(grouped.longform || [], grids.longform);
-            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages);
+            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview, true);
+            renderItems(grouped.longform || [], grids.longform, null, true);
+            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages, true);
         })
         .catch(() => {
-            renderItems([], grids.preview);
-            renderItems([], grids.longform);
-            renderItems([], grids.pages);
+            renderItems([], grids.preview, null, false);
+            renderItems([], grids.longform, null, false);
+            renderItems([], grids.pages, null, false);
         });
 })();
 </script>

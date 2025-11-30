@@ -1,6 +1,26 @@
 {
-  "generatedAt": "2025-11-29T01:34:51.507851Z",
+  "generatedAt": "2025-11-30T01:36:03.603669Z",
   "items": [
+    {
+      "id": "MagicGemWebpage",
+      "title": "MagicGemWebpage",
+      "oneLiner": "A web catalogue of all 880 4x4 magic gems",
+      "categories": [
+        "magic squares"
+      ],
+      "tags": [
+        "magic squares"
+      ],
+      "demoUrl": "https://kylemath.github.io/MagicGemWebpage",
+      "githubUrl": "https://github.com/kylemath/MagicGemWebpage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MagicGemWebpage/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-29T10:29:10",
+      "createdAt": "2025-11-29T10:27:20Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +34,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-11-28T01:36:19",
+      "lastCommit": "2025-11-29T01:35:22",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

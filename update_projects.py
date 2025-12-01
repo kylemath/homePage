@@ -140,8 +140,14 @@ def build_catalogue_entries(username: str, repos: List[Dict]) -> List[Dict]:
     return entries
 
 def write_catalogue_file(entries: List[Dict]):
+    if not entries:
+        print(f"⚠️  No entries found - not overwriting {CATALOGUE_FILE}")
+        print("   This usually means GitHub API rate limiting.")
+        print("   Set GITHUB_TOKEN environment variable and try again.")
+        return
+    
     payload = {
-        'generatedAt': datetime.utcnow().isoformat() + 'Z',
+        'generatedAt': datetime.now(timezone.utc).isoformat(),
         'items': entries
     }
     with open(CATALOGUE_FILE, 'w', encoding='utf-8') as fh:

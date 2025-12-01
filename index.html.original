@@ -3,14 +3,12 @@
 <head>
     <title>Kyle E. Mathewson - Homepage</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body { 
             font-family: Times, serif; 
-            margin: 0; 
+            margin: 40px; 
             background: white; 
-            color: black;
-            overflow-x: hidden;
+            color: black; 
         }
         h1 { font-size: 24px; }
         h2 { font-size: 18px; }
@@ -115,139 +113,98 @@
             z-index: 10;
         }
         .catalogue-card-thumb {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
             width: 100%;
-            aspect-ratio: 8 / 9;
+            aspect-ratio: 9 / 16;
             background: #f3f4f6;
-            position: relative;
-            overflow: hidden;
         }
         .catalogue-card-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top left;
             display: block;
-        }
-        .catalogue-card-logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 85%;
-            z-index: 2;
-            transition: opacity 0.18s ease;
-            pointer-events: none;
-        }
-        .catalogue-card:hover .catalogue-card-logo {
-            opacity: 0.3;
-        }
-        .catalogue-card-logo-icon {
-            font-size: 4em;
-            margin-bottom: 0.2em;
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-        }
-        .catalogue-card-logo-text {
-            font-size: 1em;
-            font-weight: 700;
-            color: white;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.4);
-            line-height: 1.3;
-            word-break: break-word;
-            padding: 0 10px;
-        }
-        .catalogue-card-title-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 10px 12px;
-            background: linear-gradient(180deg,
-                rgba(0,0,0,0.85) 0%,
-                rgba(0,0,0,0.6) 70%,
-                rgba(0,0,0,0) 100%);
-            transform: translateY(-100%);
-            transition: transform 0.18s ease;
-            z-index: 3;
-            opacity: 0;
-        }
-        .catalogue-card:hover .catalogue-card-title-wrapper {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .catalogue-card-title {
-            margin: 0;
-            font-size: 0.85em;
-            font-weight: 700;
-            color: white;
-            line-height: 1.25;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.9);
         }
         .catalogue-card-body {
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 12px 12px 14px;
+            padding: 12px 10px 14px;
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            background: linear-gradient(180deg,
-                rgba(0,0,0,0) 0%,
-                rgba(0,0,0,0.75) 30%,
-                rgba(0,0,0,0.95) 100%);
+            gap: 5px;
+            background:
+                linear-gradient(180deg,
+                    rgba(0,0,0,0) 0%,
+                    rgba(0,0,0,0.65) 35%,
+                    rgba(0,0,0,0.92) 100%);
             color: white;
-            transform: translateY(100%);
+            transform: translateY(calc(100% - var(--collapsed-height, 38px) - 1.6em));
             transition: transform 0.18s ease;
-            z-index: 3;
-            opacity: 0;
+            border-top: none;
+            box-shadow: none;
+            border-radius: 0;
+            overflow: hidden;
+        }
+        .catalogue-card-body > * {
+            position: relative;
+            z-index: 1;
         }
         .catalogue-card:hover .catalogue-card-body {
             transform: translateY(0);
-            opacity: 1;
+        }
+        .catalogue-card-title {
+            margin: 0;
+            font-size: 0.9em;
+            font-weight: 700;
+            display: inline-block;
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            color: white;
+            line-height: 1.25;
+            border: none;
+            box-shadow: none;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.9);
         }
         .catalogue-card-description {
             margin: 0;
-            font-size: 0.75em;
-            color: rgba(255,255,255,0.95);
-            background: rgba(0,0,0,0.3);
-            padding: 4px 6px;
-            border-radius: 3px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-            line-height: 1.4;
+            font-size: 0.72em;
+            color: rgba(255,255,255,0.85);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+            line-height: 1.35;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
-            line-clamp: 3;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
         .catalogue-tags {
-            display: flex;
+            display: none;
             flex-wrap: wrap;
             gap: 4px;
-            font-size: 0.65em;
+            font-size: 0.62em;
             color: white;
         }
+        .catalogue-card:hover .catalogue-tags {
+            display: flex;
+        }
         .catalogue-tags span {
-            background: rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.22);
             backdrop-filter: blur(6px);
             border-radius: 3px;
             padding: 3px 7px;
-            border: 1px solid rgba(255,255,255,0.4);
+            border: 1px solid rgba(255,255,255,0.35);
             font-weight: 600;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
         }
         .catalogue-badge {
             display: none;
         }
         .catalogue-links {
-            margin-top: 3px;
+            margin-top: 5px;
             display: flex;
             gap: 6px;
-            font-size: 0.7em;
+            font-size: 0.68em;
         }
         .catalogue-links span {
             display: none;
@@ -255,19 +212,18 @@
         .catalogue-links a {
             color: white;
             text-decoration: none;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.18);
             backdrop-filter: blur(6px);
             border-radius: 5px;
-            padding: 5px 10px;
-            border: 1px solid rgba(255,255,255,0.4);
+            padding: 4px 9px;
+            border: 1px solid rgba(255,255,255,0.35);
             font-weight: 700;
             transition: all 0.15s ease;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
         }
         .catalogue-links a:hover {
-            background: rgba(255,255,255,0.35);
+            background: rgba(255,255,255,0.28);
             transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
         .catalogue-empty {
             font-size: 0.9em;
@@ -284,97 +240,9 @@
             text-align: center;
             background: transparent;
         }
-        
-        /* Tab navigation */
-        .tab-navigation {
-            display: flex;
-            gap: 0;
-            background: #f3f4f6;
-            border-bottom: 2px solid #d1d5db;
-            overflow-x: auto;
-            overflow-y: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
-        }
-        .tab-navigation::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Edge */
-        }
-        .tab-button {
-            padding: 16px 24px;
-            background: #f3f4f6;
-            border: none;
-            border-bottom: 3px solid transparent;
-            cursor: pointer;
-            font-family: Times, serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: #374151;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        @media (max-width: 768px) {
-            .tab-button {
-                padding: 14px 18px;
-                font-size: 14px;
-            }
-        }
-        .tab-button:hover {
-            background: #e5e7eb;
-            color: #111827;
-        }
-        .tab-button.active {
-            background: white;
-            color: #1f2937;
-            border-bottom-color: #3b82f6;
-        }
-        
-        /* Tab content */
-        .tab-content {
-            display: none;
-            padding: 40px;
-            padding-top: 100px; /* Space for fixed nav bar */
-            animation: fadeIn 0.3s ease;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .tab-content {
-                padding: 20px;
-                padding-top: 80px;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
-
-<!-- Tab Navigation -->
-<nav class="tab-navigation">
-    <button class="tab-button active" data-tab="about">About</button>
-    <button class="tab-button" data-tab="projects">Projects</button>
-    <button class="tab-button" data-tab="apps">Apps</button>
-    <button class="tab-button" data-tab="writing">Writing</button>
-    <button class="tab-button" data-tab="publications">Publications</button>
-    <button class="tab-button" data-tab="teaching">Teaching</button>
-    <button class="tab-button" data-tab="experience">Experience</button>
-    <button class="tab-button" data-tab="news">News</button>
-</nav>
-
-<!-- Tab: About & Research -->
-<div id="tab-about" class="tab-content active">
-
 
 <h1>Kyle E. Mathewson, PhD</h1>
 
@@ -402,8 +270,219 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 
 <hr>
 
-<hr>
+<h2 id="navigation">Navigation</h2>
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#long-form-writing">Long Form Writing</a></li>
+    <li><a href="#projects">Recent Projects</a></li>
+    <li><a href="#contributor-projects">Contributor Projects</a></li>
+    <li><a href="#web-development">Web Development & Interactive Projects</a></li>
+    <li><a href="#publications">Recent Publications</a></li>
+    <li><a href="#news-mentions">In the News</a></li>
+    <li><a href="#teaching">Teaching</a></li>
 
+    <li><a href="https://sites.psych.ualberta.ca/kylemathewson/" target="_blank">APPLab Website</a></li>
+    <li><a href="https://apps.ualberta.ca/directory/person/kmathews" target="_blank">University Directory</a></li>
+</ul>
+
+<div class="catalogue-preview" id="catalogue-preview">
+    <h3>Catalogue Preview</h3>
+    <p>Mobile-optimized "app arcade" catalogue featuring all projects with structured entries. Scroll through portrait cards that scale from 2 columns on mobile to 8+ on ultra-wide displays. Each card expands on hover and loads from structured data for future React/Vite experiences.</p>
+    <div class="catalogue-grid" id="catalogue-grid">
+        <noscript>Enable JavaScript to preview the catalogue cards.</noscript>
+    </div>
+</div>
+
+<div class="catalogue-preview" id="longform-preview">
+    <h3>Long Form Catalogue</h3>
+    <p>Feature-length essays, zines, and interactive writing experiments from dedicated repositories.</p>
+    <div class="catalogue-grid" id="catalogue-longform-grid"></div>
+</div>
+
+<div class="catalogue-preview" id="pages-preview">
+    <h3>Independent Sites & Apps</h3>
+    <p>Standalone experiences including EEGEdu, Juventus club site, and other lab or community projects.</p>
+    <div class="catalogue-grid" id="catalogue-pages-grid"></div>
+</div>
+
+<script>
+(()=> {
+    const DATA_URL = 'catalogue_data.json';
+    const DISPLAY_LIMITS = {
+        preview: null,  // Show all cards
+        pages: null     // Show all cards
+    };
+    const grids = {
+        preview: document.getElementById('catalogue-grid'),
+        longform: document.getElementById('catalogue-longform-grid'),
+        pages: document.getElementById('catalogue-pages-grid')
+    };
+
+    function generatePlaceholder(project) {
+        // Generate a unique color scheme based on project title
+        const title = project.title || project.id || 'Project';
+        const hash = title.split('').reduce((acc, char) => char.charCodeAt(0) + ((acc << 5) - acc), 0);
+        const hue1 = Math.abs(hash % 360);
+        const hue2 = (hue1 + 137) % 360; // Golden angle for pleasing color harmony
+        
+        // Get first letters of title for the icon
+        const words = title.split(/(?=[A-Z])|[\s_-]+/);
+        const initials = words.slice(0, 2).map(w => w[0]).join('').toUpperCase().slice(0, 2);
+        
+        // Create category-based icon
+        const categories = project.categories || project.tags || [];
+        const categoryIcons = {
+            'eeg': '🧠', 'brain': '🧠', 'neuroscience': '🧠',
+            'game': '🎮', 'soccer': '⚽', 'sport': '⚽',
+            '3dprinting': '🖨️', '3d': '🖨️', 'print': '🖨️',
+            'ai': '🤖', 'ml': '🤖', 'learning': '🤖',
+            'music': '🎵', 'audio': '🎵',
+            'web': '🌐', 'webpage': '🌐',
+            'paint': '🎨', 'art': '🎨', 'creative': '🎨',
+            'terminal': '⌨️', 'cli': '⌨️',
+            'course': '📚', 'education': '📚', 'tutorial': '📚'
+        };
+        
+        let icon = '';
+        for (const cat of categories) {
+            const key = cat.toLowerCase();
+            if (categoryIcons[key]) {
+                icon = categoryIcons[key];
+                break;
+            }
+        }
+        
+        return `data:image/svg+xml,${encodeURIComponent(`
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <defs>
+                    <linearGradient id="grad${hash}" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:hsl(${hue1}, 70%, 60%);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:hsl(${hue2}, 70%, 45%);stop-opacity:1" />
+                    </linearGradient>
+                    <pattern id="grid${hash}" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="400" height="400" fill="url(#grad${hash})"/>
+                <rect width="400" height="400" fill="url(#grid${hash})"/>
+                <circle cx="200" cy="150" r="80" fill="rgba(255,255,255,0.2)"/>
+                <text x="200" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="white" text-anchor="middle">${icon || initials}</text>
+                <text x="200" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="white" text-anchor="middle" opacity="0.9">${title.length > 20 ? title.substring(0, 18) + '...' : title}</text>
+                <text x="200" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.7">${project.kind || 'project'}</text>
+            </svg>
+        `)}`;
+    }
+
+    function createCard(project) {
+        const displayTitle = (project.title || project.id || 'Untitled')
+            .replace(/([a-z0-9])([A-Z])/g, '$1<wbr>$2');
+        const card = document.createElement('article');
+        card.className = 'catalogue-card';
+        card.innerHTML = `
+            <a class="catalogue-card-thumb" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">
+                <img src="${project.screenshot}" alt="${project.title} screenshot" loading="lazy">
+            </a>
+            <div class="catalogue-card-body">
+                <h4 class="catalogue-card-title">${displayTitle}</h4>
+                <p class="catalogue-card-description">${project.oneLiner || ''}</p>
+                ${project.tags && project.tags.length ? `<div class="catalogue-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : ''}
+                <div class="catalogue-links">
+                    <span>Open Demo</span>
+                    <a class="github-link" href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        `;
+        card.dataset.demoUrl = project.demoUrl || project.githubUrl;
+        
+        // Add image error handler for placeholder
+        const img = card.querySelector('img');
+        if (img) {
+            img.addEventListener('error', function() {
+                this.src = generatePlaceholder(project);
+            }, { once: true });
+        }
+        
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('.github-link')) {
+                event.stopPropagation();
+                return;
+            }
+            if (card.dataset.demoUrl) {
+                window.open(card.dataset.demoUrl, '_blank');
+            }
+        });
+        const titleElement = card.querySelector('.catalogue-card-title');
+        if (titleElement) {
+            const collapsedHeight = titleElement.offsetHeight + 24;
+            card.style.setProperty('--collapsed-height', `${collapsedHeight}px`);
+        }
+
+        return card;
+    }
+
+    function renderItems(items, grid, limit=null, showCount=false) {
+        if (!grid) return;
+        const parentSection = grid.parentElement;
+        // Remove any existing count element
+        const existingCount = parentSection.querySelector('.catalogue-count');
+        if (existingCount) existingCount.remove();
+        
+        grid.innerHTML = '';
+        const renderList = limit ? items.slice(0, limit) : items;
+        if (!renderList.length) {
+            const empty = document.createElement('div');
+            empty.className = 'catalogue-empty';
+            empty.textContent = 'No entries yet—add a catalogue.json file to any repo to feature it here.';
+            grid.appendChild(empty);
+            return;
+        }
+        renderList.forEach(item => grid.appendChild(createCard(item)));
+        
+        // Add count if requested
+        if (showCount && renderList.length > 0) {
+            const countDiv = document.createElement('div');
+            countDiv.className = 'catalogue-count';
+            countDiv.textContent = `Showing ${renderList.length} project${renderList.length !== 1 ? 's' : ''}`;
+            parentSection.appendChild(countDiv);
+        }
+    }
+
+    function groupItems(items) {
+        const groups = {};
+        items.forEach(item => {
+            const kind = (item.kind || 'project').toLowerCase();
+            if (!groups[kind]) groups[kind] = [];
+            groups[kind].push(item);
+        });
+        return groups;
+    }
+
+    if (!window.fetch) {
+        renderItems([], grids.preview);
+        renderItems([], grids.longform);
+        renderItems([], grids.pages);
+        return;
+    }
+
+    fetch(DATA_URL)
+        .then(resp => resp.ok ? resp.json() : Promise.reject(resp.status))
+        .then(data => {
+            const items = data.items || [];
+            const grouped = groupItems(items);
+            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview, true);
+            renderItems(grouped.longform || [], grids.longform, null, true);
+            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages, true);
+        })
+        .catch(() => {
+            renderItems([], grids.preview, null, false);
+            renderItems([], grids.longform, null, false);
+            renderItems([], grids.pages, null, false);
+        });
+})();
+</script>
+
+<hr>
 <h2 id="about">About</h2>
 <p>I am an Associate Professor of Psychology in the Faculty of Science's Department of Psychology at the University of Alberta. I was previously a Postdoctoral Fellow at the Beckman Institute at the University of Illinois at Urbana-Champaign and in the Department of Psychology at the University of Alberta. I received my PhD in 2011 from the Brain and Cognition Division of the Department of Psychology at the University of Illinois in the Cognitive Neuroimaging Lab of Drs. Monica Fabiani and Gabriele Gratton, with the support of a Post Graduate Scholarship from the Natural Science and Engineering Research Council of Canada. I received my B.A. in Psychology (Honours; First in Graduating Class) from the University of Victoria in 2007, completing my honours thesis in the Learning and Cognitive Control Lab under the supervision of Dr. Clay Holroyd.</p>
 
@@ -442,31 +521,25 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 <h3>Emerging Frontiers: AI-Enhanced Perceptual Engineering</h3>
 <p>Our newest work explores whether machines can understand and generate visual illusions (visual-illusions, cross_colour), opening pathways to AI-human cognitive collaboration. We're developing computational methods that combine multivariate pattern analysis with web technologies to create the next generation of brain-computer interfaces that enhance rather than replace human cognition.</p>
 
+<hr>
 
-</div>
-
-<!-- Tab: Projects -->
-<div id="tab-projects" class="tab-content">
-
-<div class="catalogue-preview" id="catalogue-preview">
-    <h3>Catalogue Preview</h3>
-    <p>Mobile-optimized "app arcade" catalogue featuring all projects with structured entries. Scroll through portrait cards that scale from 2 columns on mobile to 8+ on ultra-wide displays. Each card expands on hover and loads from structured data for future React/Vite experiences.</p>
-    <div class="catalogue-grid" id="catalogue-grid">
-        <noscript>Enable JavaScript to preview the catalogue cards.</noscript>
-    </div>
-</div>
+<h2 id="long-form-writing">Long Form Writing</h2>
+<p>Essays and extended analyses exploring the intersection of science, society, and innovation.</p>
+<ul>
+    <li><a href="exile-engine.html" target="_blank">The Exile Engine: How Society Manufactures Genius Through Outcasting</a> (2025) - An analysis of the exile-innovation pattern from Moses to Steve Mann, examining why society's 95% rejection rate for radical ideas isn't broken—it's the feature that prevents system collapse. <em>4,967 words</em></li>
+    <li><a href="https://fungioergosum.netlify.app" target="_blank">Fungio Ergo Sum</a> - Interactive exploration of consciousness, identity, and existence through the lens of fungal networks and distributed cognition.</li>
+</ul>
 
 <hr>
 
 <h2 id="projects">Recent Projects</h2>
 <ul>
     <li><a href="https://github.com/kylemath/homePage" target="_blank">homePage</a> - Main homepage for kylemathewson.com and helper scripts</li>
-    <li><a href="https://github.com/kylemath/gitBash" target="_blank">gitBash</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/biophotons" target="_blank">biophotons</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/MagicGemWebpage" target="_blank">MagicGemWebpage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/LinoleumSecretHistory" target="_blank">LinoleumSecretHistory</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/shooterFocus" target="_blank">shooterFocus</a> - GitHub repository</li>
+    <li><a href="https://github.com/kylemath/gitBash" target="_blank">gitBash</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/soccerSim" target="_blank">soccerSim</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/InstaFaceReadX" target="_blank">InstaFaceReadX</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/GroupPaint" target="_blank">GroupPaint</a> - GitHub repository</li>
@@ -477,6 +550,7 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://github.com/kylemath/NeuroimagingClass" target="_blank">NeuroimagingClass</a> - Class materials for 2025 403 - Neuroimaging and Neurostim</li>
     <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Nehiyawewin trail signs for Edmonton</li>
     <li><a href="https://github.com/kylemath/MidiRapper" target="_blank">MidiRapper</a> - GitHub repository</li>
+    <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/collisionDetectionForcefield" target="_blank">collisionDetectionForcefield</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/topographicModelsFromMapWebpage" target="_blank">topographicModelsFromMapWebpage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/BrainCraft" target="_blank">BrainCraft</a> - GitHub repository</li>
@@ -548,7 +622,6 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://github.com/kylemath/eeg-notebooks" target="_blank">eeg-notebooks</a> - A collection of classic EEG experiments implemented with Python and Jupyter notebooks (contributor to original)</li>
     <li><a href="https://github.com/kylemath/mne-python" target="_blank">mne-python</a> - MNE : Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python (35 commits ahead)</li>
     <li><a href="https://github.com/kylemath/pycovid" target="_blank">pycovid</a> - Python package to easily access the most updated Coronavirus data using Python/PIP (contributor to original, 9 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/eeg-notebooks_v0.1" target="_blank">eeg-notebooks_v0.1</a> - A collection of classic EEG experiments implemented with Python and Jupyter notebooks (130 commits ahead)</li>
     <li><a href="https://github.com/kylemath/react-game-kit" target="_blank">react-game-kit</a> - Component library for making games with React  & React Native (9 commits ahead)</li>
     <li><a href="https://github.com/kylemath/muse-lsl" target="_blank">muse-lsl</a> - Python script to stream EEG data from the muse 2016 headset (1 commits ahead)</li>
     <li><a href="https://github.com/kylemath/ml4a-guides" target="_blank">ml4a-guides</a> - practical guides, tutorials, and code samples for ml4a (contributor to original, 2 commits ahead)</li>
@@ -557,20 +630,6 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://github.com/kylemath/face2face-demo" target="_blank">face2face-demo</a> - pix2pix demo that learns from facial landmarks and translates this into a face (1 commits ahead)</li>
     <li><a href="https://github.com/kylemath/Muse-LSL-Matlab-Tools" target="_blank">Muse-LSL-Matlab-Tools</a> - chadcwilliams.weebly.com/muse (9 commits ahead)</li>
 </ul>
-
-<hr>
-
-
-</div>
-
-<!-- Tab: Apps (Independent Sites & Apps) -->
-<div id="tab-apps" class="tab-content">
-
-<div class="catalogue-preview" id="pages-preview">
-    <h3>Independent Sites & Apps</h3>
-    <p>Standalone experiences including EEGEdu, Juventus club site, and other lab or community projects.</p>
-    <div class="catalogue-grid" id="catalogue-pages-grid"></div>
-</div>
 
 <hr>
 
@@ -591,36 +650,9 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
     <li><a href="https://juventus2013.netlify.app/" target="_blank">Juventus 2013 Boys</a> - Team website for youth soccer club featuring schedules, statistics, and team information</li>
 </ul>
 
-</div>
-
-<!-- Tab: Writing -->
-<div id="tab-writing" class="tab-content">
-
-<div class="catalogue-preview" id="longform-preview">
-    <h3>Long Form Catalogue</h3>
-    <p>Feature-length essays, zines, and interactive writing experiments from dedicated repositories.</p>
-    <div class="catalogue-grid" id="catalogue-longform-grid"></div>
-</div>
-
 <hr>
-
-<h2 id="long-form-writing">Long Form Writing</h2>
-<p>Essays and extended analyses exploring the intersection of science, society, and innovation.</p>
-<ul>
-    <li><a href="exile-engine.html" target="_blank">The Exile Engine: How Society Manufactures Genius Through Outcasting</a> (2025) - An analysis of the exile-innovation pattern from Moses to Steve Mann, examining why society's 95% rejection rate for radical ideas isn't broken—it's the feature that prevents system collapse. <em>4,967 words</em></li>
-    <li><a href="https://fungioergosum.netlify.app" target="_blank">Fungio Ergo Sum</a> - Interactive exploration of consciousness, identity, and existence through the lens of fungal networks and distributed cognition.</li>
-</ul>
-
-<hr>
-
-
-</div>
-
-<!-- Tab: Publications -->
-<div id="tab-publications" class="tab-content">
 
 <h2 id="publications">Recent Publications</h2>
-<p>View all publications on <a href="https://scholar.google.com/citations?user=wgK6LCYAAAAJ" target="_blank">Google Scholar</a></p>
 <ol reversed>
     <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:eGYfIraVYiQC" target="_blank">Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute Stroke Syndrome.</a> - M Kate et al. (2025)</li>
     <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kJDgFkosVoMC" target="_blank">Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute …</a> - M Kate et al. (2025)</li>
@@ -728,11 +760,34 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 
 <hr>
 
+<h2 id="news-mentions">In the News</h2>
+<ul>
+    <li><a href="https://www.ualberta.ca/en/folio/2023/10/inside-the-mind-of-the-machine.html" target="_blank">Inside the mind of the machine</a> - Geoff McMaster, Folio (October 2, 2023)</li>
+    <li><a href="https://edifyedmonton.com/urban/innovation-technology/check-your-head/" target="_blank">Check Your Head</a> - Steven Sandor, Edify Edmonton (May 1, 2023)</li>
+    <li><a href="https://www.ualberta.ca/en/folio/2022/04/metabolic-fingerprint-predicts-impairment-from-medical-cannabis.html" target="_blank">Metabolic 'fingerprint' predicts impairment from medical cannabis</a> - Gillian Rutherford, Folio, University of Alberta (April 20, 2022) (Collaboration)</li>
+    <li><a href="https://www.popularmechanics.com/science/a33224851/how-many-circles-viral-coffer-illusion/" target="_blank">How Many Circles Do You See Here?</a> - Andrew Daniels, Popular Mechanics (July 7, 2020)</li>
+    <li><a href="https://edmonton.ctvnews.ca/these-headsets-are-changing-the-way-u-of-a-neuroscience-students-learn-1.5091712" target="_blank">These headsets are changing the way U of A neuroscience students learn</a> - Kelsey Dyer, CTV News Edmonton (September 3, 2020)</li>
+    <li><a href="https://www.ualberta.ca/en/science/news/2020/september/eeg-headsets.html" target="_blank">A new frame of mind: EEG headsets transform learning for neuroscience students</a> - Katie Willis, Faculty of Science, University of Alberta (September 2, 2020)</li>
+    <li><a href="https://www.popsci.com/story/science/oldest-optical-illusion/" target="_blank">This ancient optical illusion is a 14,000-year-old puzzle</a> - Tom McNamara, Popular Science (March 23, 2020)</li>
+    <li><a href="https://www.ualberta.ca/en/science/news/2019/september/brain-activity-background-noise.html" target="_blank">Make some noise: How background noise affects brain activity</a> - Andrew Lyle, Faculty of Science, University of Alberta (September 19, 2019)</li>
+    <li><a href="https://www.popularmechanics.com/science/a28763960/rabbit-raven-optical-illusion/" target="_blank">Is This a Rabbit or Raven?</a> - Andrew Daniels, Popular Mechanics (August 20, 2019)</li>
+    <li><a href="https://www.ualberta.ca/en/science/news/2019/august/psych-chair-singhal.html" target="_blank">Driving the future: New chair of the Department of Psychology focuses his sights on growth</a> - Jennifer Pascoe, Faculty of Science, University of Alberta (August 6, 2019) (Mention)</li>
+    <li><a href="https://fivethirtyeight.com/features/driving-your-phone-is-a-distraction-even-if-you-arent-looking-at-it/" target="_blank">Driving? Your Phone Is A Distraction Even If You Aren't Looking At It</a> - Christie Aschwanden, FiveThirtyEight (June 21, 2018)</li>
+    <li><a href="https://www.ualberta.ca/en/science/about-us/contours/2018-spring-contours/2018/may/next-up-neuroscience.html" target="_blank">Next up in neuroscience</a> - Katie Willis, Faculty of Science, University of Alberta (May 29, 2018)</li>
+    <li><a href="https://www.ualberta.ca/en/science/news/2018/march/optical-illusion-gives-insight-into-how-we-perceive-the-world.html" target="_blank">Duck, duck, rabbit: How we see what we see</a> - Katie Willis, Faculty of Science/Folio, University of Alberta (March 5, 2018)</li>
+    <li><a href="https://time.com/5127108/brain-works-differently-outside/" target="_blank">Being Outdoors May Change the Way Your Brain Works, Study Says</a> - Jamie Ducharme, TIME (February 2, 2018)</li>
+    <li><a href="https://www.ualberta.ca/en/folio/2018/01/this-is-your-brain-this-is-your-brain-outdoors.html" target="_blank">This is your brain. This is your brain outdoors.</a> - Katie Willis, Folio, University of Alberta (January 29, 2018)</li>
+    <li><a href="https://www.ualberta.ca/en/science/news/2017/august/new-equipment-maps-brain-activity-and-blood-flow-in-neuroscience-lab.html" target="_blank">New equipment maps brain activity and blood flow in state-of-the-art neuroscience lab</a> - Katie Willis, Faculty of Science, University of Alberta (August 23, 2017)</li>
+    <li><a href="https://www.ualberta.ca/newtrail/research/research-in-the-news2" target="_blank">The Factors of Focus</a> - Staff, New Trail / Edmonton Sun (May 19, 2017)</li>
+    <li><a href="https://shouldibescaredofthis.libsyn.com/podcast/my-phone/" target="_blank">Episode 6: My Phone</a> - Brothers DePaul (Jordan Foisy, host), Should I Be Scared of This? Podcast (September 21, 2015)</li>
+    <li><a href="https://www.bbc.co.uk/programmes/p02c9mg4" target="_blank">Health Check: Driving Distraction</a> - Claudia Hammond (host), BBC World Service (November 26, 2014)</li>
+    <li><a href="https://news.illinois.edu/view/6367/204502" target="_blank">Study: Talking while driving safest with someone who can see what you see</a> - Diana Yates, Illinois News Bureau (October 8, 2014)</li>
+    <li><a href="https://beckman.illinois.edu/news/article/2014/04/23/7932048d-c34c-488b-9135-b6c167e10ea1" target="_blank">Video: Controlling brain waves to improve vision</a> - Beckman Institute for Advanced Science and Technology (April 23, 2014)</li>
+    <li><a href="https://beckman.illinois.edu/about/news/article/2011/09/27/ada7783f-4b92-415f-8908-bbb4198f8c95" target="_blank">Fellows Corner: Kyle Mathewson</a> - Beckman Institute (September 27, 2011)</li>
+</ul>
 
-</div>
+<hr>
 
-<!-- Tab: Teaching -->
-<div id="tab-teaching" class="tab-content">
 
 <h2 id="teaching">Teaching</h2>
 <ul>
@@ -766,12 +821,6 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
 <hr>
 
 
-
-
-</div>
-
-<!-- Tab: Experience -->
-<div id="tab-experience" class="tab-content">
 
 <h2 id="experience">Work Experience</h2>
 
@@ -841,250 +890,9 @@ LinkedIn: <a href="https://www.linkedin.com/in/ky-mathewson-856279124/" target="
         Active contributor to democratizing neuroscience through accessible technology</li>
 </ul>
 
-
-</div>
-
-<!-- Tab: News -->
-<div id="tab-news" class="tab-content">
-
-<h2 id="news-mentions">In the News</h2>
-<ul>
-    <li><a href="https://www.ualberta.ca/en/folio/2023/10/inside-the-mind-of-the-machine.html" target="_blank">Inside the mind of the machine</a> - Geoff McMaster, Folio (October 2, 2023)</li>
-    <li><a href="https://edifyedmonton.com/urban/innovation-technology/check-your-head/" target="_blank">Check Your Head</a> - Steven Sandor, Edify Edmonton (May 1, 2023)</li>
-    <li><a href="https://www.ualberta.ca/en/folio/2022/04/metabolic-fingerprint-predicts-impairment-from-medical-cannabis.html" target="_blank">Metabolic 'fingerprint' predicts impairment from medical cannabis</a> - Gillian Rutherford, Folio, University of Alberta (April 20, 2022) (Collaboration)</li>
-    <li><a href="https://www.popularmechanics.com/science/a33224851/how-many-circles-viral-coffer-illusion/" target="_blank">How Many Circles Do You See Here?</a> - Andrew Daniels, Popular Mechanics (July 7, 2020)</li>
-    <li><a href="https://edmonton.ctvnews.ca/these-headsets-are-changing-the-way-u-of-a-neuroscience-students-learn-1.5091712" target="_blank">These headsets are changing the way U of A neuroscience students learn</a> - Kelsey Dyer, CTV News Edmonton (September 3, 2020)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2020/september/eeg-headsets.html" target="_blank">A new frame of mind: EEG headsets transform learning for neuroscience students</a> - Katie Willis, Faculty of Science, University of Alberta (September 2, 2020)</li>
-    <li><a href="https://www.popsci.com/story/science/oldest-optical-illusion/" target="_blank">This ancient optical illusion is a 14,000-year-old puzzle</a> - Tom McNamara, Popular Science (March 23, 2020)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2019/september/brain-activity-background-noise.html" target="_blank">Make some noise: How background noise affects brain activity</a> - Andrew Lyle, Faculty of Science, University of Alberta (September 19, 2019)</li>
-    <li><a href="https://www.popularmechanics.com/science/a28763960/rabbit-raven-optical-illusion/" target="_blank">Is This a Rabbit or Raven?</a> - Andrew Daniels, Popular Mechanics (August 20, 2019)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2019/august/psych-chair-singhal.html" target="_blank">Driving the future: New chair of the Department of Psychology focuses his sights on growth</a> - Jennifer Pascoe, Faculty of Science, University of Alberta (August 6, 2019) (Mention)</li>
-    <li><a href="https://fivethirtyeight.com/features/driving-your-phone-is-a-distraction-even-if-you-arent-looking-at-it/" target="_blank">Driving? Your Phone Is A Distraction Even If You Aren't Looking At It</a> - Christie Aschwanden, FiveThirtyEight (June 21, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/about-us/contours/2018-spring-contours/2018/may/next-up-neuroscience.html" target="_blank">Next up in neuroscience</a> - Katie Willis, Faculty of Science, University of Alberta (May 29, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2018/march/optical-illusion-gives-insight-into-how-we-perceive-the-world.html" target="_blank">Duck, duck, rabbit: How we see what we see</a> - Katie Willis, Faculty of Science/Folio, University of Alberta (March 5, 2018)</li>
-    <li><a href="https://time.com/5127108/brain-works-differently-outside/" target="_blank">Being Outdoors May Change the Way Your Brain Works, Study Says</a> - Jamie Ducharme, TIME (February 2, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/folio/2018/01/this-is-your-brain-this-is-your-brain-outdoors.html" target="_blank">This is your brain. This is your brain outdoors.</a> - Katie Willis, Folio, University of Alberta (January 29, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2017/august/new-equipment-maps-brain-activity-and-blood-flow-in-neuroscience-lab.html" target="_blank">New equipment maps brain activity and blood flow in state-of-the-art neuroscience lab</a> - Katie Willis, Faculty of Science, University of Alberta (August 23, 2017)</li>
-    <li><a href="https://www.ualberta.ca/newtrail/research/research-in-the-news2" target="_blank">The Factors of Focus</a> - Staff, New Trail / Edmonton Sun (May 19, 2017)</li>
-    <li><a href="https://shouldibescaredofthis.libsyn.com/podcast/my-phone/" target="_blank">Episode 6: My Phone</a> - Brothers DePaul (Jordan Foisy, host), Should I Be Scared of This? Podcast (September 21, 2015)</li>
-    <li><a href="https://www.bbc.co.uk/programmes/p02c9mg4" target="_blank">Health Check: Driving Distraction</a> - Claudia Hammond (host), BBC World Service (November 26, 2014)</li>
-    <li><a href="https://news.illinois.edu/view/6367/204502" target="_blank">Study: Talking while driving safest with someone who can see what you see</a> - Diana Yates, Illinois News Bureau (October 8, 2014)</li>
-    <li><a href="https://beckman.illinois.edu/news/article/2014/04/23/7932048d-c34c-488b-9135-b6c167e10ea1" target="_blank">Video: Controlling brain waves to improve vision</a> - Beckman Institute for Advanced Science and Technology (April 23, 2014)</li>
-    <li><a href="https://beckman.illinois.edu/about/news/article/2011/09/27/ada7783f-4b92-415f-8908-bbb4198f8c95" target="_blank">Fellows Corner: Kyle Mathewson</a> - Beckman Institute (September 27, 2011)</li>
-</ul>
-
 <hr>
 
-
-
-</div>
-
-<!-- Footer -->
-<div style="text-align: center; padding: 20px 40px; border-top: 1px solid #e5e7eb; background: #fafafa;">
-    <p><small>Last updated: January 2025 | Office: P-455 Bio Science - Psychology Wing | <a href="mailto:kmathews@ualberta.ca" target="_blank">Contact</a></small></p>
-</div>
-
-<script>
-// Catalogue card rendering (runs after DOM is fully loaded)
-(()=> {
-    const DATA_URL = 'catalogue_data.json';
-    const DISPLAY_LIMITS = {
-        preview: null,  // Show all cards
-        pages: null     // Show all cards
-    };
-    const grids = {
-        preview: document.getElementById('catalogue-grid'),
-        longform: document.getElementById('catalogue-longform-grid'),
-        pages: document.getElementById('catalogue-pages-grid')
-    };
-
-    function generatePlaceholder(project) {
-        // Generate a unique color scheme based on project title
-        const title = project.title || project.id || 'Project';
-        const hash = title.split('').reduce((acc, char) => char.charCodeAt(0) + ((acc << 5) - acc), 0);
-        const hue1 = Math.abs(hash % 360);
-        const hue2 = (hue1 + 137) % 360; // Golden angle for pleasing color harmony
-        
-        return `data:image/svg+xml,${encodeURIComponent(`
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-                <defs>
-                    <linearGradient id="grad${hash}" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:hsl(${hue1}, 70%, 60%);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:hsl(${hue2}, 70%, 45%);stop-opacity:1" />
-                    </linearGradient>
-                    <pattern id="grid${hash}" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-                    </pattern>
-                </defs>
-                <rect width="400" height="400" fill="url(#grad${hash})"/>
-                <rect width="400" height="400" fill="url(#grid${hash})"/>
-            </svg>
-        `)}`;
-    }
-
-    function getProjectIcon(project) {
-        const categories = project.categories || project.tags || [];
-        const categoryIcons = {
-            'eeg': '🧠', 'brain': '🧠', 'neuroscience': '🧠',
-            'game': '🎮', 'soccer': '⚽', 'sport': '⚽',
-            '3dprinting': '🖨️', '3d': '🖨️', 'print': '🖨️',
-            'ai': '🤖', 'ml': '🤖', 'learning': '🤖',
-            'music': '🎵', 'audio': '🎵',
-            'web': '🌐', 'webpage': '🌐',
-            'paint': '🎨', 'art': '🎨', 'creative': '🎨',
-            'terminal': '⌨️', 'cli': '⌨️',
-            'course': '📚', 'education': '📚', 'tutorial': '📚'
-        };
-        
-        for (const cat of categories) {
-            const key = cat.toLowerCase();
-            if (categoryIcons[key]) {
-                return categoryIcons[key];
-            }
-        }
-        
-        // Default: use first letters of title
-        const title = project.title || project.id || 'Project';
-        const words = title.split(/(?=[A-Z])|[\s_-]+/);
-        return words.slice(0, 2).map(w => w[0]).join('').toUpperCase().slice(0, 2);
-    }
-
-    function createCard(project) {
-        const displayTitle = (project.title || project.id || 'Untitled')
-            .replace(/([a-z0-9])([A-Z])/g, '$1<wbr>$2');
-        const icon = getProjectIcon(project);
-        const card = document.createElement('article');
-        card.className = 'catalogue-card';
-        card.innerHTML = `
-            <a class="catalogue-card-thumb" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">
-                <img src="${project.screenshot}" alt="${project.title} screenshot" loading="lazy">
-                <div class="catalogue-card-logo" style="display: none;">
-                    <div class="catalogue-card-logo-icon">${icon}</div>
-                    <div class="catalogue-card-logo-text">${displayTitle}</div>
-                </div>
-            </a>
-            <div class="catalogue-card-title-wrapper">
-                <h4 class="catalogue-card-title">${displayTitle}</h4>
-            </div>
-            <div class="catalogue-card-body">
-                <p class="catalogue-card-description">${project.oneLiner || ''}</p>
-                ${project.tags && project.tags.length ? `<div class="catalogue-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : ''}
-                <div class="catalogue-links">
-                    <span>Open Demo</span>
-                    <a class="github-link" href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </div>
-        `;
-        card.dataset.demoUrl = project.demoUrl || project.githubUrl;
-        
-        // Add image error handler - show logo only if screenshot fails
-        const img = card.querySelector('img');
-        const logo = card.querySelector('.catalogue-card-logo');
-        if (img && logo) {
-            img.addEventListener('error', function() {
-                this.src = generatePlaceholder(project);
-                logo.style.display = 'block';
-            }, { once: true });
-        }
-        
-        card.addEventListener('click', (event) => {
-            if (event.target.closest('.github-link')) {
-                event.stopPropagation();
-                return;
-            }
-            if (card.dataset.demoUrl) {
-                window.open(card.dataset.demoUrl, '_blank');
-            }
-        });
-
-        return card;
-    }
-
-    function renderItems(items, grid, limit=null, showCount=false) {
-        if (!grid) return;
-        const parentSection = grid.parentElement;
-        // Remove any existing count element
-        const existingCount = parentSection.querySelector('.catalogue-count');
-        if (existingCount) existingCount.remove();
-        
-        grid.innerHTML = '';
-        const renderList = limit ? items.slice(0, limit) : items;
-        if (!renderList.length) {
-            const empty = document.createElement('div');
-            empty.className = 'catalogue-empty';
-            empty.textContent = 'No entries yet—add a catalogue.json file to any repo to feature it here.';
-            grid.appendChild(empty);
-            return;
-        }
-        renderList.forEach(item => grid.appendChild(createCard(item)));
-        
-        // Add count if requested
-        if (showCount && renderList.length > 0) {
-            const countDiv = document.createElement('div');
-            countDiv.className = 'catalogue-count';
-            countDiv.textContent = `Showing ${renderList.length} project${renderList.length !== 1 ? 's' : ''}`;
-            parentSection.appendChild(countDiv);
-        }
-    }
-
-    function groupItems(items) {
-        const groups = {};
-        items.forEach(item => {
-            const kind = (item.kind || 'project').toLowerCase();
-            if (!groups[kind]) groups[kind] = [];
-            groups[kind].push(item);
-        });
-        return groups;
-    }
-
-    if (!window.fetch) {
-        renderItems([], grids.preview);
-        renderItems([], grids.longform);
-        renderItems([], grids.pages);
-        return;
-    }
-
-    fetch(DATA_URL)
-        .then(resp => resp.ok ? resp.json() : Promise.reject(resp.status))
-        .then(data => {
-            const items = data.items || [];
-            const grouped = groupItems(items);
-            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview, true);
-            renderItems(grouped.longform || [], grids.longform, null, true);
-            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages, true);
-        })
-        .catch(() => {
-            renderItems([], grids.preview, null, false);
-            renderItems([], grids.longform, null, false);
-            renderItems([], grids.pages, null, false);
-        });
-})();
-</script>
-
-<script>
-// Tab switching functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const tabName = this.dataset.tab;
-            
-            // Remove active class from all buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to clicked button and corresponding content
-            this.classList.add('active');
-            const activeTab = document.getElementById(`tab-${tabName}`);
-            if (activeTab) {
-                activeTab.classList.add('active');
-            }
-        });
-    });
-});
-</script>
+<p><small>Last updated: January 2025 | Office: P-455 Bio Science - Psychology Wing | <a href="mailto:kmathews@ualberta.ca" target="_blank">Contact</a></small></p>
 
 </body>
-</html>
+</html> 

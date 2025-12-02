@@ -131,7 +131,7 @@ def resolve_screenshot_url(username: str, repo: Dict, metadata: Dict) -> str:
     """
     default_branch = repo.get('default_branch') or 'main'
     screenshot = metadata.get('screenshot')
-    homepage = repo.get('homepage', '').rstrip('/')
+    homepage = (repo.get('homepage') or '').strip().rstrip('/')
 
     if isinstance(screenshot, str) and screenshot.strip():
         trimmed = screenshot.strip()
@@ -194,9 +194,31 @@ def write_catalogue_file(entries: List[Dict]):
         print("   Set GITHUB_TOKEN environment variable and try again.")
         return
     
+    # Preserve manually added entries that aren't in GitHub
+    existing_entries = []
+    if os.path.exists(CATALOGUE_FILE):
+        try:
+            with open(CATALOGUE_FILE, 'r', encoding='utf-8') as fh:
+                existing_data = json.load(fh)
+                existing_entries = existing_data.get('items', [])
+        except (json.JSONDecodeError, IOError):
+            pass
+    
+    # Get IDs from GitHub entries
+    github_ids = {entry['id'] for entry in entries}
+    
+    # Keep manual entries that aren't in GitHub
+    manual_entries = [e for e in existing_entries if e.get('id') not in github_ids]
+    
+    if manual_entries:
+        print(f"📝 Preserving {len(manual_entries)} manually added entries")
+    
+    # Combine: GitHub entries + manual entries
+    all_entries = entries + manual_entries
+    
     payload = {
         'generatedAt': datetime.now(timezone.utc).isoformat(),
-        'items': entries
+        'items': all_entries
     }
     with open(CATALOGUE_FILE, 'w', encoding='utf-8') as fh:
         json.dump(payload, fh, indent=2)

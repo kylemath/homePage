@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-02T20:16:50.769576+00:00",
+  "generatedAt": "2025-12-02T21:51:49.249953+00:00",
   "items": [
     {
       "id": "homePage",
@@ -14,8 +14,56 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-02T20:15:20",
+      "lastCommit": "2025-12-02T21:50:46",
       "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "ExileEnginePage",
+      "title": "ExileEnginePage",
+      "oneLiner": "long form - how society manufacters genius through outcating",
+      "categories": [
+        "writing",
+        "outsider",
+        "inventor"
+      ],
+      "tags": [
+        "writing",
+        "outsider",
+        "inventor"
+      ],
+      "demoUrl": "https://kylemath.github.io/ExileEnginePage",
+      "githubUrl": "https://github.com/kylemath/ExileEnginePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/ExileEnginePage/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-02T21:49:53",
+      "createdAt": "2025-12-02T21:48:36Z"
+    },
+    {
+      "id": "LinoleumSecretHistory",
+      "title": "LinoleumSecretHistory",
+      "oneLiner": "A book about the secret history of flooring",
+      "categories": [
+        "writing",
+        "lino",
+        "novel"
+      ],
+      "tags": [
+        "writing",
+        "lino",
+        "novel"
+      ],
+      "demoUrl": "https://kylemath.github.io/LinoleumSecretHistory/",
+      "githubUrl": "https://github.com/kylemath/LinoleumSecretHistory",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/LinoleumSecretHistory/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-02T21:33:31",
+      "createdAt": "2025-11-14T07:37:43Z"
     },
     {
       "id": "gitBash",
@@ -104,30 +152,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-30T20:07:37",
       "createdAt": "2025-11-29T10:27:20Z"
-    },
-    {
-      "id": "LinoleumSecretHistory",
-      "title": "LinoleumSecretHistory",
-      "oneLiner": "The secret history of linoleum webpage",
-      "categories": [
-        "writing",
-        "lino",
-        "secret"
-      ],
-      "tags": [
-        "writing",
-        "lino",
-        "secret"
-      ],
-      "demoUrl": "https://kylemath.github.io/LinoleumSecretHistory",
-      "githubUrl": "https://github.com/kylemath/LinoleumSecretHistory",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/LinoleumSecretHistory/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-30T18:34:37",
-      "createdAt": "2025-11-14T07:37:43Z"
     },
     {
       "id": "shooterFocus",
@@ -745,7 +769,7 @@
       "tags": [],
       "demoUrl": "http://eegedu.com",
       "githubUrl": "https://github.com/kylemath/EEGEdu",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/screenshot.png",
+      "screenshot": "http://eegedu.com/screenshot.png",
       "status": null,
       "kind": "bci",
       "topicHierarchy": [],
@@ -1343,6 +1367,54 @@
       "repoTopics": [],
       "lastCommit": null,
       "createdAt": "2025-11-14T08:21:42Z"
+    },
+    {
+      "id": "fungio-manifesto-site",
+      "title": "Fungio Manifesto Site",
+      "oneLiner": "A complete manifesto on Life's hidden partnerships",
+      "categories": [
+        "writing",
+        "symbiosis",
+        "biology"
+      ],
+      "tags": [
+        "writing",
+        "symbiosis",
+        "biology"
+      ],
+      "demoUrl": "https://fungioergosum.com/",
+      "githubUrl": "https://github.com/kylemath/fungio-manifesto-site",
+      "screenshot": "https://fungioergosum.netlify.app/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": null,
+      "createdAt": null
+    },
+    {
+      "id": "devineFracture",
+      "title": "devineFracture",
+      "oneLiner": "A study into connecitons between mystical t",
+      "categories": [
+        "religion",
+        "mystic",
+        "essay"
+      ],
+      "tags": [
+        "essay",
+        "book",
+        "religion"
+      ],
+      "demoUrl": "https://devinefracture.netlify.app/",
+      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
+      "screenshot": "https://devinefracture.netlify.app/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": null,
+      "createdAt": null
     }
   ]
 }

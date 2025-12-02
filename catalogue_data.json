@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2025-12-02T22:17:25.533065+00:00",
+  "generatedAt": "2025-12-02T21:51:49.249953+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-02T21:50:46",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "ExileEnginePage",
       "title": "ExileEnginePage",
@@ -22,24 +38,8 @@
       "kind": "longform",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-02T22:16:06",
+      "lastCommit": "2025-12-02T21:49:53",
       "createdAt": "2025-12-02T21:48:36Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-02T21:52:40",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "LinoleumSecretHistory",
@@ -47,17 +47,17 @@
       "oneLiner": "A book about the secret history of flooring",
       "categories": [
         "writing",
-        "lino",
-        "novel"
+        "outsider",
+        "inventor"
       ],
       "tags": [
         "writing",
-        "lino",
-        "novel"
+        "outsider",
+        "inventor"
       ],
-      "demoUrl": "https://kylemath.github.io/LinoleumSecretHistory/",
-      "githubUrl": "https://github.com/kylemath/LinoleumSecretHistory",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/LinoleumSecretHistory/main/screenshot.png",
+      "demoUrl": "https://kylemath.github.io/ExileEnginePage",
+      "githubUrl": "https://github.com/kylemath/ExileEnginePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/ExileEnginePage/main/screenshot.png",
       "status": "published",
       "kind": "longform",
       "topicHierarchy": [],

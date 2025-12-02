@@ -62,7 +62,33 @@ def get_github_repos(username, token=None):
     )
 
 def fetch_catalogue_metadata(username: str, repo: Dict) -> Optional[Dict]:
-    """Attempt to load per-repo catalogue metadata JSON."""
+    """Attempt to load per-repo catalogue metadata JSON.
+    
+    Checks in this order:
+    1. Public deployment URL (homepage) - for private repos with public sites
+    2. GitHub raw URLs - for public repos
+    """
+    
+    # First, try the repo's homepage if it exists (for public deployments like Netlify)
+    homepage = repo.get('homepage')
+    if homepage and homepage.strip():
+        homepage = homepage.rstrip('/')
+        # Try multiple common locations on the public site
+        catalogue_urls = [
+            f"{homepage}/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/assets/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/public/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/.well-known/{CATALOGUE_ENTRY_FILE}"
+        ]
+        for url in catalogue_urls:
+            try:
+                response = requests.get(url, timeout=5)
+                if response.status_code == 200:
+                    return json.loads(response.text)
+            except (requests.RequestException, json.JSONDecodeError):
+                continue
+    
+    # Fallback to GitHub raw URLs (for public repos)
     branches = [repo.get('default_branch') or 'main', 'main', 'master']
     for branch in branches:
         if not branch:
@@ -96,18 +122,40 @@ def determine_kind(metadata: Dict, repo_topics: List[str]) -> Tuple[str, List[st
     return kind, path
 
 def resolve_screenshot_url(username: str, repo: Dict, metadata: Dict) -> str:
-    """Return an absolute screenshot URL, normalizing repo-relative paths."""
+    """Return an absolute screenshot URL, normalizing repo-relative paths.
+    
+    Priority:
+    1. Absolute URLs in metadata (http/https) - use as-is
+    2. Relative paths in metadata - resolve based on repo homepage or GitHub
+    3. Default screenshot.png from GitHub
+    """
     default_branch = repo.get('default_branch') or 'main'
     screenshot = metadata.get('screenshot')
+    homepage = repo.get('homepage', '').rstrip('/')
 
     if isinstance(screenshot, str) and screenshot.strip():
         trimmed = screenshot.strip()
+        
+        # If it's already an absolute URL, use it
+        if trimmed.startswith('http://') or trimmed.startswith('https://'):
+            return trimmed
+        
+        # Remove leading ./
         if trimmed.startswith('./'):
             trimmed = trimmed[2:]
-        if trimmed and not trimmed.startswith('http://') and not trimmed.startswith('https://'):
+        
+        # If we have a homepage (public deployment), resolve relative to it
+        if homepage and trimmed:
+            return f'{homepage}/{trimmed}'
+        
+        # Otherwise resolve relative to GitHub
+        if trimmed:
             return f'https://raw.githubusercontent.com/{username}/{repo["name"]}/{default_branch}/{trimmed}'
-        return trimmed
 
+    # Default: try homepage first, then GitHub
+    if homepage:
+        return f'{homepage}/screenshot.png'
+    
     return f'https://raw.githubusercontent.com/{username}/{repo["name"]}/{default_branch}/screenshot.png'
 
 

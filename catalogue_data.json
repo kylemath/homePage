@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2025-12-04T21:50:31.483998+00:00",
+  "generatedAt": "2025-12-05T01:35:46.090025+00:00",
   "items": [
+    {
+      "id": "CatalanQuadratic",
+      "title": "CatalanQuadratic",
+      "oneLiner": "Polynomial Solutions via Hexagon Triangulation",
+      "categories": [
+        "mathematics",
+        "geometry",
+        "webdemo"
+      ],
+      "tags": [
+        "mathematics",
+        "geometry",
+        "webdemo"
+      ],
+      "demoUrl": "https://kylemath.github.io/CatalanQuadratic",
+      "githubUrl": "https://github.com/kylemath/CatalanQuadratic",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/CatalanQuadratic/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-05T00:31:48",
+      "createdAt": "2025-11-14T07:06:36Z"
+    },
+    {
+      "id": "maestroV2",
+      "title": "MaestroV2",
+      "oneLiner": "An online app to record EEG data from Muse devices",
+      "categories": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "tags": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "demoUrl": "https://maestroapp.ca/",
+      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
+      "screenshot": "https://maestroapp.ca/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-04T21:56:58",
+      "createdAt": "2025-07-09T19:59:20Z"
+    },
     {
       "id": "ForwardLookingInfraredImagingTutorial",
       "title": "ForwardLookingInfraredImagingTutorial",
@@ -24,30 +72,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-04T21:48:27",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "MaestroEEGApp",
-      "title": "MaestroEEGApp",
-      "oneLiner": "An online app to record EEG data from Muse devices",
-      "categories": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "tags": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "demoUrl": "https://maestroapp.ca/",
-      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MaestroEEGApp/9441729dd952a3d2eafe8d2e0f4dff3a878cdbd6/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-04T21:36:44",
-      "createdAt": "2025-07-09T19:59:20Z"
     },
     {
       "id": "nehiyoMTB",
@@ -775,22 +799,6 @@
       "createdAt": "2025-11-14T07:09:52Z"
     },
     {
-      "id": "CatalanQuadratic",
-      "title": "CatalanQuadratic",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/CatalanQuadratic",
-      "githubUrl": "https://github.com/kylemath/CatalanQuadratic",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/CatalanQuadratic/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-14T07:06:12",
-      "createdAt": "2025-11-14T07:06:36Z"
-    },
-    {
       "id": "3dprint",
       "title": "3dprint",
       "oneLiner": "set of .stl files and other 3d files I find useful, no credit claimed",
@@ -1455,30 +1463,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-14T21:57:10",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "juventus2013teamsite",
-      "title": "Juventus2013TeamSite",
-      "oneLiner": "Webpage with schedule and roster and information for Juventus 2013 Boys Club Soccer Team",
-      "categories": [
-        "soccer",
-        "webpage",
-        "team"
-      ],
-      "tags": [
-        "soccer",
-        "webpage",
-        "team"
-      ],
-      "demoUrl": "https://juventus2013.netlify.app",
-      "githubUrl": "https://github.com/kylemath/Juventus2013_Div3_2025",
-      "screenshot": "https://juventus2013.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-04T17:00:00",
-      "createdAt": "2025-12-04T17:00:00Z"
     },
     {
       "id": "fungio-manifesto-site",

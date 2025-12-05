@@ -197,7 +197,7 @@
             gap: 6px;
             background: linear-gradient(180deg,
                 rgba(0,0,0,0) 0%,
-                rgba(0,0,0,0.75) 30%,
+                rgba(0,0,0,0.95) 10%,
                 rgba(0,0,0,0.95) 100%);
             color: white;
             transform: translateY(100%);
@@ -212,33 +212,36 @@
         .catalogue-card-description {
             margin: 0;
             font-size: 0.75em;
-            color: rgba(255,255,255,0.95);
-            background: rgba(0,0,0,0.3);
+            color: white;
+            background: transparent;
             padding: 4px 6px;
             border-radius: 3px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+            text-shadow: white;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            font-weight: 500;
+            z-index: 10;
         }
         .catalogue-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 4px;
-            font-size: 0.65em;
+            font-size: 0.6em;
             color: white;
         }
         .catalogue-tags span {
-            background: rgba(255,255,255,0.25);
-            backdrop-filter: blur(6px);
-            border-radius: 3px;
-            padding: 3px 7px;
-            border: 1px solid rgba(255,255,255,0.4);
-            font-weight: 600;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+            border-radius: 10px;
+            padding: 2px 8px;
+            border: 1px solid rgba(255,255,255,0.25);
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            opacity: 0.85;
         }
         .catalogue-badge {
             display: none;
@@ -252,7 +255,8 @@
         .catalogue-links span {
             display: none;
         }
-        .catalogue-links a {
+        .catalogue-links a,
+        .catalogue-links button {
             color: white;
             text-decoration: none;
             background: rgba(255,255,255,0.2);
@@ -263,11 +267,22 @@
             font-weight: 700;
             transition: all 0.15s ease;
             text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+            cursor: pointer;
+            font-family: Times, serif;
+            font-size: 1em;
         }
-        .catalogue-links a:hover {
+        .catalogue-links a:hover,
+        .catalogue-links button:hover {
             background: rgba(255,255,255,0.35);
             transform: translateY(-1px);
             box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .catalogue-links .demo-link {
+            background: rgba(59,130,246,0.5);
+            border: 1px solid rgba(96,165,250,0.6);
+        }
+        .catalogue-links .demo-link:hover {
+            background: rgba(59,130,246,0.7);
         }
         .catalogue-empty {
             font-size: 0.9em;
@@ -380,9 +395,16 @@
             -webkit-line-clamp: 2 !important;
             line-clamp: 2 !important;
             font-size: 0.8em !important;
+            color: rgba(255,255,255,0.95) !important;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
+            font-weight: normal !important;
         }
         #links-grid .catalogue-card-logo-text {
             font-size: 1.1em !important;
+        }
+        #links-grid .catalogue-tags,
+        #links-grid .catalogue-links {
+            display: none !important;
         }
     </style>
 </head>
@@ -633,10 +655,16 @@ Office: P-455 Bio Science - Psychology Wing</p>
 
 <h2 id="projects">Recent Projects</h2>
 <ul>
+    <li><a href="https://github.com/kylemath/flir" target="_blank">flir</a> - GitHub repository</li>
+    <li><a href="https://github.com/kylemath/MaestroEEGApp" target="_blank">MaestroEEGApp</a> - GitHub repository</li>
+    <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Nehiyawewin trail signs for Edmonton</li>
+    <li><a href="https://github.com/kylemath/EEGEdu" target="_blank">EEGEdu</a> - Interactive Brain Playground - Browser based tutorials on EEG with webbluetooth and muse</li>
+    <li><a href="https://github.com/kylemath/artOfSoccerWar" target="_blank">artOfSoccerWar</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/homePage" target="_blank">homePage</a> - Main homepage for kylemathewson.com and helper scripts</li>
+    <li><a href="https://github.com/kylemath/ModernWebDesign" target="_blank">ModernWebDesign</a> - GitHub repository</li>
+    <li><a href="https://github.com/kylemath/gitBash" target="_blank">gitBash</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/ExileEnginePage" target="_blank">ExileEnginePage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/LinoleumSecretHistory" target="_blank">LinoleumSecretHistory</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/gitBash" target="_blank">gitBash</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/biophotons" target="_blank">biophotons</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/MagicGemWebpage" target="_blank">MagicGemWebpage</a> - GitHub repository</li>
@@ -649,13 +677,11 @@ Office: P-455 Bio Science - Psychology Wing</p>
     <li><a href="https://github.com/kylemath/Sora" target="_blank">Sora</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/IllumiStack" target="_blank">IllumiStack</a> - 3d Printing with Stacked colour layers web app</li>
     <li><a href="https://github.com/kylemath/NeuroimagingClass" target="_blank">NeuroimagingClass</a> - Class materials for 2025 403 - Neuroimaging and Neurostim</li>
-    <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Nehiyawewin trail signs for Edmonton</li>
     <li><a href="https://github.com/kylemath/MidiRapper" target="_blank">MidiRapper</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/collisionDetectionForcefield" target="_blank">collisionDetectionForcefield</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/topographicModelsFromMapWebpage" target="_blank">topographicModelsFromMapWebpage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/BrainCraft" target="_blank">BrainCraft</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/digitalClock" target="_blank">digitalClock</a> - 3d printed digital clock for esphome and homeassistant</li>
-    <li><a href="https://github.com/kylemath/flir" target="_blank">flir</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/ClashRoyale" target="_blank">ClashRoyale</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/FractalViewerWebpage" target="_blank">FractalViewerWebpage</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/WordSelectionLLM" target="_blank">WordSelectionLLM</a> - GitHub repository</li>
@@ -670,10 +696,8 @@ Office: P-455 Bio Science - Psychology Wing</p>
     <li><a href="https://github.com/kylemath/3dprint" target="_blank">3dprint</a> - set of .stl files and other 3d files I find useful, no credit claimed</li>
     <li><a href="https://github.com/kylemath/artOfSoccerWarPlanning" target="_blank">artOfSoccerWarPlanning</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/YoutubeMusicAlbumFilterChromePlugin" target="_blank">YoutubeMusicAlbumFilterChromePlugin</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/artOfSoccerWar" target="_blank">artOfSoccerWar</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/FreethrowEEG" target="_blank">FreethrowEEG</a> - Recording EEG during freethrow basketball shooting</li>
     <li><a href="https://github.com/kylemath/reConstruction" target="_blank">reConstruction</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/EEGEdu" target="_blank">EEGEdu</a> - Interactive Brain Playground - Browser based tutorials on EEG with webbluetooth and muse</li>
     <li><a href="https://github.com/kylemath/matlab_Psychtoolbox_course" target="_blank">matlab_Psychtoolbox_course</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/RetinotopyMatlabCode" target="_blank">RetinotopyMatlabCode</a> - GitHub repository</li>
     <li><a href="https://github.com/kylemath/strokeEEG" target="_blank">strokeEEG</a> - GitHub repository</li>
@@ -1661,7 +1685,7 @@ Office: P-455 Bio Science - Psychology Wing</p>
                 <p class="catalogue-card-description">${project.oneLiner || ''}</p>
                 ${project.tags && project.tags.length ? `<div class="catalogue-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : ''}
                 <div class="catalogue-links">
-                    <span>Open Demo</span>
+                    <a class="demo-link" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">Demo</a>
                     <a class="github-link" href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
@@ -1679,7 +1703,7 @@ Office: P-455 Bio Science - Psychology Wing</p>
         }
         
         card.addEventListener('click', (event) => {
-            if (event.target.closest('.github-link')) {
+            if (event.target.closest('.github-link') || event.target.closest('.demo-link')) {
                 event.stopPropagation();
                 return;
             }

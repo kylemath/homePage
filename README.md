@@ -73,6 +73,45 @@ To set up the project locally:
    python update_projects.py
    ```
 
+## Private Repository Support
+
+The site supports displaying projects from **private GitHub repositories** that have **public deployments** (e.g., Netlify, Vercel).
+
+### Quick Setup for Private Repos
+
+1. **Set up GitHub Token** (required for private repo access):
+   ```bash
+   ./setup_github_token.sh
+   ```
+   Follow the instructions to create a token at https://github.com/settings/tokens with `repo` scope.
+
+2. **Check your private repos configuration**:
+   ```bash
+   python check_private_repos.py
+   ```
+   This diagnostic tool will show you which repos need setup.
+
+3. **For each private repo**:
+   - Set the homepage URL in GitHub repo settings
+   - Add `catalogue.json` to repo root
+   - Add `screenshot.png` to repo root
+   - Deploy the files to your public site
+
+4. **Update homepage**:
+   ```bash
+   python update_projects.py
+   ```
+
+### Documentation
+
+- **Full Guide**: See [docs/PRIVATE_REPO_AUTOMATION.md](docs/PRIVATE_REPO_AUTOMATION.md)
+- **Quick Reference**: See [docs/PRIVATE_REPO_INSTRUCTIONS.md](docs/PRIVATE_REPO_INSTRUCTIONS.md)
+
+### Helper Scripts
+
+- `setup_github_token.sh` - Check and configure GitHub token
+- `check_private_repos.py` - Diagnose private repo configuration issues
+
 ## Deployment
 
 The site automatically deploys through GitHub Actions. For manual deployment:

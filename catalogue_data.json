@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2025-12-08T01:36:09.342945+00:00",
+  "generatedAt": "2025-12-09T01:36:11.956160+00:00",
   "items": [
+    {
+      "id": "NeuroimagingNeurostimulationCourse",
+      "title": "Psych403A1 NeuroimagingNeurostim",
+      "oneLiner": "Course content and lab web tools for neuroimaging and  neurostimulation upper level psychology course.",
+      "categories": [
+        "Course",
+        "Neuroimaging",
+        "EEG"
+      ],
+      "tags": [
+        "Course",
+        "Neuroimaging",
+        "EEG"
+      ],
+      "demoUrl": "http://neuroimneurostim.netlify.app",
+      "githubUrl": "https://github.com/kylemath/NeuroimagingClass",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NeuroimagingClass/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-08T20:26:29",
+      "createdAt": "2025-09-08T06:48:10Z"
+    },
+    {
+      "id": "biophotons",
+      "title": "Biophotons",
+      "oneLiner": "Exploring measuring of human biophotons with PMTs",
+      "categories": [
+        "test"
+      ],
+      "tags": [
+        "test"
+      ],
+      "demoUrl": "https://kylemath.github.io/biophotons",
+      "githubUrl": "https://github.com/kylemath/biophotons",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/biophotons/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-08T19:28:49",
+      "createdAt": "2025-11-17T18:48:14Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +58,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-07T01:36:18",
+      "lastCommit": "2025-12-08T01:36:39",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -303,26 +347,6 @@
       "createdAt": "2025-11-14T23:53:57Z"
     },
     {
-      "id": "biophotons",
-      "title": "Biophotons",
-      "oneLiner": "Exploring measuring of human biophotons with PMTs",
-      "categories": [
-        "test"
-      ],
-      "tags": [
-        "test"
-      ],
-      "demoUrl": "https://kylemath.github.io.biophotons",
-      "githubUrl": "https://github.com/kylemath/biophotons",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/biophotons/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-30T20:11:42",
-      "createdAt": "2025-11-17T18:48:14Z"
-    },
-    {
       "id": "MagicGemWebpage",
       "title": "MagicGemWebpage",
       "oneLiner": "A web catalogue of all 880 4x4 magic gems",
@@ -527,30 +551,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-15T02:48:16",
       "createdAt": "2023-12-22T09:00:27Z"
-    },
-    {
-      "id": "NeuroimagingNeurostimulationCourse",
-      "title": "Psych403A1 NeuroimagingNeurostim",
-      "oneLiner": "Course content and lab web tools for neuroimaging and  neurostimulation upper level psychology course.",
-      "categories": [
-        "Course",
-        "Neuroimaging",
-        "EEG"
-      ],
-      "tags": [
-        "Course",
-        "Neuroimaging",
-        "EEG"
-      ],
-      "demoUrl": "http://neuroimneurostim.netlify.app",
-      "githubUrl": "https://github.com/kylemath/NeuroimagingClass",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/NeuroimagingClass/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-15T01:49:33",
-      "createdAt": "2025-09-08T06:48:10Z"
     },
     {
       "id": "MidiRapper",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-27T19:33:06.502087+00:00",
+  "generatedAt": "2025-12-27T19:51:44.332756+00:00",
   "items": [
     {
       "id": "homePage",
@@ -14,7 +14,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-27T19:10:19",
+      "lastCommit": "2025-12-27T19:50:36",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -34,34 +34,12 @@
       "demoUrl": "https://maestroapp.ca/",
       "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
       "screenshot": "https://raw.githubusercontent.com/kylemath/MaestroEEGApp/main/screenshot.png",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MaestroEEGApp/main/screenshot.png",
       "status": "published",
       "kind": "page",
       "topicHierarchy": [],
       "repoTopics": [],
       "lastCommit": "2025-12-27T07:24:37",
-      "lastCommit": "2025-12-27T07:24:37",
       "createdAt": "2025-07-09T19:59:20Z"
-    },
-    {
-      "id": "IllumiStack",
-      "title": "IllumiStack",
-      "oneLiner": "Multicolour 3D printed layer based colour mixing and shading in the browser, open source and free",
-      "categories": [
-        "3dPrinting",
-        "webpage",
-        "sign"
-      ],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/IllumiStack",
-      "githubUrl": "https://github.com/kylemath/IllumiStack",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/IllumiStack/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-27T03:40:51",
-      "createdAt": "2023-12-22T09:00:27Z"
     },
     {
       "id": "IllumiStack",

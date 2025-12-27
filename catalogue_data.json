@@ -1,6 +1,90 @@
 {
-  "generatedAt": "2025-12-27T01:35:55.138397+00:00",
+  "generatedAt": "2025-12-27T07:06:37.992122+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T07:05:30",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "IllumiStack",
+      "title": "IllumiStack",
+      "oneLiner": "Multicolour 3D printed layer based colour mixing and shading in the browser, open source and free",
+      "categories": [
+        "3dPrinting",
+        "webpage",
+        "sign"
+      ],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/IllumiStack",
+      "githubUrl": "https://github.com/kylemath/IllumiStack",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/IllumiStack/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T03:40:51",
+      "createdAt": "2023-12-22T09:00:27Z"
+    },
+    {
+      "id": "maestroV2",
+      "title": "MaestroV2",
+      "oneLiner": "An online app to record EEG data from Muse devices",
+      "categories": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "tags": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "demoUrl": "https://maestroapp.ca/",
+      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainsMindsMachinesTextbook/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T03:32:20",
+      "createdAt": "2025-07-09T19:59:20Z"
+    },
+    {
+      "id": "BrainsMindsMachinesTextbook",
+      "title": "BrainsMindsMachinesTextbook",
+      "oneLiner": "A standalone textbook for Intro Neuroscience",
+      "categories": [
+        "neuroscience",
+        "writing",
+        "text"
+      ],
+      "tags": [
+        "neuroscience",
+        "writing",
+        "text"
+      ],
+      "demoUrl": "https://kylemath.github.io/BrainsMindsMachinesTextbook",
+      "githubUrl": "https://github.com/kylemath/BrainsMindsMachinesTextbook",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainsMindsMachinesTextbook/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T03:25:31",
+      "createdAt": "2025-12-27T03:21:51Z"
+    },
     {
       "id": "Brainimation",
       "title": "Brainimation",
@@ -96,22 +180,6 @@
       "createdAt": "2025-12-25T23:16:31Z"
     },
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-26T01:36:37",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
       "id": "biophotons",
       "title": "Biophotons",
       "oneLiner": "Exploring measuring of human biophotons with PMTs",
@@ -154,30 +222,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-05T00:31:48",
       "createdAt": "2025-11-14T07:06:36Z"
-    },
-    {
-      "id": "maestroV2",
-      "title": "MaestroV2",
-      "oneLiner": "An online app to record EEG data from Muse devices",
-      "categories": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "tags": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "demoUrl": "https://maestroapp.ca/",
-      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
-      "screenshot": "https://maestroapp.ca/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-04T21:56:58",
-      "createdAt": "2025-07-09T19:59:20Z"
     },
     {
       "id": "ForwardLookingInfraredImagingTutorial",
@@ -601,26 +645,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-15T17:42:30",
       "createdAt": "2025-11-15T17:39:37Z"
-    },
-    {
-      "id": "IllumiStack",
-      "title": "IllumiStack",
-      "oneLiner": "Multicolour 3D printed layer based colour mixing and shading in the browser, open source and free",
-      "categories": [
-        "3dPrinting",
-        "webpage",
-        "sign"
-      ],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/IllumiStack",
-      "githubUrl": "https://github.com/kylemath/IllumiStack",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/IllumiStack/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-15T02:48:16",
-      "createdAt": "2023-12-22T09:00:27Z"
     },
     {
       "id": "MidiRapper",
@@ -1517,79 +1541,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-14T21:57:10",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "fungio-manifesto-site",
-      "title": "Fungio Manifesto Site",
-      "oneLiner": "A complete manifesto on Life's hidden partnerships",
-      "categories": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "tags": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "demoUrl": "https://fungioergosum.com/",
-      "githubUrl": "https://github.com/kylemath/fungio-manifesto-site",
-      "screenshot": "https://fungioergosum.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": null
-    },
-    {
-      "id": "devineFracture",
-      "title": "devineFracture",
-      "oneLiner": "A study into connecitons between mystical t",
-      "categories": [
-        "religion",
-        "mystic",
-        "essay"
-      ],
-      "tags": [
-        "essay",
-        "book",
-        "religion"
-      ],
-      "demoUrl": "https://devinefracture.netlify.app/",
-      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
-      "screenshot": "https://devinefracture.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": null
-    },
-    {
-      "id": "Psych275Alberta",
-      "title": "Psych275 Brain and Behaviour",
-      "oneLiner": "Interactive course website for PSYCH 275 at University of Alberta - Brain and Behaviour",
-      "categories": [
-        "teaching",
-        "brain",
-        "course"
-      ],
-      "tags": [
-        "teaching",
-        "brain",
-        "neuroscience",
-        "course"
-      ],
-      "demoUrl": "https://psych275.netlify.app",
-      "githubUrl": "https://github.com/kylemath/Psych275Alberta",
-      "screenshot": "https://psych275.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": null
     }
   ]
 }

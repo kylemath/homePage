@@ -29,6 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
+    outputs:
+      should_deploy: ${{ steps.verify-changed-files.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       
@@ -266,10 +270,25 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
 
-      - name: Deploy to GitHub Pages
+      - name: Upload artifact for GitHub Pages
         if: steps.verify-changed-files.outputs.changed == 'true' || github.event_name == 'push'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          cname: kylemathewson.com 
+          path: .
+  
+  deploy:
+    needs: update-and-deploy
+    if: |
+      needs.update-and-deploy.result == 'success' &&
+      (needs.update-and-deploy.outputs.should_deploy == 'true' || github.event_name == 'push')
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

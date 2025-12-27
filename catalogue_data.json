@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-27T19:51:44.332756+00:00",
+  "generatedAt": "2025-12-27T21:52:16.472246+00:00",
   "items": [
     {
       "id": "homePage",
@@ -14,8 +14,54 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-27T19:50:36",
+      "lastCommit": "2025-12-27T21:50:50",
       "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "gitBash",
+      "title": "GitBash",
+      "oneLiner": "terminal command gir to init or edit a repo and make catelogue for webpagee'",
+      "categories": [
+        "terminal",
+        "github",
+        "productive"
+      ],
+      "tags": [
+        "terminal",
+        "github",
+        "productive"
+      ],
+      "demoUrl": "https://github.com/kylemath/gitBash",
+      "githubUrl": "https://github.com/kylemath/gitBash",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/gitBash/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T21:48:20",
+      "createdAt": "2025-11-17T01:37:00Z"
+    },
+    {
+      "id": "voice2print",
+      "title": "Voice2print",
+      "oneLiner": "An AI-assisted parametric 3D modeling project that uses voice prompting and natural language to generate custom OpenSCAD designs and 3D printable models. This repository contains a diverse collection of functional 3D printed parts created through conversational design with AI.",
+      "categories": [
+        "3dPrinting",
+        "AI"
+      ],
+      "tags": [
+        "3dPrinting",
+        "AI"
+      ],
+      "demoUrl": "https://kylemath.github.io/voice2print",
+      "githubUrl": "https://github.com/kylemath/voice2print",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/voice2print/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T21:47:24",
+      "createdAt": "2025-01-05T06:32:01Z"
     },
     {
       "id": "maestroV2",
@@ -365,30 +411,6 @@
       "createdAt": "2025-12-03T20:53:35Z"
     },
     {
-      "id": "gitBash",
-      "title": "GitBash",
-      "oneLiner": "terminal command gir to init or edit a repo and make catelogue for webpagee'",
-      "categories": [
-        "terminal",
-        "github",
-        "productive"
-      ],
-      "tags": [
-        "terminal",
-        "github",
-        "productive"
-      ],
-      "demoUrl": "https://github.com/kylemath/gitBash",
-      "githubUrl": "https://github.com/kylemath/gitBash",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/gitBash/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-03T20:51:52",
-      "createdAt": "2025-11-17T01:37:00Z"
-    },
-    {
       "id": "ExileEnginePage",
       "title": "ExileEnginePage",
       "oneLiner": "long form - how society manufacters genius through outcating",
@@ -599,28 +621,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-16T23:05:57",
       "createdAt": "2025-11-16T23:04:03Z"
-    },
-    {
-      "id": "voice2print",
-      "title": "Voice2print",
-      "oneLiner": "An AI-assisted parametric 3D modeling project that uses voice prompting and natural language to generate custom OpenSCAD designs and 3D printable models. This repository contains a diverse collection of functional 3D printed parts created through conversational design with AI.",
-      "categories": [
-        "3dPrinting",
-        "AI"
-      ],
-      "tags": [
-        "3dPrinting",
-        "AI"
-      ],
-      "demoUrl": "https://github.com/kylemath/voice2print",
-      "githubUrl": "https://github.com/kylemath/voice2print",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/voice2print/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-16T22:53:11",
-      "createdAt": "2025-01-05T06:32:01Z"
     },
     {
       "id": "SoraVideoGen",

@@ -1,0 +1,42 @@
+========================================
+COPY THIS TO AI IN YOUR PRIVATE REPO:
+========================================
+
+Please set up this private repo for homepage catalogue integration:
+
+1. Create a `catalogue.json` file in the repo root with this content:
+
+{
+  "title": "[Your Project Title]",
+  "oneLiner": "[One-line description of what this does]",
+  "kind": "page",
+  "categories": ["category1", "category2"],
+  "tags": ["tag1", "tag2"],
+  "status": "published",
+  "demoUrl": "https://[your-deployed-site].netlify.app",
+  "screenshot": "screenshot.png"
+}
+
+Notes:
+- Set "kind" to: "longform" (Writing tab), "page" (Apps tab), or "project" (Projects tab)
+- Use your actual Netlify/Vercel deployment URL for demoUrl
+
+2. Create a screenshot.png file:
+- Take a screenshot of your deployed site
+- Save as screenshot.png in the repo root
+- Recommended size: 1200x800px
+
+3. Ensure both files get deployed and are accessible at:
+   - https://[your-site].netlify.app/catalogue.json
+   - https://[your-site].netlify.app/screenshot.png
+
+4. Verify the GitHub repo "Website" field is set to your deployment URL
+
+Test the setup by running:
+curl https://[your-site].netlify.app/catalogue.json
+curl -I https://[your-site].netlify.app/screenshot.png
+
+Both should return 200 OK.
+
+========================================
+

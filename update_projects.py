@@ -62,7 +62,33 @@ def get_github_repos(username, token=None):
     )
 
 def fetch_catalogue_metadata(username: str, repo: Dict) -> Optional[Dict]:
-    """Attempt to load per-repo catalogue metadata JSON."""
+    """Attempt to load per-repo catalogue metadata JSON.
+    
+    Checks in this order:
+    1. Public deployment URL (homepage) - for private repos with public sites
+    2. GitHub raw URLs - for public repos
+    """
+    
+    # First, try the repo's homepage if it exists (for public deployments like Netlify)
+    homepage = repo.get('homepage')
+    if homepage and homepage.strip():
+        homepage = homepage.rstrip('/')
+        # Try multiple common locations on the public site
+        catalogue_urls = [
+            f"{homepage}/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/assets/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/public/{CATALOGUE_ENTRY_FILE}",
+            f"{homepage}/.well-known/{CATALOGUE_ENTRY_FILE}"
+        ]
+        for url in catalogue_urls:
+            try:
+                response = requests.get(url, timeout=5)
+                if response.status_code == 200:
+                    return json.loads(response.text)
+            except (requests.RequestException, json.JSONDecodeError):
+                continue
+    
+    # Fallback to GitHub raw URLs (for public repos)
     branches = [repo.get('default_branch') or 'main', 'main', 'master']
     for branch in branches:
         if not branch:
@@ -96,18 +122,40 @@ def determine_kind(metadata: Dict, repo_topics: List[str]) -> Tuple[str, List[st
     return kind, path
 
 def resolve_screenshot_url(username: str, repo: Dict, metadata: Dict) -> str:
-    """Return an absolute screenshot URL, normalizing repo-relative paths."""
+    """Return an absolute screenshot URL, normalizing repo-relative paths.
+    
+    Priority:
+    1. Absolute URLs in metadata (http/https) - use as-is
+    2. Relative paths in metadata - resolve based on repo homepage or GitHub
+    3. Default screenshot.png from GitHub
+    """
     default_branch = repo.get('default_branch') or 'main'
     screenshot = metadata.get('screenshot')
+    homepage = (repo.get('homepage') or '').strip().rstrip('/')
 
     if isinstance(screenshot, str) and screenshot.strip():
         trimmed = screenshot.strip()
+        
+        # If it's already an absolute URL, use it
+        if trimmed.startswith('http://') or trimmed.startswith('https://'):
+            return trimmed
+        
+        # Remove leading ./
         if trimmed.startswith('./'):
             trimmed = trimmed[2:]
-        if trimmed and not trimmed.startswith('http://') and not trimmed.startswith('https://'):
+        
+        # If we have a homepage (public deployment), resolve relative to it
+        if homepage and trimmed:
+            return f'{homepage}/{trimmed}'
+        
+        # Otherwise resolve relative to GitHub
+        if trimmed:
             return f'https://raw.githubusercontent.com/{username}/{repo["name"]}/{default_branch}/{trimmed}'
-        return trimmed
 
+    # Default: try homepage first, then GitHub
+    if homepage:
+        return f'{homepage}/screenshot.png'
+    
     return f'https://raw.githubusercontent.com/{username}/{repo["name"]}/{default_branch}/screenshot.png'
 
 
@@ -140,9 +188,37 @@ def build_catalogue_entries(username: str, repos: List[Dict]) -> List[Dict]:
     return entries
 
 def write_catalogue_file(entries: List[Dict]):
+    if not entries:
+        print(f"⚠️  No entries found - not overwriting {CATALOGUE_FILE}")
+        print("   This usually means GitHub API rate limiting.")
+        print("   Set GITHUB_TOKEN environment variable and try again.")
+        return
+    
+    # Preserve manually added entries that aren't in GitHub
+    existing_entries = []
+    if os.path.exists(CATALOGUE_FILE):
+        try:
+            with open(CATALOGUE_FILE, 'r', encoding='utf-8') as fh:
+                existing_data = json.load(fh)
+                existing_entries = existing_data.get('items', [])
+        except (json.JSONDecodeError, IOError):
+            pass
+    
+    # Get IDs from GitHub entries
+    github_ids = {entry['id'] for entry in entries}
+    
+    # Keep manual entries that aren't in GitHub
+    manual_entries = [e for e in existing_entries if e.get('id') not in github_ids]
+    
+    if manual_entries:
+        print(f"📝 Preserving {len(manual_entries)} manually added entries")
+    
+    # Combine: GitHub entries + manual entries
+    all_entries = entries + manual_entries
+    
     payload = {
-        'generatedAt': datetime.utcnow().isoformat() + 'Z',
-        'items': entries
+        'generatedAt': datetime.now(timezone.utc).isoformat(),
+        'items': all_entries
     }
     with open(CATALOGUE_FILE, 'w', encoding='utf-8') as fh:
         json.dump(payload, fh, indent=2)

@@ -1,0 +1,75 @@
+═══════════════════════════════════════════════════════════
+QUICK TEST COMMANDS - Homepage Update Scripts
+═══════════════════════════════════════════════════════════
+
+FULL TEST SUITE
+───────────────
+./test_scripts_locally.sh
+
+
+SETUP (First Time)
+──────────────────
+source publications_env/bin/activate
+export GITHUB_TOKEN=your_token_here  # Optional but recommended
+
+
+INDIVIDUAL SCRIPTS
+──────────────────
+# Test projects update
+python update_projects.py
+
+# Test contributor projects
+python update_contributor_projects.py
+
+# Test publications (takes 2-4 min)
+python update_publications.py
+
+
+BACKUP & RESTORE
+────────────────
+# Before testing
+cp index.html index.html.backup
+cp catalogue_data.json catalogue_data.json.backup
+
+# Restore if needed
+mv index.html.backup index.html
+mv catalogue_data.json.backup catalogue_data.json
+
+
+CHECK RESULTS
+─────────────
+# See what changed
+git diff index.html
+git diff catalogue_data.json
+
+# Count publications (should be 50+)
+grep -c '<li><a href.*target="_blank">' index.html
+
+# Preview in browser WITH WORKING CATALOGUES (required for cards to load)
+./preview_site.sh
+# Then open: http://localhost:8000
+
+# Or quick view (catalogues won't work without web server)
+open index.html
+
+
+CLEAN UP
+────────
+# Remove backups
+rm -f index.html.backup catalogue_data.json.backup
+
+# Deactivate virtual env
+deactivate
+
+
+COMMIT & PUSH (After verifying changes look good)
+──────────────
+git add index.html catalogue_data.json .github/workflows/update-all-and-deploy.yml
+git commit -m "Update GitHub Actions workflow to fix deployment"
+git push origin main
+
+
+═══════════════════════════════════════════════════════════
+For detailed documentation, see: TESTING_LOCALLY.md
+═══════════════════════════════════════════════════════════
+

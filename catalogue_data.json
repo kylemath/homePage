@@ -2,6 +2,31 @@
   "generatedAt": "2025-11-30T01:36:03.603669Z",
   "items": [
     {
+      "id": "juventus2013",
+      "title": "Juventus 2013 Boys",
+      "oneLiner": "Team website for Juventus Soccer Club 2013 Boys T3 team featuring schedules, statistics, and team information",
+      "categories": [
+        "soccer",
+        "youth sports",
+        "community"
+      ],
+      "tags": [
+        "soccer",
+        "juventus",
+        "team management",
+        "sports"
+      ],
+      "demoUrl": "https://juventus2013.netlify.app/",
+      "githubUrl": "https://github.com/kylemath/juventus2013",
+      "screenshot": "https://juventus2013.netlify.app/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-26T00:00:00",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
       "id": "MagicGemWebpage",
       "title": "MagicGemWebpage",
       "oneLiner": "A web catalogue of all 880 4x4 magic gems",

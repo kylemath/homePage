@@ -1,6 +1,80 @@
 {
-  "generatedAt": "2025-12-27T21:52:16.472246+00:00",
+  "generatedAt": "2025-12-28T01:36:54.114094+00:00",
   "items": [
+    {
+      "id": "VisualSystemModel",
+      "title": "VisualSystemModel",
+      "oneLiner": "A webbased connectionist model of the early visual system with webcam input",
+      "categories": [
+        "brain",
+        "vision",
+        "web",
+        "simulation"
+      ],
+      "tags": [
+        "brain",
+        "vision",
+        "web",
+        "simulation"
+      ],
+      "demoUrl": "https://github.com/kylemath/VisualSystemModel",
+      "githubUrl": "https://github.com/kylemath/VisualSystemModel",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/VisualSystemModel/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-28T00:42:32",
+      "createdAt": "2025-12-28T00:42:38Z"
+    },
+    {
+      "id": "callingCenter",
+      "title": "CallingCenter",
+      "oneLiner": "A webpage to call individuals on a calling list one by one automatically",
+      "categories": [
+        "webpage",
+        "calling",
+        "election"
+      ],
+      "tags": [
+        "webpage",
+        "calling",
+        "election"
+      ],
+      "demoUrl": "http://kylemath.github.io/callingCenter",
+      "githubUrl": "https://github.com/kylemath/callingCenter",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/callingCenter/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T22:37:15",
+      "createdAt": "2025-12-27T22:37:09Z"
+    },
+    {
+      "id": "soccerSimV2Physics",
+      "title": "SoccerSimV2Physics",
+      "oneLiner": "A simulator using real physics and players",
+      "categories": [
+        "simulation",
+        "soccer",
+        "web"
+      ],
+      "tags": [
+        "simulation",
+        "soccer",
+        "web"
+      ],
+      "demoUrl": "https://github.com/kylemath/soccerSimV2Physics",
+      "githubUrl": "https://github.com/kylemath/soccerSimV2Physics",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/soccerSimV2Physics/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T22:10:51",
+      "createdAt": "2025-12-27T22:10:27Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +88,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-27T21:50:50",
+      "lastCommit": "2025-12-27T21:55:52",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-28T01:36:54.114094+00:00",
+  "generatedAt": "2025-12-29T01:37:22.173146+00:00",
   "items": [
     {
       "id": "VisualSystemModel",
@@ -24,8 +24,50 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2025-12-28T00:42:32",
+      "lastCommit": "2025-12-28T22:10:38",
       "createdAt": "2025-12-28T00:42:38Z"
+    },
+    {
+      "id": "magicGemWeb",
+      "title": "MagicGemWeb",
+      "oneLiner": "A web catalogue of magicGem demos and apps",
+      "categories": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "tags": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "demoUrl": "https://magicGemWeb.netlify.app",
+      "githubUrl": "https://github.com/kylemath/magicGemWeb",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-28T07:35:57",
+      "createdAt": "2025-12-28T07:21:38Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-28T01:37:37",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "callingCenter",
@@ -74,22 +116,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-27T22:10:51",
       "createdAt": "2025-12-27T22:10:27Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-27T21:55:52",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "gitBash",

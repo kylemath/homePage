@@ -1,6 +1,94 @@
 {
-  "generatedAt": "2025-12-29T01:37:22.173146+00:00",
+  "generatedAt": "2025-12-30T01:36:47.593783+00:00",
   "items": [
+    {
+      "id": "NeuroimagingNeurostimulationCourse",
+      "title": "Psych403A1 NeuroimagingNeurostim",
+      "oneLiner": "Course content and lab web tools for neuroimaging and  neurostimulation upper level psychology course.",
+      "categories": [
+        "Course",
+        "Neuroimaging",
+        "EEG"
+      ],
+      "tags": [
+        "Course",
+        "Neuroimaging",
+        "EEG"
+      ],
+      "demoUrl": "http://neuroimneurostim.netlify.app",
+      "githubUrl": "https://github.com/kylemath/NeuroimagingClass",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NeuroimagingClass/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-29T22:01:56",
+      "createdAt": "2025-09-08T06:48:10Z"
+    },
+    {
+      "id": "maestroV2",
+      "title": "MaestroV2",
+      "oneLiner": "An online app to record EEG data from Muse devices",
+      "categories": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "tags": [
+        "eeg",
+        "recording",
+        "data"
+      ],
+      "demoUrl": "https://maestroapp.ca/",
+      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MaestroEEGApp/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-29T04:53:15",
+      "createdAt": "2025-07-09T19:59:20Z"
+    },
+    {
+      "id": "GALM",
+      "title": "GALM",
+      "oneLiner": "Generative Adversarial Language Models",
+      "categories": [
+        "LLM",
+        "training",
+        "GAN"
+      ],
+      "tags": [
+        "LLM",
+        "training",
+        "GAN"
+      ],
+      "demoUrl": "https://github.com/kylemath/GALM",
+      "githubUrl": "https://github.com/kylemath/GALM",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GALM/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-29T04:49:54",
+      "createdAt": "2025-12-29T04:50:18Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-29T01:37:57",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "VisualSystemModel",
       "title": "VisualSystemModel",
@@ -52,22 +140,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-28T07:35:57",
       "createdAt": "2025-12-28T07:21:38Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-28T01:37:37",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "callingCenter",
@@ -164,30 +236,6 @@
       "createdAt": "2025-01-05T06:32:01Z"
     },
     {
-      "id": "maestroV2",
-      "title": "MaestroV2",
-      "oneLiner": "An online app to record EEG data from Muse devices",
-      "categories": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "tags": [
-        "eeg",
-        "recording",
-        "data"
-      ],
-      "demoUrl": "https://maestroapp.ca/",
-      "githubUrl": "https://github.com/kylemath/MaestroEEGApp",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MaestroEEGApp/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-27T07:24:37",
-      "createdAt": "2025-07-09T19:59:20Z"
-    },
-    {
       "id": "IllumiStack",
       "title": "IllumiStack",
       "oneLiner": "Multicolour 3D printed layer based colour mixing and shading in the browser, open source and free",
@@ -254,30 +302,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-26T20:07:17",
       "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "NeuroimagingNeurostimulationCourse",
-      "title": "Psych403A1 NeuroimagingNeurostim",
-      "oneLiner": "Course content and lab web tools for neuroimaging and  neurostimulation upper level psychology course.",
-      "categories": [
-        "Course",
-        "Neuroimaging",
-        "EEG"
-      ],
-      "tags": [
-        "Course",
-        "Neuroimaging",
-        "EEG"
-      ],
-      "demoUrl": "http://neuroimneurostim.netlify.app",
-      "githubUrl": "https://github.com/kylemath/NeuroimagingClass",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/NeuroimagingClass/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-26T19:50:12",
-      "createdAt": "2025-09-08T06:48:10Z"
     },
     {
       "id": "digitalClock",

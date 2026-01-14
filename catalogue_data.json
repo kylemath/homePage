@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-01-13T01:36:13.069935+00:00",
+  "generatedAt": "2026-01-14T01:36:49.952633+00:00",
   "items": [
+    {
+      "id": "Slides4Class",
+      "title": "Slides4Class",
+      "oneLiner": "Make automatic slides and images to accompany text",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Slides4Class",
+      "githubUrl": "https://github.com/kylemath/Slides4Class",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-13T20:59:14",
+      "createdAt": "2026-01-13T08:15:06Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +30,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-12T01:37:47",
+      "lastCommit": "2026-01-13T01:36:49",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

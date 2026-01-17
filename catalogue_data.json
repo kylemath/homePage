@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-01-16T01:36:21.440057+00:00",
+  "generatedAt": "2026-01-17T01:36:07.635003+00:00",
   "items": [
+    {
+      "id": "StrokeMuseTestAnalysis",
+      "title": "StrokeMuseTestAnalysis",
+      "oneLiner": "A webpage to load and plot single subject data from stroke eeg monitor app",
+      "categories": [
+        "eeg",
+        "stroke",
+        "muse"
+      ],
+      "tags": [
+        "eeg",
+        "stroke",
+        "muse"
+      ],
+      "demoUrl": "https://github.com/kylemath/StrokeMuseTestAnalysis",
+      "githubUrl": "https://github.com/kylemath/StrokeMuseTestAnalysis",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/StrokeMuseTestAnalysis/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-16T18:49:45",
+      "createdAt": "2025-11-30T05:44:05Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-15T01:36:48",
+      "lastCommit": "2026-01-16T01:36:55",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-01-17T01:36:07.635003+00:00",
+  "generatedAt": "2026-01-18T01:36:41.345795+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-17T01:36:49",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "StrokeMuseTestAnalysis",
       "title": "StrokeMuseTestAnalysis",
@@ -24,22 +40,6 @@
       "repoTopics": [],
       "lastCommit": "2026-01-16T18:49:45",
       "createdAt": "2025-11-30T05:44:05Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-16T01:36:55",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "Slides4Class",

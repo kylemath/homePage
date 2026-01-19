@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-18T01:36:41.345795+00:00",
+  "generatedAt": "2026-01-19T01:37:42.411588+00:00",
   "items": [
     {
       "id": "homePage",
@@ -14,7 +14,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-17T01:36:49",
+      "lastCommit": "2026-01-18T01:37:11",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -1595,6 +1595,22 @@
       "createdAt": "2014-04-02T01:17:24Z"
     },
     {
+      "id": "visual-illusions",
+      "title": "visual-illusions",
+      "oneLiner": "Can we teach a machine to classify visual illusions and generate new ones?",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/visual-illusions",
+      "githubUrl": "https://github.com/kylemath/visual-illusions",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/visual-illusions/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2019-01-25T23:44:38",
+      "createdAt": "2018-04-19T22:05:41Z"
+    },
+    {
       "id": "Muse_LSL_Environments",
       "title": "Muse_LSL_Environments",
       "oneLiner": "A set of python environments for running MUSE LSL experiments, record data, visualize, and send markers, using Alex B. muse-lsl",
@@ -1673,6 +1689,22 @@
       "repoTopics": [],
       "lastCommit": "2018-04-18T02:13:04",
       "createdAt": "2016-05-27T19:13:24Z"
+    },
+    {
+      "id": "Pyggy",
+      "title": "Pyggy",
+      "oneLiner": "Artificial Improvisation",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Pyggy",
+      "githubUrl": "https://github.com/kylemath/Pyggy",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Pyggy/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2016-04-08T22:00:07",
+      "createdAt": "2016-06-28T16:30:12Z"
     },
     {
       "id": "powerLawSoccerAnalysisPage",

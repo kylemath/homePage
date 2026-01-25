@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-01-24T01:36:23.575544+00:00",
+  "generatedAt": "2026-01-25T01:37:22.263853+00:00",
   "items": [
+    {
+      "id": "CableRack",
+      "title": "CableRack",
+      "oneLiner": "A rack to plug in loose cable ends with various inserts",
+      "categories": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "tags": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "demoUrl": "https://github.com/kylemath/CableRack",
+      "githubUrl": "https://github.com/kylemath/CableRack",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-24T20:02:07",
+      "createdAt": "2026-01-24T20:12:02Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-23T01:37:24",
+      "lastCommit": "2026-01-24T01:36:52",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

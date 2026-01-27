@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-01-26T01:38:16.513464+00:00",
+  "generatedAt": "2026-01-27T01:36:54.516838+00:00",
   "items": [
+    {
+      "id": "FreethrowEEG",
+      "title": "FreethrowEEG",
+      "oneLiner": "Recording EEG during freethrow basketball shooting",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-26T19:25:42",
+      "createdAt": "2025-02-25T19:04:30Z"
+    },
     {
       "id": "CableRack",
       "title": "CableRack",
@@ -22,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-25T21:20:12",
+      "lastCommit": "2026-01-26T18:41:03",
       "createdAt": "2026-01-24T20:12:02Z"
     },
     {
@@ -38,7 +54,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-25T01:37:55",
+      "lastCommit": "2026-01-26T01:38:57",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -1111,22 +1127,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-04T16:56:43",
       "createdAt": "2025-11-04T16:58:07Z"
-    },
-    {
-      "id": "FreethrowEEG",
-      "title": "FreethrowEEG",
-      "oneLiner": "Recording EEG during freethrow basketball shooting",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
-      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-03-26T06:09:18",
-      "createdAt": "2025-02-25T19:04:30Z"
     },
     {
       "id": "reConstruction",

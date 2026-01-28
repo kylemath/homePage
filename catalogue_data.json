@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-01-27T01:36:54.516838+00:00",
+  "generatedAt": "2026-01-28T01:36:53.573158+00:00",
   "items": [
+    {
+      "id": "Slides4Class",
+      "title": "Slides4Class",
+      "oneLiner": "Make automatic slides and images to accompany text",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Slides4Class",
+      "githubUrl": "https://github.com/kylemath/Slides4Class",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-27T04:03:32",
+      "createdAt": "2026-01-13T08:15:06Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-27T01:37:23",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "FreethrowEEG",
       "title": "FreethrowEEG",
@@ -42,22 +74,6 @@
       "createdAt": "2026-01-24T20:12:02Z"
     },
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-26T01:38:57",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
       "id": "StrokeMuseTestAnalysis",
       "title": "StrokeMuseTestAnalysis",
       "oneLiner": "A webpage to load and plot single subject data from stroke eeg monitor app",
@@ -80,22 +96,6 @@
       "repoTopics": [],
       "lastCommit": "2026-01-16T18:49:45",
       "createdAt": "2025-11-30T05:44:05Z"
-    },
-    {
-      "id": "Slides4Class",
-      "title": "Slides4Class",
-      "oneLiner": "Make automatic slides and images to accompany text",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/Slides4Class",
-      "githubUrl": "https://github.com/kylemath/Slides4Class",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-14T21:42:00",
-      "createdAt": "2026-01-13T08:15:06Z"
     },
     {
       "id": "GALM",

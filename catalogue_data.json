@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-01-30T01:39:17.551728+00:00",
+  "generatedAt": "2026-01-31T01:38:07.904372+00:00",
   "items": [
+    {
+      "id": "FlowFinding",
+      "title": "FlowFinding",
+      "oneLiner": "A set of web demos to study concepts around finding and quantum collapse",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/FlowFinding",
+      "githubUrl": "https://github.com/kylemath/FlowFinding",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FlowFinding/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-30T23:30:50",
+      "createdAt": "2026-01-30T22:49:49Z"
+    },
+    {
+      "id": "Genes",
+      "title": "GeneTwinExplorer",
+      "oneLiner": "Exploring genetic data comparison and vis",
+      "categories": [
+        "genetics",
+        "webpage",
+        "medicine"
+      ],
+      "tags": [
+        "genetics",
+        "webpage",
+        "medicine"
+      ],
+      "demoUrl": "https://kylemath.github.io/Genes",
+      "githubUrl": "https://github.com/kylemath/Genes",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Genes/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-30T20:58:40",
+      "createdAt": "2026-01-30T20:57:46Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +54,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-01-29T01:39:06",
+      "lastCommit": "2026-01-30T01:39:57",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

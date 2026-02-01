@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-01-31T01:38:07.904372+00:00",
+  "generatedAt": "2026-02-01T01:38:12.999223+00:00",
   "items": [
+    {
+      "id": "ConciousnessTheoryCompareWebpage",
+      "title": "ConciousnessTheoryCompareWebpage",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
+      "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/ConciousnessTheoryCompareWebpage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-31T05:44:55",
+      "createdAt": "2025-11-14T07:22:06Z"
+    },
+    {
+      "id": "NumberBlocks",
+      "title": "NumberBlocks",
+      "oneLiner": "Number blocks educations kids game",
+      "categories": [
+        "game",
+        "kids",
+        "numbers"
+      ],
+      "tags": [
+        "game",
+        "kids",
+        "numbers"
+      ],
+      "demoUrl": "https://kylemath.github.io/NumberBlocks",
+      "githubUrl": "https://github.com/kylemath/NumberBlocks",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NumberBlocks/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-31T05:13:41",
+      "createdAt": "2026-01-31T05:10:31Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-01-31T01:38:49",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "FlowFinding",
       "title": "FlowFinding",
@@ -40,22 +96,6 @@
       "repoTopics": [],
       "lastCommit": "2026-01-30T20:58:40",
       "createdAt": "2026-01-30T20:57:46Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-30T01:39:57",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "Slides4Class",
@@ -1071,22 +1111,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-14T07:29:38",
       "createdAt": "2025-04-22T17:18:59Z"
-    },
-    {
-      "id": "ConciousnessTheoryCompareWebpage",
-      "title": "ConciousnessTheoryCompareWebpage",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
-      "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/ConciousnessTheoryCompareWebpage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-14T07:21:24",
-      "createdAt": "2025-11-14T07:22:06Z"
     },
     {
       "id": "HistoricGlenoraMapWebpage",

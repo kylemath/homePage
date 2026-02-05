@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-02-04T01:38:33.803624+00:00",
+  "generatedAt": "2026-02-05T01:39:17.890163+00:00",
   "items": [
+    {
+      "id": "cursor-launcher",
+      "title": "Cursor Launcher",
+      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
+      "categories": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "tags": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "demoUrl": "https://github.com/kylemath/cursor-launcher",
+      "githubUrl": "https://github.com/kylemath/cursor-launcher",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-04T23:08:53",
+      "createdAt": "2026-02-04T23:08:58Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-03T01:39:49",
+      "lastCommit": "2026-02-04T01:39:04",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

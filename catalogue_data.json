@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-02-11T01:40:09.174607+00:00",
+  "generatedAt": "2026-02-12T01:40:03.474326+00:00",
   "items": [
+    {
+      "id": "cursor-launcher",
+      "title": "Cursor Launcher",
+      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
+      "categories": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "tags": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "demoUrl": "https://github.com/kylemath/cursor-launcher",
+      "githubUrl": "https://github.com/kylemath/cursor-launcher",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-11T19:29:47",
+      "createdAt": "2026-02-04T23:08:58Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-10T01:41:36",
+      "lastCommit": "2026-02-11T01:40:42",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -42,30 +66,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-07T00:35:45",
       "createdAt": "2026-02-06T09:46:24Z"
-    },
-    {
-      "id": "cursor-launcher",
-      "title": "Cursor Launcher",
-      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
-      "categories": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "tags": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "demoUrl": "https://github.com/kylemath/cursor-launcher",
-      "githubUrl": "https://github.com/kylemath/cursor-launcher",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-04T23:08:53",
-      "createdAt": "2026-02-04T23:08:58Z"
     },
     {
       "id": "ConciousnessTheoryCompareWebpage",

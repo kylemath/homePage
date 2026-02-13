@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-02-12T01:40:03.474326+00:00",
+  "generatedAt": "2026-02-13T01:39:56.760266+00:00",
   "items": [
+    {
+      "id": "OfTwoMindsSoccer",
+      "title": "OfTwoMindsSoccer",
+      "oneLiner": "Paper discussion of motor interference in soccer",
+      "categories": [
+        "soccer",
+        "neuro",
+        "paper"
+      ],
+      "tags": [
+        "soccer",
+        "neuro",
+        "paper"
+      ],
+      "demoUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
+      "githubUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/OfTwoMindsSoccer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-12T22:18:43",
+      "createdAt": "2026-02-12T05:05:36Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-12T01:40:49",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "cursor-launcher",
       "title": "Cursor Launcher",
@@ -24,22 +64,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-11T19:29:47",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-11T01:40:42",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "VibeScienceTalk",

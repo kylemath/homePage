@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-13T01:39:56.760266+00:00",
+  "generatedAt": "2026-02-14T01:38:53.087502+00:00",
   "items": [
     {
       "id": "OfTwoMindsSoccer",
@@ -15,15 +15,39 @@
         "neuro",
         "paper"
       ],
-      "demoUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
+      "demoUrl": "https://kylemath.github.io/OfTwoMindsSoccer/",
       "githubUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
       "screenshot": "https://raw.githubusercontent.com/kylemath/OfTwoMindsSoccer/main/screenshot.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-12T22:18:43",
+      "lastCommit": "2026-02-13T02:26:56",
       "createdAt": "2026-02-12T05:05:36Z"
+    },
+    {
+      "id": "microgptJS",
+      "title": "MicrogptJS",
+      "oneLiner": "A web demo of a js port of microgpt",
+      "categories": [
+        "AI",
+        "webapp",
+        "demo"
+      ],
+      "tags": [
+        "AI",
+        "webapp",
+        "gpt"
+      ],
+      "demoUrl": "https://kylemath.github.io/microgptJS",
+      "githubUrl": "https://github.com/kylemath/microgptJS",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/microgptJS/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-13T02:25:35",
+      "createdAt": "2026-02-13T01:42:12Z"
     },
     {
       "id": "homePage",
@@ -38,7 +62,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-12T01:40:49",
+      "lastCommit": "2026-02-13T01:40:37",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -97,9 +121,9 @@
       "oneLiner": "GitHub repository",
       "categories": [],
       "tags": [],
-      "demoUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
+      "demoUrl": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/",
       "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/ConciousnessTheoryCompareWebpage/main/screenshot.png",
+      "screenshot": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/screenshot.png",
       "status": null,
       "kind": "project",
       "topicHierarchy": [],

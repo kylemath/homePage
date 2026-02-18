@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-02-17T01:39:00.033481+00:00",
+  "generatedAt": "2026-02-18T01:39:15.045820+00:00",
   "items": [
+    {
+      "id": "NumberblockToysPrint",
+      "title": "NumberblockToysPrint",
+      "oneLiner": "Print out numberblock toys and faces",
+      "categories": [
+        "3dprint",
+        "numberblocks",
+        "toys"
+      ],
+      "tags": [
+        "3dprint",
+        "numberblocks",
+        "toys"
+      ],
+      "demoUrl": "https://kylemath.github.io/NumberblockToysPrint",
+      "githubUrl": "https://github.com/kylemath/NumberblockToysPrint",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NumberblockToysPrint/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-17T21:57:04",
+      "createdAt": "2026-02-17T21:53:05Z"
+    },
+    {
+      "id": "Luo2024Extend",
+      "title": "Luo2024Extend",
+      "oneLiner": "Twitter PhD Project Extension Challange",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Luo2024Extend",
+      "githubUrl": "https://github.com/kylemath/Luo2024Extend",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Luo2024Extend/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-17T09:38:07",
+      "createdAt": "2026-02-17T04:19:11Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +54,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-16T01:40:24",
+      "lastCommit": "2026-02-17T01:39:32",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

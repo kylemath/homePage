@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-02-20T01:40:03.795253+00:00",
+  "generatedAt": "2026-02-21T01:38:07.732327+00:00",
   "items": [
+    {
+      "id": "FreethrowEEG",
+      "title": "FreethrowEEG",
+      "oneLiner": "Recording EEG during freethrow basketball shooting",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-20T20:40:58",
+      "createdAt": "2025-02-25T19:04:30Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-20T01:40:45",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "Luo2024Extend",
       "title": "Luo2024Extend",
@@ -16,22 +48,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-19T08:04:30",
       "createdAt": "2026-02-17T04:19:11Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-19T01:39:15",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "NumberblockToysPrint",
@@ -56,22 +72,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-18T23:17:23",
       "createdAt": "2026-02-17T21:53:05Z"
-    },
-    {
-      "id": "FreethrowEEG",
-      "title": "FreethrowEEG",
-      "oneLiner": "Recording EEG during freethrow basketball shooting",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
-      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-16T01:25:06",
-      "createdAt": "2025-02-25T19:04:30Z"
     },
     {
       "id": "OfTwoMindsSoccer",

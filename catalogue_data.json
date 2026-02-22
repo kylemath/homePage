@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-02-21T01:38:07.732327+00:00",
+  "generatedAt": "2026-02-22T01:38:27.726153+00:00",
   "items": [
+    {
+      "id": "OfTwoMindsSoccer",
+      "title": "OfTwoMindsSoccer",
+      "oneLiner": "Paper discussion of motor interference in soccer",
+      "categories": [
+        "soccer",
+        "neuro",
+        "paper"
+      ],
+      "tags": [
+        "soccer",
+        "neuro",
+        "paper"
+      ],
+      "demoUrl": "https://kylemath.github.io/OfTwoMindsSoccer/",
+      "githubUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/OfTwoMindsSoccer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-21T08:15:05",
+      "createdAt": "2026-02-12T05:05:36Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-21T01:38:41",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "FreethrowEEG",
       "title": "FreethrowEEG",
@@ -16,22 +56,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-20T20:40:58",
       "createdAt": "2025-02-25T19:04:30Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-20T01:40:45",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "Luo2024Extend",
@@ -72,30 +96,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-18T23:17:23",
       "createdAt": "2026-02-17T21:53:05Z"
-    },
-    {
-      "id": "OfTwoMindsSoccer",
-      "title": "OfTwoMindsSoccer",
-      "oneLiner": "Paper discussion of motor interference in soccer",
-      "categories": [
-        "soccer",
-        "neuro",
-        "paper"
-      ],
-      "tags": [
-        "soccer",
-        "neuro",
-        "paper"
-      ],
-      "demoUrl": "https://kylemath.github.io/OfTwoMindsSoccer/",
-      "githubUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/OfTwoMindsSoccer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-13T02:26:56",
-      "createdAt": "2026-02-12T05:05:36Z"
     },
     {
       "id": "microgptJS",

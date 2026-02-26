@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-02-25T01:38:15.313515+00:00",
+  "generatedAt": "2026-02-26T01:38:26.275207+00:00",
   "items": [
+    {
+      "id": "InterpretCognates",
+      "title": "InterpretCognates",
+      "oneLiner": "Interpretability of Translational Invariants",
+      "categories": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "tags": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "demoUrl": "https://kylemath.github.io/InterpretCognates",
+      "githubUrl": "https://github.com/kylemath/InterpretCognates",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-25T08:33:47",
+      "createdAt": "2026-02-25T07:40:21Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-24T01:39:53",
+      "lastCommit": "2026-02-25T01:39:02",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

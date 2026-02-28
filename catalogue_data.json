@@ -1,22 +1,6 @@
 {
-  "generatedAt": "2026-02-27T01:38:53.933054+00:00",
+  "generatedAt": "2026-02-28T01:37:22.273636+00:00",
   "items": [
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-26T01:38:59",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
     {
       "id": "InterpretCognates",
       "title": "InterpretCognates",
@@ -38,8 +22,72 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-02-25T08:33:47",
+      "lastCommit": "2026-02-27T23:37:43",
       "createdAt": "2026-02-25T07:40:21Z"
+    },
+    {
+      "id": "cursor-launcher",
+      "title": "Cursor Launcher",
+      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
+      "categories": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "tags": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "demoUrl": "https://github.com/kylemath/cursor-launcher",
+      "githubUrl": "https://github.com/kylemath/cursor-launcher",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-27T08:01:12",
+      "createdAt": "2026-02-04T23:08:58Z"
+    },
+    {
+      "id": "MusicPlayer",
+      "title": "MusicPlayer",
+      "oneLiner": "A web based player of local mp3s",
+      "categories": [
+        "music",
+        "web",
+        "player"
+      ],
+      "tags": [
+        "music",
+        "web",
+        "player"
+      ],
+      "demoUrl": "https://kylemath.github.io/MusicPlayer",
+      "githubUrl": "https://github.com/kylemath/MusicPlayer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-27T07:21:09",
+      "createdAt": "2026-02-27T07:20:14Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-02-27T01:39:28",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "microphoneSpectroramWebpage",
@@ -180,30 +228,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-13T02:25:35",
       "createdAt": "2026-02-13T01:42:12Z"
-    },
-    {
-      "id": "cursor-launcher",
-      "title": "Cursor Launcher",
-      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
-      "categories": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "tags": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "demoUrl": "https://github.com/kylemath/cursor-launcher",
-      "githubUrl": "https://github.com/kylemath/cursor-launcher",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-11T19:29:47",
-      "createdAt": "2026-02-04T23:08:58Z"
     },
     {
       "id": "VibeScienceTalk",

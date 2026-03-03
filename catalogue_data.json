@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-03-02T01:39:40.407644+00:00",
+  "generatedAt": "2026-03-03T01:39:16.395410+00:00",
   "items": [
+    {
+      "id": "MusicPlayer",
+      "title": "MusicPlayer",
+      "oneLiner": "A web based player of local mp3s",
+      "categories": [
+        "music",
+        "web",
+        "player"
+      ],
+      "tags": [
+        "music",
+        "web",
+        "player"
+      ],
+      "demoUrl": "https://kylemath.github.io/MusicPlayer",
+      "githubUrl": "https://github.com/kylemath/MusicPlayer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-02T19:28:41",
+      "createdAt": "2026-02-27T07:20:14Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-03-01T02:57:49",
+      "lastCommit": "2026-03-02T01:40:20",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -64,30 +88,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-27T08:01:12",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "MusicPlayer",
-      "title": "MusicPlayer",
-      "oneLiner": "A web based player of local mp3s",
-      "categories": [
-        "music",
-        "web",
-        "player"
-      ],
-      "tags": [
-        "music",
-        "web",
-        "player"
-      ],
-      "demoUrl": "https://kylemath.github.io/MusicPlayer",
-      "githubUrl": "https://github.com/kylemath/MusicPlayer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-27T07:21:09",
-      "createdAt": "2026-02-27T07:20:14Z"
     },
     {
       "id": "microphoneSpectroramWebpage",

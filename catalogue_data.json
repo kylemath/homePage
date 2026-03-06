@@ -1,6 +1,29 @@
 {
-  "generatedAt": "2026-03-05T01:39:01.853828+00:00",
+  "generatedAt": "2026-03-06T01:38:47.897746+00:00",
   "items": [
+    {
+      "id": "FibrationTorusPuzzle",
+      "title": "FibrationTorusPuzzle",
+      "oneLiner": "A 3d printable hopf fibration torus segmentation",
+      "categories": [
+        "3d print",
+        "torus",
+        "fibration"
+      ],
+      "tags": [
+        "scad",
+        "3dprint"
+      ],
+      "demoUrl": "https://github.com/kylemath/FibrationTorusPuzzle",
+      "githubUrl": "https://github.com/kylemath/FibrationTorusPuzzle",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FibrationTorusPuzzle/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-05T07:00:28",
+      "createdAt": "2026-03-05T04:48:55Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +37,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-03-04T01:39:26",
+      "lastCommit": "2026-03-05T01:39:35",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

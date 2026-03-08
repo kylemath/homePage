@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-03-07T01:38:10.197727+00:00",
+  "generatedAt": "2026-03-08T01:38:14.413128+00:00",
   "items": [
+    {
+      "id": "CableRack",
+      "title": "CableRack",
+      "oneLiner": "A rack to plug in loose cable ends with various inserts",
+      "categories": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "tags": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "demoUrl": "https://github.com/kylemath/CableRack",
+      "githubUrl": "https://github.com/kylemath/CableRack",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-07T22:57:44",
+      "createdAt": "2026-01-24T20:12:02Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-07T01:38:41",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "InterpretCognates",
       "title": "InterpretCognates",
@@ -24,22 +64,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-06T23:25:53",
       "createdAt": "2026-02-25T07:40:21Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-06T01:39:19",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "FibrationTorusPuzzle",
@@ -373,30 +397,6 @@
       "repoTopics": [],
       "lastCommit": "2026-01-28T22:55:14",
       "createdAt": "2026-01-13T08:15:06Z"
-    },
-    {
-      "id": "CableRack",
-      "title": "CableRack",
-      "oneLiner": "A rack to plug in loose cable ends with various inserts",
-      "categories": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "tags": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "demoUrl": "https://github.com/kylemath/CableRack",
-      "githubUrl": "https://github.com/kylemath/CableRack",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-26T18:41:03",
-      "createdAt": "2026-01-24T20:12:02Z"
     },
     {
       "id": "StrokeMuseTestAnalysis",

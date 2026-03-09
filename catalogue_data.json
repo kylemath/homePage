@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-03-08T01:38:14.413128+00:00",
+  "generatedAt": "2026-03-09T01:39:57.827362+00:00",
   "items": [
+    {
+      "id": "LaserPointer",
+      "title": "LaserPointer",
+      "oneLiner": "Testing ideas to create a laser pointer mouse",
+      "categories": [
+        "webcam",
+        "app",
+        "mouse"
+      ],
+      "tags": [
+        "UX",
+        "python",
+        "tracker"
+      ],
+      "demoUrl": "https://github.com/kylemath/LaserPointer",
+      "githubUrl": "https://github.com/kylemath/LaserPointer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/LaserPointer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T00:42:44",
+      "createdAt": "2026-03-09T00:42:48Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-08T01:38:42",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "CableRack",
       "title": "CableRack",
@@ -24,22 +64,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-07T22:57:44",
       "createdAt": "2026-01-24T20:12:02Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-07T01:38:41",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "InterpretCognates",

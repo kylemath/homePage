@@ -1,6 +1,117 @@
 {
-  "generatedAt": "2026-03-09T01:39:57.827362+00:00",
+  "generatedAt": "2026-03-10T01:38:40.918219+00:00",
   "items": [
+    {
+      "id": "MusicPlayer",
+      "title": "MusicPlayer",
+      "oneLiner": "A web based player of local mp3s",
+      "categories": [
+        "music",
+        "web",
+        "player"
+      ],
+      "tags": [
+        "music",
+        "web",
+        "player"
+      ],
+      "demoUrl": "https://kylemath.github.io/MusicPlayer",
+      "githubUrl": "https://github.com/kylemath/MusicPlayer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T21:16:30",
+      "createdAt": "2026-02-27T07:20:14Z"
+    },
+    {
+      "id": "EEGVideo",
+      "title": "EEGVideo",
+      "oneLiner": "Record EEG while watching a synced video",
+      "categories": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "tags": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "demoUrl": "https://github.com/kylemath/EEGVideo",
+      "githubUrl": "https://github.com/kylemath/EEGVideo",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T20:20:40",
+      "createdAt": "2026-03-09T20:11:16Z"
+    },
+    {
+      "id": "NumberblockToysPrint",
+      "title": "NumberblockToysPrint",
+      "oneLiner": "Print out numberblock toys and faces",
+      "categories": [
+        "3dprint",
+        "numberblocks",
+        "toys"
+      ],
+      "tags": [
+        "3dprint",
+        "numberblocks",
+        "toys"
+      ],
+      "demoUrl": "https://kylemath.github.io/NumberblockToysPrint",
+      "githubUrl": "https://github.com/kylemath/NumberblockToysPrint",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NumberblockToysPrint/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T01:53:49",
+      "createdAt": "2026-02-17T21:53:05Z"
+    },
+    {
+      "id": "ReactionDiffusionMaze",
+      "title": "ReactionDiffusionMaze",
+      "oneLiner": "A slime maze of balls and diffusive media web app",
+      "categories": [
+        "web",
+        "game",
+        "slime"
+      ],
+      "tags": [
+        "math",
+        "game"
+      ],
+      "demoUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
+      "githubUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/ReactionDiffusionMaze/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T01:50:16",
+      "createdAt": "2026-03-09T01:49:08Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-09T01:40:32",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "LaserPointer",
       "title": "LaserPointer",
@@ -24,22 +135,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-09T00:42:44",
       "createdAt": "2026-03-09T00:42:48Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-08T01:38:42",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "CableRack",
@@ -111,30 +206,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-05T07:00:28",
       "createdAt": "2026-03-05T04:48:55Z"
-    },
-    {
-      "id": "MusicPlayer",
-      "title": "MusicPlayer",
-      "oneLiner": "A web based player of local mp3s",
-      "categories": [
-        "music",
-        "web",
-        "player"
-      ],
-      "tags": [
-        "music",
-        "web",
-        "player"
-      ],
-      "demoUrl": "https://kylemath.github.io/MusicPlayer",
-      "githubUrl": "https://github.com/kylemath/MusicPlayer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-02T19:28:41",
-      "createdAt": "2026-02-27T07:20:14Z"
     },
     {
       "id": "cursor-launcher",
@@ -251,30 +322,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-19T08:04:30",
       "createdAt": "2026-02-17T04:19:11Z"
-    },
-    {
-      "id": "NumberblockToysPrint",
-      "title": "NumberblockToysPrint",
-      "oneLiner": "Print out numberblock toys and faces",
-      "categories": [
-        "3dprint",
-        "numberblocks",
-        "toys"
-      ],
-      "tags": [
-        "3dprint",
-        "numberblocks",
-        "toys"
-      ],
-      "demoUrl": "https://kylemath.github.io/NumberblockToysPrint",
-      "githubUrl": "https://github.com/kylemath/NumberblockToysPrint",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/NumberblockToysPrint/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-02-18T23:17:23",
-      "createdAt": "2026-02-17T21:53:05Z"
     },
     {
       "id": "microgptJS",

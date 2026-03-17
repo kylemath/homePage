@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-03-16T01:40:34.804334+00:00",
+  "generatedAt": "2026-03-17T01:39:31.423210+00:00",
   "items": [
+    {
+      "id": "FreethrowEEG",
+      "title": "FreethrowEEG",
+      "oneLiner": "Recording EEG during freethrow basketball shooting",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-16T06:08:49",
+      "createdAt": "2025-02-25T19:04:30Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +30,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-03-15T01:39:09",
+      "lastCommit": "2026-03-16T01:41:13",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -40,22 +56,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-12T06:38:05",
       "createdAt": "2026-02-27T07:20:14Z"
-    },
-    {
-      "id": "FreethrowEEG",
-      "title": "FreethrowEEG",
-      "oneLiner": "Recording EEG during freethrow basketball shooting",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
-      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-12T05:43:21",
-      "createdAt": "2025-02-25T19:04:30Z"
     },
     {
       "id": "EEGVideo",

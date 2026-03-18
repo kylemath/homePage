@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-03-17T01:39:31.423210+00:00",
+  "generatedAt": "2026-03-18T01:39:53.409329+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-03-17T01:40:11",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "FreethrowEEG",
       "title": "FreethrowEEG",
@@ -16,22 +32,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-16T06:08:49",
       "createdAt": "2025-02-25T19:04:30Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-16T01:41:13",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "MusicPlayer",

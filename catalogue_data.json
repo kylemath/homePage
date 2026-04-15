@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-04-14T01:39:27.486798+00:00",
+  "generatedAt": "2026-04-15T01:39:44.596180+00:00",
   "items": [
+    {
+      "id": "digitalClock",
+      "title": "digitalClock",
+      "oneLiner": "3d printed digital clock for esphome and homeassistant",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/digitalClock",
+      "githubUrl": "https://github.com/kylemath/digitalClock",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/digitalClock/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-04-14T19:51:05",
+      "createdAt": "2024-11-09T19:18:33Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +30,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-04-13T01:41:10",
+      "lastCommit": "2026-04-14T01:39:57",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -778,22 +794,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-26T20:07:17",
       "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "digitalClock",
-      "title": "digitalClock",
-      "oneLiner": "3d printed digital clock for esphome and homeassistant",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/digitalClock",
-      "githubUrl": "https://github.com/kylemath/digitalClock",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/digitalClock/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-26T19:44:10",
-      "createdAt": "2024-11-09T19:18:33Z"
     },
     {
       "id": "StokesFluidDynamics",

@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-04-24T01:40:41.289798+00:00",
+  "generatedAt": "2026-04-25T01:39:18.011576+00:00",
   "items": [
+    {
+      "id": "BrainGames",
+      "title": "BrainGames",
+      "oneLiner": "Brains for your games",
+      "categories": [
+        "eeg",
+        "web",
+        "games"
+      ],
+      "tags": [
+        "eeg",
+        "web",
+        "games"
+      ],
+      "demoUrl": "https://kylemath.github.io/BrianGames",
+      "githubUrl": "https://github.com/kylemath/BrainGames",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainGames/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-04-24T09:05:53",
+      "createdAt": "2026-04-24T09:00:54Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-04-23T01:40:07",
+      "lastCommit": "2026-04-24T01:41:24",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

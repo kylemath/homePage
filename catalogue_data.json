@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-05-03T01:40:11.945740+00:00",
+  "generatedAt": "2026-05-04T01:42:07.016974+00:00",
   "items": [
+    {
+      "id": "FreethrowEEG",
+      "title": "FreethrowEEG",
+      "oneLiner": "Recording EEG during freethrow basketball shooting",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-03T20:32:40",
+      "createdAt": "2025-02-25T19:04:30Z"
+    },
+    {
+      "id": "MusicPlayer",
+      "title": "MusicPlayer",
+      "oneLiner": "A web based player of local mp3s",
+      "categories": [
+        "music",
+        "web",
+        "player"
+      ],
+      "tags": [
+        "music",
+        "web",
+        "player"
+      ],
+      "demoUrl": "https://kylemath.github.io/MusicPlayer",
+      "githubUrl": "https://github.com/kylemath/MusicPlayer",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-03T20:12:40",
+      "createdAt": "2026-02-27T07:20:14Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +54,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-02T01:40:36",
+      "lastCommit": "2026-05-03T01:40:40",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -56,46 +96,6 @@
       "repoTopics": [],
       "lastCommit": "2026-04-14T19:51:05",
       "createdAt": "2024-11-09T19:18:33Z"
-    },
-    {
-      "id": "FreethrowEEG",
-      "title": "FreethrowEEG",
-      "oneLiner": "Recording EEG during freethrow basketball shooting",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
-      "githubUrl": "https://github.com/kylemath/FreethrowEEG",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-16T06:08:49",
-      "createdAt": "2025-02-25T19:04:30Z"
-    },
-    {
-      "id": "MusicPlayer",
-      "title": "MusicPlayer",
-      "oneLiner": "A web based player of local mp3s",
-      "categories": [
-        "music",
-        "web",
-        "player"
-      ],
-      "tags": [
-        "music",
-        "web",
-        "player"
-      ],
-      "demoUrl": "https://kylemath.github.io/MusicPlayer",
-      "githubUrl": "https://github.com/kylemath/MusicPlayer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MusicPlayer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-12T06:38:05",
-      "createdAt": "2026-02-27T07:20:14Z"
     },
     {
       "id": "EEGVideo",

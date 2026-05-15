@@ -1,6 +1,166 @@
 {
-  "generatedAt": "2026-05-14T01:45:56.846755+00:00",
+  "generatedAt": "2026-05-15T01:43:35.496958+00:00",
   "items": [
+    {
+      "id": "CableRack",
+      "title": "CableRack",
+      "oneLiner": "A rack to plug in loose cable ends with various inserts",
+      "categories": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "tags": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "demoUrl": "https://github.com/kylemath/CableRack",
+      "githubUrl": "https://github.com/kylemath/CableRack",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T23:44:08",
+      "createdAt": "2026-01-24T20:12:02Z"
+    },
+    {
+      "id": "Slides4Class",
+      "title": "Slides4Class",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Slides4Class",
+      "githubUrl": "https://github.com/kylemath/Slides4Class",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T23:38:12",
+      "createdAt": "2026-01-13T08:15:06Z"
+    },
+    {
+      "id": "OpticalNeuralNet",
+      "title": "OpticalNeuralNet",
+      "oneLiner": "Optical based neural network paper review",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/OpticalNeuralNet",
+      "githubUrl": "https://github.com/kylemath/OpticalNeuralNet",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/OpticalNeuralNet/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T23:31:18",
+      "createdAt": "2026-05-14T23:31:23Z"
+    },
+    {
+      "id": "wifi",
+      "title": "Wifi",
+      "oneLiner": "Wifi and network tests",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/wifi",
+      "githubUrl": "https://github.com/kylemath/wifi",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/wifi/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T21:35:33",
+      "createdAt": "2026-05-14T21:28:12Z"
+    },
+    {
+      "id": "Roledex",
+      "title": "Roledex",
+      "oneLiner": "Manage roledex of contacts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Roledex",
+      "githubUrl": "https://github.com/kylemath/Roledex",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Roledex/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T21:23:48",
+      "createdAt": "2026-05-14T21:23:52Z"
+    },
+    {
+      "id": "NavierStokesEnergyLandscape",
+      "title": "NavierStokesEnergyLandscape",
+      "oneLiner": "Investigation into the Navier Stokes problem",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/NavierStokesEnergyLandscape",
+      "githubUrl": "https://github.com/kylemath/NavierStokesEnergyLandscape",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NavierStokesEnergyLandscape/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T21:19:44",
+      "createdAt": "2026-05-14T21:19:54Z"
+    },
+    {
+      "id": "GhostbustersConceptPlay",
+      "title": "GhostbustersConceptPlay",
+      "oneLiner": "A screenplay on the origin of ghostbusters",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/GhostbustersConceptPlay",
+      "githubUrl": "https://github.com/kylemath/GhostbustersConceptPlay",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GhostbustersConceptPlay/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T21:06:57",
+      "createdAt": "2026-05-14T21:07:06Z"
+    },
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColouring",
+      "githubUrl": "https://github.com/kylemath/GraphColour",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T20:59:17",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://brainimation.netlify.app",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T20:37:12",
+      "createdAt": "2025-12-26T20:06:34Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +174,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-13T01:44:21",
+      "lastCommit": "2026-05-14T01:46:38",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -191,30 +351,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-09T00:42:44",
       "createdAt": "2026-03-09T00:42:48Z"
-    },
-    {
-      "id": "CableRack",
-      "title": "CableRack",
-      "oneLiner": "A rack to plug in loose cable ends with various inserts",
-      "categories": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "tags": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "demoUrl": "https://github.com/kylemath/CableRack",
-      "githubUrl": "https://github.com/kylemath/CableRack",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-07T22:57:44",
-      "createdAt": "2026-01-24T20:12:02Z"
     },
     {
       "id": "InterpretCognates",
@@ -492,22 +628,6 @@
       "repoTopics": [],
       "lastCommit": "2026-01-30T20:58:40",
       "createdAt": "2026-01-30T20:57:46Z"
-    },
-    {
-      "id": "Slides4Class",
-      "title": "Slides4Class",
-      "oneLiner": "Make automatic slides and images to accompany text",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/Slides4Class",
-      "githubUrl": "https://github.com/kylemath/Slides4Class",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-28T22:55:14",
-      "createdAt": "2026-01-13T08:15:06Z"
     },
     {
       "id": "StrokeMuseTestAnalysis",
@@ -794,30 +914,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-27T03:25:31",
       "createdAt": "2025-12-27T03:21:51Z"
-    },
-    {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://brainimation.netlify.app",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-26T20:07:17",
-      "createdAt": "2025-12-26T20:06:34Z"
     },
     {
       "id": "StokesFluidDynamics",

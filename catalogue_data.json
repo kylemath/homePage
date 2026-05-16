@@ -1,6 +1,49 @@
 {
-  "generatedAt": "2026-05-15T01:43:35.496958+00:00",
+  "generatedAt": "2026-05-16T01:41:34.593911+00:00",
   "items": [
+    {
+      "id": "nehiyoMTB",
+      "title": "NehiyoMTB Trail Signs",
+      "oneLiner": "Nehiyawewin (Plains Cree) trail signs for Edmonton area mountain bike trails, 3D printed with bilingual syllabics",
+      "categories": [
+        "3dPrinting",
+        "wayfinding",
+        "cree",
+        "trails"
+      ],
+      "tags": [
+        "cree",
+        "3dprinting",
+        "trails",
+        "syllabics",
+        "bilingual"
+      ],
+      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
+      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
+      "status": "published",
+      "kind": "collection",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-15T18:56:14",
+      "createdAt": "2021-10-14T14:30:20Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-15T01:44:09",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "CableRack",
       "title": "CableRack",
@@ -160,22 +203,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-14T20:37:12",
       "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-14T01:46:38",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "FreethrowEEG",
@@ -1012,30 +1039,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-04T21:48:27",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "nehiyoMTB",
-      "title": "NehiyoMTB",
-      "oneLiner": "Nehiyo plains cree trail signs for Edmonton area single track trails, 3D printed",
-      "categories": [
-        "3dPrinting",
-        "wayfinding",
-        "cree"
-      ],
-      "tags": [
-        "cree",
-        "3dprinting",
-        "trails"
-      ],
-      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
-      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-04T21:28:34",
-      "createdAt": "2021-10-14T14:30:20Z"
     },
     {
       "id": "EEGEdu",

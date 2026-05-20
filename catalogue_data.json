@@ -1,21 +1,55 @@
 {
-  "generatedAt": "2026-05-20T01:47:51.502151+00:00",
+  "generatedAt": "2026-05-20T17:22:21.689392+00:00",
   "items": [
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
+      "id": "magicGemWeb",
+      "title": "MagicGemWeb",
+      "oneLiner": "A web catalogue of magicGem demos and apps",
+      "categories": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "tags": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "demoUrl": "https://kylemath.github.io/magicGemWeb/",
+      "githubUrl": "https://github.com/kylemath/magicGemWeb",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
+      "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-19T01:47:38",
-      "createdAt": "2025-06-03T17:54:09Z"
+      "lastCommit": "2026-05-20T17:05:48",
+      "createdAt": "2025-12-28T07:21:38Z"
+    },
+    {
+      "id": "artOfSoccerWar",
+      "title": "ArtOfSoccerWar",
+      "oneLiner": "THE ART OF SOCCER WAR100 CATCH PHRASESFOR YOUTH CLUB COACHES AND PLAYERS",
+      "categories": [
+        "soccer",
+        "strategy",
+        "advice"
+      ],
+      "tags": [
+        "soccer",
+        "strategy",
+        "advice"
+      ],
+      "demoUrl": "https://kylemath.github.io/artOfSoccerWar/",
+      "githubUrl": "https://github.com/kylemath/artOfSoccerWar",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/artOfSoccerWar/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T17:03:35",
+      "createdAt": "2025-06-13T22:04:47Z"
     },
     {
       "id": "nehiyoMTB",
@@ -41,8 +75,24 @@
       "kind": "collection",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-15T18:56:14",
+      "lastCommit": "2026-05-20T03:27:14",
       "createdAt": "2021-10-14T14:30:20Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T01:48:37",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "CableRack",
@@ -705,32 +755,6 @@
       "createdAt": "2025-12-29T04:50:18Z"
     },
     {
-      "id": "magicGemWeb",
-      "title": "MagicGemWeb",
-      "oneLiner": "A web catalogue of magicGem demos and apps",
-      "categories": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "tags": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "demoUrl": "https://magicGemWeb.netlify.app",
-      "githubUrl": "https://github.com/kylemath/magicGemWeb",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-30T02:43:15",
-      "createdAt": "2025-12-28T07:21:38Z"
-    },
-    {
       "id": "NeuroimagingNeurostimulationCourse",
       "title": "Psych403A1 NeuroimagingNeurostim",
       "oneLiner": "Course content and lab web tools for neuroimaging and  neurostimulation upper level psychology course.",
@@ -1084,30 +1108,6 @@
       ],
       "lastCommit": "2025-12-04T20:21:50",
       "createdAt": "2019-11-28T19:14:15Z"
-    },
-    {
-      "id": "artOfSoccerWar",
-      "title": "ArtOfSoccerWar",
-      "oneLiner": "THE ART OF SOCCER WAR100 CATCH PHRASESFOR YOUTH CLUB COACHES AND PLAYERS",
-      "categories": [
-        "soccer",
-        "strategy",
-        "advice"
-      ],
-      "tags": [
-        "soccer",
-        "strategy",
-        "advice"
-      ],
-      "demoUrl": "https://artofsoccerwar.netlify.app",
-      "githubUrl": "https://github.com/kylemath/artOfSoccerWar",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/artOfSoccerWar/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-04T18:12:24",
-      "createdAt": "2025-06-13T22:04:47Z"
     },
     {
       "id": "ModernWebDesign",

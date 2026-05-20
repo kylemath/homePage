@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-05-20T21:05:14.031793+00:00",
+  "generatedAt": "2026-05-20T21:09:51.546655+00:00",
   "items": [
+    {
+      "id": "devineFracture",
+      "title": "devineFracture",
+      "oneLiner": "A study into connections between mystical taditions",
+      "categories": [
+        "religion",
+        "mystic",
+        "essay"
+      ],
+      "tags": [
+        "essay",
+        "book",
+        "religion"
+      ],
+      "demoUrl": "https://kylemath.github.io/gnosisHermesKabal",
+      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/gnosisHermesKabal/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T21:05:53",
+      "createdAt": "2025-10-19T06:05:32Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-20T21:03:51",
+      "lastCommit": "2026-05-20T21:05:52",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -115,30 +139,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-20T19:50:17",
       "createdAt": "2025-08-27T06:47:45Z"
-    },
-    {
-      "id": "devineFracture",
-      "title": "devineFracture",
-      "oneLiner": "A study into connecitons between mystical t",
-      "categories": [
-        "religion",
-        "mystic",
-        "essay"
-      ],
-      "tags": [
-        "essay",
-        "book",
-        "religion"
-      ],
-      "demoUrl": "https://kylemath.github.io/devineFracture",
-      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/devineFracture/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T18:30:18",
-      "createdAt": "2025-10-19T06:05:32Z"
     },
     {
       "id": "magicGemWeb",

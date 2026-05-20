@@ -1,6 +1,145 @@
 {
-  "generatedAt": "2026-05-20T17:22:21.689392+00:00",
+  "generatedAt": "2026-05-20T20:10:13.012939+00:00",
   "items": [
+    {
+      "id": "fungio-manifesto-site",
+      "title": "Fungio Manifesto Site",
+      "oneLiner": "A complete manifesto on Life's hidden partnerships",
+      "categories": [
+        "writing",
+        "symbiosis",
+        "biology"
+      ],
+      "tags": [
+        "writing",
+        "symbiosis",
+        "biology"
+      ],
+      "demoUrl": "https://kylemath.github.io/fungio-manifesto-site/",
+      "githubUrl": "https://github.com/kylemath/fungio-manifesto-site",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/fungio-manifesto-site/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T20:06:13",
+      "createdAt": "2025-08-27T06:49:23Z"
+    },
+    {
+      "id": "nehiyoMTB",
+      "title": "NehiyoMTB Trail Signs",
+      "oneLiner": "Nehiyawewin (Plains Cree) trail signs for Edmonton area mountain bike trails, 3D printed with bilingual syllabics",
+      "categories": [
+        "3dPrinting",
+        "wayfinding",
+        "cree",
+        "trails"
+      ],
+      "tags": [
+        "cree",
+        "3dprinting",
+        "trails",
+        "syllabics",
+        "bilingual"
+      ],
+      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
+      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
+      "status": "published",
+      "kind": "collection",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T20:03:06",
+      "createdAt": "2021-10-14T14:30:20Z"
+    },
+    {
+      "id": "CodexMycelius",
+      "title": "Codex Mycelius",
+      "oneLiner": "Sacred text of the fungal network",
+      "categories": [
+        "fungal",
+        "network",
+        "sacred"
+      ],
+      "tags": [
+        "fungal",
+        "network",
+        "sacred"
+      ],
+      "demoUrl": "https://kylemath.github.io/codex-mycelius-site",
+      "githubUrl": "https://github.com/kylemath/codex-mycelius-site",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/codex-mycelius-site/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T19:50:17",
+      "createdAt": "2025-08-27T06:47:45Z"
+    },
+    {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://kylemath.github.io/brainimation",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T18:34:46",
+      "createdAt": "2025-12-26T20:06:34Z"
+    },
+    {
+      "id": "devineFracture",
+      "title": "devineFracture",
+      "oneLiner": "A study into connecitons between mystical t",
+      "categories": [
+        "religion",
+        "mystic",
+        "essay"
+      ],
+      "tags": [
+        "essay",
+        "book",
+        "religion"
+      ],
+      "demoUrl": "https://kylemath.github.io/devineFracture",
+      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/devineFracture/main/screenshot.png",
+      "status": "published",
+      "kind": "longform",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T18:30:18",
+      "createdAt": "2025-10-19T06:05:32Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-20T17:26:03",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "magicGemWeb",
       "title": "MagicGemWeb",
@@ -50,49 +189,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-20T17:03:35",
       "createdAt": "2025-06-13T22:04:47Z"
-    },
-    {
-      "id": "nehiyoMTB",
-      "title": "NehiyoMTB Trail Signs",
-      "oneLiner": "Nehiyawewin (Plains Cree) trail signs for Edmonton area mountain bike trails, 3D printed with bilingual syllabics",
-      "categories": [
-        "3dPrinting",
-        "wayfinding",
-        "cree",
-        "trails"
-      ],
-      "tags": [
-        "cree",
-        "3dprinting",
-        "trails",
-        "syllabics",
-        "bilingual"
-      ],
-      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
-      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
-      "status": "published",
-      "kind": "collection",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T03:27:14",
-      "createdAt": "2021-10-14T14:30:20Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T01:48:37",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "CableRack",
@@ -229,30 +325,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-14T20:59:17",
       "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://brainimation.netlify.app",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-14T20:37:12",
-      "createdAt": "2025-12-26T20:06:34Z"
     },
     {
       "id": "FreethrowEEG",
@@ -2248,54 +2320,6 @@
       "repoTopics": [],
       "lastCommit": "2025-11-14T21:57:10",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "fungio-manifesto-site",
-      "title": "Fungio Manifesto Site",
-      "oneLiner": "A complete manifesto on Life's hidden partnerships",
-      "categories": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "tags": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "demoUrl": "https://fungioergosum.com/",
-      "githubUrl": "",
-      "screenshot": "https://fungioergosum.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": null
-    },
-    {
-      "id": "devineFracture",
-      "title": "devineFracture",
-      "oneLiner": "A study into connecitons between mystical t",
-      "categories": [
-        "religion",
-        "mystic",
-        "essay"
-      ],
-      "tags": [
-        "essay",
-        "book",
-        "religion"
-      ],
-      "demoUrl": "https://devinefracture.netlify.app",
-      "githubUrl": "",
-      "screenshot": "https://devinefracture.netlify.app/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": null
     }
   ]
 }

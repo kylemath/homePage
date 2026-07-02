@@ -93,54 +93,6 @@
       "createdAt": "2021-10-14T14:30:20Z"
     },
     {
-      "id": "KyleName",
-      "title": "KyleName",
-      "oneLiner": "An analysis of the name kyle and possible hebrew names for kyles",
-      "categories": [
-        "naming",
-        "writing",
-        "hebrew"
-      ],
-      "tags": [
-        "naming",
-        "writing",
-        "hebrew"
-      ],
-      "demoUrl": "https://kylemath.github.io/metzar",
-      "githubUrl": "https://github.com/kylemath/metzar",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/metzar/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-21T18:45:51",
-      "createdAt": "2026-05-21T18:04:02Z"
-    },
-    {
-      "id": "devineFracture",
-      "title": "devineFracture",
-      "oneLiner": "A study into connections between mystical taditions",
-      "categories": [
-        "religion",
-        "mystic",
-        "essay"
-      ],
-      "tags": [
-        "essay",
-        "book",
-        "religion"
-      ],
-      "demoUrl": "https://kylemath.github.io/gnosisHermesKabal",
-      "githubUrl": "https://github.com/kylemath/gnosisHermesKabal",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/gnosisHermesKabal/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T21:05:53",
-      "createdAt": "2025-10-19T06:05:32Z"
-    },
-    {
       "id": "Brainimation",
       "title": "Brainimation",
       "oneLiner": "Live code editor hooked to brainwaves",
@@ -163,54 +115,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-20T21:02:34",
       "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "fungio-manifesto-site",
-      "title": "Fungio Manifesto Site",
-      "oneLiner": "A complete manifesto on Life's hidden partnerships",
-      "categories": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "tags": [
-        "writing",
-        "symbiosis",
-        "biology"
-      ],
-      "demoUrl": "https://kylemath.github.io/fungio-manifesto-site/",
-      "githubUrl": "https://github.com/kylemath/fungio-manifesto-site",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/fungio-manifesto-site/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T20:06:13",
-      "createdAt": "2025-08-27T06:49:23Z"
-    },
-    {
-      "id": "CodexMycelius",
-      "title": "Codex Mycelius",
-      "oneLiner": "Sacred text of the fungal network",
-      "categories": [
-        "fungal",
-        "network",
-        "sacred"
-      ],
-      "tags": [
-        "fungal",
-        "network",
-        "sacred"
-      ],
-      "demoUrl": "https://kylemath.github.io/codex-mycelius-site",
-      "githubUrl": "https://github.com/kylemath/codex-mycelius-site",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/codex-mycelius-site/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T19:50:17",
-      "createdAt": "2025-08-27T06:47:45Z"
     },
     {
       "id": "magicGemWeb",

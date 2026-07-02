@@ -1,10 +1,26 @@
 {
-  "generatedAt": "2026-07-01T01:52:39.399306+00:00",
+  "generatedAt": "2026-07-02T00:11:26.806097+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-07-02T00:09:58",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "pdfTiles",
       "title": "PdfTiles",
-      "oneLiner": "tile pdfs & build weekly Shabbat flyers, all on-device",
+      "oneLiner": "tile a pdf for flyers",
       "categories": [
         "pdf",
         "print",
@@ -22,24 +38,8 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-06-30T20:11:27",
+      "lastCommit": "2026-07-01T17:55:11",
       "createdAt": "2026-06-11T04:46:13Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-06-30T01:47:50",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "cursor-launcher",
@@ -64,33 +64,6 @@
       "repoTopics": [],
       "lastCommit": "2026-06-15T16:34:09",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "nehiyoMTB",
-      "title": "NehiyoMTB Trail Signs",
-      "oneLiner": "Nehiyawewin (Plains Cree) trail signs for Edmonton area mountain bike trails, 3D printed with bilingual syllabics",
-      "categories": [
-        "3dPrinting",
-        "wayfinding",
-        "cree",
-        "trails"
-      ],
-      "tags": [
-        "cree",
-        "3dprinting",
-        "trails",
-        "syllabics",
-        "bilingual"
-      ],
-      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
-      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
-      "status": "published",
-      "kind": "collection",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-25T08:09:03",
-      "createdAt": "2021-10-14T14:30:20Z"
     },
     {
       "id": "Brainimation",
@@ -851,30 +824,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-28T22:10:38",
       "createdAt": "2025-12-28T00:42:38Z"
-    },
-    {
-      "id": "callingCenter",
-      "title": "CallingCenter",
-      "oneLiner": "A webpage to call individuals on a calling list one by one automatically",
-      "categories": [
-        "webpage",
-        "calling",
-        "election"
-      ],
-      "tags": [
-        "webpage",
-        "calling",
-        "election"
-      ],
-      "demoUrl": "http://kylemath.github.io/callingCenter",
-      "githubUrl": "https://github.com/kylemath/callingCenter",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/callingCenter/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-27T22:37:15",
-      "createdAt": "2025-12-27T22:37:09Z"
     },
     {
       "id": "soccerSimV2Physics",
@@ -2256,6 +2205,57 @@
       "repoTopics": [],
       "lastCommit": null,
       "createdAt": "2025-11-14T08:21:42Z"
+    },
+    {
+      "id": "nehiyoMTB",
+      "title": "NehiyoMTB Trail Signs",
+      "oneLiner": "Nehiyawewin (Plains Cree) trail signs for Edmonton area mountain bike trails, 3D printed with bilingual syllabics",
+      "categories": [
+        "3dPrinting",
+        "wayfinding",
+        "cree",
+        "trails"
+      ],
+      "tags": [
+        "cree",
+        "3dprinting",
+        "trails",
+        "syllabics",
+        "bilingual"
+      ],
+      "demoUrl": "https://kylemath.github.io/nehiyoMTB",
+      "githubUrl": "https://github.com/kylemath/nehiyoMTB",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/nehiyoMTB/main/screenshot.png",
+      "status": "published",
+      "kind": "collection",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-25T08:09:03",
+      "createdAt": "2021-10-14T14:30:20Z"
+    },
+    {
+      "id": "callingCenter",
+      "title": "CallingCenter",
+      "oneLiner": "A webpage to call individuals on a calling list one by one automatically",
+      "categories": [
+        "webpage",
+        "calling",
+        "election"
+      ],
+      "tags": [
+        "webpage",
+        "calling",
+        "election"
+      ],
+      "demoUrl": "http://kylemath.github.io/callingCenter",
+      "githubUrl": "https://github.com/kylemath/callingCenter",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/callingCenter/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-12-27T22:37:15",
+      "createdAt": "2025-12-27T22:37:09Z"
     },
     {
       "id": "flir",

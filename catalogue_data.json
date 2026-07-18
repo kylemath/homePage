@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-07-17T04:09:07.447163+00:00",
+  "generatedAt": "2026-07-18T03:57:15.281502+00:00",
   "items": [
+    {
+      "id": "cantillate",
+      "title": "Cantillate",
+      "oneLiner": "Cantillation practice for torah reading",
+      "categories": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "tags": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "demoUrl": "https://kylemath.github.io/cantillate/",
+      "githubUrl": "https://github.com/kylemath/cantillate",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-07-17T19:42:53",
+      "createdAt": "2026-07-17T19:02:01Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-07-16T04:12:06",
+      "lastCommit": "2026-07-17T04:09:42",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

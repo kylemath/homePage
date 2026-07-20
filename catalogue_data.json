@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T04:22:55.543745+00:00",
+  "generatedAt": "2026-07-20T04:37:43.231016+00:00",
   "items": [
     {
       "id": "cantillate",
@@ -22,8 +22,32 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-07-18T07:13:16",
+      "lastCommit": "2026-07-20T03:49:08",
       "createdAt": "2026-07-17T19:02:01Z"
+    },
+    {
+      "id": "sunMoon",
+      "title": "SunMoon",
+      "oneLiner": "3d Galaxy to scale",
+      "categories": [
+        "simulation",
+        "galaxy",
+        "threejs"
+      ],
+      "tags": [
+        "simulation",
+        "galaxy",
+        "threejs"
+      ],
+      "demoUrl": "https://kylemath.github.io/sunMoon",
+      "githubUrl": "https://github.com/kylemath/sunMoon",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/sunMoon/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-07-19T18:32:13",
+      "createdAt": "2026-07-19T18:32:21Z"
     },
     {
       "id": "homePage",
@@ -38,7 +62,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-07-18T03:58:01",
+      "lastCommit": "2026-07-19T04:23:36",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

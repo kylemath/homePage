@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T04:37:43.231016+00:00",
+  "generatedAt": "2026-07-21T04:17:01.924966+00:00",
   "items": [
     {
       "id": "cantillate",
@@ -22,8 +22,48 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-07-20T03:49:08",
+      "lastCommit": "2026-07-20T21:16:44",
       "createdAt": "2026-07-17T19:02:01Z"
+    },
+    {
+      "id": "diagramRevamp",
+      "title": "DiagramRevamp",
+      "oneLiner": "revamp an old diagram screen shot in bulk or single",
+      "categories": [
+        "image",
+        "generative",
+        "film"
+      ],
+      "tags": [
+        "image",
+        "generative",
+        "film"
+      ],
+      "demoUrl": "https://kylemath.github.io/diagramRevamp",
+      "githubUrl": "https://github.com/kylemath/diagramRevamp",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/diagramRevamp/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-07-20T19:31:49",
+      "createdAt": "2026-07-20T19:31:42Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-07-20T04:38:26",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "sunMoon",
@@ -48,22 +88,6 @@
       "repoTopics": [],
       "lastCommit": "2026-07-19T18:32:13",
       "createdAt": "2026-07-19T18:32:21Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-07-19T04:23:36",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "pdfTiles",

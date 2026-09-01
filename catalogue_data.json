@@ -1,6 +1,78 @@
 {
-  "generatedAt": "2026-08-31T06:48:07.637979+00:00",
+  "generatedAt": "2026-09-01T06:07:25.718216+00:00",
   "items": [
+    {
+      "id": "psych275-textbook",
+      "title": "psych275-textbook",
+      "oneLiner": "PSYCH 275 textbook: Brains, Minds, and Machines",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/psych275-textbook/",
+      "githubUrl": "https://github.com/kylemath/psych275-textbook",
+      "screenshot": "https://kylemath.github.io/psych275-textbook/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-08-31T21:18:07",
+      "createdAt": "2026-08-31T20:33:58Z"
+    },
+    {
+      "id": "neuroAnimation",
+      "title": "neuroAnimation",
+      "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/neuroAnimation/",
+      "githubUrl": "https://github.com/kylemath/neuroAnimation",
+      "screenshot": "https://kylemath.github.io/neuroAnimation/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-08-31T21:18:02",
+      "createdAt": "2026-08-31T21:18:02Z"
+    },
+    {
+      "id": "cursor-launcher",
+      "title": "Cursor Launcher",
+      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
+      "categories": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "tags": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "demoUrl": "https://github.com/kylemath/cursor-launcher",
+      "githubUrl": "https://github.com/kylemath/cursor-launcher",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-08-31T18:49:12",
+      "createdAt": "2026-02-04T23:08:58Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-08-31T06:48:48",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "MusicPlayer",
       "title": "MusicPlayer",
@@ -98,30 +170,6 @@
       "createdAt": "2025-11-17T01:37:00Z"
     },
     {
-      "id": "cursor-launcher",
-      "title": "Cursor Launcher",
-      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
-      "categories": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "tags": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "demoUrl": "https://github.com/kylemath/cursor-launcher",
-      "githubUrl": "https://github.com/kylemath/cursor-launcher",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-31T03:14:36",
-      "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
       "id": "hadwigerNelson",
       "title": "HadwigerNelson",
       "oneLiner": "Test of HadwigerNelson",
@@ -144,22 +192,6 @@
       "repoTopics": [],
       "lastCommit": "2026-08-31T02:15:10",
       "createdAt": "2026-08-31T02:14:43Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-30T06:20:20",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "cantillate",

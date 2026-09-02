@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-09-01T06:07:25.718216+00:00",
+  "generatedAt": "2026-09-02T05:32:25.573508+00:00",
   "items": [
+    {
+      "id": "Psych302-305-KyleMathewson",
+      "title": "Psych302-305-KyleMathewson",
+      "oneLiner": "Test",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Psych302-305-KyleMathewson/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-02T05:27:31",
+      "createdAt": "2026-09-01T22:38:56Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-01T06:08:12",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "psych275-textbook",
       "title": "psych275-textbook",
@@ -56,22 +88,6 @@
       "repoTopics": [],
       "lastCommit": "2026-08-31T18:49:12",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-31T06:48:48",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "MusicPlayer",

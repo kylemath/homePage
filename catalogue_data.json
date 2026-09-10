@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-09-09T05:48:38.953355+00:00",
+  "generatedAt": "2026-09-10T05:42:33.939283+00:00",
   "items": [
+    {
+      "id": "Psych302-305-KyleMathewson",
+      "title": "Psych302-305-KyleMathewson",
+      "oneLiner": "Test",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
+      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "screenshot": "https://kylemath.github.io/Psych302-305-KyleMathewson/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-09T23:16:00",
+      "createdAt": "2026-09-01T22:38:56Z"
+    },
+    {
+      "id": "cantillate",
+      "title": "Cantillate",
+      "oneLiner": "Cantillation practice for torah reading",
+      "categories": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "tags": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "demoUrl": "https://kylemath.github.io/cantillate/",
+      "githubUrl": "https://github.com/kylemath/cantillate",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-09T22:39:35",
+      "createdAt": "2026-07-17T19:02:01Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +54,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-09-08T05:43:51",
+      "lastCommit": "2026-09-09T05:49:22",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -120,22 +160,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-05T02:20:21",
       "createdAt": "2026-09-05T02:20:14Z"
-    },
-    {
-      "id": "Psych302-305-KyleMathewson",
-      "title": "Psych302-305-KyleMathewson",
-      "oneLiner": "Test",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
-      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
-      "screenshot": "https://kylemath.github.io/Psych302-305-KyleMathewson/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-03T19:20:58",
-      "createdAt": "2026-09-01T22:38:56Z"
     },
     {
       "id": "p5.eegedu",
@@ -304,30 +328,6 @@
       "repoTopics": [],
       "lastCommit": "2026-08-31T02:15:10",
       "createdAt": "2026-08-31T02:14:43Z"
-    },
-    {
-      "id": "cantillate",
-      "title": "Cantillate",
-      "oneLiner": "Cantillation practice for torah reading",
-      "categories": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "tags": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "demoUrl": "https://kylemath.github.io/cantillate/",
-      "githubUrl": "https://github.com/kylemath/cantillate",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-14T06:55:38",
-      "createdAt": "2026-07-17T19:02:01Z"
     },
     {
       "id": "BouncyBalls",

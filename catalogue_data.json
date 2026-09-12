@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-09-11T05:41:56.687862+00:00",
+  "generatedAt": "2026-09-12T05:29:58.120313+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-11T05:42:31",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "Psych302-305-KyleMathewson",
       "title": "Psych302-305-KyleMathewson",
@@ -16,22 +32,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-10T06:40:20",
       "createdAt": "2026-09-01T22:38:56Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-10T05:43:20",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "cantillate",

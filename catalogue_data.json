@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-09-17T05:53:13.142160+00:00",
+  "generatedAt": "2026-09-18T05:38:43.321650+00:00",
   "items": [
+    {
+      "id": "RobotInvites",
+      "title": "RobotInvites",
+      "oneLiner": "How do we invite these robots to a party?",
+      "categories": [
+        "robots",
+        "ai",
+        "coding"
+      ],
+      "tags": [
+        "robots",
+        "ai",
+        "coding"
+      ],
+      "demoUrl": "https://kylemath.github.io/RobotInvites",
+      "githubUrl": "https://github.com/kylemath/RobotInvites",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/RobotInvites/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-17T06:03:23",
+      "createdAt": "2026-09-17T05:55:23Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-17T05:53:50",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "cursor-launcher",
       "title": "Cursor Launcher",
@@ -24,22 +64,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-16T16:10:32",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-16T05:45:10",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "Psych302-305-KyleMathewson",

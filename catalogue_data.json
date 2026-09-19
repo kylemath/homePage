@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-09-18T05:38:43.321650+00:00",
+  "generatedAt": "2026-09-19T05:34:51.397621+00:00",
   "items": [
+    {
+      "id": "cantillate",
+      "title": "Cantillate",
+      "oneLiner": "Cantillation practice for torah reading",
+      "categories": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "tags": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "demoUrl": "https://kylemath.github.io/cantillate/",
+      "githubUrl": "https://github.com/kylemath/cantillate",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-18T21:13:42",
+      "createdAt": "2026-07-17T19:02:01Z"
+    },
+    {
+      "id": "Psych302-305-KyleMathewson",
+      "title": "Psych302-305-KyleMathewson",
+      "oneLiner": "Test",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
+      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "screenshot": "https://kylemath.github.io/Psych302-305-KyleMathewson/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-18T20:19:32",
+      "createdAt": "2026-09-01T22:38:56Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-18T05:39:32",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "RobotInvites",
       "title": "RobotInvites",
@@ -26,22 +82,6 @@
       "createdAt": "2026-09-17T05:55:23Z"
     },
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-17T05:53:50",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
       "id": "cursor-launcher",
       "title": "Cursor Launcher",
       "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
@@ -64,46 +104,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-16T16:10:32",
       "createdAt": "2026-02-04T23:08:58Z"
-    },
-    {
-      "id": "Psych302-305-KyleMathewson",
-      "title": "Psych302-305-KyleMathewson",
-      "oneLiner": "Test",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
-      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
-      "screenshot": "https://kylemath.github.io/Psych302-305-KyleMathewson/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-15T21:49:06",
-      "createdAt": "2026-09-01T22:38:56Z"
-    },
-    {
-      "id": "cantillate",
-      "title": "Cantillate",
-      "oneLiner": "Cantillation practice for torah reading",
-      "categories": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "tags": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "demoUrl": "https://kylemath.github.io/cantillate/",
-      "githubUrl": "https://github.com/kylemath/cantillate",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-15T07:06:50",
-      "createdAt": "2026-07-17T19:02:01Z"
     },
     {
       "id": "MidiHotkey",

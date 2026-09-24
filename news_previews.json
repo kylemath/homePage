@@ -1,0 +1,152 @@
+[
+  {
+    "id": "news-inside-the-mind-of-the-machine",
+    "image": "images/news/news-inside-the-mind-of-the-machine.jpg",
+    "source": "https://www.ualberta.ca/en/folio/media-library/2023/10/231002-ai-psychology-teaser-16x9-1600px.jpg",
+    "ok": true,
+    "blurb": "Research exploring both sides of the close relationship between artificial intelligence and psychology — tapping our understanding of psychology to improve AI as well as interrogating the technology’s ethical, social and cultural implications — is expanding rapidly at the University of Alberta."
+  },
+  {
+    "id": "news-check-your-head",
+    "image": "images/news/news-check-your-head.jpg",
+    "source": "https://edifyedmonton.com/wp-content/uploads/KyleMathewson_FuzzyBackgroundHeadShot_KyleWearingCapWithLotsOfCordsInFront-2-1080x710.jpg",
+    "ok": true,
+    "blurb": "Enter the U of A lab that’s unlocking the brain’s potential"
+  },
+  {
+    "id": "news-metabolic-fingerprint-predicts-impairment-from-m",
+    "image": "images/news/news-metabolic-fingerprint-predicts-impairment-from-m.jpg",
+    "source": "https://www.ualberta.ca/en/folio/media-library/2022/04/220420-medical-cannabis-jason-dyck-teaser-16x9-1600px.jpg",
+    "ok": true,
+    "blurb": "Researchers have uncovered a “fingerprint” in the blood of animals that experience cognitive dysfunction from taking medical cannabis — a discovery that could help scientists develop better roadside impairment tests and discover supplements or strains of cannabis that maintain cognitive function while improving pain management."
+  },
+  {
+    "id": "news-how-many-circles-do-you-see-here",
+    "image": "images/news/news-how-many-circles-do-you-see-here.jpg",
+    "source": "https://hips.hearstapps.com/hmg-prod/images/coffer-1594084798.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+    "ok": true,
+    "blurb": "Here’s why this image is driving everyone mad—and what your answer says about you."
+  },
+  {
+    "id": "news-these-headsets-are-changing-the-way-u-of-a-neuro",
+    "image": "images/news/news-these-headsets-are-changing-the-way-u-of-a-neuro.jpg",
+    "source": "https://www.ctvnews.ca/resizer/v2/WUMDXFLJG7JKZAH7PFOWNCIVXI.png?smart=true&auth=3f34d85c5b4e59fa7350026b394f6f32c76a87d25abb42263112e12ba5775794&width=1200&height=630",
+    "ok": true,
+    "blurb": "Undergraduate psychology students at the University of Alberta are learning about neuroscience in a whole new way thanks to a donation of 50 EEG headsets."
+  },
+  {
+    "id": "news-a-new-frame-of-mind-eeg-headsets-transform-learn",
+    "image": "images/news/news-a-new-frame-of-mind-eeg-headsets-transform-learn.jpg",
+    "source": "https://www.ualberta.ca/en/science/media-library/news/2020/september/eeg-headsets.jpg",
+    "ok": true
+  },
+  {
+    "id": "news-this-ancient-optical-illusion-is-a-14-000-year-o",
+    "image": "images/news/news-this-ancient-optical-illusion-is-a-14-000-year-o.jpg",
+    "source": "https://www.popsci.com/wp-content/uploads/2020/03/23/E326WZNKFJBX7IKFZ4VC2MU5XQ.jpg?quality=85&w=1200",
+    "ok": true,
+    "blurb": "Just like the classic rabbit-duck illusion, it depends where you look first on the hunting tool, which was dug in the mountains of Southern France."
+  },
+  {
+    "id": "news-make-some-noise-how-background-noise-affects-bra",
+    "image": "images/news/news-make-some-noise-how-background-noise-affects-bra.jpg",
+    "source": "page: https://www.ualberta.ca/en/science/media-library/news/2019/september/brain-activity-background-noise.jpg",
+    "ok": true,
+    "blurb": "University of Alberta scientists take neuroscience outside the lab, investigating how different sorts of background noise affect our focus."
+  },
+  {
+    "id": "news-is-this-a-rabbit-or-raven",
+    "image": "images/news/news-is-this-a-rabbit-or-raven.jpg",
+    "source": "https://hips.hearstapps.com/hmg-prod/images/raven-rabbit-1566332843.jpg?crop=1.00xw:0.991xh;0.00160xw,0.00314xh&resize=1200:*",
+    "ok": true,
+    "blurb": "We asked experts to weigh in. Even they aren’t sure."
+  },
+  {
+    "id": "news-driving-the-future-new-chair-of-the-department-o",
+    "image": "images/news/news-driving-the-future-new-chair-of-the-department-o.jpg",
+    "source": "page: https://www.ualberta.ca/en/science/media-library/news/2019/august/anthony-singhal.jpg",
+    "ok": true,
+    "blurb": "Meet Anthony Singhal, the incoming Chair of the Department of Psychology at the University of Alberta."
+  },
+  {
+    "id": "news-driving-your-phone-is-a-distraction-even-if-you",
+    "image": null,
+    "source": null,
+    "ok": false,
+    "error": "URL redirected to the ABC News politics homepage, not the article"
+  },
+  {
+    "id": "news-next-up-in-neuroscience",
+    "image": "images/news/news-next-up-in-neuroscience.jpg",
+    "source": "page: https://www.ualberta.ca/en/science/media-library/contours/18-spring-contours/next-up-neuroscience-1100px.jpg",
+    "ok": true,
+    "blurb": "Read about Kyle Matthewson's research that investigates how our brain works indoors vs outdoors and while multitasking."
+  },
+  {
+    "id": "news-duck-duck-rabbit-how-we-see-what-we-see",
+    "image": "images/news/news-duck-duck-rabbit-how-we-see-what-we-see.jpg",
+    "source": "page: https://www.ualberta.ca/en/science/media-library/news/2018/feb/duck-duck-rabbit.jpg",
+    "ok": true,
+    "blurb": "Research on optical illusions shows that a short cue--like 'duck eats rabbit'--can give our brain the context it needs to distinguish between two identical images."
+  },
+  {
+    "id": "news-being-outdoors-may-change-the-way-your-brain-wor",
+    "image": "images/news/news-being-outdoors-may-change-the-way-your-brain-wor.jpg",
+    "source": "https://static.time.com/v3/assets/bltea6093859af6183b/blte64df89cc06c8826/6988fa57929faddee2bef70d/bike-riding-bicycle.jpg?branch=production&width=3825&quality=75&auto=webp&crop=16:9",
+    "ok": true,
+    "blurb": "Going outside may make your brain work differently, according to a new study from the University of Alberta in Canada."
+  },
+  {
+    "id": "news-this-is-your-brain-this-is-your-brain-outdoors",
+    "image": null,
+    "source": null,
+    "ok": false,
+    "error": "page has no article image (only a grey placeholder)"
+  },
+  {
+    "id": "news-new-equipment-maps-brain-activity-and-blood-flow",
+    "image": "images/news/news-new-equipment-maps-brain-activity-and-blood-flow.jpg",
+    "source": "page: https://www.ualberta.ca/en/science/media-library/news/2017/aug23---imagent-kyle-mathewson-main.jpg",
+    "ok": true,
+    "blurb": "Read about Neuroscientist Kyle Mathewson and his work with the new optical brain-imaging tool, Imagent, to study how the human brain focuses on and filters out information and the state of a person's attention from moment to moment."
+  },
+  {
+    "id": "news-the-factors-of-focus",
+    "image": "images/news/news-the-factors-of-focus.jpg",
+    "source": "page: https://www.ualberta.ca/en/newtrail/media-library/issues/2017-spring/bear-country/bc-brain-1200.jpg",
+    "ok": true
+  },
+  {
+    "id": "news-episode-6-my-phone",
+    "image": null,
+    "source": null,
+    "ok": false,
+    "error": "HTTP 404"
+  },
+  {
+    "id": "news-health-check-driving-distraction",
+    "image": "images/news/news-health-check-driving-distraction.jpg",
+    "source": "https://ichef.bbci.co.uk/images/ic/1200x675/p02cv2t2.jpg",
+    "ok": true,
+    "blurb": "Researchers have demonstrated many times that using hands-free phones is much more distracting for drivers than talking to a passenger sitting beside them."
+  },
+  {
+    "id": "news-study-talking-while-driving-safest-with-someone",
+    "image": "images/news/news-study-talking-while-driving-safest-with-someone.jpg",
+    "source": "page: https://media.news.illinois.edu/wp-content/uploads/2024/12/19141645/38844.jpg",
+    "ok": true
+  },
+  {
+    "id": "news-video-controlling-brain-waves-to-improve-vision",
+    "image": "images/news/news-video-controlling-brain-waves-to-improve-vision.jpg",
+    "source": "page: https://beckman.illinois.edu/images/default-source/news/mathewson-brainimage3.jpge20e9e9f-5204-471c-ad60-d5cbbbea8423.jpg?sfvrsn=416811fe_4",
+    "ok": true,
+    "blurb": "Researchers at the Beckman Institute are using a novel technique to test brain waves to see how the brain processes external stimuli that do and don’t reach our awareness."
+  },
+  {
+    "id": "news-fellows-corner-kyle-mathewson",
+    "image": "images/news/news-fellows-corner-kyle-mathewson.jpg",
+    "source": "https://beckman.illinois.edu/images/default-source/news/mathewsonforweb.jpg9c863bf4-e697-4005-8c0f-c663df721064.jpg",
+    "ok": true
+  }
+]

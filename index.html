@@ -1,1852 +1,730 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kyle Elliott Mathewson - Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    (function(){try{var h=location.hostname;if(!h||h==="localhost"||h==="127.0.0.1"||h==="::1"||h==="[::1]"||h.endsWith(".local"))document.documentElement.setAttribute("data-local","1")}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="theme.css">
+    <title>Kyle Elliott Mathewson</title>
+    <meta name="description" content="Kyle Mathewson — psychology, portable brain sensing, teaching, papers, and projects.">
     <style>
-        body { 
-            font-family: Times, serif; 
-            margin: 0; 
-            background: white; 
-            color: black;
-            overflow-x: hidden;
+        :root {
+            --bg:#0a0a0b;
+            --bg-grad: radial-gradient(1100px 560px at 72% -12%, #16161b 0%, #0a0a0b 62%);
+            --surface:#151518; --surface-2:#1c1c20; --surface-3:#26262c;
+            --border:#2a2a31; --border-strong:#3b3b44;
+            --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87;
+            --accent:#6ea8fe; --radius:12px;
+            --shadow:0 10px 32px rgba(0,0,0,.5);
+            --card-w: 210px; --shot-h: 124px;
         }
-        h1 { font-size: 24px; }
-        h2 { font-size: 18px; }
-        h3 { font-size: 16px; }
-        a { color: blue; }
-        a:visited { color: purple; }
-        ul { line-height: 1.4; }
-        .headshot {
-            float: right;
-            max-width: 220px;
-            border-radius: 5px;
-            margin: 0 0 20px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .catalogue-preview {
-            margin-top: 36px;
-            padding: 0;
-            background: transparent;
-            border: none;
-            border-radius: 0;
-        }
-        .catalogue-preview h3 {
-            padding: 0 0 8px;
+        * { box-sizing: border-box; }
+        body {
             margin: 0;
-            color: #111;
-            font-size: 18px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); background-image: var(--bg-grad); background-attachment: fixed;
+            color: var(--text); -webkit-font-smoothing: antialiased;
         }
-        .catalogue-preview p {
-            padding: 0 0 16px;
-            margin: 0;
-            color: #555;
-            font-size: 14px;
+        a { color: var(--accent); }
+        .wrap { max-width: 1640px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 48px) 64px; }
+        .identity { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 18px; }
+        .identity img { width: 92px; height: 92px; object-fit: cover; border-radius: 14px; flex-shrink: 0; display: block; }
+        a.home { color: inherit; text-decoration: none; cursor: pointer; }
+        a.home:hover { opacity: 0.82; }
+        h1 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 4px; }
+        .role { color: var(--text-dim); margin: 0 0 8px; font-size: 14px; }
+        .about { margin: 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
+        .meta { margin-top: 8px; color: var(--text-faint); font-size: 13px; }
+        .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 18px 0 12px; }
+        .search { flex: 1; min-width: 220px; }
+        .search input, .sort select {
+            width: 100%; background: var(--surface); color: var(--text);
+            border: 1px solid var(--border); border-radius: 10px; padding: 11px 14px; font-size: 14px; outline: none;
         }
-        .catalogue-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1px;
-            max-height: 900px;
-            overflow-y: auto;
-            overflow-x: hidden;
-            background: #e5e7eb;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        .search input:focus, .sort select:focus { border-color: var(--accent); }
+        .sort, .size { display: flex; align-items: center; gap: 8px; color: var(--text-faint); font-size: 12.5px; }
+        .sort select { width: auto; padding: 8px 10px; }
+        .size input { width: 120px; accent-color: var(--accent); }
+        .views { display: flex; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 3px; }
+        .views button, .fchip {
+            border: 0; background: transparent; color: var(--text-dim); cursor: pointer;
+            border-radius: 8px; font-weight: 600;
         }
-        .catalogue-grid::-webkit-scrollbar {
-            width: 8px;
+        .views button { padding: 7px 12px; font-size: 13px; }
+        .views button.active { background: var(--surface-3); color: var(--text); }
+        a.edit { display: none; color: var(--text-dim); font-size: 13px; font-weight: 600; text-decoration: none; border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 8px 12px; }
+        html[data-local] a.edit { display: inline-block; }
+        a.edit:hover { color: var(--text); border-color: var(--border-strong); }
+        .table-wrap { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+        table.data { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+        table.data th { background: var(--surface-2); color: var(--text-dim); text-align: left; font-weight: 600; padding: 11px 14px; border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
+        table.data th:hover { color: var(--text); }
+        table.data th.on::after { content: ' ↑'; color: var(--accent); }
+        table.data th.on.desc::after { content: ' ↓'; }
+        table.data td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
+        table.data tr { cursor: pointer; }
+        table.data tr:hover { background: var(--surface-2); }
+        table.data td.title { color: var(--text); font-weight: 600; }
+        table.data td, table.data th { overflow-wrap: anywhere; }
+        table.data td.desc { color: var(--text-faint); }
+        .card-grid { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+        .more { margin-top: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text-dim); border-radius: 999px; padding: 7px 14px; font-weight: 650; font-size: 13px; cursor: pointer; }
+        .more:hover { color: var(--text); border-color: var(--border-strong); }
+        .chip-board { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        .chip-level { display: flex; gap: 12px; align-items: flex-start; }
+        .chip-label { flex: 0 0 76px; padding-top: 8px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+        .chip-row, .chip-groups { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; min-width: 0; }
+        .chip-groups { gap: 8px 10px; }
+        .chip-group {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+            padding: 4px 6px 4px 8px; border-radius: 12px;
+            background: color-mix(in srgb, var(--tint) 9%, transparent);
         }
-        .catalogue-grid::-webkit-scrollbar-track {
-            background: #f3f4f6;
-            border-radius: 4px;
+        .group-name { font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--tint); opacity: .8; margin-right: 2px; }
+        .fchip {
+            border: 1px solid color-mix(in srgb, var(--tint, var(--border)) 45%, var(--border));
+            background: color-mix(in srgb, var(--tint, var(--surface)) 16%, var(--surface));
+            color: var(--text-dim); padding: 6px 12px; border-radius: 999px; font-size: 12.5px;
         }
-        .catalogue-grid::-webkit-scrollbar-thumb {
-            background: #d1d5db;
-            border-radius: 4px;
+        .fchip .n { opacity: .65; font-weight: 550; margin-left: 2px; }
+        .fchip.section { font-size: 13px; padding: 7px 13px; }
+        .fchip.topic { font-size: 12px; padding: 5px 10px; }
+        .fchip:hover { color: var(--text); border-color: color-mix(in srgb, var(--tint) 70%, var(--border-strong)); }
+        .fchip.active { background: var(--tint, var(--text)); color: #0a0a0b; border-color: transparent; }
+        .fchip.active:hover { color: #0a0a0b; }
+        .focus-banner { display: flex; gap: 18px; align-items: flex-start; margin: 0 0 16px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; }
+        .focus-banner img { width: 148px; height: 96px; object-fit: cover; border-radius: 10px; flex-shrink: 0; background: var(--surface-3); }
+        .focus-banner h2 { margin: 0 0 6px; font-size: 20px; letter-spacing: -0.02em; }
+        .focus-banner p { margin: 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
+        .places { display: flex; flex-wrap: wrap; gap: 12px 4px; margin: 8px 0 4px; }
+        .place {
+            display: flex; flex-direction: column; align-items: center; gap: 6px;
+            width: 78px; text-decoration: none; color: var(--text-dim);
         }
-        .catalogue-grid::-webkit-scrollbar-thumb:hover {
-            background: #9ca3af;
+        .place .orb {
+            width: 48px; height: 48px; border-radius: 50%; background: #fff;
+            border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+            overflow: hidden; transition: transform .18s ease, border-color .18s ease;
         }
-        @media (min-width: 640px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        .place img { width: 54%; height: 54%; object-fit: contain; display: block; }
+        .place.wide img { width: 84%; height: 84%; }
+        .place .label { font-size: 11.5px; font-weight: 650; letter-spacing: -0.01em; text-align: center; line-height: 1.2; }
+        .place:hover .orb { transform: translateY(-2px); border-color: var(--border-strong); }
+        .place:hover, .place:hover .label { color: var(--text); }
+        .interests { margin: 2px 0 6px; padding: 14px 0 10px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .interests-label { margin: 0 0 10px; font-size: 11px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+        .area-strip { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+        .area-card {
+            flex: 1 1 220px; max-width: 280px;
+            display: flex; align-items: center; gap: 12px;
+            padding: 6px 12px 6px 6px; border-radius: 999px;
+            text-decoration: none; color: inherit; background: transparent;
         }
-        @media (min-width: 900px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
+        .area-card img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; display: block; background: var(--surface-3); }
+        .area-card span { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+        .area-card:hover { background: var(--surface); }
+        .area-card:hover span { color: var(--accent); }
+        .area-card.on { background: var(--surface); box-shadow: inset 0 0 0 1px var(--border-strong); }
+        .area-card.dim { opacity: 0.38; filter: grayscale(1); }
+        .area-card.dim:hover { opacity: 0.72; }
+        .row { margin: 0 0 26px; }
+        .row-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+        .row-head h2 { margin: 0; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+        .row-head h2::before { content: ''; width: 8px; height: 8px; border-radius: 3px; background: var(--dot, var(--text-faint)); }
+        .row-head h2 a { color: inherit; text-decoration: none; }
+        .row-head h2 a:hover { color: var(--accent); }
+        .count { font-size: 12px; color: var(--text-faint); border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; }
+        .row-desc { margin: 0 0 10px; color: var(--text-dim); font-size: 13.5px; line-height: 1.45; max-width: 820px; }
+        .card {
+            width: min(var(--card-w), 100%); flex: 0 1 auto;
+            background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+            overflow: hidden; cursor: pointer; text-decoration: none; color: inherit;
+            display: flex; flex-direction: column;
+            transition: transform .18s ease, border-color .18s ease, background .18s ease;
         }
-        @media (min-width: 1200px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(5, 1fr);
-            }
+        .card:hover { transform: translateY(-3px); background: var(--surface-2); border-color: var(--border-strong); box-shadow: var(--shadow); }
+        .shot { height: var(--shot-h); max-height: var(--shot-h); flex: 0 0 var(--shot-h); background: var(--surface-3); position: relative; overflow: hidden; }
+        .shot img.cover { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
+        .mark {
+            height: 100%; display: flex; align-items: center; justify-content: center;
+            font-size: 28px; font-weight: 700; color: white; letter-spacing: -0.03em;
         }
-        @media (min-width: 1500px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(6, 1fr);
-            }
+        .mark img.logo { width: 42%; height: 42%; object-fit: contain; }
+        .paper-shot { display: grid; grid-template-columns: 1.25fr 0.9fr; grid-template-rows: minmax(0, 1fr); height: 100%; max-height: 100%; min-height: 0; overflow: hidden; background: #f4f1ea; color: #1c1c1c; }
+        .paper-page { padding: 22px 8px 6px; overflow: hidden; border-right: 1px solid #e4dfd4; min-height: 0; min-width: 0; }
+        .paper-page img.cover { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+        .paper-page .kicker { font-size: 7px; letter-spacing: .08em; text-transform: uppercase; color: #887f70; margin-bottom: 4px; }
+        .paper-page .pt { font-family: Georgia, 'Times New Roman', serif; font-size: 9px; line-height: 1.2; font-weight: 700; margin: 0 0 3px; }
+        .paper-page .pa { font-size: 7px; color: #5c564c; margin-bottom: 5px; }
+        .paper-page .lines { display: flex; flex-direction: column; gap: 3px; }
+        .paper-page .lines span { display: block; height: 3px; background: #e4dfd4; border-radius: 1px; }
+        .paper-figs { display: grid; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); gap: 3px; padding: 3px; background: #fff; min-height: 0; min-width: 0; overflow: hidden; }
+        .paper-figs img, .paper-figs .fig {
+            width: 100%; height: 100%; min-height: 0; object-fit: cover; background: #f7f5f0; border: 1px solid #e7e1d6;
         }
-        @media (min-width: 1800px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(7, 1fr);
-            }
+        .paper-figs .fig { display: flex; align-items: flex-end; padding: 4px; font-size: 8px; color: #887f70; }
+        .info { padding: 10px 10px 12px; display: flex; flex-direction: column; gap: 4px; height: 78px; overflow: hidden; }
+        .info h3 { margin: 0; font-size: 13.5px; font-weight: 650; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .info p { margin: 0; color: var(--text-faint); font-size: 12px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .kind {
+            position: absolute; top: 6px; left: 6px; font-size: 10px; font-weight: 700;
+            letter-spacing: .04em; text-transform: uppercase; background: rgba(0,0,0,.55);
+            border: 1px solid var(--border); color: white; border-radius: 6px; padding: 2px 6px;
         }
-        @media (min-width: 2100px) {
-            .catalogue-grid {
-                grid-template-columns: repeat(8, 1fr);
-            }
-        }
-        .catalogue-card {
-            position: relative;
-            border-radius: 0;
-            overflow: hidden;
-            border: none;
-            padding: 0;
-            background: white;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, z-index 0s;
-            cursor: pointer;
-        }
-        .catalogue-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            z-index: 10;
-        }
-        .catalogue-card-thumb {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            aspect-ratio: 2 / 3;
-            background: #f3f4f6;
-            position: relative;
-            overflow: hidden;
-        }
-        .catalogue-card-thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top left;
-            display: block;
-        }
-        .catalogue-card-logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 85%;
-            z-index: 2;
-            transition: opacity 0.18s ease;
-            pointer-events: none;
-        }
-        .catalogue-card:hover .catalogue-card-logo {
-            opacity: 0.3;
-        }
-        .catalogue-card-logo-icon {
-            font-size: 4em;
-            margin-bottom: 0.2em;
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-        }
-        .catalogue-card-logo-text {
-            font-size: 1em;
-            font-weight: 700;
-            color: white;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.4);
-            line-height: 1.3;
-            word-break: break-word;
-            padding: 0 10px;
-        }
-        .catalogue-card-title-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 10px 12px;
-            background: linear-gradient(180deg,
-                rgba(0,0,0,0.85) 0%,
-                rgba(0,0,0,0.6) 70%,
-                rgba(0,0,0,0) 100%);
-            transform: translateY(-100%);
-            transition: transform 0.18s ease;
-            z-index: 3;
-            opacity: 0;
-        }
-        .catalogue-card:hover .catalogue-card-title-wrapper {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .catalogue-card-title {
-            margin: 0;
-            font-size: 0.85em;
-            font-weight: 700;
-            color: white;
-            line-height: 1.25;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.9);
-        }
-        .catalogue-card-body {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 12px 12px 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            background: linear-gradient(180deg,
-                rgba(0,0,0,0) 0%,
-                rgba(0,0,0,0.95) 10%,
-                rgba(0,0,0,0.95) 100%);
-            color: white;
-            transform: translateY(100%);
-            transition: transform 0.18s ease;
-            z-index: 3;
-            opacity: 0;
-        }
-        .catalogue-card:hover .catalogue-card-body {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        .catalogue-card-description {
-            margin: 0;
-            font-size: 0.75em;
-            color: white;
-            background: transparent;
-            padding: 4px 6px;
-            border-radius: 3px;
-            text-shadow: white;
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            font-weight: 500;
-            z-index: 10;
-        }
-        .catalogue-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4px;
-            font-size: 0.6em;
-            color: white;
-        }
-        .catalogue-tags span {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(4px);
-            border-radius: 10px;
-            padding: 2px 8px;
-            border: 1px solid rgba(255,255,255,0.25);
-            font-weight: 500;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-            opacity: 0.85;
-        }
-        .catalogue-badge {
-            display: none;
-        }
-        .catalogue-links {
-            margin-top: 3px;
-            display: flex;
-            gap: 6px;
-            font-size: 0.7em;
-        }
-        .catalogue-links span {
-            display: none;
-        }
-        .catalogue-links a,
-        .catalogue-links button {
-            color: white;
-            text-decoration: none;
-            background: rgba(255,255,255,0.2);
-            backdrop-filter: blur(6px);
-            border-radius: 5px;
-            padding: 5px 10px;
-            border: 1px solid rgba(255,255,255,0.4);
-            font-weight: 700;
-            transition: all 0.15s ease;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-            cursor: pointer;
-            font-family: Times, serif;
-            font-size: 1em;
-        }
-        .catalogue-links a:hover,
-        .catalogue-links button:hover {
-            background: rgba(255,255,255,0.35);
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-        .catalogue-links .demo-link {
-            background: rgba(59,130,246,0.5);
-            border: 1px solid rgba(96,165,250,0.6);
-        }
-        .catalogue-links .demo-link:hover {
-            background: rgba(59,130,246,0.7);
-        }
-        .catalogue-empty {
-            font-size: 0.9em;
-            color: #6b7280;
-            padding: 40px 20px;
-            text-align: center;
-            background: white;
-        }
-        .catalogue-count {
-            font-size: 0.85em;
-            color: #6b7280;
-            margin: 0;
-            padding: 12px 0;
-            text-align: center;
-            background: transparent;
-        }
-        
-        /* Tab navigation */
-        .tab-navigation {
-            display: flex;
-            gap: 0;
-            background: #f3f4f6;
-            border-bottom: 2px solid #d1d5db;
-            overflow-x: auto;
-            overflow-y: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
-        }
-        .tab-navigation::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Edge */
-        }
-        .tab-button {
-            padding: 16px 24px;
-            background: #f3f4f6;
-            border: none;
-            border-bottom: 3px solid transparent;
-            cursor: pointer;
-            font-family: Times, serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: #374151;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-        @media (max-width: 768px) {
-            .tab-button {
-                padding: 14px 18px;
-                font-size: 14px;
-            }
-        }
-        .tab-button:hover {
-            background: #e5e7eb;
-            color: #111827;
-        }
-        .tab-button.active {
-            background: white;
-            color: #1f2937;
-            border-bottom-color: #3b82f6;
-        }
-        
-        /* Tab content */
-        .tab-content {
-            display: none;
-            padding: 40px;
-            padding-top: 100px; /* Space for fixed nav bar */
-            animation: fadeIn 0.3s ease;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .tab-content {
-                padding: 20px;
-                padding-top: 80px;
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        /* Professional links grid customization */
-        #links-grid .catalogue-card-body {
-            transform: translateY(0) !important;
-            opacity: 1 !important;
-            position: relative !important;
-            background: rgba(0,0,0,0.8) !important;
-        }
-        #links-grid .catalogue-card-title-wrapper {
-            display: none !important;
-        }
-        #links-grid .catalogue-card-thumb {
-            aspect-ratio: 2 / 3 !important;
-        }
-        #links-grid .catalogue-card-logo {
-            opacity: 1 !important;
-        }
-        #links-grid .catalogue-card:hover .catalogue-card-logo {
-            opacity: 0.8 !important;
-        }
-        #links-grid .catalogue-card-description {
-            -webkit-line-clamp: 2 !important;
-            line-clamp: 2 !important;
-            font-size: 0.8em !important;
-            color: rgba(255,255,255,0.95) !important;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
-            font-weight: normal !important;
-        }
-        #links-grid .catalogue-card-logo-text {
-            font-size: 1.1em !important;
-        }
-        #links-grid .catalogue-tags,
-        #links-grid .catalogue-links {
-            display: none !important;
+        .empty { color: var(--text-faint); font-size: 14px; }
+        footer { margin-top: 12px; color: var(--text-faint); font-size: 12px; }
+        @media (max-width: 640px) {
+            .identity { flex-direction: column; }
+            .chip-level { flex-direction: column; gap: 6px; }
+            .chip-label { padding-top: 0; }
         }
     </style>
 </head>
 <body>
-
-<!-- Tab Navigation -->
-<nav class="tab-navigation">
-    <button class="tab-button active" data-tab="about">About</button>
-    <button class="tab-button" data-tab="projects">Projects</button>
-    <button class="tab-button" data-tab="apps">Apps</button>
-    <button class="tab-button" data-tab="writing">Writing</button>
-    <button class="tab-button" data-tab="research">Research</button>
-    <button class="tab-button" data-tab="publications">Publications</button>
-    <button class="tab-button" data-tab="teaching">Teaching</button>
-    <button class="tab-button" data-tab="experience">Experience</button>
-    <button class="tab-button" data-tab="news">News</button>
-</nav>
-
-<!-- Tab: About & Research -->
-<div id="tab-about" class="tab-content active">
-
-
-<h1>Kyle Elliott Mathewson, PhD</h1>
-
-<p><strong>Associate Professor, Faculty of Science - Psychology</strong><br>
-<strong>Director, Attention Perception and Performance Lab (APPLab)</strong><br>
-<strong>University of Alberta</strong><br>
-Edmonton, AB<br>
-Email: <a href="mailto:kmathews@ualberta.ca" target="_blank">kmathews@ualberta.ca</a><br>
-Phone: (780) 492-2662<br>
-Office: P-455 Bio Science - Psychology Wing</p>
-
-<div style="margin: 30px 0;">
-    <h3 style="margin-bottom: 15px;">Professional Links</h3>
-    <div class="catalogue-grid" id="links-grid" style="max-height: none;">
-        <article class="catalogue-card" onclick="window.location.href='#about'">
-            <div class="catalogue-card-thumb">
-                <img src="images/headshot.jpg" alt="Kyle Mathewson" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Kyle E. Mathewson, PhD</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://docs.google.com/document/d/1AxFnSLORzV253BfuqUx0_QgDFOLhe3_JVR6Jl327vM0/edit?usp=sharing', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">CV</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Complete CV</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://apps.ualberta.ca/directory/person/kmathews', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #007C41 0%, #00A651 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 100 100" fill="white">
-                            <text x="50" y="60" font-family="serif" font-size="60" font-weight="bold" text-anchor="middle" fill="white">U</text>
-                            <text x="85" y="40" font-family="serif" font-size="30" font-weight="bold" fill="#FFDB05">A</text>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">Faculty</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">UAlberta Directory</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://sites.psych.ualberta.ca/kylemathewson/', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M13 3C9.23 3 6.19 5.95 6 9.66l-1.92 2.53c-.24.31 0 .81.42.81H6v3c0 1.11.89 2 2 2h1v3h7v-4.69c2.37-1.12 4-3.51 4-6.31 0-3.86-3.14-7-7-7zm1 11h-2v-2h2v2zm0-4h-2V6h2v4z"/>
-                            <circle cx="9" cy="11" r="1" fill="white"/>
-                            <circle cx="15" cy="11" r="1" fill="white"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">APPLab</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Lab Website</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://github.com/kylemath', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">GitHub</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">@kylemath</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://scholar.google.com/citations?user=wgK6LCYAAAAJ', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #4285F4 0%, #5A95F5 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            <circle cx="12" cy="7" r="2" fill="white"/>
-                            <path d="M12 10c-3 0-5 2-5 4v3h10v-3c0-2-2-4-5-4z" fill="white"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">Scholar</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Publications</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://www.youtube.com/user/kmathew3/videos', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">YouTube</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Lectures</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://x.com/mathkyle?lang=en', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #000000 0%, #14171A 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">X / Twitter</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">@mathkyle</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://www.instagram.com/kylemath/', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">Instagram</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">@kylemath</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://www.linkedin.com/in/ky-mathewson-856279124/', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #0077B5 0%, #00A0DC 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">LinkedIn</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Network</p>
-            </div>
-        </article>
-        
-        <article class="catalogue-card" onclick="window.open('https://photos.app.goo.gl/4kHWvNK2Cpwja7uN7', '_blank')">
-            <div class="catalogue-card-thumb" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
-                <div class="catalogue-card-logo" style="display: block;">
-                    <div class="catalogue-card-logo-icon" style="font-size: 3em;">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                            <circle cx="8.5" cy="8.5" r="1.5" fill="white"/>
-                        </svg>
-                    </div>
-                    <div class="catalogue-card-logo-text">Photos</div>
-                </div>
-            </div>
-            <div class="catalogue-card-body" style="transform: translateY(0); opacity: 1; position: relative;">
-                <p class="catalogue-card-description">Album</p>
-            </div>
-        </article>
-    </div>
-</div>
-
-<hr>
-
-<hr>
-
-<h2 id="about">About</h2>
-<p>I am an Associate Professor of Psychology in the Faculty of Science's Department of Psychology at the University of Alberta. I was previously a Postdoctoral Fellow at the Beckman Institute at the University of Illinois at Urbana-Champaign and in the Department of Psychology at the University of Alberta. I received my PhD in 2011 from the Brain and Cognition Division of the Department of Psychology at the University of Illinois in the Cognitive Neuroimaging Lab of Drs. Monica Fabiani and Gabriele Gratton, with the support of a Post Graduate Scholarship from the Natural Science and Engineering Research Council of Canada. I received my B.A. in Psychology (Honours; First in Graduating Class) from the University of Victoria in 2007, completing my honours thesis in the Learning and Cognitive Control Lab under the supervision of Dr. Clay Holroyd.</p>
-
-<h3>Academic Research and Leadership</h3>
-<p>As Director of the Attention Perception and Performance Lab (APPLab) in the Department of Psychology at the University of Alberta, I lead research in cognitive neuroscience focusing on visual awareness, attention, learning, and memory. Our lab uses cutting-edge approaches combining human behavioral studies, neuroimaging, and electrophysiological recording. We're particularly focused on developing portable, accessible brain-sensing technologies and studying attention in real-world environments. Our work spans from basic research on neural oscillations to applied projects in areas like stroke diagnosis and sports performance.</p>
-
-<h3>Industry and Consulting</h3>
-<p>Beyond academia, I engage in independent consulting work, applying neuroscience and cognitive psychology principles to real-world challenges. My expertise in portable brain-sensing technology and human performance optimization has led to collaborations with various industries and organizations.</p>
-
-<h3>Personal Life and Community Involvement</h3>
-<p>Outside of my academic work, I'm actively involved in the Edmonton community, particularly in youth sports development. I serve as a soccer coach for the Juventus Soccer Club, working with the <a href="https://juventus2013.netlify.app/" target="_blank">2013 Boys T3 team</a>. I'm also an active player myself in the <a href="https://edsa.org/" target="_blank">Edmonton and District Soccer Association</a>, combining my passion for sports with community engagement.</p>
-
-<p>I share my life with my wife, Dr. Claire Scavuzzo, who is also at the University of Alberta. Together, we balance our academic careers with family life and various projects. Our children are actively involved in technology and sports - my son is developing his coding skills (visible on his <a href="https://github.com/jackyscavuzzo" target="_blank">GitHub</a>) and shares his interests through his <a href="https://www.youtube.com/channel/UC6C2whs1A2Po3gICTFnazmw" target="_blank">YouTube channel</a>, while also playing soccer with the Juventus club.</p>
-
-<p>This combination of academic research, industry application, and community involvement allows me to pursue my goal of making neuroscience more accessible and applicable to everyday life, while maintaining a rich and balanced personal life.</p>
-
-
-</div>
-
-<!-- Tab: Projects -->
-<div id="tab-projects" class="tab-content">
-
-<div class="catalogue-preview" id="catalogue-preview">
-    <h3>Catalogue Preview</h3>
-    <p>Mobile-optimized "app arcade" catalogue featuring all projects with structured entries. Scroll through portrait cards that scale from 2 columns on mobile to 8+ on ultra-wide displays. Each card expands on hover and loads from structured data for future React/Vite experiences.</p>
-    <div class="catalogue-grid" id="catalogue-grid">
-        <noscript>Enable JavaScript to preview the catalogue cards.</noscript>
-    </div>
-</div>
-
-<hr>
-
-<h2 id="projects">Recent Projects</h2>
-<ul>
-    <li><a href="https://github.com/kylemath/myTestWebsite" target="_blank">myTestWebsite</a> - A test of a github page</li>
-    <li><a href="https://github.com/kylemath/testSep23" target="_blank">testSep23</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/homePage" target="_blank">homePage</a> - Main homepage for kylemathewson.com and helper scripts</li>
-    <li><a href="https://github.com/kylemath/Psych302-305-KyleMathewson" target="_blank">Psych302-305-KyleMathewson</a> - Test</li>
-    <li><a href="https://github.com/kylemath/FungioErgoSum" target="_blank">FungioErgoSum</a> - A symbiotic theory of life</li>
-    <li><a href="https://github.com/kylemath/ColourNamesPicker" target="_blank">ColourNamesPicker</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/cantillate" target="_blank">cantillate</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/RobotInvites" target="_blank">RobotInvites</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/cursor-launcher" target="_blank">cursor-launcher</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/MidiHotkey" target="_blank">MidiHotkey</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/kylemath" target="_blank">kylemath</a> - GitHub profile</li>
-    <li><a href="https://github.com/kylemath/digitalClock" target="_blank">digitalClock</a> - 3d printed digital clock for esphome and homeassistant</li>
-    <li><a href="https://github.com/kylemath/math6" target="_blank">math6</a> - Lumen — Grade 6 math tutor (website and installable PWA)</li>
-    <li><a href="https://github.com/kylemath/magicSquare_physicalSolver" target="_blank">magicSquare_physicalSolver</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/p5.eegedu" target="_blank">p5.eegedu</a> - A live coding environment in p5 which includes bluetooth transmitted brain activity as input variables</li>
-    <li><a href="https://github.com/kylemath/psych275-textbook" target="_blank">psych275-textbook</a> - PSYCH 275 textbook: Brains, Minds, and Machines</li>
-    <li><a href="https://github.com/kylemath/neuroAnimation" target="_blank">neuroAnimation</a> - 3D neuroscience mechanism demos (action potential, membrane, synapse)</li>
-    <li><a href="https://github.com/kylemath/MusicPlayer" target="_blank">MusicPlayer</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/MathPlayground" target="_blank">MathPlayground</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/pdf2jpeg" target="_blank">pdf2jpeg</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/gitBash" target="_blank">gitBash</a> - A convenient bash script to streamline git repository initialization with GitHub integration.</li>
-    <li><a href="https://github.com/kylemath/hadwigerNelson" target="_blank">hadwigerNelson</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/BouncyBalls" target="_blank">BouncyBalls</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/diagramRevamp" target="_blank">diagramRevamp</a> - Revamp diagram</li>
-    <li><a href="https://github.com/kylemath/sunMoon" target="_blank">sunMoon</a> - 3d simulation of our galaxy to scale = Web, threejs</li>
-    <li><a href="https://github.com/kylemath/pdfTiles" target="_blank">pdfTiles</a> - Tile PDFs to make flyers or cards</li>
-    <li><a href="https://github.com/kylemath/Brainimation" target="_blank">Brainimation</a> - Live EEG Brain Data Meets Creative Coding  An interactive web platform that combines real-time EEG brain data from Muse headsets with P5.js creative coding, enabling anyone to create brain-controlled art and visualizations in real-time.</li>
-    <li><a href="https://github.com/kylemath/magicGemWeb" target="_blank">magicGemWeb</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/artOfSoccerWar" target="_blank">artOfSoccerWar</a> - A modern, interactive web guide based on Sun Tzu's "The Art of War" adapted for youth soccer coaches and players. Features 100 coaching principles across 13 chapters with detailed descriptions available on hover.</li>
-    <li><a href="https://github.com/kylemath/CableRack" target="_blank">CableRack</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Slides4Class" target="_blank">Slides4Class</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/OpticalNeuralNet" target="_blank">OpticalNeuralNet</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/wifi" target="_blank">wifi</a> - Web home security suite</li>
-    <li><a href="https://github.com/kylemath/Roledex" target="_blank">Roledex</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/NavierStokesEnergyLandscape" target="_blank">NavierStokesEnergyLandscape</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/GhostbustersConceptPlay" target="_blank">GhostbustersConceptPlay</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/GraphColour" target="_blank">GraphColour</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/FreethrowEEG" target="_blank">FreethrowEEG</a> - Recording EEG during freethrow basketball shooting</li>
-    <li><a href="https://github.com/kylemath/BrainGames" target="_blank">BrainGames</a> - Brains for your Games</li>
-    <li><a href="https://github.com/kylemath/EEGVideo" target="_blank">EEGVideo</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/NumberblockToysPrint" target="_blank">NumberblockToysPrint</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/ReactionDiffusionMaze" target="_blank">ReactionDiffusionMaze</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/LaserPointer" target="_blank">LaserPointer</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/InterpretCognates" target="_blank">InterpretCognates</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/FibrationTorusPuzzle" target="_blank">FibrationTorusPuzzle</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/microphoneSpectroramWebpage" target="_blank">microphoneSpectroramWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/accGyro" target="_blank">accGyro</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/OfTwoMindsSoccer" target="_blank">OfTwoMindsSoccer</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Luo2024Extend" target="_blank">Luo2024Extend</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/microgptJS" target="_blank">microgptJS</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Talk" target="_blank">Talk</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/ConciousnessTheoryCompareWebpage" target="_blank">ConciousnessTheoryCompareWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/NumberBlocks" target="_blank">NumberBlocks</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/FlowFinding" target="_blank">FlowFinding</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Genes" target="_blank">Genes</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/StrokeMuseTestAnalysis" target="_blank">StrokeMuseTestAnalysis</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/GALM" target="_blank">GALM</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/NeuroimagingClass" target="_blank">NeuroimagingClass</a> - Class materials for 2025 403 - Neuroimaging and Neurostim</li>
-    <li><a href="https://github.com/kylemath/MaestroEEGApp" target="_blank">MaestroEEGApp</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/VisualSystemModel" target="_blank">VisualSystemModel</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/soccerSimV2Physics" target="_blank">soccerSimV2Physics</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/voice2print" target="_blank">voice2print</a> - From my voice to plastic</li>
-    <li><a href="https://github.com/kylemath/IllumiStack" target="_blank">IllumiStack</a> - 3d Printing with Stacked colour layers web app</li>
-    <li><a href="https://github.com/kylemath/BrainsMindsMachinesTextbook" target="_blank">BrainsMindsMachinesTextbook</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/StokesFluidDynamics" target="_blank">StokesFluidDynamics</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/biophotons" target="_blank">biophotons</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/CatalanQuadratic" target="_blank">CatalanQuadratic</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/flir" target="_blank">flir</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/EEGEdu" target="_blank">EEGEdu</a> - Interactive Brain Playground - Browser based tutorials on EEG with webbluetooth and muse</li>
-    <li><a href="https://github.com/kylemath/ModernWebDesign" target="_blank">ModernWebDesign</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/ExileEnginePage" target="_blank">ExileEnginePage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/LinoleumSecretHistory" target="_blank">LinoleumSecretHistory</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/MagicGemWebpage" target="_blank">MagicGemWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/shooterFocus" target="_blank">shooterFocus</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/soccerSim" target="_blank">soccerSim</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/InstaFaceReadX" target="_blank">InstaFaceReadX</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/GroupPaint" target="_blank">GroupPaint</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/todoManager" target="_blank">todoManager</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Sora" target="_blank">Sora</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/MidiRapper" target="_blank">MidiRapper</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/collisionDetectionForcefield" target="_blank">collisionDetectionForcefield</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/topographicModelsFromMapWebpage" target="_blank">topographicModelsFromMapWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/BrainCraft" target="_blank">BrainCraft</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/ClashRoyale" target="_blank">ClashRoyale</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/FractalViewerWebpage" target="_blank">FractalViewerWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/WordSelectionLLM" target="_blank">WordSelectionLLM</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/topologicalDataAnalysisBiology" target="_blank">topologicalDataAnalysisBiology</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/pickingTVWebpage" target="_blank">pickingTVWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/JaneStreetDwarkeshPuzzle" target="_blank">JaneStreetDwarkeshPuzzle</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/HistoricGlenoraMapWebpage" target="_blank">HistoricGlenoraMapWebpage</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/cryptoMemeCoinMint" target="_blank">cryptoMemeCoinMint</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/3dprint" target="_blank">3dprint</a> - set of .stl files and other 3d files I find useful, no credit claimed</li>
-    <li><a href="https://github.com/kylemath/artOfSoccerWarPlanning" target="_blank">artOfSoccerWarPlanning</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/YoutubeMusicAlbumFilterChromePlugin" target="_blank">YoutubeMusicAlbumFilterChromePlugin</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/reConstruction" target="_blank">reConstruction</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/matlab_Psychtoolbox_course" target="_blank">matlab_Psychtoolbox_course</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/RetinotopyMatlabCode" target="_blank">RetinotopyMatlabCode</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/strokeEEG" target="_blank">strokeEEG</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/voyageAnalysis" target="_blank">voyageAnalysis</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/StoryTrees3" target="_blank">StoryTrees3</a> - Story Trees 3 - RAVEN</li>
-    <li><a href="https://github.com/kylemath/psych403_Fall2022" target="_blank">psych403_Fall2022</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/p5.eegedu.art" target="_blank">p5.eegedu.art</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/StoryTrees2" target="_blank">StoryTrees2</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/abcovid" target="_blank">abcovid</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/webcamHR" target="_blank">webcamHR</a> - P5.js webcam HR</li>
-    <li><a href="https://github.com/kylemath/matlab_video_hr" target="_blank">matlab_video_hr</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/Mathewson2009" target="_blank">Mathewson2009</a> - Phase analysis from Mathewson 2009</li>
-    <li><a href="https://github.com/kylemath/faceoff" target="_blank">faceoff</a> - Latent GAN State Brain Surfing</li>
-    <li><a href="https://github.com/kylemath/gmailPower" target="_blank">gmailPower</a> - Power User for Gmail</li>
-    <li><a href="https://github.com/kylemath/WhisperingPines" target="_blank">WhisperingPines</a> - Webcam Responsive AudioVisual Art</li>
-    <li><a href="https://github.com/kylemath/Apparition" target="_blank">Apparition</a> - Apparition make a live video puppet with pix2pix based on old youtube videos</li>
-    <li><a href="https://github.com/kylemath/DeepEEG" target="_blank">DeepEEG</a> - Deep Learning with Tensor Flow for EEG MNE Epoch Objects</li>
-    <li><a href="https://github.com/kylemath/pyoptical" target="_blank">pyoptical</a> - Imagent optical imaging interface to MNE loading</li>
-    <li><a href="https://github.com/kylemath/375Data_2020" target="_blank">375Data_2020</a> - Shared Datasets and analysis files for 375 Final Paper</li>
-    <li><a href="https://github.com/kylemath/SSAEP" target="_blank">SSAEP</a> - miceeg</li>
-    <li><a href="https://github.com/kylemath/MathewsonMatlabTools" target="_blank">MathewsonMatlabTools</a> - Toolbox of tricks, gadgets, gizmos, and automated emailers</li>
-    <li><a href="https://github.com/kylemath/cross_colour" target="_blank">cross_colour</a> - Overlay saturated crosshatch grid onto grayscale image for illusory colours</li>
-    <li><a href="https://github.com/kylemath/pyERP" target="_blank">pyERP</a> - python ERP framework using MNE structures</li>
-    <li><a href="https://github.com/kylemath/garmin_graphs" target="_blank">garmin_graphs</a> - Load in data from garmin connect and plot over time in matlab</li>
-    <li><a href="https://github.com/kylemath/TimeFreqWorkshop" target="_blank">TimeFreqWorkshop</a> - Presentation and code for time frequency workshop</li>
-    <li><a href="https://github.com/kylemath/necker_move" target="_blank">necker_move</a> - moving necker cube</li>
-    <li><a href="https://github.com/kylemath/micb" target="_blank">micb</a> - Motion Induced Change Blindness - Yao, Wood, Simons 2019 - Psychtoolbox code </li>
-    <li><a href="https://github.com/kylemath/nomad" target="_blank">nomad</a> - Near-infrared Optical Montage Automated Design</li>
-    <li><a href="https://github.com/kylemath/visual-illusions" target="_blank">visual-illusions</a> - Can we teach a machine to classify visual illusions and generate new ones?</li>
-    <li><a href="https://github.com/kylemath/Muse_LSL_Environments" target="_blank">Muse_LSL_Environments</a> - A set of python environments for running MUSE LSL experiments, record data, visualize, and send markers, using Alex B. muse-lsl</li>
-    <li><a href="https://github.com/kylemath/MoralWordEEG" target="_blank">MoralWordEEG</a> - Experiment, Materials, and Analysis code for Moral Word EEG project</li>
-    <li><a href="https://github.com/kylemath/AudienceEEG" target="_blank">AudienceEEG</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/FitnessMemory" target="_blank">FitnessMemory</a> - GitHub repository</li>
-    <li><a href="https://github.com/kylemath/DuckBunny2" target="_blank">DuckBunny2</a> - Analysis and results for duckbunny2 project</li>
-    <li><a href="https://github.com/kylemath/Pyggy" target="_blank">Pyggy</a> - Artificial Improvisation</li>
-    <li><a href="https://github.com/kylemath/mySecondTestWebsite" target="_blank">mySecondTestWebsite</a> - test 2</li>
-    <li><a href="https://github.com/kylemath/powerLawSoccerAnalysisPage" target="_blank">powerLawSoccerAnalysisPage</a> - GitHub repository</li>
-</ul>
-
-<hr>
-
-<h2 id="contributor-projects">Contributor Projects</h2>
-<ul>
-    <li><a href="https://github.com/kylemath/hueforge-at-home" target="_blank">hueforge-at-home</a> - Basic javascript implementation of color mixing for 3d printing using p5js (5 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/pytutorial" target="_blank">pytutorial</a> - Contributor project (12 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/muse-js" target="_blank">muse-js</a> - Muse 2016 EEG Headset JavaScript Library (using Web Bluetooth) (contributor to original)</li>
-    <li><a href="https://github.com/kylemath/HNN-AEF" target="_blank">HNN-AEF</a> - Data and code to replicate the main findings associated with the manuscript “Neural Mechanisms Underlying Human Auditory Evoked Responses Revealed by Human Neocortical Neurosolver”. (contributor to original)</li>
-    <li><a href="https://github.com/kylemath/eeg-notebooks" target="_blank">eeg-notebooks</a> - A collection of classic EEG experiments implemented with Python and Jupyter notebooks (contributor to original)</li>
-    <li><a href="https://github.com/kylemath/mne-python" target="_blank">mne-python</a> - MNE : Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python (35 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/pycovid" target="_blank">pycovid</a> - Python package to easily access the most updated Coronavirus data using Python/PIP (contributor to original, 9 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/eeg-notebooks_v0.1" target="_blank">eeg-notebooks_v0.1</a> - A collection of classic EEG experiments implemented with Python and Jupyter notebooks (130 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/react-game-kit" target="_blank">react-game-kit</a> - Component library for making games with React  & React Native (9 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/muse-lsl" target="_blank">muse-lsl</a> - Python script to stream EEG data from the muse 2016 headset (1 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/ml4a-guides" target="_blank">ml4a-guides</a> - practical guides, tutorials, and code samples for ml4a (contributor to original, 2 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/EEG-Classification" target="_blank">EEG-Classification</a> - This project was a joint effort with the neurology labs at UNL and UCD Anschutz to use deep learning to classify EEG data. (18 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/face2face-demo" target="_blank">face2face-demo</a> - pix2pix demo that learns from facial landmarks and translates this into a face (1 commits ahead)</li>
-    <li><a href="https://github.com/kylemath/Muse-LSL-Matlab-Tools" target="_blank">Muse-LSL-Matlab-Tools</a> - chadcwilliams.weebly.com/muse (9 commits ahead)</li>
-</ul>
-
-<hr>
-
-
-</div>
-
-<!-- Tab: Apps (Independent Sites & Apps) -->
-<div id="tab-apps" class="tab-content">
-
-<div class="catalogue-preview" id="pages-preview">
-    <h3>Independent Sites & Apps</h3>
-    <p>Standalone experiences including EEGEdu, Juventus club site, and other lab or community projects.</p>
-    <div class="catalogue-grid" id="catalogue-pages-grid"></div>
-</div>
-
-<hr>
-
-<h2 id="web-development">Web Development & Interactive Projects</h2>
-<p>Interactive web applications and digital experiences developed using modern web technologies including JavaScript, P5.js, WebGL, and Web APIs.</p>
-<ul>
-    <li><a href="https://eegedu.com/" target="_blank">EEGEdu</a> - Interactive Brain Playground: Browser-based tutorials for learning EEG and neuroscience using Web Bluetooth and Muse headsets</li>
-    <li><a href="https://p5eegedu.com/" target="_blank">p5.eegedu</a> - Live coding environment combining P5.js creative coding with real-time brain activity input via Bluetooth EEG</li>
-    <li><a href="https://p5eegedu.art/" target="_blank">p5.eegedu.art</a> - Creative brain-art gallery showcasing interactive visualizations driven by neural activity</li>
-    <li><a href="https://kylemath.github.io/IllumiStack/" target="_blank">IllumiStack</a> - 3D printing web app for creating multi-color prints using stacked layers and color mixing algorithms</li>
-    <li><a href="https://kylemath.github.io/webcamHR/" target="_blank">webcamHR</a> - Real-time heart rate detection from webcam using computer vision and signal processing in P5.js</li>
-    <li><a href="https://kylemath.github.io/cross_colour/" target="_blank">cross_colour</a> - Interactive demonstration of illusory colors created by overlaying crosshatch patterns on grayscale images</li>
-    <li><a href="https://kylemath.github.io/necker_move/" target="_blank">necker_move</a> - Animated Necker cube optical illusion with interactive controls for studying visual perception</li>
-    <li><a href="https://kylemath.github.io/hueforge-at-home/" target="_blank">hueforge-at-home</a> - JavaScript implementation of color mixing algorithms for multi-material 3D printing using P5.js</li>
-    <li><a href="https://kylemath.github.io/WhisperingPines/" target="_blank">WhisperingPines</a> - Webcam-responsive audiovisual art installation combining computer vision with generative audio</li>
-    <li><a href="https://kylemath.github.io/faceoff/" target="_blank">faceoff</a> - Interactive exploration of latent GAN space using brain signals for navigating generated face landscapes</li>
-    <li><a href="https://kylemath.github.io/Apparition/" target="_blank">Apparition</a> - Real-time video puppetry system using pix2pix neural networks trained on historical video footage</li>
-    <li><a href="https://juventus2013.netlify.app/" target="_blank">Juventus 2013 Boys</a> - Team website for youth soccer club featuring schedules, statistics, and team information</li>
-</ul>
-
-</div>
-
-<!-- Tab: Writing -->
-<div id="tab-writing" class="tab-content">
-
-<div class="catalogue-preview" id="longform-preview">
-    <h3>Long Form Catalogue</h3>
-    <p>Feature-length essays, zines, and interactive writing experiments from dedicated repositories.</p>
-    <div class="catalogue-grid" id="catalogue-longform-grid"></div>
-</div>
-
-
-
-</div>
-
-<!-- Tab: Research -->
-<div id="tab-research" class="tab-content">
-
-<h2>Research: Pervasive Brain Sensing for Everyone</h2>
-
-<h3>Foundational Research: Visual Awareness & Consciousness</h3>
-
-<p>Our foundational work investigates the neural mechanisms underlying conscious visual perception. Through pioneering studies of alpha oscillations (8-12 Hz brain rhythms), we discovered that consciousness operates not as a continuous stream but as discrete pulses—what we call "pulsed inhibition." This work reveals how brain rhythms gate access to awareness, explaining why we sometimes see and sometimes miss the same stimulus.</p>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Core Discoveries: The Rhythmic Nature of Consciousness</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-alpha-oscillations.jpg" alt="Alpha oscillations and visual awareness" class="research-image">
-        <div class="research-content">
-            <p>Our most-cited research established that the phase and power of alpha oscillations predict whether we perceive visual stimuli. By entraining these rhythms with flickering lights, we can create predictable fluctuations in awareness—demonstrating causal control over consciousness itself. This work has fundamentally shaped our understanding of attention, perception, and the neural basis of subjective experience.</p>
-        <div class="research-links">
-            <p><em>Key papers:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C" target="_blank">To see or not to see: prestimulus α phase predicts visual awareness (2009)</a> <span class="citation-count">360+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:UeHWp8X0CEIC" target="_blank">Pulsed out of awareness: EEG alpha oscillations as pulsed-inhibition (2011)</a> <span class="citation-count">300+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:LkGwnXOMwfcC" target="_blank">Making Waves in the Stream of Consciousness (2012)</a> <span class="citation-count">220+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:u-x6o8ySG0sC" target="_blank">Rescuing stimuli from invisibility with pre-target entrainment (2010)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:SGW5VrABaM0C" target="_blank">Effects of random fluctuations in alpha oscillations on orientation detection (2019)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:KaMxkj08jr0C" target="_blank">Power and phase of alpha oscillations reveal spatial-temporal attention interaction (2017)</a></li>
-            </ul>
-            
-            <p><em>Related studies:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:hsZV8lGYWTMC" target="_blank">Suppressed probes during binocular rivalry draw attention (2014)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:-jrNzM816MMC" target="_blank">Regulating access to awareness: Brain activity in binocular rivalry (2017)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:DkZNVXde3BIC" target="_blank">Blinded by magic: Electrophysiological correlates of change blindness (2019)</a></li>
-            </ul>
-            
-            <p><em>Related projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/Mathewson2009" target="_blank">Mathewson2009</a> - Phase analysis code</li>
-                <li><a href="https://github.com/kylemath/DuckBunny2" target="_blank">DuckBunny2</a> - Ambiguous figure perception</li>
-                <li><a href="https://github.com/kylemath/micb" target="_blank">Motion Induced Change Blindness</a></li>
-            </ul>
+<div class="wrap">
+    <header class="identity" id="identity"></header>
+    <div id="places"></div>
+    <div id="areas"></div>
+    <div id="focus"></div>
+    <div class="controls">
+        <div class="search"><input id="q" type="search" placeholder="Search projects, papers, courses, links…"></div>
+        <label class="size">Card size
+            <input id="card-size" type="range" min="140" max="340" value="210">
+        </label>
+        <label class="sort">Sort
+            <select id="sort">
+                <option value="recent">Recent</option>
+                <option value="name">Name</option>
+                <option value="year">Year</option>
+            </select>
+        </label>
+        <div class="views">
+            <button type="button" data-view="rows" class="active">Rows</button>
+            <button type="button" data-view="cards">Cards</button>
+            <button type="button" data-view="table">Table</button>
         </div>
-        </div>
+        <a class="edit" href="sorter.html">Edit categories</a>
+        <a class="edit" href="screenshots.html">Add screenshots</a>
+        <a class="edit" href="paper-shots.html">Add paper images</a>
     </div>
+    <div class="chip-board" id="chips"></div>
+    <main id="catalogue"></main>
+    <footer id="foot"></footer>
 </div>
-
-<hr style="margin: 40px 0; border: none; border-top: 2px solid #e5e7eb;">
-
-<h3>A Systematic Vision: From Lab to Everyday Life</h3>
-
-<p>Building on these foundational discoveries, the Attention Perception and Performance Lab follows a strategic four-stage approach to democratize neuroscience through pervasive, accessible brain sensing technology. Our goal: develop robust, portable systems that can help everyone understand and optimize their cognitive performance in real-world environments.</p>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Stage 1: Advanced Measurement Devices</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="https://raw.githubusercontent.com/kylemath/EEGEdu/master/src/components/PageSwitcher/components/EEGEduIntro/assets/musepicture.png" alt="Portable EEG technology" class="research-image">
-        <div class="research-content">
-            <p>We engineer portable, high-quality neural recording systems that work beyond traditional lab constraints. Our portable EEG platforms enable 3-minute stroke diagnosis, while projects like flexible neural interfaces and MRI-compatible epidermal electronics push toward seamless, comfortable brain monitoring. <strong>Future directions:</strong> Developing ultra-miniaturized, wireless neural dust and breathable electronic tattoos for continuous, imperceptible brain monitoring.</p>
-            <div class="research-links">
-                <p><em>Related papers:</em></p>
-                <ul>
-                    <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:v7i7sE0JH_gC" target="_blank">High and dry? Comparing active dry EEG electrodes (2017)</a></li>
-                    <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:DrR-2ekChdkC" target="_blank">Predicting stroke severity with Muse portable EEG (2020)</a></li>
-                    <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:pAkWuXOU-OoC" target="_blank">Increasing the mobility of EEG data collection using a Latte Panda (2018)</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Flexible Electronics & Advanced Materials</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-flexible-electronics.jpg" alt="Flexible electronics and wearable sensors" class="research-image">
-        <div class="research-content">
-            <p>Our collaboration with materials scientists has pioneered the next generation of wearable neural interfaces. These ultra-thin, breathable electronic systems conform to skin like temporary tattoos while maintaining research-grade signal quality. Unlike rigid electrodes, they enable comfortable, long-term monitoring compatible with advanced imaging (MRI) and real-world activities.</p>
-        <div class="research-links">
-            <p><em>Key papers:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:WHdLCjDvYFkC" target="_blank">Soft microfluidic assemblies of sensors, circuits, and radios for the skin (2014)</a> <span class="citation-count">760+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:PYBJJbyH-FwC" target="_blank">Rugged and breathable forms of stretchable electronics (2014)</a> <span class="citation-count">370+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:kzcSZmkxUKAC" target="_blank">Large-area MRI-compatible epidermal electronic interfaces (2019)</a> <span class="citation-count">190+ citations</span></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:3bvyWxjaHKcC" target="_blank">Two-layered and stretchable e-textile patches for wearable healthcare (2018)</a></li>
-            </ul>
-            
-            <p><em>Related imaging research:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:MhiOAD_qIWkC" target="_blank">Dynamics of Alpha Control: Combined EEG and Event-related Optical Signal (2014)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:Xz60mAmATU4C" target="_blank">Fast optical signals for real-time retinotopy and brain computer interface (2023)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:Br1UauaknNIC" target="_blank">Retinotopic visual mapping using simultaneous fast and slow near-infrared imaging (2014)</a></li>
-            </ul>
-            
-            <p><em>Related projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/nomad" target="_blank">nomad</a> - Near-infrared Optical Montage Automated Design</li>
-                <li><a href="https://github.com/kylemath/RetinotopyMatlabCode" target="_blank">RetinotopyMatlabCode</a></li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Stage 2: Accessible Software Ecosystems</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="https://raw.githubusercontent.com/kylemath/EEGEdu/master/logo.png" alt="EEGEdu interactive brain playground" class="research-image">
-        <div class="research-content">
-        <p>We create open-source software infrastructure that makes brain recording as simple as using a smartphone. Tools like <a href="https://github.com/kylemath/muse-js" target="_blank">muse-js</a> (Web Bluetooth EEG), <a href="https://eegedu.com" target="_blank">EEGEdu</a> (interactive brain playground), and comprehensive analysis libraries (DeepEEG, fooof, pyoptical) democratize access to neurotechnology. <strong>Future directions:</strong> Real-time AI-powered brain state decoding and personalized cognitive optimization recommendations through everyday devices.</p>
-        <div class="research-links">
-            <p><em>Related projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/EEGEdu" target="_blank">EEGEdu</a> - Interactive Brain Playground</li>
-                <li><a href="https://github.com/kylemath/DeepEEG" target="_blank">DeepEEG</a> - Deep learning for EEG analysis</li>
-                <li><a href="https://github.com/kylemath/muse-js" target="_blank">muse-js</a> - Web Bluetooth EEG library</li>
-                <li><a href="https://github.com/kylemath/pyoptical" target="_blank">pyoptical</a> - Python optical imaging interface</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Stage 3: Real-World Validation</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-mobile-eeg.jpg" alt="Mobile EEG recording during cycling" class="research-image" onerror="this.src='https://via.placeholder.com/400x300/4A90E2/ffffff?text=Mobile+EEG+Research'">
-        <div class="research-content">
-        <p>We validate neuroscience findings in natural environments—measuring brain activity during cycling through traffic, skateboarding, basketball shooting, and exploring how environmental factors modulate neural responses. This work reveals which lab findings translate to real life and which require revision. <strong>Future directions:</strong> Large-scale ecological studies using crowd-sourced brain data to understand cognitive performance across diverse populations and environments.</p>
-        <div class="research-links">
-            <p><em>Related papers:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:3IUjL8kdGLQC" target="_blank">Transitioning EEG experiments away from the laboratory (2017)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:SnGPuo6Feq8C" target="_blank">EEG in motion: oddball task in active skateboarding (2021)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:5bg8sr1QxYwC" target="_blank">A ride in the park: Cycling in different outdoor environments (2020)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:silx2ntsSuwC" target="_blank">Surrounding Traffic Matters: Increases in traffic volume and EEG changes (2022)</a></li>
-            </ul>
-            
-            <p><em>Related projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/FreethrowEEG" target="_blank">FreethrowEEG</a> - Recording EEG during basketball shooting</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Stage 4: Translational Applications</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-clinical-apps.jpg" alt="Clinical stroke diagnosis application" class="research-image" onerror="this.src='https://via.placeholder.com/400x300/28A745/ffffff?text=Clinical+Applications'">
-        <div class="research-content">
-        <p>We deploy validated technologies across four domains: <strong>Research</strong> (open-source tools, reproducible workflows), <strong>Education</strong> (interactive learning platforms, programming courses), <strong>Consumer</strong> (creative brain-art interfaces, physiological monitoring), and <strong>Clinical</strong> (emergency stroke assessment, post-stroke rehabilitation). Projects span from Indigenous language preservation to creative fabrication. <strong>Future directions:</strong> Personalized cognitive enhancement, predictive mental health monitoring, and brain-responsive smart environments.</p>
-        <div class="research-links">
-            <p><em>Related papers:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:eGYfIraVYiQC" target="_blank">Muse EEG for stroke detection (2025)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:8Xgff_V0N9gC" target="_blank">The moving wave: Mobile EEG applications (2024)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:X9ykpCP0fEIC" target="_blank">Quantitative EEG to assess post-stroke functional disability (2024)</a></li>
-            </ul>
-            
-            <p><em>Related projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/webcamHR" target="_blank">webcamHR</a> - Heart rate detection from webcam</li>
-                <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Indigenous language trail signs</li>
-                <li><a href="https://github.com/kylemath/voice2print" target="_blank">voice2print</a> - Voice to 3D printing</li>
-                <li><a href="https://github.com/kylemath/IllumiStack" target="_blank">IllumiStack</a> - Multi-color 3D printing tool</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<hr style="margin: 40px 0; border: none; border-top: 2px solid #e5e7eb;">
-
-<h3>Creative Applications: Brain-Art & Interactive Experiences</h3>
-
-<p>Beyond clinical and research applications, we explore how brain sensing can enable new forms of creative expression and human-computer interaction. These projects transform neural activity into art, music, and interactive experiences—making the invisible visible and creating intuitive interfaces between mind and machine.</p>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Neural Art & Generative Interfaces</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-brain-art.jpg" alt="Brain-controlled creative applications" class="research-image">
-        <div class="research-content">
-        <p>Our creative projects use real-time brain activity to control generative art, navigate AI-generated imagery, and create responsive audiovisual experiences. These tools democratize neurotechnology by making it playful, engaging, and accessible to artists, educators, and the public.</p>
-        <div class="research-links">
-            <p><em>Interactive brain-art platforms:</em></p>
-            <ul>
-                <li><a href="https://p5eegedu.com/" target="_blank">p5.eegedu</a> - Live coding environment with brain activity as input</li>
-                <li><a href="https://p5eegedu.art/" target="_blank">p5.eegedu.art</a> - Gallery of brain-controlled generative art</li>
-                <li><a href="https://kylemath.github.io/faceoff/" target="_blank">faceoff</a> - Navigate GAN-generated faces using brain signals</li>
-                <li><a href="https://kylemath.github.io/Apparition/" target="_blank">Apparition</a> - Video puppetry controlled by neural activity</li>
-            </ul>
-            
-            <p><em>Visual perception & illusions:</em></p>
-            <ul>
-                <li><a href="https://kylemath.github.io/cross_colour/" target="_blank">cross_colour</a> - Interactive illusory color demonstrations</li>
-                <li><a href="https://kylemath.github.io/necker_move/" target="_blank">necker_move</a> - Animated ambiguous figures</li>
-                <li><a href="https://github.com/kylemath/visual-illusions" target="_blank">visual-illusions</a> - Machine learning for illusion generation</li>
-            </ul>
-            
-            <p><em>Audiovisual experiences:</em></p>
-            <ul>
-                <li><a href="https://kylemath.github.io/WhisperingPines/" target="_blank">WhisperingPines</a> - Webcam-responsive generative audiovisual art</li>
-                <li><a href="https://github.com/kylemath/MidiRapper" target="_blank">MidiRapper</a> - MIDI-based music generation</li>
-            </ul>
-            
-            <p><em>Physiological computing:</em></p>
-            <ul>
-                <li><a href="https://kylemath.github.io/webcamHR/" target="_blank">webcamHR</a> - Heart rate detection from webcam video</li>
-                <li><a href="https://github.com/kylemath/matlab_video_hr" target="_blank">matlab_video_hr</a> - MATLAB implementation of video-based heart rate</li>
-            </ul>
-            
-            <p><em>Related papers:</em></p>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:mKu_rENv82IC" target="_blank">Noncontact measurement of emotional and physiological changes in heart rate (2018)</a></li>
-                <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:WF5omc3nYNoC" target="_blank">Simultaneous perception of both interpretations of ambiguous figures (2011)</a></li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<div class="research-stage">
-    <div class="research-stage-header">
-        <h4>Digital Fabrication & Creative Tools</h4>
-    </div>
-    <div class="research-stage-body">
-        <img src="images/research-digital-fabrication.jpg" alt="Creative fabrication and 3D printing" class="research-image">
-        <div class="research-content">
-        <p>We develop tools that bridge digital design with physical creation, enabling novel forms of expression and personalized manufacturing. From voice-controlled 3D printing to color-mixing algorithms, these projects explore how computational creativity can enhance human imagination.</p>
-        <div class="research-links">
-            <p><em>3D printing & fabrication:</em></p>
-            <ul>
-                <li><a href="https://kylemath.github.io/IllumiStack/" target="_blank">IllumiStack</a> - Multi-color 3D printing with stacked transparency layers</li>
-                <li><a href="https://kylemath.github.io/hueforge-at-home/" target="_blank">hueforge-at-home</a> - Color mixing algorithms for 3D printing</li>
-                <li><a href="https://github.com/kylemath/voice2print" target="_blank">voice2print</a> - Transform voice recordings into 3D-printable objects</li>
-                <li><a href="https://github.com/kylemath/topographicModelsFromMapWebpage" target="_blank">topographicModelsFromMapWebpage</a> - Generate 3D terrain models from maps</li>
-                <li><a href="https://github.com/kylemath/digitalClock" target="_blank">digitalClock</a> - 3D-printed smart clock for ESPHome</li>
-            </ul>
-            
-            <p><em>Visual & generative tools:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/FractalViewerWebpage" target="_blank">FractalViewerWebpage</a> - Interactive fractal exploration</li>
-                <li><a href="https://github.com/kylemath/microphoneSpectroramWebpage" target="_blank">microphoneSpectroramWebpage</a> - Real-time audio visualization</li>
-                <li><a href="https://github.com/kylemath/GroupPaint" target="_blank">GroupPaint</a> - Collaborative drawing interface</li>
-            </ul>
-            
-            <p><em>Community & cultural projects:</em></p>
-            <ul>
-                <li><a href="https://github.com/kylemath/nehiyoMTB" target="_blank">nehiyoMTB</a> - Nehiyawewin (Cree) trail signs for Edmonton</li>
-                <li><a href="https://github.com/kylemath/HistoricGlenoraMapWebpage" target="_blank">HistoricGlenoraMapWebpage</a> - Historical Edmonton neighborhood mapping</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-
-<h4>Emerging Frontiers: AI-Enhanced Perceptual Engineering</h4>
-
-<p>Our newest work explores whether machines can understand and generate visual illusions, opening pathways to AI-human cognitive collaboration. We're developing computational methods that combine multivariate pattern analysis with web technologies to create the next generation of brain-computer interfaces that enhance rather than replace human cognition.</p>
-<div class="research-links">
-    <p><em>Related papers:</em></p>
-    <ul>
-        <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:SGW5VrABaM0C" target="_blank">Effects of random fluctuations in alpha oscillations on orientation detection (2019)</a></li>
-        <li><a href="https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C" target="_blank">To see or not to see: prestimulus α phase predicts visual awareness (2009)</a></li>
-    </ul>
-    
-    <p><em>Related projects:</em></p>
-    <ul>
-        <li><a href="https://github.com/kylemath/visual-illusions" target="_blank">visual-illusions</a> - ML for visual illusions</li>
-        <li><a href="https://github.com/kylemath/cross_colour" target="_blank">cross_colour</a> - Illusory color effects</li>
-        <li><a href="https://github.com/kylemath/faceoff" target="_blank">faceoff</a> - Latent GAN State Brain Surfing</li>
-        <li><a href="https://github.com/kylemath/Apparition" target="_blank">Apparition</a> - Live video puppet with pix2pix</li>
-        <li><a href="https://github.com/kylemath/ConciousnessTheoryCompareWebpage" target="_blank">ConciousnessTheoryCompareWebpage</a> - Compare theories of consciousness</li>
-        <li><a href="https://github.com/kylemath/Generation" target="_blank">Generation</a> - Local AI image generation with diffusion models</li>
-    </ul>
-</div>
-
-<style>
-/* Research Section Styling */
-#tab-research h2 {
-    color: #0f172a;
-    font-size: 32px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid #3b82f6;
-    font-weight: 700;
-}
-
-#tab-research h3 {
-    color: #1e293b;
-    font-size: 24px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 5px solid #3b82f6;
-    font-weight: 600;
-}
-
-#tab-research h4 {
-    color: #1e40af;
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.research-stage {
-    margin: 40px 0;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
-    border: 1px solid #e5e7eb;
-    transition: all 0.3s ease;
-    overflow: hidden;
-}
-
-.research-stage:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.08);
-    transform: translateY(-3px);
-    border-color: #cbd5e1;
-}
-
-.research-stage-header {
-    width: 100%;
-    padding: 20px 30px;
-    background: #ffffff;
-    border-bottom: 3px solid #e5e7eb;
-    border-left: 5px solid #3b82f6;
-}
-
-.research-stage-header h4 {
-    color: #1e293b;
-    margin: 0;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-}
-
-.research-stage-body {
-    display: flex;
-    gap: 30px;
-    padding: 30px;
-    align-items: flex-start;
-    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
-}
-
-.research-stage:nth-child(even) .research-stage-body {
-    flex-direction: row-reverse;
-}
-
-.research-image {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-}
-
-.research-stage:hover .research-image {
-    transform: scale(1.02);
-}
-
-.research-content {
-    flex: 1;
-}
-
-.research-content > p:first-of-type {
-    line-height: 1.7;
-    margin-bottom: 20px;
-    margin-top: 0;
-    color: #374151;
-}
-
-.research-content em {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #6366f1;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.research-content p:has(em) {
-    margin-bottom: 8px;
-}
-
-.research-content a {
-    display: inline-block;
-    color: #2563eb;
-    text-decoration: none;
-    padding: 4px 0;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid transparent;
-}
-
-.research-content a:hover {
-    color: #1d4ed8;
-    border-bottom-color: #3b82f6;
-    padding-left: 4px;
-}
-
-.research-content a:visited {
-    color: #7c3aed;
-}
-
-/* Research links styling */
-.research-links {
-    margin-top: 25px;
-}
-
-.research-links ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.research-links li {
-    padding: 6px 0 6px 20px;
-    position: relative;
-    line-height: 1.6;
-}
-
-.research-links li:before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #3b82f6;
-    font-weight: bold;
-}
-
-.research-links p {
-    margin-bottom: 5px;
-}
-
-.citation-count {
-    display: inline-block;
-    margin-left: 8px;
-    padding: 2px 8px;
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    color: #1e40af;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 12px;
-    border: 1px solid #bfdbfe;
-}
-
-/* Section dividers */
-#tab-research hr {
-    margin: 50px 0;
-    border: none;
-    border-top: 2px solid #e5e7eb;
-    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-}
-
-/* Emerging Frontiers special styling */
-#tab-research h4:last-of-type {
-    margin-top: 50px;
-    padding-top: 30px;
-    padding-left: 20px;
-    border-top: 2px dashed #d1d5db;
-    border-left: 4px solid #8b5cf6;
-    color: #1e293b;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .research-stage-header {
-        padding: 15px 20px;
-    }
-    
-    .research-stage-header h4 {
-        font-size: 18px;
-    }
-    
-    .research-stage-body {
-        flex-direction: column !important;
-        padding: 20px;
-        gap: 20px;
-    }
-    
-    .research-image {
-        width: 100%;
-        height: auto;
-        max-height: 250px;
-        order: -1; /* Image appears first on mobile */
-    }
-    
-    #tab-research h2 {
-        font-size: 24px;
-    }
-    
-    #tab-research h3 {
-        font-size: 20px;
-    }
-}
-</style>
-
-</div>
-
-<!-- Tab: Publications -->
-<div id="tab-publications" class="tab-content">
-
-<h2 id="publications">Recent Publications</h2>
-<p>View all publications on <a href="https://scholar.google.com/citations?user=wgK6LCYAAAAJ" target="_blank">Google Scholar</a></p>
-<ol reversed>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:AYInfyleIOsC" target="_blank">Universal Conceptual Structure in Neural Translation: Probing NLLB-200's Multilingual Geometry</a> - KE Mathewson (2026)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:RJOyoaXV5v8C" target="_blank">Magic Gems: A Polyhedral Framework for Magic Squares</a> - KE Mathewson (2025)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:eGYfIraVYiQC" target="_blank">Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute Stroke Syndrome.</a> - M Kate et al. (2025)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kJDgFkosVoMC" target="_blank">Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute …</a> - M Kate et al. (2025)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:X9ykpCP0fEIC" target="_blank">Quantitative electroencephalography to assess post-stroke functional disability: A systematic review and meta-analysis</a> - I Sood et al. (2024)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:8Xgff_V0N9gC" target="_blank">The moving wave: Applications of the mobile EEG approach to study human attention</a> - KE Mathewson et al. (2024)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Xz60mAmATU4C" target="_blank">Fast optical signals for real-time retinotopy and brain computer interface</a> - D Perpetuini et al. (2023)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2v_ZtQDX9iAC" target="_blank">B. 4 Quantitative electroencephalography to predict post-stroke disability: a systematic review and meta-analysis</a> - I Sood et al. (2023)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:27LrP4qxOz0C" target="_blank">An# EEGManyLabs study to test the role of the alpha phase on visual perception (a replication and new evidence)</a> - M Ruzzoli et al. (2023)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QsaTk4IG4EwC" target="_blank">Recommendations and publication guidelines for studies using frequency domain and time‐frequency domain analyses of neural time series</a> - A Keil et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LXmCCkuhhTsC" target="_blank">Metabolomic fingerprint of behavioral changes in response to full-spectrum cannabis extracts</a> - ZH Maayah et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:IsPWOBWtZBwC" target="_blank">To see, not to see or to see poorly: Perceptual quality and guess rate as a function of electroencephalography (EEG) brain activity in an orientation perception task</a> - SS Sheldon et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:silx2ntsSuwC" target="_blank">Surrounding Traffic Matters: Increases in Traffic Volume Are Related to Changes in EEG Rhythms in Urban Cyclists</a> - D Robles et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:sA9dB-pw3HoC" target="_blank">Low cost, portable electroencephalograph may improve the accuracy of prehospital stroke diagnosis and detection of large vessel occlusion</a> - CM Wilkinson et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:k_7cPK9k7w8C" target="_blank">Abstract tp56: low cost, portable electroencephalograph may improve the accuracy of prehospital stroke diagnosis and detection of large vessel occlusion</a> - CM Wilkinson et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Hck25ST_3aIC" target="_blank">Abstract WMP46: Quantitative Electroencephalogram To Assess Neurovascular Coupling Post Endovascular Thrombectomy</a> - N Ishaque et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CYCckWUYoCcC" target="_blank">INCREASES IN TRAFFIC VOLUME ARE ASSOCIATED WITH MEASURABLE CHANGES IN EEG IN URBAN CYCLING LANES</a> - D Robles et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:aIdbFUkbNIkC" target="_blank">Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using …</a> - SS Sheldon et al. (2022)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SnGPuo6Feq8C" target="_blank">EEG in motion: Using an oddball task to explore motor interference in active skateboarding</a> - D Robles et al. (2021)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:UuEBAcK4md4C" target="_blank">DECODING COVERT ATTENTION ON AN ORIENTATION PERCEPTION TASK FROM EEG ALPHA ACTIVITY</a> - S Sheldon et al. (2021)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DrR-2ekChdkC" target="_blank">Predicting stroke severity with a 3-min recording from the Muse portable EEG system for rapid diagnosis of stroke</a> - CM Wilkinson* et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:5bg8sr1QxYwC" target="_blank">A ride in the park: Cycling in different outdoor environments modulates the auditory evoked potentials</a> - JEM Scanlon et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:pS0ncopqnHgC" target="_blank">The time course of moral perception: an ERP investigation of the moral pop-out effect</a> - A Gantman et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rbm3iO8VlycC" target="_blank">Aerobic fitness unrelated to acquisition of spatial relational memory in college-aged adults</a> - MC Chandler et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rTD5ala9j4wC" target="_blank">Application of the Muse portable EEG system to aid in rapid diagnosis of stroke</a> - CM Wilkinson et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QUX0mv85b1cC" target="_blank">Attention in Motion: Using an Oddball Task to Record Brain Activity in Skateboarders</a> - D Robles et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PkcyUWeTMh0C" target="_blank">EFFECTS OF COVERT ATTENTION ON ORIENTATION DETECTION AND PERCEPTION: AN EEG STUDY</a> - S Sheldon et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:JTqpx9DYBaYC" target="_blank">APPLICATION OF THE MUSE PORTABLE EEG SYSTEM TO AID IN RAPID DIAGNOSIS OF STROKE</a> - J Burrell et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:wvYxNZNCP7wC" target="_blank">DIFFERENCES IN TRAFFIC CONDITIONS ARE RELATED TO N1 AMPLITUDE CHANGES DURING CYCLING</a> - D Robles et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HJSXoJQnj-YC" target="_blank">BLINDED BY MAGIC: ELECTROPHYSIOLOGICAL CORRELATES OF CHANGE BLINDNESS</a> - M Yuan et al. (2020)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kzcSZmkxUKAC" target="_blank">Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring</a> - L Tian et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:NDuN12AVoxsC" target="_blank">Taking off the training wheels: Measuring auditory P3 during outdoor cycling using an active wet EEG system</a> - JEM Scanlon et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:w0F2JDEymm0C" target="_blank">The ecological cocktail party: Measuring brain activity during an auditory oddball task with background noise</a> - JEM Scanlon et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:FiDNX6EVdGUC" target="_blank">Electrophysiological correlates of hyperoxia during resting‐state EEG in awake human subjects</a> - SAD Kizuk et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2l5NCbZemmgC" target="_blank">Real brains in virtual worlds: Validating a novel oddball paradigm in virtual reality</a> - JWP Kuziek et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:isU91gLudPYC" target="_blank">The human eye as a camera</a> - S Mann et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DkZNVXde3BIC" target="_blank">Blinded by magic: Electrophysiological correlates of change blindness</a> - M Yuan et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SGW5VrABaM0C" target="_blank">Effects of random fluctuations in alpha oscillations on orientation detection: an EEG study</a> - SS Sheldon et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:An6A6Jpfc1oC" target="_blank">The time-course of moral perception: An electroencephalography investigation</a> - AP Gantman et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:EPG8bYD4jVwC" target="_blank">Aerobic Fitness Does Not Predict Acquisition of Hippocampal-dependent Memory in College-aged Adults</a> - MC Chandler et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:eAlLMO4JVmQC" target="_blank">Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring (vol 3, pg 194, 2019)</a> - L Tian et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mWEH9CqjF64C" target="_blank">Publisher Correction: Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring</a> - T Limei et al. (2019)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3bvyWxjaHKcC" target="_blank">Two‐layered and stretchable e‐textile patches for wearable healthcare electronics</a> - TG La et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mKu_rENv82IC" target="_blank">Noncontact measurement of emotional and physiological changes in heart rate from a webcam</a> - CR Madan et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:pAkWuXOU-OoC" target="_blank">Increasing the mobility of EEG data collection using a Latte Panda computer</a> - JWP Kuziek et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kWvqk_afx_IC" target="_blank">Does 10-Hz cathodal oscillating current of the parieto-occipital lobe modulate target detection?</a> - SS Sheldon et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1DsIQWDZLl8C" target="_blank">Entrainment of theta, not alpha, oscillations is predictive of the brightness enhancement of a flickering stimulus</a> - JK Bertrand et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:U_HPUtbDl20C" target="_blank">Duck eats rabbit: exactly which type of relational phrase can disambiguate the perception of identical side by side ambiguous figures?</a> - KE Mathewson (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:v6i8RKmR8ToC" target="_blank">Electrophysiological correlates of hyperoxia during resting-state EEG in awake human subjects</a> - W Vuong et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:YsrPvlHIBpEC" target="_blank">EFFECTS OF RANDOM FLUCTUATIONS IN ALPHA POWER ON COLOR DETECTION: AN EEG STUDY</a> - S Sheldon et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:ziOE8S1-AIUC" target="_blank">FEEDBACK ERROR-RELATED NEGATIVITY AS A CONTROL SIGNAL FOR THE ATTENTION SYSTEM</a> - D Robles et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mUJArPsKIAAC" target="_blank">BRAIN WAVES MEET REAL LIFE: RECENT ADVANCES IN MOBILE EEG</a> - KE Mathewson et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:oi2SiIJ9l4AC" target="_blank">MODULATIONS IN BASELINE OSCILLATIONS AND AUDITORY ERPS AS A FUNCTION OF REAL-WORLD ENVIRONMENTAL NOISE</a> - JEM Scanlon et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:w1MjKQ0l0TYC" target="_blank">A RIDE IN THE PARK: CYCLING IN DIFFERENT OUTDOOR ENVIRONMENTS AFFECTS THE AUDITORY N1</a> - J Scanlon et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:65Yg0jNCQDAC" target="_blank">" Power and phase of alpha oscillations reveal an interaction between spatial and temporal visual attention": Erratum.</a> - SAD Kizuk et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HhcuHIWmDEUC" target="_blank">Power and Phase of Alpha Oscillations Reveal an Interaction between Spatial and Temporal Visual Attention (vol 29, pg 480, 2017)</a> - SAD Kizuk et al. (2018)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jE2MZjpN3IcC" target="_blank">High and dry? Comparing active dry EEG electrodes to active and passive wet electrodes</a> - KE Mathewson et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:KaMxkj08jr0C" target="_blank">Power and phase of alpha oscillations reveal an interaction between spatial and temporal visual attention</a> - SAD Kizuk et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-7ulzOJl1JYC" target="_blank">Transitioning EEG experiments away from the laboratory using a Raspberry Pi 2</a> - JWP Kuziek et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PyEswDtIyv0C" target="_blank">Your brain on bikes: P3, MMN/N2b, and baseline noise while pedaling a stationary bike</a> - JEM Scanlon et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1Ye0OR6EYb4C" target="_blank">Reorganization of neural systems mediating peripheral visual selective attention in the deaf: An optical imaging study</a> - JL Seymour et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-jrNzM816MMC" target="_blank">Regulating the access to awareness: Brain activity related to probe-related and spontaneous reversals in binocular rivalry</a> - BA Metzger et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:uVUOdF_882EC" target="_blank">Does viewing nature and urban environments change neuro-cognitive markers of attention?</a> - J Kuziek et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:O0nohqN1r9EC" target="_blank">YOUR BRAIN IN THE WORLD: INVESTIGATING THE N1 AND P2 FOR ECOLOGICAL STIMULI.</a> - T McLean et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-95Q15plzcUC" target="_blank">DO EXOGENOUSLY ENTRAINED OSCILLATIONS IN BRAIN ACTIVITY INFLUENCE PERCEPTION?</a> - S Sheldon et al. (2017)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:6_hjMsCP8ZoC" target="_blank">Combining energy and Laplacian regularization to accurately retrieve the depth of brain activity of diffuse optical tomographic data</a> - AM Chiarelli et al. (2016)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QyXJ3EUuO1IC" target="_blank">The Vision Rhythm? Entrainment at Multiple Frequencies Reveal Differential Interactions Between Neural Oscillations and Visual Perception</a> - SAD Kizuk et al. (2016)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:OBSaB-F7qqsC" target="_blank">Taking Off the Training Wheels: Measuring Brain Activity During Outdoor Cycling Using an Active Wet EEG System</a> - J Scanlon et al. (2016)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HGTzPopzzJcC" target="_blank">Red Light, Green Light: Understanding the Perceptual Qualities of alpha Inhibition and the Role of Attention in Entrainment</a> - J Kuziek et al. (2016)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WC9gN4BGCRcC" target="_blank">MAKING WAVES IN TWO STREAMS OF CONSCIOUSNESS: AN INTERACTION BETWEEN SPATIAL AND TEMPORAL ATTENTION</a> - SAD Kizuk et al. (2015)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:yxmsSjX2EkcC" target="_blank">NON-CONTACT MEASUREMENT OF COGNITIVE, EMOTIONAL, AND PHYSIOLOGICAL CHANGES IN HEART RATE WITH A WEBCAM</a> - CR Madan et al. (2015)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-mN3Mh-tlDkC" target="_blank">PROBING BINOCULAR RIVALRY: PRE-STIMULUS ALPHA DETERMINES WHETHER SUPPRESSED-EYE PROBES ELICIT A SWITCH IN PERCEPTUAL DOMINANCE</a> - BA Metzger et al. (2015)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WHdLCjDvYFkC" target="_blank">Soft microfluidic assemblies of sensors, circuits, and radios for the skin</a> - S Xu* et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PYBJJbyH-FwC" target="_blank">Rugged and breathable forms of stretchable electronics with adherent composite substrates for transcutaneous monitoring</a> - KI Jang et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:MhiOAD_qIWkC" target="_blank">Dynamics of Alpha Control: Preparatory Suppression of Posterior Alpha Oscillations by Frontal Modulators Revealed with Combined EEG and Event-related Optical Signal</a> - KE Mathewson et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:owLR8QvbtFgC" target="_blank">Providing views of the driving scene to drivers’ conversation partners mitigates cell-phone-related distraction</a> - JG Gaspar et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3NQIlFlcGxIC" target="_blank">Keep your mind on the road: Predicting mind-wandering while driving using classification of pre-probe oscillatory brain activity and driving performance</a> - J He et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Ade32sEp0pkC" target="_blank">Amelioration of the distracting effect of cellphone driving</a> - WN Street et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:hsZV8lGYWTMC" target="_blank">Not all probes are created equal: Suppressed probes presented during binocular rivalry draw attention to the suppressed image</a> - BA Metzger et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Br1UauaknNIC" target="_blank">Retinotopic visual mapping of brain oxygenation and neuronal activity using simultaneous fast and slow near-infrared optical brain imaging in humans.</a> - KE Mathewson et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:zGdJYJv2LkUC" target="_blank">Fabrication Procedure for Rugged and Breathable Forms of Stretchable Electronics with Adherent and Composite Substrates</a> - JA Rogers et al. (2014)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CB2v5VPnA5kC" target="_blank">Providing conversation partners views of the driving scene mitigates cell phone-related distraction</a> - JG Gaspar et al. (2013)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LkGwnXOMwfcC" target="_blank">Making Waves in the Stream of Consciousness: Entraining Oscillations in EEG Alpha and Fluctuations in Visual Awareness with Rhythmic Visual Stimulation</a> - KE Mathewson et al. (2012)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:_FxGoFyzp5QC" target="_blank">Dissociable neural representations of reinforcement and belief prediction errors underlie strategic learning</a> - L Zhu et al. (2012)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:hqOjcs7Dif8C" target="_blank">Different slopes for different folks: Alpha and delta EEG power predict subsequent video game learning rate and improvements in cognitive control tasks</a> - KE Mathewson et al. (2012)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:UeHWp8X0CEIC" target="_blank">Pulsed out of awareness: EEG alpha oscillations represent a pulsed-inhibition of ongoing cortical processing</a> - KE Mathewson et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2osOgNQ5qMEC" target="_blank">Learning to multitask: effects of video game practice on electrophysiological indices of attention and resource allocation</a> - EL Maclin et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WF5omc3nYNoC" target="_blank">Simultaneous perception of both interpretations of ambiguous figures</a> - MS Jensen et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jU7OWUQzBzMC" target="_blank">WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED …</a> - KE Mathewson et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SjuI4pbJlxcC" target="_blank">Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical …</a> - KE Mathewson et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LPtt_HFRSbwC" target="_blank">DISCO: DETECTORS, IMAGES, SOURCES AND CORTICAL OPTIMIZATION OF LIGHT CHANNELS FOR THE EVENT-RELATED OPTICAL SIGNAL (EROS)</a> - DA Steines et al. (2011)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u-x6o8ySG0sC" target="_blank">Rescuing stimuli from invisibility: Inducing a momentary release from visual masking with pre-target entrainment</a> - KE Mathewson et al. (2010)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:5nxA0vEk-isC" target="_blank">Making waves in the stream of consciousness: Eliciting predictable oscillations in visual awareness with pretarget entrainment at 12 Hz</a> - KE Mathewson et al. (2010)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:L1USKYWJimsC" target="_blank">Who will learn best? Electrophysiological markers of cognitive control predict subsequent complex task learning in the space fortress game</a> - KE Mathewson et al. (2010)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CdxZDUztZiMC" target="_blank">Controlling the timing of oscillations in neural activity and consciousness with rhythmic visual stimulation</a> - K Mathewson et al. (2010)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:prdVHNxh-e8C" target="_blank">ENTRAINING NEURAL OSCILLATIONS WITH RHYTHMIC VISUAL STIMULATION ELICITS SIMULTANEOUS FLUCTUATIONS IN VISUAL AWARENESS</a> - KE Mathewson et al. (2010)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C" target="_blank">To see or not to see: prestimulus α phase predicts visual awareness</a> - KE Mathewson et al. (2009)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:XUvXOeBm_78C" target="_blank">Illuminating awareness: Investigating the temporal and spatial neural dynamics of metacontrast masking using the event-related optical signal</a> - K Mathewson et al. (2009)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rHJHxKgnXwkC" target="_blank">Making waves in the stream of consciousness: Eliciting predictable oscillations in visual awareness with visual entrainment at 12 Hz</a> - KE Mathewson et al. (2009)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:0EnyYjriUFMC" target="_blank">Pre-stimulus activity predicts subsequent target detection in meta-contrast masking</a> - K Mathewson et al. (2008)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:6bLC7aUMtPcC" target="_blank">Training on a complex task affects dual task event-related brain potentials</a> - KA Low et al. (2008)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1yWc8FF-_SYC" target="_blank">Now you see it, now you don't: Pre-stimulus electrophysiological predictors of subsequent visual awareness in metacontrast masking</a> - KE Mathewson et al. (2008)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:MAUkC_7iAq8C" target="_blank">The detrimental effects of working memory load on a sustained attention task: The elimination of a cueing effect with distraction</a> - K Mathewson et al. (2007)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DBa1UEJaJKAC" target="_blank">Sequence learning and medial-front cortex: External versus internal error evaluation</a> - O Krigolson et al. (2007)</li>
-    <li><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:d1gkVwhDpl0C" target="_blank">The role of medial-frontal cortex in sequence learning</a> - OE Krigolson et al. (2006)</li>
-</ol>
-
-<hr>
-
-
-</div>
-
-<!-- Tab: Teaching -->
-<div id="tab-teaching" class="tab-content">
-
-<h2 id="teaching">Teaching</h2>
-<ul>
-    <li><strong>PSYCH 275 - Brain and Behavior:</strong> An introduction to brain mechanisms involved in sensation, perception, movement, motivation, learning, and cognition, as studied in both humans and lower animals. <a href="https://youtu.be/MkqbObAURVI?si=NDxqzmPBOf3YysgI" target="_blank">[YouTube Playlist]</a></li>
-    <li><strong>PSYCH 375 - Cognitive Neuroscience:</strong> An advanced study of cognitive processes from a neuroscientific perspective, examining how the brain supports functions such as attention, perception, memory, and executive control. <a href="https://www.youtube.com/playlist?list=PLeBpq2qBuOI3Tmb2oxEl1B2gq9s6Ol85O" target="_blank">[YouTube Playlist 1]</a> | <a href="https://www.youtube.com/playlist?list=PLeBpq2qBuOI2MydmU9cAsgUP6goamWKUE" target="_blank">[YouTube Playlist 2]</a></li>
-    <li><strong>PSYCH 396, 398, 496, 498 - Independent Research Projects:</strong> Supervised independent research projects for undergraduate and graduate students.</li>
-    <li><strong>Supervision of Masters and Doctoral Students' Theses:</strong> Mentoring graduate students through their research projects and thesis completion.</li>
-    <li><strong>PSYCH 403/505 - Recent Advances in Experimental Psychology / Conference Course in Psychology:</strong> Advanced concepts and theories in experimental psychology and emerging research areas. I have taught five versions of this course in various years:
-        <ul>
-            <li>Computer Programming for Psychology 1: Experiment Creation, Presentation, Data Collection</li>
-            <li>Computer Programming for Psychology 2: Data Analysis, Statistics, and Visualization</li>
-            <li>Consciousness: Recent Advances and Theories</li>
-            <li>Advanced Cognitive Neuroscience</li>
-            <li>Brain Sensing and Stimulation</li>
-        </ul>
-    </li>
-    <li><strong>Course Content Creation Projects:</strong>
-        <ul>
-            <li><a href="https://github.com/kylemath/EEGEdu" target="_blank">EEGEdu</a> - Interactive brain playground for learning</li>
-            <li><a href="https://github.com/kylemath/p5.eegedu" target="_blank">p5.eegedu</a> - Live coding with brain activity</li>
-            <li><a href="https://github.com/kylemath/matlab_Psychtoolbox_course" target="_blank">matlab_Psychtoolbox_course</a> - MATLAB Psychtoolbox programming tutorials <a href="https://www.youtube.com/playlist?list=PLeBpq2qBuOI0lHH7py9B-B53zVxcVwyne" target="_blank">[YouTube Playlist]</a></li>
-            <li><a href="https://github.com/kylemath/pytutorial" target="_blank">pytutorial</a> - Python programming tutorial materials</li>
-            <li><a href="https://github.com/kylemath/eeg-notebooks" target="_blank">eeg-notebooks</a> - Classic EEG experiments in Jupyter</li>
-            <li><a href="https://github.com/kylemath/DeepEEG" target="_blank">DeepEEG</a> - Deep learning for EEG analysis</li>
-            <li><a href="https://github.com/kylemath/375Data_2020" target="_blank">375Data_2020</a> - Shared datasets for final papers</li>
-            <li><a href="https://github.com/kylemath/TimeFreqWorkshop" target="_blank">TimeFreqWorkshop</a> - Time frequency analysis workshop materials</li>
-        </ul>
-    </li>
-</ul>
-
-<hr>
-
-
-
-
-</div>
-
-<!-- Tab: Experience -->
-<div id="tab-experience" class="tab-content">
-
-<h2 id="experience">Work Experience</h2>
-
-<h3>Academic Positions</h3>
-<ul>
-    <li><strong>Associate Professor (2019-present)</strong><br>
-        Department of Psychology, Faculty of Science, University of Alberta<br>
-        <em>Director, Attention Perception and Performance Lab (APPLab)</em><br>
-        Research focus: Cognitive neuroscience, portable EEG systems, real-world brain monitoring</li>
-    
-    <li><strong>Assistant Professor (2013-2019)</strong><br>
-        Department of Psychology, Faculty of Science, University of Alberta<br>
-        <em>Director, Attention Perception and Performance Lab (APPLab)</em><br>
-        Established lab, developed portable brain sensing technologies, secured research funding</li>
-    
-    <li><strong>Postdoctoral Fellow (2011-2013)</strong><br>
-        Beckman Institute for Advanced Science and Technology, University of Illinois at Urbana-Champaign<br>
-        <em>Supervisors: Drs. Monica Fabiani and Gabriele Gratton</em><br>
-        Research on neural oscillations, optical brain imaging, flexible electronics</li>
-    
-    <li><strong>Postdoctoral Fellow (2011)</strong><br>
-        Department of Psychology, University of Alberta<br>
-        <em>Supervisor: Dr. Anthony Singhal</em><br>
-        Transition position focusing on attention and perception research</li>
-</ul>
-
-<h3>Industry & Consulting Experience</h3>
-<ul>
-    <li><strong>Senior Software Engineer (May 2023 - Oct 2023)</strong><br>
-        Neurosity, San Francisco Bay Area (Remote)<br>
-        <em>6 months, Permanent Full-time</em><br>
-        Skills: Data Science, TypeScript, and 15+ additional technical skills<br>
-        Focus on neurotechnology software development and brain-computer interface applications</li>
-    
-    <li><strong>Chief Scientist (Jun 2021 - May 2023)</strong><br>
-        Blueberry, Toronto, Ontario, Canada<br>
-        <em>2 years</em><br>
-        Skills: Data Science, TypeScript, and 5+ additional skills<br>
-        Leadership role in scientific research and technology development</li>
-    
-    <li><strong>Scientific Advisor (Jul 2020 - Jun 2021)</strong><br>
-        Blueberry, Toronto, Ontario, Canada<br>
-        <em>1 year</em><br>
-        Skills: Neuroscience<br>
-        Advisory role providing neuroscience expertise and strategic guidance</li>
-    
-    <li><strong>Independent Consultant (2013-present)</strong><br>
-        Neuroscience and Cognitive Psychology Applications<br>
-        <em>Applied research consulting for various industries and organizations</em><br>
-        Expertise in portable brain-sensing technology and human performance optimization</li>
-    
-    <li><strong>Industry Collaborations</strong><br>
-        <em>Various projects involving neurotechnology development and validation</em><br>
-        Work with companies developing portable EEG systems, brain-computer interfaces, and consumer neurotechnology applications</li>
-</ul>
-
-<h3>Community & Leadership</h3>
-<ul>
-    <li><strong>Soccer Coach (2010s-present)</strong><br>
-        Juventus Soccer Club, Edmonton<br>
-        <em>2013 Boys T3 team coaching and youth development</em><br>
-        Active player in Edmonton and District Soccer Association</li>
-    
-    <li><strong>Open Source Project Leadership</strong><br>
-        <em>GitHub: <a href="https://github.com/kylemath" target="_blank">@kylemath</a></em><br>
-        Lead developer on EEGEdu, muse-js, DeepEEG, and numerous neuroscience tools<br>
-        Active contributor to democratizing neuroscience through accessible technology</li>
-</ul>
-
-
-</div>
-
-<!-- Tab: News -->
-<div id="tab-news" class="tab-content">
-
-<h2 id="news-mentions">In the News</h2>
-<ul>
-    <li><a href="https://www.ualberta.ca/en/folio/2023/10/inside-the-mind-of-the-machine.html" target="_blank">Inside the mind of the machine</a> - Geoff McMaster, Folio (October 2, 2023)</li>
-    <li><a href="https://edifyedmonton.com/urban/innovation-technology/check-your-head/" target="_blank">Check Your Head</a> - Steven Sandor, Edify Edmonton (May 1, 2023)</li>
-    <li><a href="https://www.ualberta.ca/en/folio/2022/04/metabolic-fingerprint-predicts-impairment-from-medical-cannabis.html" target="_blank">Metabolic 'fingerprint' predicts impairment from medical cannabis</a> - Gillian Rutherford, Folio, University of Alberta (April 20, 2022) (Collaboration)</li>
-    <li><a href="https://www.popularmechanics.com/science/a33224851/how-many-circles-viral-coffer-illusion/" target="_blank">How Many Circles Do You See Here?</a> - Andrew Daniels, Popular Mechanics (July 7, 2020)</li>
-    <li><a href="https://edmonton.ctvnews.ca/these-headsets-are-changing-the-way-u-of-a-neuroscience-students-learn-1.5091712" target="_blank">These headsets are changing the way U of A neuroscience students learn</a> - Kelsey Dyer, CTV News Edmonton (September 3, 2020)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2020/september/eeg-headsets.html" target="_blank">A new frame of mind: EEG headsets transform learning for neuroscience students</a> - Katie Willis, Faculty of Science, University of Alberta (September 2, 2020)</li>
-    <li><a href="https://www.popsci.com/story/science/oldest-optical-illusion/" target="_blank">This ancient optical illusion is a 14,000-year-old puzzle</a> - Tom McNamara, Popular Science (March 23, 2020)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2019/september/brain-activity-background-noise.html" target="_blank">Make some noise: How background noise affects brain activity</a> - Andrew Lyle, Faculty of Science, University of Alberta (September 19, 2019)</li>
-    <li><a href="https://www.popularmechanics.com/science/a28763960/rabbit-raven-optical-illusion/" target="_blank">Is This a Rabbit or Raven?</a> - Andrew Daniels, Popular Mechanics (August 20, 2019)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2019/august/psych-chair-singhal.html" target="_blank">Driving the future: New chair of the Department of Psychology focuses his sights on growth</a> - Jennifer Pascoe, Faculty of Science, University of Alberta (August 6, 2019) (Mention)</li>
-    <li><a href="https://fivethirtyeight.com/features/driving-your-phone-is-a-distraction-even-if-you-arent-looking-at-it/" target="_blank">Driving? Your Phone Is A Distraction Even If You Aren't Looking At It</a> - Christie Aschwanden, FiveThirtyEight (June 21, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/about-us/contours/2018-spring-contours/2018/may/next-up-neuroscience.html" target="_blank">Next up in neuroscience</a> - Katie Willis, Faculty of Science, University of Alberta (May 29, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2018/march/optical-illusion-gives-insight-into-how-we-perceive-the-world.html" target="_blank">Duck, duck, rabbit: How we see what we see</a> - Katie Willis, Faculty of Science/Folio, University of Alberta (March 5, 2018)</li>
-    <li><a href="https://time.com/5127108/brain-works-differently-outside/" target="_blank">Being Outdoors May Change the Way Your Brain Works, Study Says</a> - Jamie Ducharme, TIME (February 2, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/folio/2018/01/this-is-your-brain-this-is-your-brain-outdoors.html" target="_blank">This is your brain. This is your brain outdoors.</a> - Katie Willis, Folio, University of Alberta (January 29, 2018)</li>
-    <li><a href="https://www.ualberta.ca/en/science/news/2017/august/new-equipment-maps-brain-activity-and-blood-flow-in-neuroscience-lab.html" target="_blank">New equipment maps brain activity and blood flow in state-of-the-art neuroscience lab</a> - Katie Willis, Faculty of Science, University of Alberta (August 23, 2017)</li>
-    <li><a href="https://www.ualberta.ca/newtrail/research/research-in-the-news2" target="_blank">The Factors of Focus</a> - Staff, New Trail / Edmonton Sun (May 19, 2017)</li>
-    <li><a href="https://shouldibescaredofthis.libsyn.com/podcast/my-phone/" target="_blank">Episode 6: My Phone</a> - Brothers DePaul (Jordan Foisy, host), Should I Be Scared of This? Podcast (September 21, 2015)</li>
-    <li><a href="https://www.bbc.co.uk/programmes/p02c9mg4" target="_blank">Health Check: Driving Distraction</a> - Claudia Hammond (host), BBC World Service (November 26, 2014)</li>
-    <li><a href="https://news.illinois.edu/view/6367/204502" target="_blank">Study: Talking while driving safest with someone who can see what you see</a> - Diana Yates, Illinois News Bureau (October 8, 2014)</li>
-    <li><a href="https://beckman.illinois.edu/news/article/2014/04/23/7932048d-c34c-488b-9135-b6c167e10ea1" target="_blank">Video: Controlling brain waves to improve vision</a> - Beckman Institute for Advanced Science and Technology (April 23, 2014)</li>
-    <li><a href="https://beckman.illinois.edu/about/news/article/2011/09/27/ada7783f-4b92-415f-8908-bbb4198f8c95" target="_blank">Fellows Corner: Kyle Mathewson</a> - Beckman Institute (September 27, 2011)</li>
-</ul>
-
-<hr>
-
-
-
-</div>
-
-<!-- Footer -->
-<div style="text-align: center; padding: 20px 40px; border-top: 1px solid #e5e7eb; background: #fafafa;">
-    <p><small>Last updated: January 2025 | Office: P-455 Bio Science - Psychology Wing | <a href="mailto:kmathews@ualberta.ca" target="_blank">Contact</a></small></p>
-</div>
-
 <script>
-// Catalogue card rendering (runs after DOM is fully loaded)
-(()=> {
-    const DATA_URL = 'catalogue_data.json';
-    const DISPLAY_LIMITS = {
-        preview: null,  // Show all cards
-        pages: null     // Show all cards
-    };
-    const grids = {
-        preview: document.getElementById('catalogue-grid'),
-        longform: document.getElementById('catalogue-longform-grid'),
-        pages: document.getElementById('catalogue-pages-grid')
-    };
+const PREVIEW = 10;
+const state = { q: '', sort: 'recent', view: 'rows', kind: 'all', topic: 'all', area: null, areaTopics: null, itemTopics: new Map(), rows: [], areas: [], links: [], open: new Set(), tableKey: 'title', tableDir: 1 };
+const TYPE_IDS = new Set(['links', 'papers', 'news', 'writing', 'experience']);
+const KIND_CHIPS = [
+    {id: 'all', title: 'All', tint: '#f5f5f6'},
+    {id: 'project', title: 'Projects', tint: '#8eb0ff'},
+    {id: 'paper', title: 'Papers', tint: '#e0a35e'},
+    {id: 'writing', title: 'Writing', tint: '#b48ef0'},
+    {id: 'news', title: 'News', tint: '#6cc6d6'}
+];
+const TOPIC_FAMILIES = [
+    { title: 'Lab', tint: '#5ec98b', keys: ['teaching', 'research', 'flexibleelectronics'] },
+    { title: 'Perception', tint: '#c4a6f5', keys: ['illusions', 'artcolabs'] },
+    { title: 'Brain tools', tint: '#8eb0ff', keys: ['webeeg', 'eegtools'] },
+    { title: 'Math & machines', tint: '#e0b56a', keys: ['math', 'magicsquares', 'computingscience', 'deeplearningpages', 'generativeai', 'computationalinteligence'] },
+    { title: 'Web & making', tint: '#7dcaa3', keys: ['webosapps', 'webanimation', 'webtools', 'commandlinetools', '3dprint', 'games'] },
+    { title: 'Elsewhere', tint: '#7dccc4', keys: ['soccer', 'judaism', 'finances', 'consulting', 'productivity'] }
+];
+const OTHER_FAMILY = { title: 'Other', tint: '#9aa0aa' };
+function familyKey(title) {
+    return String(title || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+function familyFor(title) {
+    const key = familyKey(title);
+    return TOPIC_FAMILIES.find(f => f.keys.includes(key)) || OTHER_FAMILY;
+}
+function chipTint(row, family) {
+    const own = row && row.color;
+    if (own && own.toLowerCase() !== '#9aa0aa') return own;
+    return family.tint;
+}
 
-    function generatePlaceholder(project) {
-        // Generate a unique color scheme based on project title
-        const title = project.title || project.id || 'Project';
-        const hash = title.split('').reduce((acc, char) => char.charCodeAt(0) + ((acc << 5) - acc), 0);
-        const hue1 = Math.abs(hash % 360);
-        const hue2 = (hue1 + 137) % 360; // Golden angle for pleasing color harmony
-        
-        return `data:image/svg+xml,${encodeURIComponent(`
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-                <defs>
-                    <linearGradient id="grad${hash}" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:hsl(${hue1}, 70%, 60%);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:hsl(${hue2}, 70%, 45%);stop-opacity:1" />
-                    </linearGradient>
-                    <pattern id="grid${hash}" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-                    </pattern>
-                </defs>
-                <rect width="400" height="400" fill="url(#grad${hash})"/>
-                <rect width="400" height="400" fill="url(#grid${hash})"/>
-            </svg>
-        `)}`;
-    }
-
-    function getProjectIcon(project) {
-        const categories = project.categories || project.tags || [];
-        const categoryIcons = {
-            'eeg': '🧠', 'brain': '🧠', 'neuroscience': '🧠',
-            'game': '🎮', 'soccer': '⚽', 'sport': '⚽',
-            '3dprinting': '🖨️', '3d': '🖨️', 'print': '🖨️',
-            'ai': '🤖', 'ml': '🤖', 'learning': '🤖',
-            'music': '🎵', 'audio': '🎵',
-            'web': '🌐', 'webpage': '🌐',
-            'paint': '🎨', 'art': '🎨', 'creative': '🎨',
-            'terminal': '⌨️', 'cli': '⌨️',
-            'course': '📚', 'education': '📚', 'tutorial': '📚'
-        };
-        
-        for (const cat of categories) {
-            const key = cat.toLowerCase();
-            if (categoryIcons[key]) {
-                return categoryIcons[key];
-            }
-        }
-        
-        // Default: use first letters of title
-        const title = project.title || project.id || 'Project';
-        const words = title.split(/(?=[A-Z])|[\s_-]+/);
-        return words.slice(0, 2).map(w => w[0]).join('').toUpperCase().slice(0, 2);
-    }
-
-    function createCard(project) {
-        const displayTitle = (project.title || project.id || 'Untitled')
-            .replace(/([a-z0-9])([A-Z])/g, '$1<wbr>$2');
-        const icon = getProjectIcon(project);
-        const card = document.createElement('article');
-        card.className = 'catalogue-card';
-        card.innerHTML = `
-            <a class="catalogue-card-thumb" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">
-                <img src="${project.screenshot}" alt="${project.title} screenshot" loading="lazy">
-                <div class="catalogue-card-logo" style="display: none;">
-                    <div class="catalogue-card-logo-icon">${icon}</div>
-                    <div class="catalogue-card-logo-text">${displayTitle}</div>
-                </div>
-            </a>
-            <div class="catalogue-card-title-wrapper">
-                <h4 class="catalogue-card-title">${displayTitle}</h4>
-            </div>
-            <div class="catalogue-card-body">
-                <p class="catalogue-card-description">${project.oneLiner || ''}</p>
-                ${project.tags && project.tags.length ? `<div class="catalogue-tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div>` : ''}
-                <div class="catalogue-links">
-                    <a class="demo-link" href="${project.demoUrl || project.githubUrl}" target="_blank" rel="noopener noreferrer">Demo</a>
-                    <a class="github-link" href="${project.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </div>
-        `;
-        card.dataset.demoUrl = project.demoUrl || project.githubUrl;
-        
-        // Add image error handler - show logo only if screenshot fails
-        const img = card.querySelector('img');
-        const logo = card.querySelector('.catalogue-card-logo');
-        if (img && logo) {
-            img.addEventListener('error', function() {
-                this.src = generatePlaceholder(project);
-                logo.style.display = 'block';
-            }, { once: true });
-        }
-        
-        card.addEventListener('click', (event) => {
-            if (event.target.closest('.github-link') || event.target.closest('.demo-link')) {
-                event.stopPropagation();
-                return;
-            }
-            if (card.dataset.demoUrl) {
-                window.open(card.dataset.demoUrl, '_blank');
-            }
+function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function stamp(item) {
+    const raw = item.lastCommit || item.createdAt || item.year || 0;
+    const n = Date.parse(raw);
+    if (!Number.isNaN(n)) return n;
+    const y = Number(item.year);
+    return y ? Date.UTC(y, 0, 1) : 0;
+}
+function sortItems(items) {
+    const copy = items.slice();
+    if (state.sort === 'name') copy.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+    else if (state.sort === 'year') copy.sort((a, b) => (b.year || 0) - (a.year || 0) || (a.title || '').localeCompare(b.title || ''));
+    else copy.sort((a, b) => stamp(b) - stamp(a));
+    return copy;
+}
+function matches(item) {
+    if (!state.q) return true;
+    const hay = [item.title, item.oneLiner, item.authors, item.kind, ...(item.categories || []), ...(item.tags || [])].join(' ').toLowerCase();
+    return hay.includes(state.q);
+}
+function resourceKind(item) {
+    if (item.kind === 'paper') return 'paper';
+    if (item.kind === 'news') return 'news';
+    if (item.kind === 'link') return 'link';
+    if (item.kind === 'longform') return 'writing';
+    if (item.kind === 'topic') return 'focus';
+    return 'project';
+}
+function topicsOf(item) {
+    return state.itemTopics.get(String(item.id).toLowerCase()) || new Set();
+}
+function inArea(item) {
+    if (!state.areaTopics) return true;
+    let hit = false;
+    topicsOf(item).forEach(id => { if (state.areaTopics.has(id)) hit = true; });
+    return hit;
+}
+function inScope(item) {
+    if (resourceKind(item) === 'focus' || resourceKind(item) === 'link') return false;
+    if (!inArea(item)) return false;
+    if (state.kind !== 'all' && resourceKind(item) !== state.kind) return false;
+    if (state.topic !== 'all' && !topicsOf(item).has(state.topic)) return false;
+    return matches(item);
+}
+function paperShot(item) {
+    const figs = item.figures || [];
+    const page = item.pdfPage
+        ? `<img class="cover" src="${esc(item.pdfPage)}" alt="">`
+        : `<div class="kicker">${esc(item.year || 'Paper')}</div><p class="pt">${esc(item.title)}</p><div class="pa">${esc(item.authors || '')}</div><div class="lines"><span></span><span style="width:92%"></span><span style="width:80%"></span><span></span><span style="width:88%"></span><span style="width:70%"></span></div>`;
+    const fig = (src, label) => src
+        ? `<img src="${esc(src)}" alt="${esc(label)}">`
+        : `<div class="fig">${esc(label)}</div>`;
+    if (item.composite) return `<img class="cover" src="${esc(item.composite)}" alt="">`;
+    return `<div class="paper-shot"><div class="paper-page">${page}</div><div class="paper-figs">${fig(figs[0], 'Fig. 1')}${fig(figs[1], 'Fig. 2')}</div></div>`;
+}
+function shot(item) {
+    if (item.kind === 'paper') return paperShot(item);
+    if (item.screenshot) return `<img class="cover" src="${esc(item.screenshot)}" alt="">`;
+    const accent = item.accent || '#3b3b44';
+    const mark = item.logo
+        ? `<img class="logo" src="${esc(item.logo)}" alt="">`
+        : esc(item.mark || (item.title || '?').slice(0, 2));
+    return `<div class="mark" style="background:${esc(accent)}">${mark}</div>`;
+}
+function card(item) {
+    const href = item.demoUrl || item.url || item.githubUrl || '#';
+    const extra = item.kind === 'paper' ? ' paper' : '';
+    return `<a class="card${extra}" href="${esc(href)}" target="_blank" rel="noopener noreferrer">
+        <div class="shot">${shot(item)}<span class="kind">${esc(item.kind || 'project')}</span></div>
+        <div class="info"><h3>${esc(item.title)}</h3><p>${esc(item.oneLiner || '')}</p></div>
+    </a>`;
+}
+function visibleItems(items) {
+    return sortItems(items.filter(inScope));
+}
+function topicRows() {
+    return state.rows.filter(row => !TYPE_IDS.has(row.id) && (state.topic === 'all' || row.id === state.topic));
+}
+function looseItems() {
+    if (state.topic !== 'all') return [];
+    const placed = new Set();
+    state.rows.forEach(row => {
+        if (TYPE_IDS.has(row.id)) return;
+        row.items.forEach(item => placed.add(String(item.id).toLowerCase()));
+    });
+    const out = [];
+    const seen = new Set();
+    state.rows.forEach(row => {
+        if (!TYPE_IDS.has(row.id)) return;
+        row.items.forEach(item => {
+            const key = String(item.id).toLowerCase();
+            if (placed.has(key) || seen.has(key) || !inScope(item)) return;
+            seen.add(key);
+            out.push({...item, category: row.title});
         });
-
-        return card;
-    }
-
-    function renderItems(items, grid, limit=null, showCount=false) {
-        if (!grid) return;
-        const parentSection = grid.parentElement;
-        // Remove any existing count element
-        const existingCount = parentSection.querySelector('.catalogue-count');
-        if (existingCount) existingCount.remove();
-        
-        grid.innerHTML = '';
-        const renderList = limit ? items.slice(0, limit) : items;
-        if (!renderList.length) {
-            const empty = document.createElement('div');
-            empty.className = 'catalogue-empty';
-            empty.textContent = 'No entries yet—add a catalogue.json file to any repo to feature it here.';
-            grid.appendChild(empty);
+    });
+    return sortItems(out);
+}
+function collectedItems(activeRows) {
+    const items = [];
+    const seen = new Set();
+    activeRows.forEach(row => visibleItems(row.items).forEach(item => {
+        if (seen.has(item.id)) return;
+        seen.add(item.id);
+        items.push({...item, category: row.title});
+    }));
+    return items;
+}
+function tableValue(item, key) {
+    if (key === 'updated') return stamp(item);
+    if (key === 'year') return item.year || 0;
+    return String(item[key] || '').toLowerCase();
+}
+function selectionItems() {
+    const items = [];
+    const seen = new Set();
+    state.rows.forEach(row => row.items.forEach(item => {
+        const key = String(item.id).toLowerCase();
+        if (seen.has(key) || resourceKind(item) === 'focus' || resourceKind(item) === 'link') return;
+        if (state.kind !== 'all' && resourceKind(item) !== state.kind) return;
+        if (state.topic !== 'all' && !topicsOf(item).has(state.topic)) return;
+        if (!matches(item)) return;
+        seen.add(key);
+        items.push(item);
+    }));
+    return items;
+}
+function visibleAreas() {
+    if (state.topic === 'all') return state.areas;
+    const present = new Set();
+    selectionItems().forEach(item => topicsOf(item).forEach(id => present.add(id)));
+    return state.areas.filter(area => (area.topics || []).some(id => present.has(id)));
+}
+const WIDE_LINKS = new Set(['link-faculty', 'link-lab']);
+function placesHtml() {
+    if (!state.links.length) return '';
+    return `<div class="places">${state.links.map(item => {
+        const href = item.url || item.demoUrl || '#';
+        const wide = WIDE_LINKS.has(item.id) ? ' wide' : '';
+        const icon = item.logo
+            ? `<img src="${esc(item.logo)}" alt="">`
+            : esc(item.mark || (item.title || '?').slice(0, 2));
+        return `<a class="place${wide}" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><span class="orb">${icon}</span><span class="label">${esc(item.title)}</span></a>`;
+    }).join('')}</div>`;
+}
+function renderPlaces() {
+    document.getElementById('places').innerHTML = placesHtml();
+}
+function areasHtml() {
+    const areas = visibleAreas();
+    if (!areas.length) return '';
+    return `<div class="interests"><p class="interests-label">Areas of interest</p><div class="area-strip">${areas.map(area => {
+        const on = state.area && state.area.id === area.id;
+        const dim = state.area && !on ? ' dim' : '';
+        return `<a class="area-card${on ? ' on' : ''}${dim}" data-area="${esc(area.id)}" href="?area=${encodeURIComponent(area.id)}">${area.logo ? `<img src="${esc(area.logo)}" alt="">` : ''}<span>${esc(area.title)}</span></a>`;
+    }).join('')}</div></div>`;
+}
+function applyArea(area, push) {
+    state.area = area || null;
+    state.areaTopics = state.area ? new Set(state.area.topics || []) : null;
+    document.title = state.area ? `${state.area.title} — Kyle Elliott Mathewson` : 'Kyle Elliott Mathewson';
+    const url = new URL(location.href);
+    if (state.area) url.searchParams.set('area', state.area.id);
+    else url.searchParams.delete('area');
+    const next = url.pathname + url.search + url.hash;
+    if (push && next !== location.pathname + location.search + location.hash) history.pushState({area: state.area && state.area.id}, '', next);
+    renderFocus();
+    renderChips();
+    render();
+}
+function renderAreas() {
+    document.getElementById('areas').innerHTML = areasHtml();
+}
+function cardBlock(rowId, items) {
+    const open = state.open.has(rowId);
+    const shown = open ? items : items.slice(0, PREVIEW);
+    const toggle = items.length > PREVIEW
+        ? `<button type="button" class="more" data-row="${esc(rowId)}">${open ? 'Hide' : 'Show all'}</button>`
+        : '';
+    return `<div class="card-grid">${shown.map(card).join('')}</div>${toggle}`;
+}
+function render() {
+    renderAreas();
+    const root = document.getElementById('catalogue');
+    const activeRows = topicRows().filter(row => visibleItems(row.items).length);
+    const loose = looseItems();
+    if (state.view === 'cards' || state.view === 'table') {
+        let items = collectedItems(activeRows).concat(loose);
+        if (state.view === 'table') {
+            items.sort((a, b) => {
+                const av = tableValue(a, state.tableKey);
+                const bv = tableValue(b, state.tableKey);
+                if (av < bv) return -1 * state.tableDir;
+                if (av > bv) return 1 * state.tableDir;
+                return 0;
+            });
+            const cols = [
+                ['title', 'Title'], ['kind', 'Kind'], ['category', 'Category'],
+                ['oneLiner', 'Description'], ['year', 'Year'], ['updated', 'Updated']
+            ];
+            root.innerHTML = items.length ? `<div class="table-wrap"><table class="data"><thead><tr>${cols.map(([key, label]) => {
+                const on = state.tableKey === key ? ` on${state.tableDir < 0 ? ' desc' : ''}` : '';
+                return `<th data-key="${key}" class="${on.trim()}">${label}</th>`;
+            }).join('')}</tr></thead><tbody>${items.map(item => `<tr data-href="${esc(item.demoUrl || item.url || item.githubUrl || '')}">
+                <td class="title">${esc(item.title)}</td>
+                <td>${esc(item.kind || '')}</td>
+                <td>${esc(item.category || '')}</td>
+                <td class="desc">${esc(item.oneLiner || '')}</td>
+                <td>${esc(item.year || '')}</td>
+                <td>${item.lastCommit ? esc(String(item.lastCommit).slice(0, 10)) : esc(item.year || '')}</td>
+            </tr>`).join('')}</tbody></table></div>` : `<p class="empty">Nothing matches.</p>`;
             return;
         }
-        renderList.forEach(item => grid.appendChild(createCard(item)));
-        
-        // Add count if requested
-        if (showCount && renderList.length > 0) {
-            const countDiv = document.createElement('div');
-            countDiv.className = 'catalogue-count';
-            countDiv.textContent = `Showing ${renderList.length} project${renderList.length !== 1 ? 's' : ''}`;
-            parentSection.appendChild(countDiv);
-        }
+        root.innerHTML = items.length
+            ? cardBlock('cards', items)
+            : `<p class="empty">Nothing matches.</p>`;
+        return;
     }
+    const html = activeRows.map(row => {
+        const items = visibleItems(row.items);
+        if (!items.length) return '';
+        return `<section class="row">
+            <div class="row-head"><h2 style="--dot:${esc(row.color)}">${esc(row.title)}</h2><span class="count">${items.length}</span></div>
+            ${row.description ? `<p class="row-desc">${esc(row.description)}</p>` : ''}
+            ${cardBlock(row.id, items)}
+        </section>`;
+    }).join('');
+    const looseHtml = loose.length ? `<section class="row">
+        <div class="row-head"><h2 style="--dot:#9aa0aa">${state.kind === 'all' ? 'Also' : esc(KIND_CHIPS.find(k => k.id === state.kind).title)}</h2><span class="count">${loose.length}</span></div>
+        ${cardBlock('loose', loose)}
+    </section>` : '';
+    root.innerHTML = html + looseHtml || `<p class="empty">Nothing matches.</p>`;
+}
+function renderIdentity(profile) {
+    document.getElementById('identity').innerHTML = `
+        <a class="home" href="./" title="Back to the start"><img src="${esc(profile.headshot)}" alt=""></a>
+        <div>
+            <h1><a class="home" href="./" title="Back to the start">${esc(profile.name)}</a></h1>
+            <p class="role">${esc(profile.role)}</p>
+            <p class="about">${esc(profile.about)}</p>
+            <p class="meta">${esc(profile.office)} · <a href="mailto:${esc(profile.email)}">${esc(profile.email)}</a></p>
+        </div>`;
+}
+function countKind(kind) {
+    const seen = new Set();
+    let n = 0;
+    state.rows.forEach(row => row.items.forEach(item => {
+        const key = String(item.id).toLowerCase();
+        if (seen.has(key)) return;
+        seen.add(key);
+        if (resourceKind(item) === 'focus' || resourceKind(item) === 'link' || !inArea(item)) return;
+        if (kind !== 'all' && resourceKind(item) !== kind) return;
+        n += 1;
+    }));
+    return n;
+}
+function renderFocus() {
+    const el = document.getElementById('focus');
+    if (!state.area) { el.innerHTML = ''; return; }
+    el.innerHTML = `<div class="focus-banner">${state.area.logo ? `<img src="${esc(state.area.logo)}" alt="">` : ''}<div><h2>${esc(state.area.title)}</h2><p>${esc(state.area.summary || '')}</p></div></div>`;
+}
+function renderChips() {
+    const kinds = KIND_CHIPS.filter(k => k.id === 'all' || countKind(k.id)).map(k => {
+        const on = state.kind === k.id ? ' active' : '';
+        return `<button type="button" class="fchip section${on}" style="--tint:${esc(k.tint)}" data-kind="${esc(k.id)}">${esc(k.title)}<span class="n">${countKind(k.id)}</span></button>`;
+    });
+    const savedKind = state.kind;
+    const savedTopic = state.topic;
+    state.topic = 'all';
+    const topics = state.rows.filter(row => !TYPE_IDS.has(row.id)).map(row => {
+        const n = visibleItems(row.items).length;
+        return n ? {row, n} : null;
+    }).filter(Boolean);
+    state.kind = savedKind;
+    state.topic = savedTopic;
+    const buckets = TOPIC_FAMILIES.map(f => ({...f, chips: []}));
+    const other = {...OTHER_FAMILY, chips: []};
+    topics.forEach(({row, n}) => {
+        const family = familyFor(row.title);
+        const bucket = buckets.find(b => b.title === family.title) || other;
+        bucket.chips.push({row, n, tint: chipTint(row, family)});
+    });
+    const groups = buckets.concat([other]).filter(b => b.chips.length);
+    const allButton = `<button type="button" class="fchip topic${state.topic === 'all' ? ' active' : ''}" style="--tint:#f5f5f6" data-topic="all">All</button>`;
+    const groupHtml = groups.map(g => `<div class="chip-group" style="--tint:${esc(g.tint)}"><span class="group-name">${esc(g.title)}</span>${g.chips.map(({row, n, tint}) => `<button type="button" class="fchip topic${state.topic === row.id ? ' active' : ''}" style="--tint:${esc(tint)}" data-topic="${esc(row.id)}">${esc(row.title)}<span class="n">${n}</span></button>`).join('')}</div>`).join('');
+    document.getElementById('chips').innerHTML = `
+        <div class="chip-level"><span class="chip-label">Type</span><div class="chip-row">${kinds.join('')}</div></div>
+        <div class="chip-level"><span class="chip-label">Topics</span><div class="chip-groups">${allButton}${groupHtml}</div></div>`;
+}
+function byId(list) {
+    const map = new Map();
+    list.forEach(item => map.set(String(item.id).toLowerCase(), item));
+    return map;
+}
 
-    function groupItems(items) {
-        const groups = {};
-        items.forEach(item => {
-            const kind = (item.kind || 'project').toLowerCase();
-            if (!groups[kind]) groups[kind] = [];
-            groups[kind].push(item);
+Promise.all([
+    fetch('site_content.json').then(r => r.json()),
+    fetch('catalogue_data.json').then(r => r.json())
+]).then(([site, catalogue]) => {
+    const projects = (catalogue.items || []).map(item => ({...item, kind: item.kind || 'project', url: item.demoUrl || item.githubUrl}));
+    const projectMap = byId(projects);
+    state.areas = site.areas || [];
+    state.links = site.links || [];
+    const topicMap = new Map();
+    (site.categories || []).forEach(c => {
+        if (TYPE_IDS.has(c.id) || c.id === 'general') return;
+        (c.names || []).forEach(n => {
+            const key = String(n).toLowerCase();
+            if (!topicMap.has(key)) topicMap.set(key, new Set());
+            topicMap.get(key).add(c.id);
         });
-        return groups;
-    }
-
-    if (!window.fetch) {
-        renderItems([], grids.preview);
-        renderItems([], grids.longform);
-        renderItems([], grids.pages);
+    });
+    state.itemTopics = topicMap;
+    const areaId = new URLSearchParams(location.search).get('area');
+    state.area = state.areas.find(a => a.id === areaId) || null;
+    state.areaTopics = state.area ? new Set(state.area.topics || []) : null;
+    if (state.area) document.title = `${state.area.title} — Kyle Elliott Mathewson`;
+    const local = [...site.links, ...site.teaching, ...site.experience, ...site.stages, ...site.papers, ...site.news];
+    const localMap = byId(local);
+    const allItems = new Map([...projectMap, ...localMap]);
+    const usedGroups = new Set();
+    const usedProjects = new Set();
+    if (Array.isArray(site.categories) && site.categories.length) {
+        const known = new Set();
+        state.rows = site.categories.filter(c => c.id !== 'general').map(c => {
+            const items = (c.names || []).map(n => allItems.get(String(n).toLowerCase())).filter(Boolean);
+            items.forEach(item => known.add(String(item.id).toLowerCase()));
+            return {id: c.id, title: c.title, description: c.description || '', color: c.color || '#9aa0aa', items};
+        });
+        const general = site.categories.find(c => c.id === 'general');
+        const loose = (general ? general.names : []).map(n => allItems.get(String(n).toLowerCase())).filter(Boolean);
+        projects.forEach(item => { if (!known.has(String(item.id).toLowerCase())) loose.push(item); });
+        const seenLoose = new Set();
+        const extra = loose.filter(item => {
+            const key = String(item.id).toLowerCase();
+            if (known.has(key) || seenLoose.has(key)) return false;
+            seenLoose.add(key);
+            return true;
+        });
+        if (extra.length) {
+            state.rows.push({id: 'general', title: (general && general.title) || 'More projects', description: (general && general.description) || '', color: '#9aa0aa', items: extra});
+        }
+        renderIdentity(site.profile);
+        renderPlaces();
+        renderFocus();
+        renderChips();
+        render();
+        const when = catalogue.generatedAt ? new Date(catalogue.generatedAt).toLocaleDateString() : '';
+        document.getElementById('foot').textContent = when ? `Project cards refresh from GitHub. Catalogue generated ${when}.` : '';
         return;
     }
 
-    fetch(DATA_URL)
-        .then(resp => resp.ok ? resp.json() : Promise.reject(resp.status))
-        .then(data => {
-            const items = data.items || [];
-            const grouped = groupItems(items);
-            renderItems(grouped.project || [], grids.preview, DISPLAY_LIMITS.preview, true);
-            renderItems(grouped.longform || [], grids.longform, null, true);
-            renderItems(grouped.page || [], grids.pages, DISPLAY_LIMITS.pages, true);
-        })
-        .catch(() => {
-            renderItems([], grids.preview, null, false);
-            renderItems([], grids.longform, null, false);
-            renderItems([], grids.pages, null, false);
-        });
-})();
-</script>
+    function takeGroup(groupId) {
+        const group = (site.groups || []).find(g => g.id === groupId);
+        if (!group) return [];
+        usedGroups.add(groupId);
+        return (group.names || []).map(name => {
+            const item = projectMap.get(String(name).toLowerCase());
+            if (!item) return null;
+            usedProjects.add(item.id);
+            return item;
+        }).filter(Boolean);
+    }
 
-<script>
-// Tab switching functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const tabName = this.dataset.tab;
-            
-            // Remove active class from all buttons and contents
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            // Add active class to clicked button and corresponding content
-            this.classList.add('active');
-            const activeTab = document.getElementById(`tab-${tabName}`);
-            if (activeTab) {
-                activeTab.classList.add('active');
-            }
-        });
+    state.rows = site.featured.map(row => {
+        const items = [];
+        (row.itemIds || []).forEach(id => { const item = localMap.get(id.toLowerCase()); if (item) items.push(item); });
+        (row.groupIds || []).forEach(id => items.push(...takeGroup(id)));
+        if (row.kinds) {
+            const kinds = new Set(row.kinds);
+            local.filter(item => kinds.has(item.kind)).forEach(item => items.push(item));
+            projects.filter(item => kinds.has(item.kind)).forEach(item => { usedProjects.add(item.id); items.push(item); });
+        }
+        const seen = new Set();
+        return {...row, items: items.filter(item => item && !seen.has(item.id) && seen.add(item.id))};
     });
+
+    (site.groups || []).forEach(group => {
+        if (usedGroups.has(group.id)) return;
+        const items = takeGroup(group.id);
+        if (!items.length) return;
+        state.rows.push({id: group.id, title: group.title, description: group.description || '', color: '#9aa0aa', items});
+    });
+
+    const rest = projects.filter(item => !usedProjects.has(item.id));
+    if (rest.length) {
+        state.rows.push({id:'more', title:'More projects', description:'Public repositories that are not in a category yet.', color:'#9aa0aa', items: rest});
+    }
+
+    renderIdentity(site.profile);
+    renderPlaces();
+    renderFocus();
+    renderChips();
+    render();
+    const when = catalogue.generatedAt ? new Date(catalogue.generatedAt).toLocaleDateString() : '';
+    document.getElementById('foot').textContent = when ? `Project cards refresh from GitHub. Catalogue generated ${when}.` : '';
+}).catch(err => {
+    document.getElementById('catalogue').innerHTML = `<p class="empty">Could not load the catalogue.</p>`;
+    console.error(err);
+});
+
+document.getElementById('identity').addEventListener('click', e => {
+    const home = e.target.closest('a.home');
+    if (!home) return;
+    e.preventDefault();
+    const start = new URL('./', location.href);
+    const here = new URL(location.href);
+    if (start.pathname === here.pathname && !here.search && !here.hash) location.reload();
+    else location.assign(start.href);
+});
+document.getElementById('q').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+document.getElementById('sort').addEventListener('change', e => { state.sort = e.target.value; render(); });
+document.querySelector('.views').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    state.view = btn.dataset.view;
+    document.querySelectorAll('.views button').forEach(b => b.classList.toggle('active', b === btn));
+    render();
+});
+function applyCardSize(px) {
+    const width = Math.max(140, Math.min(340, Number(px) || 210));
+    document.documentElement.style.setProperty('--card-w', width + 'px');
+    document.documentElement.style.setProperty('--shot-h', Math.round(width * 124 / 210) + 'px');
+    try { localStorage.setItem('homepage-card-size', String(width)); } catch (err) {}
+}
+const savedSize = (() => { try { return localStorage.getItem('homepage-card-size'); } catch (err) { return null; } })();
+if (savedSize) {
+    document.getElementById('card-size').value = savedSize;
+    applyCardSize(savedSize);
+}
+document.getElementById('card-size').addEventListener('input', e => applyCardSize(e.target.value));
+document.getElementById('catalogue').addEventListener('click', e => {
+    const more = e.target.closest('button.more');
+    if (more) {
+        const id = more.dataset.row;
+        if (state.open.has(id)) state.open.delete(id);
+        else state.open.add(id);
+        render();
+        return;
+    }
+    const th = e.target.closest('th[data-key]');
+    if (th) {
+        const key = th.dataset.key;
+        state.tableDir = state.tableKey === key ? -state.tableDir : 1;
+        state.tableKey = key;
+        render();
+        return;
+    }
+    const tr = e.target.closest('tr[data-href]');
+    if (tr && tr.dataset.href) window.open(tr.dataset.href, '_blank', 'noopener');
+});
+document.getElementById('areas').addEventListener('click', e => {
+    const card = e.target.closest('.area-card');
+    if (!card) return;
+    e.preventDefault();
+    const area = state.areas.find(a => a.id === card.dataset.area);
+    if (!area) return;
+    applyArea(state.area && state.area.id === area.id ? null : area, true);
+});
+window.addEventListener('popstate', () => {
+    const areaId = new URLSearchParams(location.search).get('area');
+    applyArea(state.areas.find(a => a.id === areaId) || null, false);
+});
+document.getElementById('chips').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    if (btn.dataset.kind) {
+        state.kind = btn.dataset.kind;
+        state.topic = 'all';
+    } else if (btn.dataset.topic) {
+        state.topic = btn.dataset.topic;
+    }
+    renderChips();
+    render();
 });
 </script>
-
+<script src="theme.js"></script>
 </body>
 </html>

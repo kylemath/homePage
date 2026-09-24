@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="../theme.css">
+    <title>GenerativeAI</title>
+    <style>
+        :root {
+            --bg:#0a0a0b;
+            --bg-grad: radial-gradient(1100px 560px at 72% -12%, #16161b 0%, #0a0a0b 62%);
+            --surface:#151518; --surface-2:#1c1c20; --surface-3:#26262c;
+            --border:#2a2a31; --border-strong:#3b3b44;
+            --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87;
+            --accent:#6ea8fe; --radius:12px;
+            --shadow:0 10px 32px rgba(0,0,0,.5);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); background-image: var(--bg-grad); background-attachment: fixed;
+            color: var(--text); -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); }
+        .wrap { max-width: 1640px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 48px) 64px; }
+        .back { margin: 0 0 18px; font-size: 13px; font-weight: 600; }
+        .back a { text-decoration: none; }
+        .back a:hover { text-decoration: underline; }
+        h1 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; }
+        h1::before { content: ''; width: 10px; height: 10px; border-radius: 3px; background: var(--dot, var(--text-faint)); flex-shrink: 0; }
+        .body { margin: 0 0 10px; color: var(--text-dim); font-size: 16px; line-height: 1.6; max-width: 760px; }
+        .extra { margin: 0 0 8px; color: var(--text-dim); font-size: 15px; line-height: 1.55; max-width: 760px; }
+        .meta { margin: 0 0 18px; color: var(--text-faint); font-size: 13px; }
+        .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+        table.data { width: 100%; border-collapse: collapse; font-size: 13px; }
+        table.data th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-dim); text-align: left; font-weight: 600; padding: 11px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+        table.data.sortable th { cursor: pointer; user-select: none; }
+        table.data.sortable th:hover { color: var(--text); }
+        table.data th.on::after { content: ' ↑'; color: var(--accent); }
+        table.data th.on.desc::after { content: ' ↓'; }
+        table.data td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
+        table.data tr { position: relative; }
+        table.data tr.has-link { cursor: pointer; }
+        table.data tr.has-link:hover { background: var(--surface-2); }
+        table.data td.title { color: var(--text); font-weight: 600; }
+        table.data td.title a { color: inherit; text-decoration: none; font-weight: 600; }
+        table.data td.title a.rowlink::after { content: ''; position: absolute; inset: 0; }
+        table.data td.desc { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-faint); }
+        .empty { color: var(--text-faint); font-size: 14px; }
+        .topic-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+        .topic-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+        .topic-list a.topic { color: var(--text); font-weight: 650; text-decoration: none; font-size: 16px; display: inline-flex; align-items: center; gap: 8px; }
+        .topic-list a.topic:hover { color: var(--accent); }
+        .topic-list .dot { width: 8px; height: 8px; border-radius: 3px; display: inline-block; }
+        .topic-list p { margin: 6px 0 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
+        footer { margin-top: 18px; color: var(--text-faint); font-size: 12px; }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p class="back"><a href="../index.html">Home</a> · <a href="index.html">All topics</a></p>
+    <h1 style="--dot:#9aa0aa">GenerativeAI</h1>
+    <p class="body">This category has no description.</p><p class="meta">2 items</p><div class="table-wrap"><table class="data"><thead><tr><th>Title</th><th>Kind</th><th>Category</th><th>Description</th><th>Year</th><th>Updated</th></tr></thead><tbody><tr class="has-link"><td class="title"><a class="rowlink" href="none">Local AI Image Generator</a></td><td>project</td><td>GenerativeAI</td><td class="desc">Local generation of images with diffusive model API calls and local hosting, python backend</td><td></td><td>2025-12-01</td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://github.com/kylemath/Pyggy">Pyggy</a></td><td>project</td><td>GenerativeAI</td><td class="desc">Artificial Improvisation</td><td></td><td>2016-04-08</td></tr></tbody></table></div>
+</div>
+<script src="../theme.js"></script>
+</body>
+</html>

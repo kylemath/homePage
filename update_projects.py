@@ -159,7 +159,35 @@ def resolve_screenshot_url(username: str, repo: Dict, metadata: Dict) -> str:
     return f'https://raw.githubusercontent.com/{username}/{repo["name"]}/{default_branch}/screenshot.png'
 
 
-def build_catalogue_entries(username: str, repos: List[Dict]) -> List[Dict]:
+def remote_image_exists(url: str) -> bool:
+    """True when a screenshot URL actually returns an image.
+
+    Project cards use screenshot.png in the repo (or on its homepage) so other
+    sites can read the same file. A missing file should stay blank here rather
+    than point at a dead URL.
+    """
+    if not url.startswith('http://') and not url.startswith('https://'):
+        return False
+    try:
+        response = requests.get(url, timeout=8, stream=True)
+    except requests.RequestException:
+        return False
+    ok = response.status_code == 200 and 'image' in response.headers.get('Content-Type', '')
+    response.close()
+    return ok
+
+
+def choose_screenshot(resolved: str, previous: str) -> str:
+    """Prefer the repo screenshot when it exists. Keep a local image otherwise."""
+    prev = (previous or '').strip()
+    if prev.startswith('images/') and not remote_image_exists(resolved):
+        return prev
+    if not prev and not remote_image_exists(resolved):
+        return ''
+    return resolved
+
+
+def build_catalogue_entries(username: str, repos: List[Dict], previous_by_id: Optional[Dict[str, Dict]] = None) -> List[Dict]:
     entries = []
     for repo in repos:
         metadata = fetch_catalogue_metadata(username, repo) or {}
@@ -176,7 +204,10 @@ def build_catalogue_entries(username: str, repos: List[Dict]) -> List[Dict]:
             'tags': metadata.get('tags', []),
             'demoUrl': metadata.get('demoUrl') or repo.get('homepage') or repo['html_url'],
             'githubUrl': repo['html_url'],
-            'screenshot': resolve_screenshot_url(username, repo, metadata),
+            'screenshot': choose_screenshot(
+                resolve_screenshot_url(username, repo, metadata),
+                ((previous_by_id or {}).get(metadata.get('id') or repo['name']) or {}).get('screenshot') or ''
+            ),
             'status': metadata.get('status'),
             'kind': kind,
             'topicHierarchy': topic_path,
@@ -184,6 +215,9 @@ def build_catalogue_entries(username: str, repos: List[Dict]) -> List[Dict]:
             'lastCommit': repo['last_commit_date'].isoformat() if repo.get('last_commit_date') else None,
             'createdAt': repo.get('created_at')
         }
+        previous = (previous_by_id or {}).get(entry['id']) or {}
+        if previous.get('logo') and not entry.get('logo'):
+            entry['logo'] = previous['logo']
         entries.append(entry)
     return entries
 
@@ -225,15 +259,27 @@ def write_catalogue_file(entries: List[Dict]):
 
 
 def update_html_file(repos, html_file):
-    """Update the index.html file with sorted repositories."""
+    """Update a legacy projects list in index.html, if that section still exists.
+
+    The homepage now renders projects from catalogue_data.json, so a missing
+    list is expected and must not abort the catalogue write.
+    """
     with open(html_file, 'r', encoding='utf-8') as f:
         content = f.read()
+
+    if 'id="projects"' not in content:
+        print(f"Skipping HTML project list in {html_file}; catalogue_data.json is the source.")
+        return
 
     # Parse HTML
     soup = BeautifulSoup(content, 'html.parser')
     
     # Find the projects section
-    projects_section = soup.find('h2', {'id': 'projects'}).find_next('ul')
+    projects_heading = soup.find('h2', {'id': 'projects'})
+    if projects_heading is None or projects_heading.find_next('ul') is None:
+        print(f"Skipping HTML project list in {html_file}; no projects list found.")
+        return
+    projects_section = projects_heading.find_next('ul')
     
     # Create new repository list items
     new_items = []
@@ -272,9 +318,20 @@ if __name__ == '__main__':
     
     # Get sorted repositories
     repos = get_github_repos(USERNAME, TOKEN)
-    
-    # Build catalogue data and write to file
-    catalogue_entries = build_catalogue_entries(USERNAME, repos)
+
+    previous_by_id = {}
+    if os.path.exists(CATALOGUE_FILE):
+        try:
+            with open(CATALOGUE_FILE, 'r', encoding='utf-8') as fh:
+                for item in json.load(fh).get('items', []):
+                    if item.get('id'):
+                        previous_by_id[item['id']] = item
+        except (json.JSONDecodeError, IOError):
+            previous_by_id = {}
+
+    # Build catalogue data and write to file.
+    # Screenshots point at screenshot.png in each repo when that file exists.
+    catalogue_entries = build_catalogue_entries(USERNAME, repos, previous_by_id)
     write_catalogue_file(catalogue_entries)
     
     # Filter repos for textual list display

@@ -61,6 +61,9 @@ jobs:
         run: |
           echo "Updating projects list..."
           python update_projects.py
+          # Project cards use screenshot.png from each repo.
+          # Paper cards use images saved in this repo.
+          python link_paper_thumbnails.py
         
       - name: Update contributor projects list
         if: |
@@ -136,6 +139,9 @@ jobs:
           
           # Clean up backup file
           rm -f index.html.backup
+
+          # Keep paper card images that were generated into images/papers/.
+          python link_paper_thumbnails.py
           
           # Final validation
           FINAL_COUNT=$(grep -c '<li><a href.*target="_blank">' index.html || echo "0")
@@ -227,7 +233,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add index.html catalogue_data.json
+          git add index.html catalogue_data.json site_content.json images/papers
           
           # Create a more descriptive commit message
           PROJECTS_UPDATED=""

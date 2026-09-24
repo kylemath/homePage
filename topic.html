@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="theme.css">
+    <title>Topic</title>
+    <style>
+        :root {
+            --bg:#0a0a0b;
+            --bg-grad: radial-gradient(1100px 560px at 72% -12%, #16161b 0%, #0a0a0b 62%);
+            --surface:#151518; --surface-2:#1c1c20; --surface-3:#26262c;
+            --border:#2a2a31; --border-strong:#3b3b44;
+            --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87;
+            --accent:#6ea8fe; --radius:12px;
+            --shadow:0 10px 32px rgba(0,0,0,.5);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); background-image: var(--bg-grad); background-attachment: fixed;
+            color: var(--text); -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); }
+        .wrap { max-width: 1640px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 48px) 64px; }
+        .back { margin: 0 0 18px; font-size: 13px; font-weight: 600; }
+        .back a { text-decoration: none; }
+        .back a:hover { text-decoration: underline; }
+        h1 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; }
+        h1::before { content: ''; width: 10px; height: 10px; border-radius: 3px; background: var(--dot, var(--text-faint)); flex-shrink: 0; }
+        .body { margin: 0 0 10px; color: var(--text-dim); font-size: 16px; line-height: 1.6; max-width: 760px; }
+        .extra { margin: 0 0 8px; color: var(--text-dim); font-size: 15px; line-height: 1.55; max-width: 760px; }
+        .meta { margin: 0 0 18px; color: var(--text-faint); font-size: 13px; }
+        .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+        table.data { width: 100%; border-collapse: collapse; font-size: 13px; }
+        table.data th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-dim); text-align: left; font-weight: 600; padding: 11px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; }
+        table.data th:hover { color: var(--text); }
+        table.data th.on::after { content: ' ↑'; color: var(--accent); }
+        table.data th.on.desc::after { content: ' ↓'; }
+        table.data td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
+        table.data tr { cursor: pointer; }
+        table.data tr:hover { background: var(--surface-2); }
+        table.data td.title { color: var(--text); font-weight: 600; }
+        table.data td.desc { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-faint); }
+        .empty { color: var(--text-faint); font-size: 14px; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p class="back"><a href="index.html">Home</a> · <a href="topics/index.html">All topics</a></p>
+    <main id="topic"><p class="empty">Loading topic…</p></main>
+</div>
+<script>
+const params = new URLSearchParams(location.search);
+const wanted = (params.get('id') || '').trim().toLowerCase();
+const state = { items: [], key: '', dir: 1, categoryTitle: '' };
+const SECTIONS = ['links', 'teaching', 'experience', 'stages', 'papers', 'news'];
+const SKIP = new Set(['id', 'title', 'color', 'description', 'names']);
+
+function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function hrefOf(item) {
+    return item.demoUrl || item.url || item.githubUrl || '';
+}
+function yearOf(item) {
+    return item.year ? String(item.year) : '';
+}
+function updatedOf(item) {
+    if (item.lastCommit) return String(item.lastCommit).slice(0, 10);
+    return yearOf(item);
+}
+function stamp(item) {
+    const raw = item.lastCommit || item.createdAt || item.year || 0;
+    const n = Date.parse(raw);
+    if (!Number.isNaN(n)) return n;
+    const y = Number(item.year);
+    return y ? Date.UTC(y, 0, 1) : 0;
+}
+function tableValue(item, key) {
+    if (key === 'updated') return stamp(item);
+    if (key === 'year') return Number(item.year) || 0;
+    if (key === 'category') return state.categoryTitle.toLowerCase();
+    return String(item[key] || '').toLowerCase();
+}
+function labelKey(key) {
+    return key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/_/g, ' ').replace(/^./, c => c.toUpperCase());
+}
+function byId(list) {
+    const map = new Map();
+    list.forEach(item => {
+        const key = String(item.id || '').toLowerCase();
+        if (key) map.set(key, item);
+    });
+    return map;
+}
+
+function render() {
+    const root = document.getElementById('topic');
+    const items = state.items.slice();
+    if (state.key) {
+        items.sort((a, b) => {
+            const av = tableValue(a, state.key);
+            const bv = tableValue(b, state.key);
+            if (av < bv) return -1 * state.dir;
+            if (av > bv) return 1 * state.dir;
+            return 0;
+        });
+    }
+    const cols = [
+        ['title', 'Title'], ['kind', 'Kind'], ['category', 'Category'],
+        ['oneLiner', 'Description'], ['year', 'Year'], ['updated', 'Updated']
+    ];
+    const table = items.length ? `<div class="table-wrap"><table class="data"><thead><tr>${cols.map(([key, label]) => {
+        const on = state.key === key ? ` on${state.dir < 0 ? ' desc' : ''}` : '';
+        return `<th data-key="${key}" class="${on.trim()}">${label}</th>`;
+    }).join('')}</tr></thead><tbody>${items.map(item => `<tr data-href="${esc(hrefOf(item))}">
+        <td class="title">${esc(item.title)}</td>
+        <td>${esc(item.kind || '')}</td>
+        <td>${esc(state.categoryTitle)}</td>
+        <td class="desc">${esc(item.oneLiner || '')}</td>
+        <td>${esc(yearOf(item))}</td>
+        <td>${esc(updatedOf(item))}</td>
+    </tr>`).join('')}</tbody></table></div>` : `<p class="empty">No matching items.</p>`;
+    const head = root.querySelector('.table-slot');
+    if (head) head.innerHTML = table;
+}
+
+Promise.all([
+    fetch('site_content.json').then(r => r.json()),
+    fetch('catalogue_data.json').then(r => r.json())
+]).then(([site, catalogue]) => {
+    const root = document.getElementById('topic');
+    const categories = site.categories || [];
+    if (!wanted) {
+        root.innerHTML = `<h1 style="--dot:#6ea8fe">Topic</h1><p class="body">Open a category with <code>?id=</code> in the address, or browse <a href="topics/index.html">all topics</a>.</p>`;
+        return;
+    }
+    const category = categories.find(c => String(c.id || '').toLowerCase() === wanted);
+    if (!category) {
+        root.innerHTML = `<h1 style="--dot:#6ea8fe">Topic</h1><p class="body">No category matches <strong>${esc(wanted)}</strong>.</p>`;
+        return;
+    }
+    const projects = (catalogue.items || []).map(item => ({...item, kind: item.kind || 'project'}));
+    const lookup = byId(projects);
+    SECTIONS.forEach(section => (site[section] || []).forEach(item => {
+        const key = String(item.id || '').toLowerCase();
+        if (!key) return;
+        const base = lookup.get(key) || {};
+        const merged = {...base};
+        Object.keys(item).forEach(field => {
+            const value = item[field];
+            if (value !== null && value !== '' && !(Array.isArray(value) && !value.length)) merged[field] = value;
+        });
+        lookup.set(key, merged);
+    }));
+    const seen = new Set();
+    const items = [];
+    (category.names || []).forEach(name => {
+        const key = String(name).toLowerCase();
+        if (seen.has(key)) return;
+        seen.add(key);
+        const item = lookup.get(key);
+        if (item) items.push(item);
+    });
+    state.items = items;
+    state.categoryTitle = category.title || '';
+    document.title = `${category.title || 'Topic'} — Kyle Elliott Mathewson`;
+    const description = (category.description || '').trim();
+    const body = description
+        ? `<p class="body">${esc(description)}</p>`
+        : `<p class="body">This category has no description.</p>`;
+    const extras = Object.keys(category).filter(key => !SKIP.has(key) && typeof category[key] === 'string' && category[key].trim())
+        .map(key => `<p class="extra"><strong>${esc(labelKey(key))}.</strong> ${esc(category[key].trim())}</p>`).join('');
+    const missing = (category.names || []).length - items.length;
+    const note = `${items.length} items${missing ? ` · ${missing} listed names had no matching record` : ''}`;
+    root.innerHTML = `
+        <h1 style="--dot:${esc(category.color || '#9aa0aa')}">${esc(category.title || '')}</h1>
+        ${body}
+        ${extras}
+        <p class="meta">${esc(note)}</p>
+        <div class="table-slot"></div>`;
+    render();
+}).catch(err => {
+    document.getElementById('topic').innerHTML = `<p class="empty">Could not load this topic.</p>`;
+    console.error(err);
+});
+
+document.getElementById('topic').addEventListener('click', e => {
+    const th = e.target.closest('th[data-key]');
+    if (th) {
+        const key = th.dataset.key;
+        state.dir = state.key === key ? -state.dir : 1;
+        state.key = key;
+        render();
+        return;
+    }
+    const tr = e.target.closest('tr[data-href]');
+    if (tr && tr.dataset.href) window.open(tr.dataset.href, '_blank', 'noopener');
+});
+</script>
+<script src="theme.js"></script>
+</body>
+</html>

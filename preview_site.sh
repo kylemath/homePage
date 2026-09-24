@@ -14,7 +14,7 @@ echo ""
 
 # Try Python 3 first (most common)
 if command -v python3 &> /dev/null; then
-    python3 -m http.server 8000
+    python3 serve.py
 # Try Python 2 as fallback
 elif command -v python &> /dev/null; then
     python -m SimpleHTTPServer 8000

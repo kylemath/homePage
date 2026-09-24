@@ -1,2 +1,4 @@
 publications_env/
+.venv/
 .env
+incoming_screenshots/

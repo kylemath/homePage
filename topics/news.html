@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="../theme.css">
+    <title>News</title>
+    <style>
+        :root {
+            --bg:#0a0a0b;
+            --bg-grad: radial-gradient(1100px 560px at 72% -12%, #16161b 0%, #0a0a0b 62%);
+            --surface:#151518; --surface-2:#1c1c20; --surface-3:#26262c;
+            --border:#2a2a31; --border-strong:#3b3b44;
+            --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87;
+            --accent:#6ea8fe; --radius:12px;
+            --shadow:0 10px 32px rgba(0,0,0,.5);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); background-image: var(--bg-grad); background-attachment: fixed;
+            color: var(--text); -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); }
+        .wrap { max-width: 1640px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 48px) 64px; }
+        .back { margin: 0 0 18px; font-size: 13px; font-weight: 600; }
+        .back a { text-decoration: none; }
+        .back a:hover { text-decoration: underline; }
+        h1 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; }
+        h1::before { content: ''; width: 10px; height: 10px; border-radius: 3px; background: var(--dot, var(--text-faint)); flex-shrink: 0; }
+        .body { margin: 0 0 10px; color: var(--text-dim); font-size: 16px; line-height: 1.6; max-width: 760px; }
+        .extra { margin: 0 0 8px; color: var(--text-dim); font-size: 15px; line-height: 1.55; max-width: 760px; }
+        .meta { margin: 0 0 18px; color: var(--text-faint); font-size: 13px; }
+        .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+        table.data { width: 100%; border-collapse: collapse; font-size: 13px; }
+        table.data th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-dim); text-align: left; font-weight: 600; padding: 11px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+        table.data.sortable th { cursor: pointer; user-select: none; }
+        table.data.sortable th:hover { color: var(--text); }
+        table.data th.on::after { content: ' ↑'; color: var(--accent); }
+        table.data th.on.desc::after { content: ' ↓'; }
+        table.data td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
+        table.data tr { position: relative; }
+        table.data tr.has-link { cursor: pointer; }
+        table.data tr.has-link:hover { background: var(--surface-2); }
+        table.data td.title { color: var(--text); font-weight: 600; }
+        table.data td.title a { color: inherit; text-decoration: none; font-weight: 600; }
+        table.data td.title a.rowlink::after { content: ''; position: absolute; inset: 0; }
+        table.data td.desc { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-faint); }
+        .empty { color: var(--text-faint); font-size: 14px; }
+        .topic-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+        .topic-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+        .topic-list a.topic { color: var(--text); font-weight: 650; text-decoration: none; font-size: 16px; display: inline-flex; align-items: center; gap: 8px; }
+        .topic-list a.topic:hover { color: var(--accent); }
+        .topic-list .dot { width: 8px; height: 8px; border-radius: 3px; display: inline-block; }
+        .topic-list p { margin: 6px 0 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
+        footer { margin-top: 18px; color: var(--text-faint); font-size: 12px; }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p class="back"><a href="../index.html">Home</a> · <a href="index.html">All topics</a></p>
+    <h1 style="--dot:#6cc6d6">News</h1>
+    <p class="body">Coverage of the lab, the illusions, and portable EEG.</p><p class="meta">22 items</p><div class="table-wrap"><table class="data"><thead><tr><th>Title</th><th>Kind</th><th>Category</th><th>Description</th><th>Year</th><th>Updated</th></tr></thead><tbody><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/folio/2023/10/inside-the-mind-of-the-machine.html">Inside the mind of the machine</a></td><td>news</td><td>News</td><td class="desc">Geoff McMaster, Folio (October 2, 2023)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://edifyedmonton.com/urban/innovation-technology/check-your-head/">Check Your Head</a></td><td>news</td><td>News</td><td class="desc">Steven Sandor, Edify Edmonton (May 1, 2023)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/folio/2022/04/metabolic-fingerprint-predicts-impairment-from-medical-cannabis.html">Metabolic &#x27;fingerprint&#x27; predicts impairment from medical cannabis</a></td><td>news</td><td>News</td><td class="desc">Gillian Rutherford, Folio, University of Alberta (April 20, 2022) (Collaboration)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.popularmechanics.com/science/a33224851/how-many-circles-viral-coffer-illusion/">How Many Circles Do You See Here?</a></td><td>news</td><td>News</td><td class="desc">Andrew Daniels, Popular Mechanics (July 7, 2020)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://edmonton.ctvnews.ca/these-headsets-are-changing-the-way-u-of-a-neuroscience-students-learn-1.5091712">These headsets are changing the way U of A neuroscience students learn</a></td><td>news</td><td>News</td><td class="desc">Kelsey Dyer, CTV News Edmonton (September 3, 2020)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/news/2020/september/eeg-headsets.html">A new frame of mind: EEG headsets transform learning for neuroscience students</a></td><td>news</td><td>News</td><td class="desc">Katie Willis, Faculty of Science, University of Alberta (September 2, 2020)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.popsci.com/story/science/oldest-optical-illusion/">This ancient optical illusion is a 14,000-year-old puzzle</a></td><td>news</td><td>News</td><td class="desc">Tom McNamara, Popular Science (March 23, 2020)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/news/2019/september/brain-activity-background-noise.html">Make some noise: How background noise affects brain activity</a></td><td>news</td><td>News</td><td class="desc">Andrew Lyle, Faculty of Science, University of Alberta (September 19, 2019)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.popularmechanics.com/science/a28763960/rabbit-raven-optical-illusion/">Is This a Rabbit or Raven?</a></td><td>news</td><td>News</td><td class="desc">Andrew Daniels, Popular Mechanics (August 20, 2019)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/news/2019/august/psych-chair-singhal.html">Driving the future: New chair of the Department of Psychology focuses his sights on growth</a></td><td>news</td><td>News</td><td class="desc">Jennifer Pascoe, Faculty of Science, University of Alberta (August 6, 2019) (Mention)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://fivethirtyeight.com/features/driving-your-phone-is-a-distraction-even-if-you-arent-looking-at-it/">Driving? Your Phone Is A Distraction Even If You Aren&#x27;t Looking At It</a></td><td>news</td><td>News</td><td class="desc">Christie Aschwanden, FiveThirtyEight (June 21, 2018)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/about-us/contours/2018-spring-contours/2018/may/next-up-neuroscience.html">Next up in neuroscience</a></td><td>news</td><td>News</td><td class="desc">Katie Willis, Faculty of Science, University of Alberta (May 29, 2018)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/news/2018/march/optical-illusion-gives-insight-into-how-we-perceive-the-world.html">Duck, duck, rabbit: How we see what we see</a></td><td>news</td><td>News</td><td class="desc">Katie Willis, Faculty of Science/Folio, University of Alberta (March 5, 2018)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://time.com/5127108/brain-works-differently-outside/">Being Outdoors May Change the Way Your Brain Works, Study Says</a></td><td>news</td><td>News</td><td class="desc">Jamie Ducharme, TIME (February 2, 2018)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/folio/2018/01/this-is-your-brain-this-is-your-brain-outdoors.html">This is your brain. This is your brain outdoors.</a></td><td>news</td><td>News</td><td class="desc">Katie Willis, Folio, University of Alberta (January 29, 2018)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/en/science/news/2017/august/new-equipment-maps-brain-activity-and-blood-flow-in-neuroscience-lab.html">New equipment maps brain activity and blood flow in state-of-the-art neuroscience lab</a></td><td>news</td><td>News</td><td class="desc">Katie Willis, Faculty of Science, University of Alberta (August 23, 2017)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.ualberta.ca/newtrail/research/research-in-the-news2">The Factors of Focus</a></td><td>news</td><td>News</td><td class="desc">Staff, New Trail / Edmonton Sun (May 19, 2017)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://shouldibescaredofthis.libsyn.com/podcast/my-phone/">Episode 6: My Phone</a></td><td>news</td><td>News</td><td class="desc">Brothers DePaul (Jordan Foisy, host), Should I Be Scared of This? Podcast (September 21, 2015)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://www.bbc.co.uk/programmes/p02c9mg4">Health Check: Driving Distraction</a></td><td>news</td><td>News</td><td class="desc">Claudia Hammond (host), BBC World Service (November 26, 2014)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://news.illinois.edu/view/6367/204502">Study: Talking while driving safest with someone who can see what you see</a></td><td>news</td><td>News</td><td class="desc">Diana Yates, Illinois News Bureau (October 8, 2014)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://beckman.illinois.edu/news/article/2014/04/23/7932048d-c34c-488b-9135-b6c167e10ea1">Video: Controlling brain waves to improve vision</a></td><td>news</td><td>News</td><td class="desc">Beckman Institute for Advanced Science and Technology (April 23, 2014)</td><td></td><td></td></tr><tr class="has-link"><td class="title"><a class="rowlink" href="https://beckman.illinois.edu/about/news/article/2011/09/27/ada7783f-4b92-415f-8908-bbb4198f8c95">Fellows Corner: Kyle Mathewson</a></td><td>news</td><td>News</td><td class="desc">Beckman Institute (September 27, 2011)</td><td></td><td></td></tr></tbody></table></div>
+</div>
+<script src="../theme.js"></script>
+</body>
+</html>

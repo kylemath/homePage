@@ -1,0 +1,2801 @@
+{
+  "profile": {
+    "name": "Kyle Elliott Mathewson, PhD",
+    "role": "Associate Professor, Psychology \u00b7 Director, APPLab \u00b7 University of Alberta",
+    "email": "kmathews@ualberta.ca",
+    "phone": "(780) 492-2662",
+    "office": "P-455 Bio Science",
+    "headshot": "images/headshot.jpg",
+    "about": "I am an Associate Professor of Psychology at the University of Alberta and director of the Attention Perception and Performance Lab. The lab studies visual awareness, attention, learning, and memory, and builds portable brain-sensing tools that work outside a traditional lab. I previously trained with Monica Fabiani and Gabriele Gratton at the University of Illinois, and with Clay Holroyd at the University of Victoria."
+  },
+  "featured": [
+    {
+      "id": "links",
+      "title": "Links",
+      "description": "Faculty page, lab, code, lectures, and the other places this work lives.",
+      "color": "#9aa0aa",
+      "itemIds": [
+        "link-cv",
+        "link-faculty",
+        "link-lab",
+        "link-github",
+        "link-scholar",
+        "link-youtube",
+        "link-x",
+        "link-instagram",
+        "link-linkedin",
+        "link-photos"
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "description": "Brain and Behavior, Cognitive Neuroscience, and the programming and sensing courses around them, together with the repositories those courses use.",
+      "color": "#5ec98b",
+      "itemIds": [
+        "teach-275",
+        "teach-375",
+        "teach-independent",
+        "teach-403",
+        "teach-psychtoolbox"
+      ],
+      "groupIds": [
+        "e7d41b87-3b82-48f7-9e1c-cc0fb4967bb4",
+        "014343b3-863a-4ebb-bf36-0ddd68304995",
+        "32a3aa37-015b-47a7-963a-6cd757ecd339"
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "description": "Pervasive brain sensing, from the finding that alpha oscillations gate visual awareness to portable systems for everyday and clinical use. The row groups the narrative with the repositories behind it.",
+      "color": "#7c9cff",
+      "itemIds": [
+        "stage-alpha",
+        "stage-devices",
+        "stage-flex",
+        "stage-software",
+        "stage-world",
+        "stage-clinical",
+        "stage-art",
+        "stage-fab"
+      ],
+      "groupIds": [
+        "248a2527-6776-4522-9069-62c1f932a577",
+        "d9e0cb43-4d79-4869-ba36-ce10e65f8c1e",
+        "0bb534b2-0ed3-4417-8145-24cc4891b80b",
+        "a079e253-2a2d-4bd4-8c6a-94fbcb2bfb97"
+      ]
+    },
+    {
+      "id": "papers",
+      "title": "Papers",
+      "description": "Journal articles and conference papers. The thumbnail is the first page beside two figures.",
+      "color": "#e0a35e",
+      "kinds": [
+        "paper"
+      ]
+    },
+    {
+      "id": "news",
+      "title": "News",
+      "description": "Coverage of the lab, the illusions, and portable EEG.",
+      "color": "#6cc6d6",
+      "kinds": [
+        "news"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "Books, essays, and long-form projects.",
+      "color": "#b48ef0",
+      "kinds": [
+        "longform"
+      ],
+      "groupIds": [
+        "da78da71-9176-4605-a0b8-ea680b60576e"
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "description": "Academic posts, industry roles, and community work.",
+      "color": "#5ec9c0",
+      "itemIds": [
+        "exp-assoc",
+        "exp-asst",
+        "exp-beckman",
+        "exp-neurosity",
+        "exp-blueberry",
+        "exp-coach"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "link-cv",
+      "kind": "link",
+      "logo": "images/logos/link-cv.svg",
+      "title": "CV",
+      "oneLiner": "Complete CV",
+      "url": "https://docs.google.com/document/d/1AxFnSLORzV253BfuqUx0_QgDFOLhe3_JVR6Jl327vM0/edit?usp=sharing",
+      "accent": "#6b7280",
+      "mark": "CV"
+    },
+    {
+      "id": "link-faculty",
+      "kind": "link",
+      "logo": "images/logos/link-faculty.svg",
+      "title": "Faculty",
+      "oneLiner": "UAlberta Directory",
+      "url": "https://apps.ualberta.ca/directory/person/kmathews",
+      "accent": "#007C41",
+      "mark": "UA"
+    },
+    {
+      "id": "link-lab",
+      "kind": "link",
+      "logo": "images/logos/link-lab.png",
+      "title": "APPLab",
+      "oneLiner": "Lab Website",
+      "url": "https://sites.psych.ualberta.ca/kylemathewson/",
+      "accent": "#4f46e5",
+      "mark": "Lab"
+    },
+    {
+      "id": "link-github",
+      "kind": "link",
+      "logo": "images/logos/link-github.svg",
+      "title": "GitHub",
+      "oneLiner": "@kylemath",
+      "url": "https://github.com/kylemath",
+      "accent": "#24292f",
+      "mark": "GH"
+    },
+    {
+      "id": "link-scholar",
+      "kind": "link",
+      "logo": "images/logos/link-scholar.svg",
+      "title": "Scholar",
+      "oneLiner": "Publications",
+      "url": "https://scholar.google.com/citations?user=wgK6LCYAAAAJ",
+      "accent": "#4285F4",
+      "mark": "GS"
+    },
+    {
+      "id": "link-youtube",
+      "kind": "link",
+      "logo": "images/logos/link-youtube.svg",
+      "title": "YouTube",
+      "oneLiner": "Lectures",
+      "url": "https://www.youtube.com/user/kmathew3/videos",
+      "accent": "#CC0000",
+      "mark": "YT"
+    },
+    {
+      "id": "link-x",
+      "kind": "link",
+      "logo": "images/logos/link-x.svg",
+      "title": "X / Twitter",
+      "oneLiner": "@mathkyle",
+      "url": "https://x.com/mathkyle?lang=en",
+      "accent": "#111111",
+      "mark": "X"
+    },
+    {
+      "id": "link-instagram",
+      "kind": "link",
+      "logo": "images/logos/link-instagram.svg",
+      "title": "Instagram",
+      "oneLiner": "@kylemath",
+      "url": "https://www.instagram.com/kylemath/",
+      "accent": "#C13584",
+      "mark": "IG"
+    },
+    {
+      "id": "link-linkedin",
+      "kind": "link",
+      "logo": "images/logos/link-linkedin.svg",
+      "title": "LinkedIn",
+      "oneLiner": "Network",
+      "url": "https://www.linkedin.com/in/ky-mathewson-856279124/",
+      "accent": "#0077B5",
+      "mark": "in"
+    },
+    {
+      "id": "link-photos",
+      "kind": "link",
+      "logo": "images/logos/link-photos.svg",
+      "title": "Photos",
+      "oneLiner": "Album",
+      "url": "https://photos.app.goo.gl/4kHWvNK2Cpwja7uN7",
+      "accent": "#059669",
+      "mark": "Ph"
+    }
+  ],
+  "teaching": [
+    {
+      "id": "teach-275",
+      "kind": "course",
+      "title": "PSYCH 275",
+      "oneLiner": "Brain and Behavior: sensation, perception, movement, motivation, learning, and cognition.",
+      "url": "https://youtu.be/MkqbObAURVI?si=NDxqzmPBOf3YysgI",
+      "mark": "275"
+    },
+    {
+      "id": "teach-375",
+      "kind": "course",
+      "title": "PSYCH 375",
+      "oneLiner": "Cognitive Neuroscience. Two lecture playlists.",
+      "url": "https://www.youtube.com/playlist?list=PLeBpq2qBuOI3Tmb2oxEl1B2gq9s6Ol85O",
+      "links": [
+        {
+          "label": "Playlist 2",
+          "url": "https://www.youtube.com/playlist?list=PLeBpq2qBuOI2MydmU9cAsgUP6goamWKUE"
+        }
+      ],
+      "mark": "375"
+    },
+    {
+      "id": "teach-independent",
+      "kind": "course",
+      "title": "Independent Research",
+      "oneLiner": "PSYCH 396, 398, 496, 498 and graduate thesis supervision.",
+      "url": "https://sites.psych.ualberta.ca/kylemathewson/",
+      "mark": "IR"
+    },
+    {
+      "id": "teach-403",
+      "kind": "course",
+      "title": "PSYCH 403 / 505",
+      "oneLiner": "Recent advances: programming, consciousness, cognitive neuroscience, brain sensing.",
+      "url": "https://github.com/kylemath/NeuroimagingClass",
+      "mark": "403"
+    },
+    {
+      "id": "teach-psychtoolbox",
+      "kind": "course",
+      "title": "Psychtoolbox Course",
+      "oneLiner": "MATLAB Psychtoolbox programming tutorials.",
+      "url": "https://www.youtube.com/playlist?list=PLeBpq2qBuOI0lHH7py9B-B53zVxcVwyne",
+      "mark": "PTB"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-assoc",
+      "kind": "role",
+      "title": "Associate Professor",
+      "oneLiner": "Psychology, University of Alberta. Director, APPLab. 2019\u2013present.",
+      "year": 2019,
+      "url": "https://apps.ualberta.ca/directory/person/kmathews",
+      "mark": "UA"
+    },
+    {
+      "id": "exp-asst",
+      "kind": "role",
+      "title": "Assistant Professor",
+      "oneLiner": "Psychology, University of Alberta. Established APPLab. 2013\u20132019.",
+      "year": 2013,
+      "url": "https://apps.ualberta.ca/directory/person/kmathews",
+      "mark": "UA"
+    },
+    {
+      "id": "exp-beckman",
+      "kind": "role",
+      "title": "Postdoctoral Fellow",
+      "oneLiner": "Beckman Institute, University of Illinois. Fabiani & Gratton. 2011\u20132013.",
+      "year": 2011,
+      "url": "https://beckman.illinois.edu/",
+      "mark": "UI"
+    },
+    {
+      "id": "exp-neurosity",
+      "kind": "role",
+      "title": "Senior Software Engineer",
+      "oneLiner": "Neurosity. Neurotechnology software and brain-computer interfaces. 2023.",
+      "year": 2023,
+      "url": "https://neurosity.co/",
+      "mark": "NS"
+    },
+    {
+      "id": "exp-blueberry",
+      "kind": "role",
+      "title": "Chief Scientist",
+      "oneLiner": "Blueberry, Toronto. Scientific leadership, 2021\u20132023. Advisor, 2020\u20132021.",
+      "year": 2021,
+      "url": "https://www.linkedin.com/in/ky-mathewson-856279124/",
+      "mark": "BB"
+    },
+    {
+      "id": "exp-coach",
+      "kind": "role",
+      "title": "Soccer Coach",
+      "oneLiner": "Juventus Soccer Club, 2013 Boys. Player, Edmonton and District Soccer Association.",
+      "year": 2013,
+      "url": "https://juventus2013.netlify.app/",
+      "mark": "\u26bd"
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-alpha",
+      "kind": "topic",
+      "title": "Rhythmic Consciousness",
+      "oneLiner": "Alpha phase and power predict whether a stimulus is seen. Entrainment shows the rhythm is causal.",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C",
+      "screenshot": "images/research-alpha-oscillations.jpg"
+    },
+    {
+      "id": "stage-devices",
+      "kind": "topic",
+      "title": "Portable Measurement",
+      "oneLiner": "EEG that leaves the lab: dry electrodes, Muse, and a few minutes of recording for stroke severity.",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:DrR-2ekChdkC",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/src/components/PageSwitcher/components/EEGEduIntro/assets/musepicture.png"
+    },
+    {
+      "id": "stage-flex",
+      "kind": "topic",
+      "title": "Flexible Electronics",
+      "oneLiner": "Skin-like, MRI-compatible interfaces for long-term neural monitoring.",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:kzcSZmkxUKAC",
+      "screenshot": "images/research-flexible-electronics.jpg"
+    },
+    {
+      "id": "stage-software",
+      "kind": "topic",
+      "title": "Accessible Software",
+      "oneLiner": "EEGEdu and the browser tools that let students record and learn from their own brain activity.",
+      "url": "https://eegedu.com/",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/logo.png"
+    },
+    {
+      "id": "stage-world",
+      "kind": "topic",
+      "title": "Real-World Validation",
+      "oneLiner": "Mobile EEG during cycling, skateboarding, and everyday environments.",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:8Xgff_V0N9gC",
+      "screenshot": "images/research-mobile-eeg.jpg"
+    },
+    {
+      "id": "stage-clinical",
+      "kind": "topic",
+      "title": "Translational Use",
+      "oneLiner": "Portable EEG aimed at faster stroke assessment outside a traditional lab.",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=wgK6LCYAAAAJ&citation_for_view=wgK6LCYAAAAJ:sA9dB-pw3HoC",
+      "screenshot": "images/research-clinical-apps.jpg"
+    },
+    {
+      "id": "stage-art",
+      "kind": "topic",
+      "title": "Neural Art",
+      "oneLiner": "Brain activity as a control signal for art, music, and generative interfaces.",
+      "url": "https://github.com/kylemath/faceoff",
+      "screenshot": "images/research-brain-art.jpg"
+    },
+    {
+      "id": "stage-fab",
+      "kind": "topic",
+      "title": "Digital Fabrication",
+      "oneLiner": "Creative tools that turn sensing and design into physical objects.",
+      "url": "https://github.com/kylemath/IllumiStack",
+      "screenshot": "images/research-digital-fabrication.jpg"
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper-2026-universal-conceptual-structure-in-neural-translation-pro",
+      "kind": "paper",
+      "title": "Universal Conceptual Structure in Neural Translation: Probing NLLB-200's Multilingual Geometry",
+      "authors": "KE Mathewson",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:AYInfyleIOsC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson (2026)"
+    },
+    {
+      "id": "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares",
+      "kind": "paper",
+      "title": "Magic Gems: A Polyhedral Framework for Magic Squares",
+      "authors": "KE Mathewson",
+      "year": 2025,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:RJOyoaXV5v8C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson (2025)"
+    },
+    {
+      "id": "paper-2025-combining-the-los-angeles-motor-scale-and-the-muse-porta",
+      "kind": "paper",
+      "title": "Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute Stroke Syndrome.",
+      "authors": "M Kate et al.",
+      "year": 2025,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:eGYfIraVYiQC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "M Kate et al. (2025)"
+    },
+    {
+      "id": "paper-2025-abstract-tmp30-combining-the-los-angeles-motor-scale-and",
+      "kind": "paper",
+      "title": "Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute\u00a0\u2026",
+      "authors": "M Kate et al.",
+      "year": 2025,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kJDgFkosVoMC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "M Kate et al. (2025)"
+    },
+    {
+      "id": "paper-2024-quantitative-electroencephalography-to-assess-post-strok",
+      "kind": "paper",
+      "title": "Quantitative electroencephalography to assess post-stroke functional disability: A systematic review and meta-analysis",
+      "authors": "I Sood et al.",
+      "year": 2024,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:X9ykpCP0fEIC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "I Sood et al. (2024)"
+    },
+    {
+      "id": "paper-2024-the-moving-wave-applications-of-the-mobile-eeg-approach",
+      "kind": "paper",
+      "title": "The moving wave: Applications of the mobile EEG approach to study human attention",
+      "authors": "KE Mathewson et al.",
+      "year": 2024,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:8Xgff_V0N9gC",
+      "pdfPage": "images/papers/paper-2024-the-moving-wave-applications-of-the-mobile-eeg-approach.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2024)",
+      "composite": "images/papers/paper-2024-the-moving-wave-applications-of-the-mobile-eeg-approach.png"
+    },
+    {
+      "id": "paper-2023-fast-optical-signals-for-real-time-retinotopy-and-brain",
+      "kind": "paper",
+      "title": "Fast optical signals for real-time retinotopy and brain computer interface",
+      "authors": "D Perpetuini et al.",
+      "year": 2023,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Xz60mAmATU4C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Perpetuini et al. (2023)"
+    },
+    {
+      "id": "paper-2023-b-4-quantitative-electroencephalography-to-predict-post",
+      "kind": "paper",
+      "title": "B. 4 Quantitative electroencephalography to predict post-stroke disability: a systematic review and meta-analysis",
+      "authors": "I Sood et al.",
+      "year": 2023,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2v_ZtQDX9iAC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "I Sood et al. (2023)"
+    },
+    {
+      "id": "paper-2023-an-eegmanylabs-study-to-test-the-role-of-the-alpha-phase",
+      "kind": "paper",
+      "title": "An# EEGManyLabs study to test the role of the alpha phase on visual perception (a replication and new evidence)",
+      "authors": "M Ruzzoli et al.",
+      "year": 2023,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:27LrP4qxOz0C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "M Ruzzoli et al. (2023)"
+    },
+    {
+      "id": "paper-2022-recommendations-and-publication-guidelines-for-studies-u",
+      "kind": "paper",
+      "title": "Recommendations and publication guidelines for studies using frequency domain and time\u2010frequency domain analyses of neural time series",
+      "authors": "A Keil et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QsaTk4IG4EwC",
+      "pdfPage": "images/papers/paper-2022-recommendations-and-publication-guidelines-for-studies-u.png",
+      "figures": [],
+      "oneLiner": "A Keil et al. (2022)",
+      "composite": "images/papers/paper-2022-recommendations-and-publication-guidelines-for-studies-u.png"
+    },
+    {
+      "id": "paper-2022-metabolomic-fingerprint-of-behavioral-changes-in-respons",
+      "kind": "paper",
+      "title": "Metabolomic fingerprint of behavioral changes in response to full-spectrum cannabis extracts",
+      "authors": "ZH Maayah et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LXmCCkuhhTsC",
+      "pdfPage": "images/papers/paper-2022-metabolomic-fingerprint-of-behavioral-changes-in-respons.png",
+      "figures": [],
+      "oneLiner": "ZH Maayah et al. (2022)",
+      "composite": "images/papers/paper-2022-metabolomic-fingerprint-of-behavioral-changes-in-respons.png"
+    },
+    {
+      "id": "paper-2022-to-see-not-to-see-or-to-see-poorly-perceptual-quality-an",
+      "kind": "paper",
+      "title": "To see, not to see or to see poorly: Perceptual quality and guess rate as a function of electroencephalography (EEG) brain activity in an orientation perception task",
+      "authors": "SS Sheldon et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:IsPWOBWtZBwC",
+      "pdfPage": "images/papers/paper-2022-to-see-not-to-see-or-to-see-poorly-perceptual-quality-an.png",
+      "figures": [],
+      "oneLiner": "SS Sheldon et al. (2022)",
+      "composite": "images/papers/paper-2022-to-see-not-to-see-or-to-see-poorly-perceptual-quality-an.png"
+    },
+    {
+      "id": "paper-2022-surrounding-traffic-matters-increases-in-traffic-volume",
+      "kind": "paper",
+      "title": "Surrounding Traffic Matters: Increases in Traffic Volume Are Related to Changes in EEG Rhythms in Urban Cyclists",
+      "authors": "D Robles et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:silx2ntsSuwC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Robles et al. (2022)"
+    },
+    {
+      "id": "paper-2022-low-cost-portable-electroencephalograph-may-improve-the",
+      "kind": "paper",
+      "title": "Low cost, portable electroencephalograph may improve the accuracy of prehospital stroke diagnosis and detection of large vessel occlusion",
+      "authors": "CM Wilkinson et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:sA9dB-pw3HoC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "CM Wilkinson et al. (2022)"
+    },
+    {
+      "id": "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma",
+      "kind": "paper",
+      "title": "Abstract tp56: low cost, portable electroencephalograph may improve the accuracy of prehospital stroke diagnosis and detection of large vessel occlusion",
+      "authors": "CM Wilkinson et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:k_7cPK9k7w8C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "CM Wilkinson et al. (2022)"
+    },
+    {
+      "id": "paper-2022-abstract-wmp46-quantitative-electroencephalogram-to-asse",
+      "kind": "paper",
+      "title": "Abstract WMP46: Quantitative Electroencephalogram To Assess Neurovascular Coupling Post Endovascular Thrombectomy",
+      "authors": "N Ishaque et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Hck25ST_3aIC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "N Ishaque et al. (2022)"
+    },
+    {
+      "id": "paper-2022-increases-in-traffic-volume-are-associated-with-measurab",
+      "kind": "paper",
+      "title": "INCREASES IN TRAFFIC VOLUME ARE ASSOCIATED WITH MEASURABLE CHANGES IN EEG IN URBAN CYCLING LANES",
+      "authors": "D Robles et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CYCckWUYoCcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Robles et al. (2022)"
+    },
+    {
+      "id": "paper-2022-connecting-covert-attention-and-visual-perception-to-the",
+      "kind": "paper",
+      "title": "Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using\u00a0\u2026",
+      "authors": "SS Sheldon et al.",
+      "year": 2022,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:aIdbFUkbNIkC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SS Sheldon et al. (2022)"
+    },
+    {
+      "id": "paper-2021-eeg-in-motion-using-an-oddball-task-to-explore-motor-int",
+      "kind": "paper",
+      "title": "EEG in motion: Using an oddball task to explore motor interference in active skateboarding",
+      "authors": "D Robles et al.",
+      "year": 2021,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SnGPuo6Feq8C",
+      "pdfPage": "images/papers/paper-2021-eeg-in-motion-using-an-oddball-task-to-explore-motor-int.png",
+      "figures": [],
+      "oneLiner": "D Robles et al. (2021)",
+      "composite": "images/papers/paper-2021-eeg-in-motion-using-an-oddball-task-to-explore-motor-int.png"
+    },
+    {
+      "id": "paper-2021-decoding-covert-attention-on-an-orientation-perception-t",
+      "kind": "paper",
+      "title": "DECODING COVERT ATTENTION ON AN ORIENTATION PERCEPTION TASK FROM EEG ALPHA ACTIVITY",
+      "authors": "S Sheldon et al.",
+      "year": 2021,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:UuEBAcK4md4C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "S Sheldon et al. (2021)"
+    },
+    {
+      "id": "paper-2020-predicting-stroke-severity-with-a-3-min-recording-from-t",
+      "kind": "paper",
+      "title": "Predicting stroke severity with a 3-min recording from the Muse portable EEG system for rapid diagnosis of stroke",
+      "authors": "CM Wilkinson* et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DrR-2ekChdkC",
+      "pdfPage": "images/papers/paper-2020-predicting-stroke-severity-with-a-3-min-recording-from-t.png",
+      "figures": [
+        "images/research-clinical-apps.jpg",
+        "images/research-flexible-electronics.jpg"
+      ],
+      "oneLiner": "CM Wilkinson* et al. (2020)",
+      "composite": "images/papers/paper-2020-predicting-stroke-severity-with-a-3-min-recording-from-t.png"
+    },
+    {
+      "id": "paper-2020-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+      "kind": "paper",
+      "title": "A ride in the park: Cycling in different outdoor environments modulates the auditory evoked potentials",
+      "authors": "JEM Scanlon et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:5bg8sr1QxYwC",
+      "pdfPage": "images/papers/paper-2020-a-ride-in-the-park-cycling-in-different-outdoor-environm.png",
+      "figures": [],
+      "oneLiner": "JEM Scanlon et al. (2020)",
+      "composite": "images/papers/paper-2020-a-ride-in-the-park-cycling-in-different-outdoor-environm.png"
+    },
+    {
+      "id": "paper-2020-the-time-course-of-moral-perception-an-erp-investigation",
+      "kind": "paper",
+      "title": "The time course of moral perception: an ERP investigation of the moral pop-out effect",
+      "authors": "A Gantman et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:pS0ncopqnHgC",
+      "pdfPage": "images/papers/paper-2020-the-time-course-of-moral-perception-an-erp-investigation.png",
+      "figures": [],
+      "oneLiner": "A Gantman et al. (2020)",
+      "composite": "images/papers/paper-2020-the-time-course-of-moral-perception-an-erp-investigation.png"
+    },
+    {
+      "id": "paper-2020-aerobic-fitness-unrelated-to-acquisition-of-spatial-rela",
+      "kind": "paper",
+      "title": "Aerobic fitness unrelated to acquisition of spatial relational memory in college-aged adults",
+      "authors": "MC Chandler et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rbm3iO8VlycC",
+      "pdfPage": "images/papers/paper-2020-aerobic-fitness-unrelated-to-acquisition-of-spatial-rela.png",
+      "figures": [],
+      "oneLiner": "MC Chandler et al. (2020)",
+      "composite": "images/papers/paper-2020-aerobic-fitness-unrelated-to-acquisition-of-spatial-rela.png"
+    },
+    {
+      "id": "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra",
+      "kind": "paper",
+      "title": "Application of the Muse portable EEG system to aid in rapid diagnosis of stroke",
+      "authors": "CM Wilkinson et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rTD5ala9j4wC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "CM Wilkinson et al. (2020)"
+    },
+    {
+      "id": "paper-2020-attention-in-motion-using-an-oddball-task-to-record-brai",
+      "kind": "paper",
+      "title": "Attention in Motion: Using an Oddball Task to Record Brain Activity in Skateboarders",
+      "authors": "D Robles et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QUX0mv85b1cC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Robles et al. (2020)"
+    },
+    {
+      "id": "paper-2020-effects-of-covert-attention-on-orientation-detection-and",
+      "kind": "paper",
+      "title": "EFFECTS OF COVERT ATTENTION ON ORIENTATION DETECTION AND PERCEPTION: AN EEG STUDY",
+      "authors": "S Sheldon et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PkcyUWeTMh0C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "S Sheldon et al. (2020)"
+    },
+    {
+      "id": "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra-2",
+      "kind": "paper",
+      "title": "APPLICATION OF THE MUSE PORTABLE EEG SYSTEM TO AID IN RAPID DIAGNOSIS OF STROKE",
+      "authors": "J Burrell et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:JTqpx9DYBaYC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J Burrell et al. (2020)"
+    },
+    {
+      "id": "paper-2020-differences-in-traffic-conditions-are-related-to-n1-ampl",
+      "kind": "paper",
+      "title": "DIFFERENCES IN TRAFFIC CONDITIONS ARE RELATED TO N1 AMPLITUDE CHANGES DURING CYCLING",
+      "authors": "D Robles et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:wvYxNZNCP7wC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Robles et al. (2020)"
+    },
+    {
+      "id": "paper-2020-blinded-by-magic-electrophysiological-correlates-of-chan",
+      "kind": "paper",
+      "title": "BLINDED BY MAGIC: ELECTROPHYSIOLOGICAL CORRELATES OF CHANGE BLINDNESS",
+      "authors": "M Yuan et al.",
+      "year": 2020,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HJSXoJQnj-YC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "M Yuan et al. (2020)"
+    },
+    {
+      "id": "paper-2019-large-area-mri-compatible-epidermal-electronic-interface",
+      "kind": "paper",
+      "title": "Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring",
+      "authors": "L Tian et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kzcSZmkxUKAC",
+      "pdfPage": "images/papers/paper-2019-large-area-mri-compatible-epidermal-electronic-interface.png",
+      "figures": [
+        "images/research-flexible-electronics.jpg",
+        "images/research-digital-fabrication.jpg"
+      ],
+      "oneLiner": "L Tian et al. (2019)",
+      "composite": "images/papers/paper-2019-large-area-mri-compatible-epidermal-electronic-interface.png"
+    },
+    {
+      "id": "paper-2019-taking-off-the-training-wheels-measuring-auditory-p3-dur",
+      "kind": "paper",
+      "title": "Taking off the training wheels: Measuring auditory P3 during outdoor cycling using an active wet EEG system",
+      "authors": "JEM Scanlon et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:NDuN12AVoxsC",
+      "pdfPage": "images/papers/paper-2019-taking-off-the-training-wheels-measuring-auditory-p3-dur.png",
+      "figures": [],
+      "oneLiner": "JEM Scanlon et al. (2019)",
+      "composite": "images/papers/paper-2019-taking-off-the-training-wheels-measuring-auditory-p3-dur.png"
+    },
+    {
+      "id": "paper-2019-the-ecological-cocktail-party-measuring-brain-activity-d",
+      "kind": "paper",
+      "title": "The ecological cocktail party: Measuring brain activity during an auditory oddball task with background noise",
+      "authors": "JEM Scanlon et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:w0F2JDEymm0C",
+      "pdfPage": "images/papers/paper-2019-the-ecological-cocktail-party-measuring-brain-activity-d.png",
+      "figures": [],
+      "oneLiner": "JEM Scanlon et al. (2019)",
+      "composite": "images/papers/paper-2019-the-ecological-cocktail-party-measuring-brain-activity-d.png"
+    },
+    {
+      "id": "paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest",
+      "kind": "paper",
+      "title": "Electrophysiological correlates of hyperoxia during resting\u2010state EEG in awake human subjects",
+      "authors": "SAD Kizuk et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:FiDNX6EVdGUC",
+      "pdfPage": "images/papers/paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest.png",
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2019)",
+      "composite": "images/papers/paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest.png"
+    },
+    {
+      "id": "paper-2019-real-brains-in-virtual-worlds-validating-a-novel-oddball",
+      "kind": "paper",
+      "title": "Real brains in virtual worlds: Validating a novel oddball paradigm in virtual reality",
+      "authors": "JWP Kuziek et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2l5NCbZemmgC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "JWP Kuziek et al. (2019)"
+    },
+    {
+      "id": "paper-2019-the-human-eye-as-a-camera",
+      "kind": "paper",
+      "title": "The human eye as a camera",
+      "authors": "S Mann et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:isU91gLudPYC",
+      "pdfPage": "images/papers/paper-2019-the-human-eye-as-a-camera.png",
+      "figures": [],
+      "oneLiner": "S Mann et al. (2019)",
+      "composite": "images/papers/paper-2019-the-human-eye-as-a-camera.png"
+    },
+    {
+      "id": "paper-2019-blinded-by-magic-electrophysiological-correlates-of-chan",
+      "kind": "paper",
+      "title": "Blinded by magic: Electrophysiological correlates of change blindness",
+      "authors": "M Yuan et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DkZNVXde3BIC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "M Yuan et al. (2019)"
+    },
+    {
+      "id": "paper-2019-effects-of-random-fluctuations-in-alpha-oscillations-on",
+      "kind": "paper",
+      "title": "Effects of random fluctuations in alpha oscillations on orientation detection: an EEG study",
+      "authors": "SS Sheldon et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SGW5VrABaM0C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SS Sheldon et al. (2019)"
+    },
+    {
+      "id": "paper-2019-the-time-course-of-moral-perception-an-electroencephalog",
+      "kind": "paper",
+      "title": "The time-course of moral perception: An electroencephalography investigation",
+      "authors": "AP Gantman et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:An6A6Jpfc1oC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "AP Gantman et al. (2019)"
+    },
+    {
+      "id": "paper-2019-aerobic-fitness-does-not-predict-acquisition-of-hippocam",
+      "kind": "paper",
+      "title": "Aerobic Fitness Does Not Predict Acquisition of Hippocampal-dependent Memory in College-aged Adults",
+      "authors": "MC Chandler et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:EPG8bYD4jVwC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "MC Chandler et al. (2019)"
+    },
+    {
+      "id": "paper-2019-large-area-mri-compatible-epidermal-electronic-interface-2",
+      "kind": "paper",
+      "title": "Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring (vol 3, pg 194, 2019)",
+      "authors": "L Tian et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:eAlLMO4JVmQC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "L Tian et al. (2019)"
+    },
+    {
+      "id": "paper-2019-publisher-correction-large-area-mri-compatible-epidermal",
+      "kind": "paper",
+      "title": "Publisher Correction: Large-area MRI-compatible epidermal electronic interfaces for prosthetic control and cognitive monitoring",
+      "authors": "T Limei et al.",
+      "year": 2019,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mWEH9CqjF64C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "T Limei et al. (2019)"
+    },
+    {
+      "id": "paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab",
+      "kind": "paper",
+      "title": "Two\u2010layered and stretchable e\u2010textile patches for wearable healthcare electronics",
+      "authors": "TG La et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3bvyWxjaHKcC",
+      "pdfPage": "images/papers/paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab.png",
+      "figures": [],
+      "oneLiner": "TG La et al. (2018)",
+      "composite": "images/papers/paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab.png"
+    },
+    {
+      "id": "paper-2018-noncontact-measurement-of-emotional-and-physiological-ch",
+      "kind": "paper",
+      "title": "Noncontact measurement of emotional and physiological changes in heart rate from a webcam",
+      "authors": "CR Madan et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mKu_rENv82IC",
+      "pdfPage": "images/papers/paper-2018-noncontact-measurement-of-emotional-and-physiological-ch.png",
+      "figures": [],
+      "oneLiner": "CR Madan et al. (2018)",
+      "composite": "images/papers/paper-2018-noncontact-measurement-of-emotional-and-physiological-ch.png"
+    },
+    {
+      "id": "paper-2018-increasing-the-mobility-of-eeg-data-collection-using-a-l",
+      "kind": "paper",
+      "title": "Increasing the mobility of EEG data collection using a Latte Panda computer",
+      "authors": "JWP Kuziek et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:pAkWuXOU-OoC",
+      "pdfPage": "images/papers/paper-2018-increasing-the-mobility-of-eeg-data-collection-using-a-l.png",
+      "figures": [],
+      "oneLiner": "JWP Kuziek et al. (2018)",
+      "composite": "images/papers/paper-2018-increasing-the-mobility-of-eeg-data-collection-using-a-l.png"
+    },
+    {
+      "id": "paper-2018-does-10-hz-cathodal-oscillating-current-of-the-parieto-o",
+      "kind": "paper",
+      "title": "Does 10-Hz cathodal oscillating current of the parieto-occipital lobe modulate target detection?",
+      "authors": "SS Sheldon et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kWvqk_afx_IC",
+      "pdfPage": "images/papers/paper-2018-does-10-hz-cathodal-oscillating-current-of-the-parieto-o.png",
+      "figures": [],
+      "oneLiner": "SS Sheldon et al. (2018)",
+      "composite": "images/papers/paper-2018-does-10-hz-cathodal-oscillating-current-of-the-parieto-o.png"
+    },
+    {
+      "id": "paper-2018-entrainment-of-theta-not-alpha-oscillations-is-predictiv",
+      "kind": "paper",
+      "title": "Entrainment of theta, not alpha, oscillations is predictive of the brightness enhancement of a flickering stimulus",
+      "authors": "JK Bertrand et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1DsIQWDZLl8C",
+      "pdfPage": "images/papers/paper-2018-entrainment-of-theta-not-alpha-oscillations-is-predictiv.png",
+      "figures": [],
+      "oneLiner": "JK Bertrand et al. (2018)",
+      "composite": "images/papers/paper-2018-entrainment-of-theta-not-alpha-oscillations-is-predictiv.png"
+    },
+    {
+      "id": "paper-2018-duck-eats-rabbit-exactly-which-type-of-relational-phrase",
+      "kind": "paper",
+      "title": "Duck eats rabbit: exactly which type of relational phrase can disambiguate the perception of identical side by side ambiguous figures?",
+      "authors": "KE Mathewson",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:U_HPUtbDl20C",
+      "pdfPage": "images/papers/paper-2018-duck-eats-rabbit-exactly-which-type-of-relational-phrase.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson (2018)",
+      "composite": "images/papers/paper-2018-duck-eats-rabbit-exactly-which-type-of-relational-phrase.png"
+    },
+    {
+      "id": "paper-2018-electrophysiological-correlates-of-hyperoxia-during-rest",
+      "kind": "paper",
+      "title": "Electrophysiological correlates of hyperoxia during resting-state EEG in awake human subjects",
+      "authors": "W Vuong et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:v6i8RKmR8ToC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "W Vuong et al. (2018)"
+    },
+    {
+      "id": "paper-2018-effects-of-random-fluctuations-in-alpha-power-on-color-d",
+      "kind": "paper",
+      "title": "EFFECTS OF RANDOM FLUCTUATIONS IN ALPHA POWER ON COLOR DETECTION: AN EEG STUDY",
+      "authors": "S Sheldon et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:YsrPvlHIBpEC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "S Sheldon et al. (2018)"
+    },
+    {
+      "id": "paper-2018-feedback-error-related-negativity-as-a-control-signal-fo",
+      "kind": "paper",
+      "title": "FEEDBACK ERROR-RELATED NEGATIVITY AS A CONTROL SIGNAL FOR THE ATTENTION SYSTEM",
+      "authors": "D Robles et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:ziOE8S1-AIUC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "D Robles et al. (2018)"
+    },
+    {
+      "id": "paper-2018-brain-waves-meet-real-life-recent-advances-in-mobile-eeg",
+      "kind": "paper",
+      "title": "BRAIN WAVES MEET REAL LIFE: RECENT ADVANCES IN MOBILE EEG",
+      "authors": "KE Mathewson et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:mUJArPsKIAAC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2018)"
+    },
+    {
+      "id": "paper-2018-modulations-in-baseline-oscillations-and-auditory-erps-a",
+      "kind": "paper",
+      "title": "MODULATIONS IN BASELINE OSCILLATIONS AND AUDITORY ERPS AS A FUNCTION OF REAL-WORLD ENVIRONMENTAL NOISE",
+      "authors": "JEM Scanlon et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:oi2SiIJ9l4AC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "JEM Scanlon et al. (2018)"
+    },
+    {
+      "id": "paper-2018-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+      "kind": "paper",
+      "title": "A RIDE IN THE PARK: CYCLING IN DIFFERENT OUTDOOR ENVIRONMENTS AFFECTS THE AUDITORY N1",
+      "authors": "J Scanlon et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:w1MjKQ0l0TYC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J Scanlon et al. (2018)"
+    },
+    {
+      "id": "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interac",
+      "kind": "paper",
+      "title": "\" Power and phase of alpha oscillations reveal an interaction between spatial and temporal visual attention\": Erratum.",
+      "authors": "SAD Kizuk et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:65Yg0jNCQDAC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2018)"
+    },
+    {
+      "id": "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+      "kind": "paper",
+      "title": "Power and Phase of Alpha Oscillations Reveal an Interaction between Spatial and Temporal Visual Attention (vol 29, pg 480, 2017)",
+      "authors": "SAD Kizuk et al.",
+      "year": 2018,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HhcuHIWmDEUC",
+      "pdfPage": "images/papers/paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interact.png",
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2018)",
+      "composite": "images/papers/paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interact.png"
+    },
+    {
+      "id": "paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti",
+      "kind": "paper",
+      "title": "High and dry? Comparing active dry EEG electrodes to active and passive wet electrodes",
+      "authors": "KE Mathewson et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jE2MZjpN3IcC",
+      "pdfPage": "images/papers/paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2017)",
+      "composite": "images/papers/paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti.png"
+    },
+    {
+      "id": "paper-2017-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+      "kind": "paper",
+      "title": "Power and phase of alpha oscillations reveal an interaction between spatial and temporal visual attention",
+      "authors": "SAD Kizuk et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:KaMxkj08jr0C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2017)"
+    },
+    {
+      "id": "paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u",
+      "kind": "paper",
+      "title": "Transitioning EEG experiments away from the laboratory using a Raspberry Pi 2",
+      "authors": "JWP Kuziek et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-7ulzOJl1JYC",
+      "pdfPage": "images/papers/paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u.png",
+      "figures": [],
+      "oneLiner": "JWP Kuziek et al. (2017)",
+      "composite": "images/papers/paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u.png"
+    },
+    {
+      "id": "paper-2017-your-brain-on-bikes-p3-mmn-n2b-and-baseline-noise-while",
+      "kind": "paper",
+      "title": "Your brain on bikes: P3, MMN/N2b, and baseline noise while pedaling a stationary bike",
+      "authors": "JEM Scanlon et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PyEswDtIyv0C",
+      "pdfPage": "images/papers/paper-2017-your-brain-on-bikes-p3-mmn-n2b-and-baseline-noise-while.png",
+      "figures": [],
+      "oneLiner": "JEM Scanlon et al. (2017)",
+      "composite": "images/papers/paper-2017-your-brain-on-bikes-p3-mmn-n2b-and-baseline-noise-while.png"
+    },
+    {
+      "id": "paper-2017-reorganization-of-neural-systems-mediating-peripheral-vi",
+      "kind": "paper",
+      "title": "Reorganization of neural systems mediating peripheral visual selective attention in the deaf: An optical imaging study",
+      "authors": "JL Seymour et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1Ye0OR6EYb4C",
+      "pdfPage": "images/papers/paper-2017-reorganization-of-neural-systems-mediating-peripheral-vi.png",
+      "figures": [],
+      "oneLiner": "JL Seymour et al. (2017)",
+      "composite": "images/papers/paper-2017-reorganization-of-neural-systems-mediating-peripheral-vi.png"
+    },
+    {
+      "id": "paper-2017-regulating-the-access-to-awareness-brain-activity-relate",
+      "kind": "paper",
+      "title": "Regulating the access to awareness: Brain activity related to probe-related and spontaneous reversals in binocular rivalry",
+      "authors": "BA Metzger et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-jrNzM816MMC",
+      "pdfPage": "images/papers/paper-2017-regulating-the-access-to-awareness-brain-activity-relate.png",
+      "figures": [],
+      "oneLiner": "BA Metzger et al. (2017)",
+      "composite": "images/papers/paper-2017-regulating-the-access-to-awareness-brain-activity-relate.png"
+    },
+    {
+      "id": "paper-2017-does-viewing-nature-and-urban-environments-change-neuro",
+      "kind": "paper",
+      "title": "Does viewing nature and urban environments change neuro-cognitive markers of attention?",
+      "authors": "J Kuziek et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:uVUOdF_882EC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J Kuziek et al. (2017)"
+    },
+    {
+      "id": "paper-2017-your-brain-in-the-world-investigating-the-n1-and-p2-for",
+      "kind": "paper",
+      "title": "YOUR BRAIN IN THE WORLD: INVESTIGATING THE N1 AND P2 FOR ECOLOGICAL STIMULI.",
+      "authors": "T McLean et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:O0nohqN1r9EC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "T McLean et al. (2017)"
+    },
+    {
+      "id": "paper-2017-do-exogenously-entrained-oscillations-in-brain-activity",
+      "kind": "paper",
+      "title": "DO EXOGENOUSLY ENTRAINED OSCILLATIONS IN BRAIN ACTIVITY INFLUENCE PERCEPTION?",
+      "authors": "S Sheldon et al.",
+      "year": 2017,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-95Q15plzcUC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "S Sheldon et al. (2017)"
+    },
+    {
+      "id": "paper-2016-combining-energy-and-laplacian-regularization-to-accurat",
+      "kind": "paper",
+      "title": "Combining energy and Laplacian regularization to accurately retrieve the depth of brain activity of diffuse optical tomographic data",
+      "authors": "AM Chiarelli et al.",
+      "year": 2016,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:6_hjMsCP8ZoC",
+      "pdfPage": "images/papers/paper-2016-combining-energy-and-laplacian-regularization-to-accurat.png",
+      "figures": [],
+      "oneLiner": "AM Chiarelli et al. (2016)",
+      "composite": "images/papers/paper-2016-combining-energy-and-laplacian-regularization-to-accurat.png"
+    },
+    {
+      "id": "paper-2016-the-vision-rhythm-entrainment-at-multiple-frequencies-re",
+      "kind": "paper",
+      "title": "The Vision Rhythm? Entrainment at Multiple Frequencies Reveal Differential Interactions Between Neural Oscillations and Visual Perception",
+      "authors": "SAD Kizuk et al.",
+      "year": 2016,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QyXJ3EUuO1IC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2016)"
+    },
+    {
+      "id": "paper-2016-taking-off-the-training-wheels-measuring-brain-activity",
+      "kind": "paper",
+      "title": "Taking Off the Training Wheels: Measuring Brain Activity During Outdoor Cycling Using an Active Wet EEG System",
+      "authors": "J Scanlon et al.",
+      "year": 2016,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:OBSaB-F7qqsC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J Scanlon et al. (2016)"
+    },
+    {
+      "id": "paper-2016-red-light-green-light-understanding-the-perceptual-quali",
+      "kind": "paper",
+      "title": "Red Light, Green Light: Understanding the Perceptual Qualities of alpha Inhibition and the Role of Attention in Entrainment",
+      "authors": "J Kuziek et al.",
+      "year": 2016,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:HGTzPopzzJcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J Kuziek et al. (2016)"
+    },
+    {
+      "id": "paper-2015-making-waves-in-two-streams-of-consciousness-an-interact",
+      "kind": "paper",
+      "title": "MAKING WAVES IN TWO STREAMS OF CONSCIOUSNESS: AN INTERACTION BETWEEN SPATIAL AND TEMPORAL ATTENTION",
+      "authors": "SAD Kizuk et al.",
+      "year": 2015,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WC9gN4BGCRcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "SAD Kizuk et al. (2015)"
+    },
+    {
+      "id": "paper-2015-non-contact-measurement-of-cognitive-emotional-and-physi",
+      "kind": "paper",
+      "title": "NON-CONTACT MEASUREMENT OF COGNITIVE, EMOTIONAL, AND PHYSIOLOGICAL CHANGES IN HEART RATE WITH A WEBCAM",
+      "authors": "CR Madan et al.",
+      "year": 2015,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:yxmsSjX2EkcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "CR Madan et al. (2015)"
+    },
+    {
+      "id": "paper-2015-probing-binocular-rivalry-pre-stimulus-alpha-determines",
+      "kind": "paper",
+      "title": "PROBING BINOCULAR RIVALRY: PRE-STIMULUS ALPHA DETERMINES WHETHER SUPPRESSED-EYE PROBES ELICIT A SWITCH IN PERCEPTUAL DOMINANCE",
+      "authors": "BA Metzger et al.",
+      "year": 2015,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:-mN3Mh-tlDkC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "BA Metzger et al. (2015)"
+    },
+    {
+      "id": "paper-2014-soft-microfluidic-assemblies-of-sensors-circuits-and-rad",
+      "kind": "paper",
+      "title": "Soft microfluidic assemblies of sensors, circuits, and radios for the skin",
+      "authors": "S Xu* et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WHdLCjDvYFkC",
+      "pdfPage": "images/papers/paper-2014-soft-microfluidic-assemblies-of-sensors-circuits-and-rad.png",
+      "figures": [],
+      "oneLiner": "S Xu* et al. (2014)",
+      "composite": "images/papers/paper-2014-soft-microfluidic-assemblies-of-sensors-circuits-and-rad.png"
+    },
+    {
+      "id": "paper-2014-rugged-and-breathable-forms-of-stretchable-electronics-w",
+      "kind": "paper",
+      "title": "Rugged and breathable forms of stretchable electronics with adherent composite substrates for transcutaneous monitoring",
+      "authors": "KI Jang et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:PYBJJbyH-FwC",
+      "pdfPage": "images/papers/paper-2014-rugged-and-breathable-forms-of-stretchable-electronics-w.png",
+      "figures": [],
+      "oneLiner": "KI Jang et al. (2014)",
+      "composite": "images/papers/paper-2014-rugged-and-breathable-forms-of-stretchable-electronics-w.png"
+    },
+    {
+      "id": "paper-2014-dynamics-of-alpha-control-preparatory-suppression-of-pos",
+      "kind": "paper",
+      "title": "Dynamics of Alpha Control: Preparatory Suppression of Posterior Alpha Oscillations by Frontal Modulators Revealed with Combined EEG and Event-related Optical Signal",
+      "authors": "KE Mathewson et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:MhiOAD_qIWkC",
+      "pdfPage": "images/papers/paper-2014-dynamics-of-alpha-control-preparatory-suppression-of-pos.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2014)",
+      "composite": "images/papers/paper-2014-dynamics-of-alpha-control-preparatory-suppression-of-pos.png"
+    },
+    {
+      "id": "paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa",
+      "kind": "paper",
+      "title": "Providing views of the driving scene to drivers\u2019 conversation partners mitigates cell-phone-related distraction",
+      "authors": "JG Gaspar et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:owLR8QvbtFgC",
+      "pdfPage": "images/papers/paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa.png",
+      "figures": [],
+      "oneLiner": "JG Gaspar et al. (2014)",
+      "composite": "images/papers/paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa.png"
+    },
+    {
+      "id": "paper-2014-keep-your-mind-on-the-road-predicting-mind-wandering-whi",
+      "kind": "paper",
+      "title": "Keep your mind on the road: Predicting mind-wandering while driving using classification of pre-probe oscillatory brain activity and driving performance",
+      "authors": "J He et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3NQIlFlcGxIC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "J He et al. (2014)"
+    },
+    {
+      "id": "paper-2014-amelioration-of-the-distracting-effect-of-cellphone-driv",
+      "kind": "paper",
+      "title": "Amelioration of the distracting effect of cellphone driving",
+      "authors": "WN Street et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Ade32sEp0pkC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "WN Street et al. (2014)"
+    },
+    {
+      "id": "paper-2014-not-all-probes-are-created-equal-suppressed-probes-prese",
+      "kind": "paper",
+      "title": "Not all probes are created equal: Suppressed probes presented during binocular rivalry draw attention to the suppressed image",
+      "authors": "BA Metzger et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:hsZV8lGYWTMC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "BA Metzger et al. (2014)"
+    },
+    {
+      "id": "paper-2014-retinotopic-visual-mapping-of-brain-oxygenation-and-neur",
+      "kind": "paper",
+      "title": "Retinotopic visual mapping of brain oxygenation and neuronal activity using simultaneous fast and slow near-infrared optical brain imaging in humans.",
+      "authors": "KE Mathewson et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:Br1UauaknNIC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2014)"
+    },
+    {
+      "id": "paper-2014-fabrication-procedure-for-rugged-and-breathable-forms-of",
+      "kind": "paper",
+      "title": "Fabrication Procedure for Rugged and Breathable Forms of Stretchable Electronics with Adherent and Composite Substrates",
+      "authors": "JA Rogers et al.",
+      "year": 2014,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:zGdJYJv2LkUC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "JA Rogers et al. (2014)"
+    },
+    {
+      "id": "paper-2013-providing-conversation-partners-views-of-the-driving-sce",
+      "kind": "paper",
+      "title": "Providing conversation partners views of the driving scene mitigates cell phone-related distraction",
+      "authors": "JG Gaspar et al.",
+      "year": 2013,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CB2v5VPnA5kC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "JG Gaspar et al. (2013)"
+    },
+    {
+      "id": "paper-2012-making-waves-in-the-stream-of-consciousness-entraining-o",
+      "kind": "paper",
+      "title": "Making Waves in the Stream of Consciousness: Entraining Oscillations in EEG Alpha and Fluctuations in Visual Awareness with Rhythmic Visual Stimulation",
+      "authors": "KE Mathewson et al.",
+      "year": 2012,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LkGwnXOMwfcC",
+      "pdfPage": "images/papers/paper-2012-making-waves-in-the-stream-of-consciousness-entraining-o.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2012)",
+      "composite": "images/papers/paper-2012-making-waves-in-the-stream-of-consciousness-entraining-o.png"
+    },
+    {
+      "id": "paper-2012-dissociable-neural-representations-of-reinforcement-and",
+      "kind": "paper",
+      "title": "Dissociable neural representations of reinforcement and belief prediction errors underlie strategic learning",
+      "authors": "L Zhu et al.",
+      "year": 2012,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:_FxGoFyzp5QC",
+      "pdfPage": "images/papers/paper-2012-dissociable-neural-representations-of-reinforcement-and.png",
+      "figures": [],
+      "oneLiner": "L Zhu et al. (2012)",
+      "composite": "images/papers/paper-2012-dissociable-neural-representations-of-reinforcement-and.png"
+    },
+    {
+      "id": "paper-2012-different-slopes-for-different-folks-alpha-and-delta-eeg",
+      "kind": "paper",
+      "title": "Different slopes for different folks: Alpha and delta EEG power predict subsequent video game learning rate and improvements in cognitive control tasks",
+      "authors": "KE Mathewson et al.",
+      "year": 2012,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:hqOjcs7Dif8C",
+      "pdfPage": "images/papers/paper-2012-different-slopes-for-different-folks-alpha-and-delta-eeg.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2012)",
+      "composite": "images/papers/paper-2012-different-slopes-for-different-folks-alpha-and-delta-eeg.png"
+    },
+    {
+      "id": "paper-2011-pulsed-out-of-awareness-eeg-alpha-oscillations-represent",
+      "kind": "paper",
+      "title": "Pulsed out of awareness: EEG alpha oscillations represent a pulsed-inhibition of ongoing cortical processing",
+      "authors": "KE Mathewson et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:UeHWp8X0CEIC",
+      "pdfPage": "images/papers/paper-2011-pulsed-out-of-awareness-eeg-alpha-oscillations-represent.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2011)",
+      "composite": "images/papers/paper-2011-pulsed-out-of-awareness-eeg-alpha-oscillations-represent.png"
+    },
+    {
+      "id": "paper-2011-learning-to-multitask-effects-of-video-game-practice-on",
+      "kind": "paper",
+      "title": "Learning to multitask: effects of video game practice on electrophysiological indices of attention and resource allocation",
+      "authors": "EL Maclin et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:2osOgNQ5qMEC",
+      "pdfPage": "images/papers/paper-2011-learning-to-multitask-effects-of-video-game-practice-on.png",
+      "figures": [],
+      "oneLiner": "EL Maclin et al. (2011)",
+      "composite": "images/papers/paper-2011-learning-to-multitask-effects-of-video-game-practice-on.png"
+    },
+    {
+      "id": "paper-2011-simultaneous-perception-of-both-interpretations-of-ambig",
+      "kind": "paper",
+      "title": "Simultaneous perception of both interpretations of ambiguous figures",
+      "authors": "MS Jensen et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:WF5omc3nYNoC",
+      "pdfPage": "images/papers/paper-2011-simultaneous-perception-of-both-interpretations-of-ambig.png",
+      "figures": [],
+      "oneLiner": "MS Jensen et al. (2011)",
+      "composite": "images/papers/paper-2011-simultaneous-perception-of-both-interpretations-of-ambig.png"
+    },
+    {
+      "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg",
+      "kind": "paper",
+      "title": "WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED\u00a0\u2026",
+      "authors": "KE Mathewson et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jU7OWUQzBzMC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2011)"
+    },
+    {
+      "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg-2",
+      "kind": "paper",
+      "title": "Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical\u00a0\u2026",
+      "authors": "KE Mathewson et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SjuI4pbJlxcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2011)"
+    },
+    {
+      "id": "paper-2011-disco-detectors-images-sources-and-cortical-optimization",
+      "kind": "paper",
+      "title": "DISCO: DETECTORS, IMAGES, SOURCES AND CORTICAL OPTIMIZATION OF LIGHT CHANNELS FOR THE EVENT-RELATED OPTICAL SIGNAL (EROS)",
+      "authors": "DA Steines et al.",
+      "year": 2011,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:LPtt_HFRSbwC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "DA Steines et al. (2011)"
+    },
+    {
+      "id": "paper-2010-rescuing-stimuli-from-invisibility-inducing-a-momentary",
+      "kind": "paper",
+      "title": "Rescuing stimuli from invisibility: Inducing a momentary release from visual masking with pre-target entrainment",
+      "authors": "KE Mathewson et al.",
+      "year": 2010,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u-x6o8ySG0sC",
+      "pdfPage": "images/papers/paper-2010-rescuing-stimuli-from-invisibility-inducing-a-momentary.png",
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2010)",
+      "composite": "images/papers/paper-2010-rescuing-stimuli-from-invisibility-inducing-a-momentary.png"
+    },
+    {
+      "id": "paper-2010-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+      "kind": "paper",
+      "title": "Making waves in the stream of consciousness: Eliciting predictable oscillations in visual awareness with pretarget entrainment at 12 Hz",
+      "authors": "KE Mathewson et al.",
+      "year": 2010,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:5nxA0vEk-isC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2010)"
+    },
+    {
+      "id": "paper-2010-who-will-learn-best-electrophysiological-markers-of-cogn",
+      "kind": "paper",
+      "title": "Who will learn best? Electrophysiological markers of cognitive control predict subsequent complex task learning in the space fortress game",
+      "authors": "KE Mathewson et al.",
+      "year": 2010,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:L1USKYWJimsC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2010)"
+    },
+    {
+      "id": "paper-2010-controlling-the-timing-of-oscillations-in-neural-activit",
+      "kind": "paper",
+      "title": "Controlling the timing of oscillations in neural activity and consciousness with rhythmic visual stimulation",
+      "authors": "K Mathewson et al.",
+      "year": 2010,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:CdxZDUztZiMC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "K Mathewson et al. (2010)"
+    },
+    {
+      "id": "paper-2010-entraining-neural-oscillations-with-rhythmic-visual-stim",
+      "kind": "paper",
+      "title": "ENTRAINING NEURAL OSCILLATIONS WITH RHYTHMIC VISUAL STIMULATION ELICITS SIMULTANEOUS FLUCTUATIONS IN VISUAL AWARENESS",
+      "authors": "KE Mathewson et al.",
+      "year": 2010,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:prdVHNxh-e8C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2010)"
+    },
+    {
+      "id": "paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a",
+      "kind": "paper",
+      "title": "To see or not to see: prestimulus \u03b1 phase predicts visual awareness",
+      "authors": "KE Mathewson et al.",
+      "year": 2009,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C",
+      "pdfPage": "images/papers/paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a.png",
+      "figures": [
+        "images/research-alpha-oscillations.jpg",
+        "images/research-mobile-eeg.jpg"
+      ],
+      "oneLiner": "KE Mathewson et al. (2009)",
+      "composite": "images/papers/paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a.png"
+    },
+    {
+      "id": "paper-2009-illuminating-awareness-investigating-the-temporal-and-sp",
+      "kind": "paper",
+      "title": "Illuminating awareness: Investigating the temporal and spatial neural dynamics of metacontrast masking using the event-related optical signal",
+      "authors": "K Mathewson et al.",
+      "year": 2009,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:XUvXOeBm_78C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "K Mathewson et al. (2009)"
+    },
+    {
+      "id": "paper-2009-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+      "kind": "paper",
+      "title": "Making waves in the stream of consciousness: Eliciting predictable oscillations in visual awareness with visual entrainment at 12 Hz",
+      "authors": "KE Mathewson et al.",
+      "year": 2009,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:rHJHxKgnXwkC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2009)"
+    },
+    {
+      "id": "paper-2008-pre-stimulus-activity-predicts-subsequent-target-detecti",
+      "kind": "paper",
+      "title": "Pre-stimulus activity predicts subsequent target detection in meta-contrast masking",
+      "authors": "K Mathewson et al.",
+      "year": 2008,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:0EnyYjriUFMC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "K Mathewson et al. (2008)"
+    },
+    {
+      "id": "paper-2008-training-on-a-complex-task-affects-dual-task-event-relat",
+      "kind": "paper",
+      "title": "Training on a complex task affects dual task event-related brain potentials",
+      "authors": "KA Low et al.",
+      "year": 2008,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:6bLC7aUMtPcC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KA Low et al. (2008)"
+    },
+    {
+      "id": "paper-2008-now-you-see-it-now-you-don-t-pre-stimulus-electrophysiol",
+      "kind": "paper",
+      "title": "Now you see it, now you don't: Pre-stimulus electrophysiological predictors of subsequent visual awareness in metacontrast masking",
+      "authors": "KE Mathewson et al.",
+      "year": 2008,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:1yWc8FF-_SYC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "KE Mathewson et al. (2008)"
+    },
+    {
+      "id": "paper-2007-the-detrimental-effects-of-working-memory-load-on-a-sust",
+      "kind": "paper",
+      "title": "The detrimental effects of working memory load on a sustained attention task: The elimination of a cueing effect with distraction",
+      "authors": "K Mathewson et al.",
+      "year": 2007,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:MAUkC_7iAq8C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "K Mathewson et al. (2007)"
+    },
+    {
+      "id": "paper-2007-sequence-learning-and-medial-front-cortex-external-versu",
+      "kind": "paper",
+      "title": "Sequence learning and medial-front cortex: External versus internal error evaluation",
+      "authors": "O Krigolson et al.",
+      "year": 2007,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&cstart=100&pagesize=100&citation_for_view=wgK6LCYAAAAJ:DBa1UEJaJKAC",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "O Krigolson et al. (2007)"
+    },
+    {
+      "id": "paper-2006-the-role-of-medial-frontal-cortex-in-sequence-learning",
+      "kind": "paper",
+      "title": "The role of medial-frontal cortex in sequence learning",
+      "authors": "OE Krigolson et al.",
+      "year": 2006,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:d1gkVwhDpl0C",
+      "pdfPage": null,
+      "figures": [],
+      "oneLiner": "OE Krigolson et al. (2006)"
+    }
+  ],
+  "news": [
+    {
+      "id": "news-inside-the-mind-of-the-machine",
+      "kind": "news",
+      "title": "Inside the mind of the machine",
+      "oneLiner": "Geoff McMaster, Folio (October 2, 2023)",
+      "url": "https://www.ualberta.ca/en/folio/2023/10/inside-the-mind-of-the-machine.html",
+      "screenshot": "images/news/news-inside-the-mind-of-the-machine.jpg"
+    },
+    {
+      "id": "news-check-your-head",
+      "kind": "news",
+      "title": "Check Your Head",
+      "oneLiner": "Steven Sandor, Edify Edmonton (May 1, 2023)",
+      "url": "https://edifyedmonton.com/urban/innovation-technology/check-your-head/",
+      "screenshot": "images/news/news-check-your-head.jpg"
+    },
+    {
+      "id": "news-metabolic-fingerprint-predicts-impairment-from-m",
+      "kind": "news",
+      "title": "Metabolic 'fingerprint' predicts impairment from medical cannabis",
+      "oneLiner": "Gillian Rutherford, Folio, University of Alberta (April 20, 2022) (Collaboration)",
+      "url": "https://www.ualberta.ca/en/folio/2022/04/metabolic-fingerprint-predicts-impairment-from-medical-cannabis.html",
+      "screenshot": "images/news/news-metabolic-fingerprint-predicts-impairment-from-m.jpg"
+    },
+    {
+      "id": "news-how-many-circles-do-you-see-here",
+      "kind": "news",
+      "title": "How Many Circles Do You See Here?",
+      "oneLiner": "Andrew Daniels, Popular Mechanics (July 7, 2020)",
+      "url": "https://www.popularmechanics.com/science/a33224851/how-many-circles-viral-coffer-illusion/",
+      "screenshot": "images/news/news-how-many-circles-do-you-see-here.jpg"
+    },
+    {
+      "id": "news-these-headsets-are-changing-the-way-u-of-a-neuro",
+      "kind": "news",
+      "title": "These headsets are changing the way U of A neuroscience students learn",
+      "oneLiner": "Kelsey Dyer, CTV News Edmonton (September 3, 2020)",
+      "url": "https://edmonton.ctvnews.ca/these-headsets-are-changing-the-way-u-of-a-neuroscience-students-learn-1.5091712",
+      "screenshot": "images/news/news-these-headsets-are-changing-the-way-u-of-a-neuro.jpg"
+    },
+    {
+      "id": "news-a-new-frame-of-mind-eeg-headsets-transform-learn",
+      "kind": "news",
+      "title": "A new frame of mind: EEG headsets transform learning for neuroscience students",
+      "oneLiner": "Katie Willis, Faculty of Science, University of Alberta (September 2, 2020)",
+      "url": "https://www.ualberta.ca/en/science/news/2020/september/eeg-headsets.html",
+      "screenshot": "images/news/news-a-new-frame-of-mind-eeg-headsets-transform-learn.jpg"
+    },
+    {
+      "id": "news-this-ancient-optical-illusion-is-a-14-000-year-o",
+      "kind": "news",
+      "title": "This ancient optical illusion is a 14,000-year-old puzzle",
+      "oneLiner": "Tom McNamara, Popular Science (March 23, 2020)",
+      "url": "https://www.popsci.com/story/science/oldest-optical-illusion/",
+      "screenshot": "images/news/news-this-ancient-optical-illusion-is-a-14-000-year-o.jpg"
+    },
+    {
+      "id": "news-make-some-noise-how-background-noise-affects-bra",
+      "kind": "news",
+      "title": "Make some noise: How background noise affects brain activity",
+      "oneLiner": "Andrew Lyle, Faculty of Science, University of Alberta (September 19, 2019)",
+      "url": "https://www.ualberta.ca/en/science/news/2019/september/brain-activity-background-noise.html",
+      "screenshot": "images/news/news-make-some-noise-how-background-noise-affects-bra.jpg"
+    },
+    {
+      "id": "news-is-this-a-rabbit-or-raven",
+      "kind": "news",
+      "title": "Is This a Rabbit or Raven?",
+      "oneLiner": "Andrew Daniels, Popular Mechanics (August 20, 2019)",
+      "url": "https://www.popularmechanics.com/science/a28763960/rabbit-raven-optical-illusion/",
+      "screenshot": "images/news/news-is-this-a-rabbit-or-raven.jpg"
+    },
+    {
+      "id": "news-driving-the-future-new-chair-of-the-department-o",
+      "kind": "news",
+      "title": "Driving the future: New chair of the Department of Psychology focuses his sights on growth",
+      "oneLiner": "Jennifer Pascoe, Faculty of Science, University of Alberta (August 6, 2019) (Mention)",
+      "url": "https://www.ualberta.ca/en/science/news/2019/august/psych-chair-singhal.html",
+      "screenshot": "images/news/news-driving-the-future-new-chair-of-the-department-o.jpg"
+    },
+    {
+      "id": "news-driving-your-phone-is-a-distraction-even-if-you",
+      "kind": "news",
+      "title": "Driving? Your Phone Is A Distraction Even If You Aren't Looking At It",
+      "oneLiner": "Christie Aschwanden, FiveThirtyEight (June 21, 2018)",
+      "url": "https://fivethirtyeight.com/features/driving-your-phone-is-a-distraction-even-if-you-arent-looking-at-it/"
+    },
+    {
+      "id": "news-next-up-in-neuroscience",
+      "kind": "news",
+      "title": "Next up in neuroscience",
+      "oneLiner": "Katie Willis, Faculty of Science, University of Alberta (May 29, 2018)",
+      "url": "https://www.ualberta.ca/en/science/about-us/contours/2018-spring-contours/2018/may/next-up-neuroscience.html",
+      "screenshot": "images/news/news-next-up-in-neuroscience.jpg"
+    },
+    {
+      "id": "news-duck-duck-rabbit-how-we-see-what-we-see",
+      "kind": "news",
+      "title": "Duck, duck, rabbit: How we see what we see",
+      "oneLiner": "Katie Willis, Faculty of Science/Folio, University of Alberta (March 5, 2018)",
+      "url": "https://www.ualberta.ca/en/science/news/2018/march/optical-illusion-gives-insight-into-how-we-perceive-the-world.html",
+      "screenshot": "images/news/news-duck-duck-rabbit-how-we-see-what-we-see.jpg"
+    },
+    {
+      "id": "news-being-outdoors-may-change-the-way-your-brain-wor",
+      "kind": "news",
+      "title": "Being Outdoors May Change the Way Your Brain Works, Study Says",
+      "oneLiner": "Jamie Ducharme, TIME (February 2, 2018)",
+      "url": "https://time.com/5127108/brain-works-differently-outside/",
+      "screenshot": "images/news/news-being-outdoors-may-change-the-way-your-brain-wor.jpg"
+    },
+    {
+      "id": "news-this-is-your-brain-this-is-your-brain-outdoors",
+      "kind": "news",
+      "title": "This is your brain. This is your brain outdoors.",
+      "oneLiner": "Katie Willis, Folio, University of Alberta (January 29, 2018)",
+      "url": "https://www.ualberta.ca/en/folio/2018/01/this-is-your-brain-this-is-your-brain-outdoors.html"
+    },
+    {
+      "id": "news-new-equipment-maps-brain-activity-and-blood-flow",
+      "kind": "news",
+      "title": "New equipment maps brain activity and blood flow in state-of-the-art neuroscience lab",
+      "oneLiner": "Katie Willis, Faculty of Science, University of Alberta (August 23, 2017)",
+      "url": "https://www.ualberta.ca/en/science/news/2017/august/new-equipment-maps-brain-activity-and-blood-flow-in-neuroscience-lab.html",
+      "screenshot": "images/news/news-new-equipment-maps-brain-activity-and-blood-flow.jpg"
+    },
+    {
+      "id": "news-the-factors-of-focus",
+      "kind": "news",
+      "title": "The Factors of Focus",
+      "oneLiner": "Staff, New Trail / Edmonton Sun (May 19, 2017)",
+      "url": "https://www.ualberta.ca/newtrail/research/research-in-the-news2",
+      "screenshot": "images/news/news-the-factors-of-focus.jpg"
+    },
+    {
+      "id": "news-episode-6-my-phone",
+      "kind": "news",
+      "title": "Episode 6: My Phone",
+      "oneLiner": "Brothers DePaul (Jordan Foisy, host), Should I Be Scared of This? Podcast (September 21, 2015)",
+      "url": "https://shouldibescaredofthis.libsyn.com/podcast/my-phone/"
+    },
+    {
+      "id": "news-health-check-driving-distraction",
+      "kind": "news",
+      "title": "Health Check: Driving Distraction",
+      "oneLiner": "Claudia Hammond (host), BBC World Service (November 26, 2014)",
+      "url": "https://www.bbc.co.uk/programmes/p02c9mg4",
+      "screenshot": "images/news/news-health-check-driving-distraction.jpg"
+    },
+    {
+      "id": "news-study-talking-while-driving-safest-with-someone",
+      "kind": "news",
+      "title": "Study: Talking while driving safest with someone who can see what you see",
+      "oneLiner": "Diana Yates, Illinois News Bureau (October 8, 2014)",
+      "url": "https://news.illinois.edu/view/6367/204502",
+      "screenshot": "images/news/news-study-talking-while-driving-safest-with-someone.jpg"
+    },
+    {
+      "id": "news-video-controlling-brain-waves-to-improve-vision",
+      "kind": "news",
+      "title": "Video: Controlling brain waves to improve vision",
+      "oneLiner": "Beckman Institute for Advanced Science and Technology (April 23, 2014)",
+      "url": "https://beckman.illinois.edu/news/article/2014/04/23/7932048d-c34c-488b-9135-b6c167e10ea1",
+      "screenshot": "images/news/news-video-controlling-brain-waves-to-improve-vision.jpg"
+    },
+    {
+      "id": "news-fellows-corner-kyle-mathewson",
+      "kind": "news",
+      "title": "Fellows Corner: Kyle Mathewson",
+      "oneLiner": "Beckman Institute (September 27, 2011)",
+      "url": "https://beckman.illinois.edu/about/news/article/2011/09/27/ada7783f-4b92-415f-8908-bbb4198f8c95",
+      "screenshot": "images/news/news-fellows-corner-kyle-mathewson.jpg"
+    }
+  ],
+  "groups": [
+    {
+      "id": "79f46515-fb11-44f9-870d-1772a87aeee9",
+      "title": "CommandLineTools",
+      "names": [
+        "gitBash",
+        "pdf2jpeg",
+        "Roledex"
+      ],
+      "description": ""
+    },
+    {
+      "id": "9f577ee1-5fcf-44d4-b2af-a9cec955c226",
+      "title": "Math",
+      "names": [
+        "MathPlayground",
+        "hadwigerNelson",
+        "NavierStokesEnergyLandscape",
+        "GraphColour",
+        "Luo2024Extend",
+        "CatalanQuadratic",
+        "JaneStreetDwarkeshPuzzle"
+      ],
+      "description": ""
+    },
+    {
+      "id": "4dd5cf81-be32-4641-889e-b9f9fbc02504",
+      "title": "Computational Inteligence",
+      "names": [
+        "OpticalNeuralNet",
+        "microgptJS",
+        "VisualSystemModel",
+        "HNN-AEF"
+      ],
+      "description": ""
+    },
+    {
+      "id": "f5d66641-ed53-4a28-a695-53c386c70ab2",
+      "title": "3d Print",
+      "names": [
+        "CableRack",
+        "digitalClock",
+        "NumberblockToysPrint",
+        "FibrationTorusPuzzle",
+        "hueforge-at-home",
+        "3dprint",
+        "voice2print",
+        "IllumiStack",
+        "topographicModelsFromMapWebpage"
+      ],
+      "description": ""
+    },
+    {
+      "id": "d9e0cb43-4d79-4869-ba36-ce10e65f8c1e",
+      "title": "EEG Research",
+      "names": [
+        "FreethrowEEG",
+        "voyageAnalysis",
+        "AudienceEEG",
+        "SSAEP"
+      ],
+      "description": ""
+    },
+    {
+      "id": "9862c922-2592-46be-b3ff-e624cb34ff5d",
+      "title": "Soccer",
+      "names": [
+        "artOfSoccerWar",
+        "OfTwoMindsSoccer",
+        "powerLawSoccerAnalysisPage",
+        "artOfSoccerWarPlanning"
+      ],
+      "description": ""
+    },
+    {
+      "id": "a309adad-d1a1-4820-ba8c-9fff81ae1a58",
+      "title": "WebOS Apps",
+      "names": [
+        "MusicPlayer",
+        "cursor-launcher",
+        "wifi",
+        "LaserPointer",
+        "InstaFaceReadX",
+        "GroupPaint"
+      ],
+      "description": ""
+    },
+    {
+      "id": "2ff918ce-ab15-49b8-9ac6-152432be641e",
+      "title": "Judaism",
+      "names": [
+        "cantillate"
+      ],
+      "description": ""
+    },
+    {
+      "id": "da78da71-9176-4605-a0b8-ea680b60576e",
+      "title": "Writing",
+      "names": [
+        "GhostbustersConceptPlay",
+        "BrainsMindsMachinesTextbook",
+        "ExileEnginePage",
+        "LinoleumSecretHistory"
+      ],
+      "description": "Essays, books, and long-form writing projects."
+    },
+    {
+      "id": "248a2527-6776-4522-9069-62c1f932a577",
+      "title": "Research",
+      "names": [
+        "375Data_2020",
+        "FitnessMemory",
+        "webcamHR",
+        "matlab_video_hr",
+        "Mathewson2009",
+        "MoralWordEEG"
+      ],
+      "description": "Foundational work on visual awareness and the lab's portable brain-sensing program. These repositories are the code, data, and experiments behind that research."
+    },
+    {
+      "id": "e7d41b87-3b82-48f7-9e1c-cc0fb4967bb4",
+      "title": "Teaching",
+      "names": [
+        "Talk",
+        "NeuroimagingClass"
+      ],
+      "description": "Courses, lecture playlists, and the materials used to teach brain and behavior, cognitive neuroscience, and programming for psychology."
+    },
+    {
+      "id": "40af4b0e-c199-468d-81e4-3c8ab0394248",
+      "title": "WebAnimation",
+      "names": [
+        "BouncyBalls",
+        "ReactionDiffusionMaze",
+        "microphoneSpectroramWebpage",
+        "accGyro",
+        "FractalViewerWebpage",
+        "sunMoon"
+      ],
+      "description": ""
+    },
+    {
+      "id": "2db63981-a036-417f-b7e0-ebb670aeb2b2",
+      "title": "WebTools",
+      "names": [
+        "diagramRevamp",
+        "pdfTiles",
+        "ModernWebDesign",
+        "MidiRapper",
+        "abcovid",
+        "YoutubeMusicAlbumFilterChromePlugin"
+      ],
+      "description": ""
+    },
+    {
+      "id": "d4dc7a52-3bc8-43b7-a591-a1938a659e62",
+      "title": "WebEEG",
+      "names": [
+        "faceoff",
+        "Brainimation",
+        "p5.eegedu.art",
+        "BrainGames",
+        "EEG-FPS-Game",
+        "p5.eegedu",
+        "EEGVideo",
+        "muse-js",
+        "EEGEdu"
+      ],
+      "description": "Browser experiments that record or visualize EEG."
+    },
+    {
+      "id": "8da48248-af02-4745-91b9-c6ba36a7c5df",
+      "title": "ArtColabs",
+      "names": [
+        "reConstruction",
+        "StoryTrees3",
+        "WhisperingPines",
+        "StoryTrees2",
+        "Apparition"
+      ],
+      "description": ""
+    },
+    {
+      "id": "b0b88b59-b310-437d-a5eb-5704779863fb",
+      "title": "Games",
+      "names": [
+        "NumberBlocks",
+        "soccerSimV2Physics",
+        "shooterFocus",
+        "soccerSim",
+        "BrainCraft",
+        "react-game-kit",
+        "ClashRoyale",
+        "Mario-Kart-3.js"
+      ],
+      "description": ""
+    },
+    {
+      "id": "a55d2324-faaf-47b0-abaf-fc87c035965b",
+      "title": "DeepLearningPages",
+      "names": [
+        "FlowFinding",
+        "ConciousnessTheoryCompareWebpage",
+        "StokesFluidDynamics",
+        "biophotons",
+        "flir"
+      ],
+      "description": ""
+    },
+    {
+      "id": "f579b876-e26f-473c-ac80-1569cb5d72aa",
+      "title": "MagicSquares",
+      "names": [
+        "magicGemWeb",
+        "MagicGemWebpage"
+      ],
+      "description": ""
+    },
+    {
+      "id": "dd06c076-4a45-4b20-b905-84896277a41a",
+      "title": "Finances",
+      "names": [
+        "pickingTVWebpage",
+        "cryptoMemeCoinMint"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cf837411-f5ae-4218-aa6b-d0eecb4bb136",
+      "title": "Consulting",
+      "names": [
+        "HistoricGlenoraMapWebpage",
+        "pycovid",
+        "Genes"
+      ],
+      "description": ""
+    },
+    {
+      "id": "c50dae4c-8449-484b-8179-e65822d78beb",
+      "title": "Productivity",
+      "names": [
+        "homePage",
+        "todoManager",
+        "gmailPower",
+        "garmin_graphs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "5fbeae31-ab06-4fcd-8f74-53eabb712982",
+      "title": "GenerativeAI",
+      "names": [
+        "Generation",
+        "Sora",
+        "ml4a-guides",
+        "face2face-demo",
+        "ml4a.github.io",
+        "Pyggy"
+      ],
+      "description": ""
+    },
+    {
+      "id": "1d555948-d7ac-4b3f-a70b-93120e5628c8",
+      "title": "ComputingScience",
+      "names": [
+        "collisionDetectionForcefield",
+        "WordSelectionLLM",
+        "GALM",
+        "InterpretCognates",
+        "topologicalDataAnalysisBiology"
+      ],
+      "description": ""
+    },
+    {
+      "id": "32a3aa37-015b-47a7-963a-6cd757ecd339",
+      "title": "PsychExperiment",
+      "names": [
+        "matlab_Psychtoolbox_course",
+        "pytutorial",
+        "psych403_Fall2022",
+        "vispy"
+      ],
+      "description": ""
+    },
+    {
+      "id": "0bb534b2-0ed3-4417-8145-24cc4891b80b",
+      "title": "Stroke EEG",
+      "names": [
+        "strokeEEG",
+        "MaestroEEGApp",
+        "StrokeMuseTestAnalysis"
+      ],
+      "description": "Portable EEG for stroke detection and related clinical analysis."
+    },
+    {
+      "id": "a079e253-2a2d-4bd4-8c6a-94fbcb2bfb97",
+      "title": "Optical imaging",
+      "names": [
+        "pyoptical",
+        "RetinotopyMatlabCode",
+        "nomad"
+      ],
+      "description": ""
+    },
+    {
+      "id": "00918bba-d27e-44d3-ae6d-b4d00bcdbc33",
+      "title": "Illusions",
+      "names": [
+        "cross_colour",
+        "necker_move",
+        "micb",
+        "visual-illusions",
+        "DuckBunny2"
+      ],
+      "description": ""
+    },
+    {
+      "id": "11c02266-a9a9-4174-9394-3b97dbb71bcf",
+      "title": "EEGTools",
+      "names": [
+        "muse_osc",
+        "mne-python",
+        "EEG-Classification",
+        "Muse-LSL-Matlab-Tools",
+        "fooof",
+        "pyERP",
+        "Muse_LSL_Environments",
+        "eeg-notebooks",
+        "DeepEEG",
+        "eeg-notebooks_v0.1",
+        "muse-lsl",
+        "MathewsonMatlabTools"
+      ],
+      "description": "Libraries and pipelines for recording, analyzing, and streaming EEG."
+    },
+    {
+      "id": "014343b3-863a-4ebb-bf36-0ddd68304995",
+      "title": "TeachingTools",
+      "names": [
+        "Slides4Class",
+        "TimeFreqWorkshop"
+      ],
+      "description": "Slides, workshops, and tools built for the classroom."
+    }
+  ],
+  "categories": [
+    {
+      "id": "links",
+      "title": "Links",
+      "description": "Faculty page, lab, code, lectures, and the other places this work lives.",
+      "color": "#9aa0aa",
+      "names": [
+        "link-cv",
+        "link-faculty",
+        "link-lab",
+        "link-github",
+        "link-scholar",
+        "link-youtube",
+        "link-x",
+        "link-instagram",
+        "link-linkedin",
+        "link-photos"
+      ]
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "description": "Brain and Behavior, Cognitive Neuroscience, and the programming and sensing courses around them, together with the repositories those courses use.",
+      "color": "#5ec98b",
+      "names": [
+        "teach-275",
+        "teach-375",
+        "teach-independent",
+        "teach-403",
+        "teach-psychtoolbox",
+        "Slides4Class",
+        "TimeFreqWorkshop",
+        "matlab_Psychtoolbox_course",
+        "psych403_Fall2022",
+        "news-these-headsets-are-changing-the-way-u-of-a-neuro",
+        "news-a-new-frame-of-mind-eeg-headsets-transform-learn"
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "description": "Pervasive brain sensing, from the finding that alpha oscillations gate visual awareness to portable systems for everyday and clinical use. The row groups the narrative with the repositories behind it.",
+      "color": "#7c9cff",
+      "names": [
+        "stage-alpha",
+        "stage-devices",
+        "stage-flex",
+        "stage-software",
+        "stage-world",
+        "stage-clinical",
+        "stage-art",
+        "stage-fab",
+        "375Data_2020",
+        "FitnessMemory",
+        "webcamHR",
+        "matlab_video_hr",
+        "Mathewson2009",
+        "MoralWordEEG",
+        "FreethrowEEG",
+        "voyageAnalysis",
+        "AudienceEEG",
+        "SSAEP",
+        "strokeEEG",
+        "StrokeMuseTestAnalysis",
+        "pyoptical",
+        "RetinotopyMatlabCode",
+        "nomad",
+        "paper-2025-combining-the-los-angeles-motor-scale-and-the-muse-porta",
+        "paper-2025-abstract-tmp30-combining-the-los-angeles-motor-scale-and",
+        "paper-2024-quantitative-electroencephalography-to-assess-post-strok",
+        "paper-2024-the-moving-wave-applications-of-the-mobile-eeg-approach",
+        "paper-2023-b-4-quantitative-electroencephalography-to-predict-post",
+        "paper-2022-surrounding-traffic-matters-increases-in-traffic-volume",
+        "paper-2022-low-cost-portable-electroencephalograph-may-improve-the",
+        "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma",
+        "paper-2022-increases-in-traffic-volume-are-associated-with-measurab",
+        "paper-2021-eeg-in-motion-using-an-oddball-task-to-explore-motor-int",
+        "paper-2020-predicting-stroke-severity-with-a-3-min-recording-from-t",
+        "paper-2020-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+        "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra",
+        "paper-2020-attention-in-motion-using-an-oddball-task-to-record-brai",
+        "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra-2",
+        "paper-2020-differences-in-traffic-conditions-are-related-to-n1-ampl",
+        "paper-2019-taking-off-the-training-wheels-measuring-auditory-p3-dur",
+        "paper-2018-brain-waves-meet-real-life-recent-advances-in-mobile-eeg",
+        "paper-2018-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+        "paper-2016-taking-off-the-training-wheels-measuring-brain-activity",
+        "news-being-outdoors-may-change-the-way-your-brain-wor",
+        "news-this-is-your-brain-this-is-your-brain-outdoors"
+      ]
+    },
+    {
+      "id": "papers",
+      "title": "Papers",
+      "description": "Journal articles and conference papers. The thumbnail is the first page beside two figures.",
+      "color": "#e0a35e",
+      "names": [
+        "paper-2026-universal-conceptual-structure-in-neural-translation-pro",
+        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares",
+        "paper-2025-combining-the-los-angeles-motor-scale-and-the-muse-porta",
+        "paper-2025-abstract-tmp30-combining-the-los-angeles-motor-scale-and",
+        "paper-2024-quantitative-electroencephalography-to-assess-post-strok",
+        "paper-2024-the-moving-wave-applications-of-the-mobile-eeg-approach",
+        "paper-2023-fast-optical-signals-for-real-time-retinotopy-and-brain",
+        "paper-2023-b-4-quantitative-electroencephalography-to-predict-post",
+        "paper-2023-an-eegmanylabs-study-to-test-the-role-of-the-alpha-phase",
+        "paper-2022-recommendations-and-publication-guidelines-for-studies-u",
+        "paper-2022-metabolomic-fingerprint-of-behavioral-changes-in-respons",
+        "paper-2022-to-see-not-to-see-or-to-see-poorly-perceptual-quality-an",
+        "paper-2022-surrounding-traffic-matters-increases-in-traffic-volume",
+        "paper-2022-low-cost-portable-electroencephalograph-may-improve-the",
+        "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma",
+        "paper-2022-abstract-wmp46-quantitative-electroencephalogram-to-asse",
+        "paper-2022-increases-in-traffic-volume-are-associated-with-measurab",
+        "paper-2022-connecting-covert-attention-and-visual-perception-to-the",
+        "paper-2021-eeg-in-motion-using-an-oddball-task-to-explore-motor-int",
+        "paper-2021-decoding-covert-attention-on-an-orientation-perception-t",
+        "paper-2020-predicting-stroke-severity-with-a-3-min-recording-from-t",
+        "paper-2020-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+        "paper-2020-the-time-course-of-moral-perception-an-erp-investigation",
+        "paper-2020-aerobic-fitness-unrelated-to-acquisition-of-spatial-rela",
+        "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra",
+        "paper-2020-attention-in-motion-using-an-oddball-task-to-record-brai",
+        "paper-2020-effects-of-covert-attention-on-orientation-detection-and",
+        "paper-2020-application-of-the-muse-portable-eeg-system-to-aid-in-ra-2",
+        "paper-2020-differences-in-traffic-conditions-are-related-to-n1-ampl",
+        "paper-2020-blinded-by-magic-electrophysiological-correlates-of-chan",
+        "paper-2019-large-area-mri-compatible-epidermal-electronic-interface",
+        "paper-2019-taking-off-the-training-wheels-measuring-auditory-p3-dur",
+        "paper-2019-the-ecological-cocktail-party-measuring-brain-activity-d",
+        "paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest",
+        "paper-2019-real-brains-in-virtual-worlds-validating-a-novel-oddball",
+        "paper-2019-the-human-eye-as-a-camera",
+        "paper-2019-blinded-by-magic-electrophysiological-correlates-of-chan",
+        "paper-2019-effects-of-random-fluctuations-in-alpha-oscillations-on",
+        "paper-2019-the-time-course-of-moral-perception-an-electroencephalog",
+        "paper-2019-aerobic-fitness-does-not-predict-acquisition-of-hippocam",
+        "paper-2019-large-area-mri-compatible-epidermal-electronic-interface-2",
+        "paper-2019-publisher-correction-large-area-mri-compatible-epidermal",
+        "paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab",
+        "paper-2018-noncontact-measurement-of-emotional-and-physiological-ch",
+        "paper-2018-increasing-the-mobility-of-eeg-data-collection-using-a-l",
+        "paper-2018-does-10-hz-cathodal-oscillating-current-of-the-parieto-o",
+        "paper-2018-entrainment-of-theta-not-alpha-oscillations-is-predictiv",
+        "paper-2018-duck-eats-rabbit-exactly-which-type-of-relational-phrase",
+        "paper-2018-electrophysiological-correlates-of-hyperoxia-during-rest",
+        "paper-2018-effects-of-random-fluctuations-in-alpha-power-on-color-d",
+        "paper-2018-feedback-error-related-negativity-as-a-control-signal-fo",
+        "paper-2018-brain-waves-meet-real-life-recent-advances-in-mobile-eeg",
+        "paper-2018-modulations-in-baseline-oscillations-and-auditory-erps-a",
+        "paper-2018-a-ride-in-the-park-cycling-in-different-outdoor-environm",
+        "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interac",
+        "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+        "paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti",
+        "paper-2017-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+        "paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u",
+        "paper-2017-your-brain-on-bikes-p3-mmn-n2b-and-baseline-noise-while",
+        "paper-2017-reorganization-of-neural-systems-mediating-peripheral-vi",
+        "paper-2017-regulating-the-access-to-awareness-brain-activity-relate",
+        "paper-2017-does-viewing-nature-and-urban-environments-change-neuro",
+        "paper-2017-your-brain-in-the-world-investigating-the-n1-and-p2-for",
+        "paper-2017-do-exogenously-entrained-oscillations-in-brain-activity",
+        "paper-2016-combining-energy-and-laplacian-regularization-to-accurat",
+        "paper-2016-the-vision-rhythm-entrainment-at-multiple-frequencies-re",
+        "paper-2016-taking-off-the-training-wheels-measuring-brain-activity",
+        "paper-2016-red-light-green-light-understanding-the-perceptual-quali",
+        "paper-2015-making-waves-in-two-streams-of-consciousness-an-interact",
+        "paper-2015-non-contact-measurement-of-cognitive-emotional-and-physi",
+        "paper-2015-probing-binocular-rivalry-pre-stimulus-alpha-determines",
+        "paper-2014-soft-microfluidic-assemblies-of-sensors-circuits-and-rad",
+        "paper-2014-rugged-and-breathable-forms-of-stretchable-electronics-w",
+        "paper-2014-dynamics-of-alpha-control-preparatory-suppression-of-pos",
+        "paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa",
+        "paper-2014-keep-your-mind-on-the-road-predicting-mind-wandering-whi",
+        "paper-2014-amelioration-of-the-distracting-effect-of-cellphone-driv",
+        "paper-2014-not-all-probes-are-created-equal-suppressed-probes-prese",
+        "paper-2014-retinotopic-visual-mapping-of-brain-oxygenation-and-neur",
+        "paper-2014-fabrication-procedure-for-rugged-and-breathable-forms-of",
+        "paper-2013-providing-conversation-partners-views-of-the-driving-sce",
+        "paper-2012-making-waves-in-the-stream-of-consciousness-entraining-o",
+        "paper-2012-dissociable-neural-representations-of-reinforcement-and",
+        "paper-2012-different-slopes-for-different-folks-alpha-and-delta-eeg",
+        "paper-2011-pulsed-out-of-awareness-eeg-alpha-oscillations-represent",
+        "paper-2011-learning-to-multitask-effects-of-video-game-practice-on",
+        "paper-2011-simultaneous-perception-of-both-interpretations-of-ambig",
+        "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg",
+        "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg-2",
+        "paper-2011-disco-detectors-images-sources-and-cortical-optimization",
+        "paper-2010-rescuing-stimuli-from-invisibility-inducing-a-momentary",
+        "paper-2010-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+        "paper-2010-who-will-learn-best-electrophysiological-markers-of-cogn",
+        "paper-2010-controlling-the-timing-of-oscillations-in-neural-activit",
+        "paper-2010-entraining-neural-oscillations-with-rhythmic-visual-stim",
+        "paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a",
+        "paper-2009-illuminating-awareness-investigating-the-temporal-and-sp",
+        "paper-2009-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+        "paper-2008-pre-stimulus-activity-predicts-subsequent-target-detecti",
+        "paper-2008-training-on-a-complex-task-affects-dual-task-event-relat",
+        "paper-2008-now-you-see-it-now-you-don-t-pre-stimulus-electrophysiol",
+        "paper-2007-the-detrimental-effects-of-working-memory-load-on-a-sust",
+        "paper-2007-sequence-learning-and-medial-front-cortex-external-versu",
+        "paper-2006-the-role-of-medial-frontal-cortex-in-sequence-learning"
+      ]
+    },
+    {
+      "id": "news",
+      "title": "News",
+      "description": "Coverage of the lab, the illusions, and portable EEG.",
+      "color": "#6cc6d6",
+      "names": [
+        "news-inside-the-mind-of-the-machine",
+        "news-check-your-head",
+        "news-metabolic-fingerprint-predicts-impairment-from-m",
+        "news-how-many-circles-do-you-see-here",
+        "news-these-headsets-are-changing-the-way-u-of-a-neuro",
+        "news-a-new-frame-of-mind-eeg-headsets-transform-learn",
+        "news-this-ancient-optical-illusion-is-a-14-000-year-o",
+        "news-make-some-noise-how-background-noise-affects-bra",
+        "news-is-this-a-rabbit-or-raven",
+        "news-driving-the-future-new-chair-of-the-department-o",
+        "news-driving-your-phone-is-a-distraction-even-if-you",
+        "news-next-up-in-neuroscience",
+        "news-duck-duck-rabbit-how-we-see-what-we-see",
+        "news-being-outdoors-may-change-the-way-your-brain-wor",
+        "news-this-is-your-brain-this-is-your-brain-outdoors",
+        "news-new-equipment-maps-brain-activity-and-blood-flow",
+        "news-the-factors-of-focus",
+        "news-episode-6-my-phone",
+        "news-health-check-driving-distraction",
+        "news-study-talking-while-driving-safest-with-someone",
+        "news-video-controlling-brain-waves-to-improve-vision",
+        "news-fellows-corner-kyle-mathewson"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "Books, essays, and long-form projects.",
+      "color": "#b48ef0",
+      "names": [
+        "GhostbustersConceptPlay",
+        "BrainsMindsMachinesTextbook",
+        "ExileEnginePage",
+        "LinoleumSecretHistory",
+        "FungioErgoSum"
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "description": "Academic posts, industry roles, and community work.",
+      "color": "#5ec9c0",
+      "names": [
+        "exp-assoc",
+        "exp-asst",
+        "exp-beckman",
+        "exp-neurosity",
+        "exp-blueberry",
+        "exp-coach"
+      ]
+    },
+    {
+      "id": "79f46515-fb11-44f9-870d-1772a87aeee9",
+      "title": "CommandLineTools",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "gitBash",
+        "pdf2jpeg",
+        "Roledex"
+      ]
+    },
+    {
+      "id": "9f577ee1-5fcf-44d4-b2af-a9cec955c226",
+      "title": "Math",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "MathPlayground",
+        "hadwigerNelson",
+        "NavierStokesEnergyLandscape",
+        "Luo2024Extend",
+        "CatalanQuadratic",
+        "JaneStreetDwarkeshPuzzle",
+        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares"
+      ]
+    },
+    {
+      "id": "4dd5cf81-be32-4641-889e-b9f9fbc02504",
+      "title": "Computational Inteligence",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "OpticalNeuralNet",
+        "microgptJS",
+        "VisualSystemModel"
+      ]
+    },
+    {
+      "id": "f5d66641-ed53-4a28-a695-53c386c70ab2",
+      "title": "3d Print",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "CableRack",
+        "digitalClock",
+        "NumberblockToysPrint",
+        "FibrationTorusPuzzle",
+        "3dprint",
+        "voice2print",
+        "IllumiStack",
+        "topographicModelsFromMapWebpage"
+      ]
+    },
+    {
+      "id": "9862c922-2592-46be-b3ff-e624cb34ff5d",
+      "title": "Soccer",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "artOfSoccerWar",
+        "OfTwoMindsSoccer",
+        "powerLawSoccerAnalysisPage",
+        "artOfSoccerWarPlanning"
+      ]
+    },
+    {
+      "id": "a309adad-d1a1-4820-ba8c-9fff81ae1a58",
+      "title": "WebOS Apps",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "MusicPlayer",
+        "cursor-launcher",
+        "wifi",
+        "LaserPointer",
+        "instaFaceReadX",
+        "groupPaint"
+      ]
+    },
+    {
+      "id": "2ff918ce-ab15-49b8-9ac6-152432be641e",
+      "title": "Judaism",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "cantillate"
+      ]
+    },
+    {
+      "id": "40af4b0e-c199-468d-81e4-3c8ab0394248",
+      "title": "WebAnimation",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "BouncyBalls",
+        "ReactionDiffusionMaze",
+        "microphoneSpectroramWebpage",
+        "FractalViewerWebpage",
+        "sunMoon"
+      ]
+    },
+    {
+      "id": "2db63981-a036-417f-b7e0-ebb670aeb2b2",
+      "title": "WebTools",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "diagramRevamp",
+        "pdfTiles",
+        "ModernWebDesign",
+        "MidiRapper",
+        "abcovid",
+        "YoutubeMusicAlbumFilterChromePlugin"
+      ]
+    },
+    {
+      "id": "d4dc7a52-3bc8-43b7-a591-a1938a659e62",
+      "title": "WebEEG",
+      "description": "Browser experiments that record or visualize EEG.",
+      "color": "#9aa0aa",
+      "names": [
+        "faceoff",
+        "Brainimation",
+        "p5.eegedu.art",
+        "BrainGames",
+        "p5.eegedu",
+        "EEGVideo",
+        "EEGEdu",
+        "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma"
+      ]
+    },
+    {
+      "id": "8da48248-af02-4745-91b9-c6ba36a7c5df",
+      "title": "ArtColabs",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "reConstruction",
+        "StoryTrees3",
+        "WhisperingPines",
+        "StoryTrees2",
+        "Apparition"
+      ]
+    },
+    {
+      "id": "b0b88b59-b310-437d-a5eb-5704779863fb",
+      "title": "Games",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "NumberBlocks",
+        "soccerSimV2Physics",
+        "shooterFocus",
+        "soccerSim",
+        "BrainCraft",
+        "ClashRoyale",
+        "BrainGames"
+      ]
+    },
+    {
+      "id": "a55d2324-faaf-47b0-abaf-fc87c035965b",
+      "title": "DeepLearningPages",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "FlowFinding",
+        "ConciousnessTheoryCompareWebpage",
+        "StokesFluidDynamics",
+        "biophotons",
+        "flir"
+      ]
+    },
+    {
+      "id": "f579b876-e26f-473c-ac80-1569cb5d72aa",
+      "title": "MagicSquares",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "magicGemWeb",
+        "MagicGemWebpage",
+        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares"
+      ]
+    },
+    {
+      "id": "dd06c076-4a45-4b20-b905-84896277a41a",
+      "title": "Finances",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "pickingTVWebpage",
+        "cryptoMemeCoinMint"
+      ]
+    },
+    {
+      "id": "cf837411-f5ae-4218-aa6b-d0eecb4bb136",
+      "title": "Consulting",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "HistoricGlenoraMapWebpage",
+        "Genes"
+      ]
+    },
+    {
+      "id": "c50dae4c-8449-484b-8179-e65822d78beb",
+      "title": "Productivity",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "homePage",
+        "todoManager",
+        "gmailPower",
+        "garmin_graphs"
+      ]
+    },
+    {
+      "id": "5fbeae31-ab06-4fcd-8f74-53eabb712982",
+      "title": "GenerativeAI",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "Generation",
+        "Pyggy"
+      ]
+    },
+    {
+      "id": "1d555948-d7ac-4b3f-a70b-93120e5628c8",
+      "title": "ComputingScience",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "collisionDetectionForcefield",
+        "WordSelectionLLM",
+        "GALM",
+        "InterpretCognates",
+        "topologicalDataAnalysisBiology"
+      ]
+    },
+    {
+      "id": "00918bba-d27e-44d3-ae6d-b4d00bcdbc33",
+      "title": "Illusions",
+      "description": "",
+      "color": "#9aa0aa",
+      "names": [
+        "cross_colour",
+        "necker_move",
+        "micb",
+        "visual-illusions",
+        "DuckBunny2",
+        "paper-2023-an-eegmanylabs-study-to-test-the-role-of-the-alpha-phase",
+        "paper-2022-to-see-not-to-see-or-to-see-poorly-perceptual-quality-an",
+        "paper-2022-connecting-covert-attention-and-visual-perception-to-the",
+        "paper-2021-decoding-covert-attention-on-an-orientation-perception-t",
+        "paper-2020-the-time-course-of-moral-perception-an-erp-investigation",
+        "paper-2020-effects-of-covert-attention-on-orientation-detection-and",
+        "paper-2019-effects-of-random-fluctuations-in-alpha-oscillations-on",
+        "paper-2019-the-time-course-of-moral-perception-an-electroencephalog",
+        "paper-2018-entrainment-of-theta-not-alpha-oscillations-is-predictiv",
+        "paper-2018-duck-eats-rabbit-exactly-which-type-of-relational-phrase",
+        "paper-2018-effects-of-random-fluctuations-in-alpha-power-on-color-d",
+        "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interac",
+        "paper-2018-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+        "paper-2017-power-and-phase-of-alpha-oscillations-reveal-an-interact",
+        "paper-2017-regulating-the-access-to-awareness-brain-activity-relate",
+        "paper-2017-do-exogenously-entrained-oscillations-in-brain-activity",
+        "paper-2016-the-vision-rhythm-entrainment-at-multiple-frequencies-re",
+        "paper-2016-red-light-green-light-understanding-the-perceptual-quali",
+        "paper-2015-probing-binocular-rivalry-pre-stimulus-alpha-determines",
+        "paper-2014-dynamics-of-alpha-control-preparatory-suppression-of-pos",
+        "paper-2014-not-all-probes-are-created-equal-suppressed-probes-prese",
+        "paper-2012-making-waves-in-the-stream-of-consciousness-entraining-o",
+        "paper-2012-different-slopes-for-different-folks-alpha-and-delta-eeg",
+        "paper-2011-pulsed-out-of-awareness-eeg-alpha-oscillations-represent",
+        "paper-2011-simultaneous-perception-of-both-interpretations-of-ambig",
+        "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg",
+        "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg-2",
+        "paper-2010-rescuing-stimuli-from-invisibility-inducing-a-momentary",
+        "paper-2010-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+        "paper-2010-entraining-neural-oscillations-with-rhythmic-visual-stim",
+        "paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a",
+        "paper-2009-illuminating-awareness-investigating-the-temporal-and-sp",
+        "paper-2009-making-waves-in-the-stream-of-consciousness-eliciting-pr",
+        "paper-2008-pre-stimulus-activity-predicts-subsequent-target-detecti",
+        "paper-2008-now-you-see-it-now-you-don-t-pre-stimulus-electrophysiol",
+        "news-this-ancient-optical-illusion-is-a-14-000-year-o",
+        "news-duck-duck-rabbit-how-we-see-what-we-see"
+      ]
+    },
+    {
+      "id": "11c02266-a9a9-4174-9394-3b97dbb71bcf",
+      "title": "EEGTools",
+      "description": "Libraries and pipelines for recording, analyzing, and streaming EEG.",
+      "color": "#9aa0aa",
+      "names": [
+        "pyERP",
+        "Muse_LSL_Environments",
+        "DeepEEG",
+        "MathewsonMatlabTools",
+        "paper-2018-increasing-the-mobility-of-eeg-data-collection-using-a-l",
+        "paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti",
+        "paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u",
+        "news-these-headsets-are-changing-the-way-u-of-a-neuro",
+        "news-a-new-frame-of-mind-eeg-headsets-transform-learn"
+      ]
+    },
+    {
+      "id": "general",
+      "title": "More projects",
+      "description": "Not in a category yet.",
+      "color": "#9aa0aa",
+      "names": [
+        "myTestWebsite",
+        "testSep23",
+        "Psych302-305-KyleMathewson",
+        "ColourNamesPicker",
+        "RobotInvites",
+        "MidiHotkey",
+        "kylemath",
+        "math6",
+        "magicSquare",
+        "psych275-textbook",
+        "neuroAnimation",
+        "GraphColouring",
+        "MacbookSteeringGame",
+        "VibeScienceTalk",
+        "NeuroimagingNeurostimulationCourse",
+        "maestroV2",
+        "ForwardLookingInfraredImagingTutorial",
+        "SoraVideoGen",
+        "mySecondTestWebsite",
+        "nehiyoMTB",
+        "callingCenter"
+      ]
+    },
+    {
+      "id": "flexible-electronics",
+      "title": "Flexible electronics",
+      "description": "Skin-like and textile interfaces for neural monitoring.",
+      "color": "#7dcaa3",
+      "names": [
+        "paper-2019-large-area-mri-compatible-epidermal-electronic-interface",
+        "paper-2019-large-area-mri-compatible-epidermal-electronic-interface-2",
+        "paper-2019-publisher-correction-large-area-mri-compatible-epidermal",
+        "paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab",
+        "paper-2014-rugged-and-breathable-forms-of-stretchable-electronics-w",
+        "paper-2014-fabrication-procedure-for-rugged-and-breathable-forms-of"
+      ]
+    }
+  ],
+  "colsPerRow": "auto",
+  "areas": [
+    {
+      "id": "awareness",
+      "title": "Visual awareness",
+      "logo": "images/research-alpha-oscillations.jpg",
+      "summary": "Consciousness is rhythmic. Alpha oscillations predict whether a stimulus is seen, and entraining that rhythm changes awareness itself.",
+      "topics": [
+        "00918bba-d27e-44d3-ae6d-b4d00bcdbc33"
+      ]
+    },
+    {
+      "id": "devices",
+      "title": "Portable measurement",
+      "logo": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/src/components/PageSwitcher/components/EEGEduIntro/assets/musepicture.png",
+      "summary": "Recording the brain outside a shielded room: dry electrodes, a few minutes of data, and systems that travel with the person.",
+      "topics": [
+        "11c02266-a9a9-4174-9394-3b97dbb71bcf",
+        "d4dc7a52-3bc8-43b7-a591-a1938a659e62"
+      ]
+    },
+    {
+      "id": "flexible",
+      "title": "Flexible electronics",
+      "logo": "images/research-flexible-electronics.jpg",
+      "summary": "Skin-like, MRI-compatible interfaces that keep research-grade signals while people move.",
+      "topics": [
+        "flexible-electronics"
+      ]
+    },
+    {
+      "id": "software",
+      "title": "Accessible software",
+      "logo": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/logo.png",
+      "summary": "Browser tools and courses that let students record and learn from their own brain activity.",
+      "topics": [
+        "d4dc7a52-3bc8-43b7-a591-a1938a659e62",
+        "11c02266-a9a9-4174-9394-3b97dbb71bcf",
+        "teaching"
+      ]
+    },
+    {
+      "id": "world",
+      "title": "Real-world validation",
+      "logo": "images/research-mobile-eeg.jpg",
+      "summary": "The same attention measures, taken while people cycle, skateboard, and move through ordinary environments.",
+      "topics": [
+        "research"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "Clinical translation",
+      "logo": "images/research-clinical-apps.jpg",
+      "summary": "Portable EEG aimed at faster stroke assessment before a patient reaches a traditional lab.",
+      "topics": [
+        "research"
+      ]
+    },
+    {
+      "id": "art",
+      "title": "Neural art",
+      "logo": "images/research-brain-art.jpg",
+      "summary": "Brain activity as a control signal for images, music, and generative interfaces.",
+      "topics": [
+        "8da48248-af02-4745-91b9-c6ba36a7c5df",
+        "d4dc7a52-3bc8-43b7-a591-a1938a659e62"
+      ]
+    },
+    {
+      "id": "fabrication",
+      "title": "Digital fabrication",
+      "logo": "images/research-digital-fabrication.jpg",
+      "summary": "Sensing and design turned into physical objects: stacked color, prints, and the tools around them.",
+      "topics": [
+        "f5d66641-ed53-4a28-a695-53c386c70ab2"
+      ]
+    }
+  ]
+}

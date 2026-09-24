@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="theme.css">
+    <title>Add screenshots</title>
+    <style>
+        :root {
+            --bg:#0a0a0b; --surface:#151518; --surface-2:#1c1c20;
+            --border:#2a2a31; --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87; --accent:#6ea8fe;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text);
+        }
+        .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 64px; }
+        a { color: var(--accent); }
+        h1 { font-size: 26px; margin: 0 0 8px; }
+        p.lead { color: var(--text-dim); max-width: 720px; line-height: 1.5; }
+        .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 18px 0; }
+        button.save {
+            background: var(--text); color: #0a0a0b; border: 0; border-radius: 10px;
+            padding: 10px 14px; font-weight: 700; cursor: pointer;
+        }
+        button.save:disabled { opacity: 0.45; cursor: default; }
+        .status { color: var(--text-dim); font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+        th { color: var(--text-dim); background: var(--surface-2); }
+        td.desc { color: var(--text-faint); max-width: 280px; }
+        .drop {
+            min-width: 160px; min-height: 72px; border: 1px dashed var(--border); border-radius: 10px;
+            display: flex; align-items: center; justify-content: center; color: var(--text-faint);
+            background: #101013; cursor: pointer; text-align: center; padding: 8px;
+        }
+        .drop.over { border-color: var(--accent); color: var(--text); }
+        .drop.has { border-style: solid; }
+        .drop img { max-width: 140px; max-height: 64px; display: block; }
+        input[type=file] { display: none; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p><a href="index.html">Home</a></p>
+    <h1>Cards missing a screenshot</h1>
+    <p class="lead">Drop a PNG on each row. Save commits it as <code>screenshot.png</code> in that repo, which is the file the catalogue and the other sites already use. Open this page from <code>python3 serve.py</code>, with <code>GITHUB_TOKEN</code> set to a token that can write those repos.</p>
+    <div class="bar">
+        <button type="button" class="save" id="save" disabled>Save and populate repo screenshots</button>
+        <span class="status" id="status"></span>
+    </div>
+    <table>
+        <thead><tr><th>Project</th><th>Description</th><th>Category</th><th>Repo</th><th>PNG</th></tr></thead>
+        <tbody id="rows"></tbody>
+    </table>
+</div>
+<script>
+const files = new Map();
+const statusEl = document.getElementById('status');
+const saveBtn = document.getElementById('save');
+
+function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function refreshSave() {
+    saveBtn.disabled = files.size === 0;
+    statusEl.textContent = files.size ? `${files.size} PNG${files.size === 1 ? '' : 's'} ready` : '';
+}
+function takeFile(id, file, zone) {
+    if (!file || file.type !== 'image/png') {
+        statusEl.textContent = 'Use a .png file.';
+        return;
+    }
+    files.set(id, file);
+    const url = URL.createObjectURL(file);
+    zone.classList.add('has');
+    zone.innerHTML = `<img src="${url}" alt="">`;
+    refreshSave();
+}
+
+Promise.all([
+    fetch('catalogue_data.json').then(r => r.json()),
+    fetch('site_content.json').then(r => r.json())
+]).then(([catalogue, site]) => {
+    const categoryOf = new Map();
+    (site.categories || []).forEach(c => (c.names || []).forEach(name => {
+        const key = String(name).toLowerCase();
+        if (!categoryOf.has(key)) categoryOf.set(key, c.title);
+    }));
+    const missing = (catalogue.items || []).filter(item => !(item.screenshot || '').trim() && item.githubUrl);
+    missing.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+    const body = document.getElementById('rows');
+    if (!missing.length) {
+        body.innerHTML = '<tr><td colspan="5">Every project card already has a screenshot.</td></tr>';
+        return;
+    }
+    body.innerHTML = missing.map(item => {
+        const repo = item.githubUrl || '';
+        const label = repo.replace('https://github.com/', '');
+        return `<tr data-id="${esc(item.id)}">
+            <td>${esc(item.title)}</td>
+            <td class="desc">${esc(item.oneLiner || '')}</td>
+            <td>${esc(categoryOf.get(String(item.id).toLowerCase()) || '')}</td>
+            <td><a href="${esc(repo)}" target="_blank" rel="noopener">${esc(label)}</a></td>
+            <td><label class="drop">Drop PNG<input type="file" accept="image/png"></label></td>
+        </tr>`;
+    }).join('');
+    body.querySelectorAll('tr').forEach(row => {
+        const zone = row.querySelector('.drop');
+        const input = row.querySelector('input');
+        const id = row.dataset.id;
+        input.addEventListener('change', () => takeFile(id, input.files[0], zone));
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+        zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+        zone.addEventListener('drop', e => {
+            e.preventDefault();
+            zone.classList.remove('over');
+            takeFile(id, e.dataTransfer.files[0], zone);
+        });
+    });
+    statusEl.textContent = `${missing.length} cards still need a screenshot.`;
+});
+
+saveBtn.addEventListener('click', async () => {
+    const body = new FormData();
+    files.forEach((file, id) => body.append(id, file, id + '.png'));
+    saveBtn.disabled = true;
+    statusEl.textContent = 'Saving into each repo…';
+    try {
+        const res = await fetch('/save-screenshots', { method: 'POST', body });
+        const data = await res.json();
+        if (!res.ok || data.status !== 'ok') throw new Error(data.message || 'Save failed');
+        const done = Object.keys(data.updated || {});
+        done.forEach(id => {
+            files.delete(id);
+            const row = document.querySelector(`tr[data-id="${CSS.escape(id)}"]`);
+            if (row) row.remove();
+        });
+        statusEl.textContent = `Saved screenshot.png in ${done.length} ${done.length === 1 ? 'repo' : 'repos'}.`;
+    } catch (err) {
+        statusEl.textContent = err.message;
+    }
+    refreshSave();
+});
+</script>
+<script src="theme.js"></script>
+</body>
+</html>

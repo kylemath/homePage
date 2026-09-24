@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    (function(){try{var s=localStorage.getItem("theme");var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}})();
+    </script>
+    <link rel="stylesheet" href="theme.css">
+    <title>Add paper images</title>
+    <style>
+        :root {
+            --bg:#0a0a0b; --surface:#151518; --surface-2:#1c1c20;
+            --border:#2a2a31; --text:#f5f5f6; --text-dim:#b6b6bf; --text-faint:#7c7c87; --accent:#6ea8fe;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text);
+        }
+        .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 20px 64px; }
+        a { color: var(--accent); }
+        h1 { font-size: 26px; margin: 0 0 8px; }
+        p.lead { color: var(--text-dim); max-width: 760px; line-height: 1.5; }
+        .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 18px 0; }
+        button.save {
+            background: var(--text); color: #0a0a0b; border: 0; border-radius: 10px;
+            padding: 10px 14px; font-weight: 700; cursor: pointer;
+        }
+        button.save:disabled { opacity: 0.45; cursor: default; }
+        .status { color: var(--text-dim); font-size: 14px; }
+        table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+        th { color: var(--text-dim); background: var(--surface-2); }
+        td.title { font-weight: 650; }
+        td.meta { color: var(--text-faint); white-space: nowrap; }
+        .shots { display: flex; gap: 8px; }
+        .drop {
+            width: 132px; min-height: 88px; border: 1px dashed var(--border); border-radius: 10px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+            color: var(--text-faint); background: #101013; cursor: pointer; text-align: center; padding: 8px;
+            font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+        }
+        .drop.over { border-color: var(--accent); color: var(--text); }
+        .drop.has { border-style: solid; color: transparent; }
+        .drop img { max-width: 116px; max-height: 72px; display: block; }
+        input[type=file] { display: none; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <p><a href="index.html">Home</a></p>
+    <h1>Papers missing a composite image</h1>
+    <p class="lead">Drop the paper image and two figures on each row. Save builds the card thumbnail, the first page beside the two figures, and stores it with that paper. Open this page from <code>python3 serve.py</code>.</p>
+    <div class="bar">
+        <button type="button" class="save" id="save" disabled>Save paper images</button>
+        <span class="status" id="status"></span>
+    </div>
+    <table>
+        <thead><tr><th>Paper</th><th>Year</th><th>Images</th></tr></thead>
+        <tbody id="rows"></tbody>
+    </table>
+</div>
+<script>
+const SLOTS = [
+    ['page', 'Paper'],
+    ['fig1', 'Figure 1'],
+    ['fig2', 'Figure 2']
+];
+const files = new Map();
+const statusEl = document.getElementById('status');
+const saveBtn = document.getElementById('save');
+
+function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function keyOf(id, slot) {
+    return id + '::' + slot;
+}
+function readyCount() {
+    const ids = new Set();
+    files.forEach((_, key) => ids.add(key.split('::')[0]));
+    let n = 0;
+    ids.forEach(id => {
+        if (SLOTS.every(([slot]) => files.has(keyOf(id, slot)))) n += 1;
+    });
+    return n;
+}
+function refreshSave() {
+    const n = readyCount();
+    saveBtn.disabled = n === 0;
+    statusEl.textContent = n ? `${n} paper${n === 1 ? '' : 's'} ready` : (files.size ? 'Each paper needs a page image and two figures.' : '');
+}
+function takeFile(id, slot, file, zone) {
+    if (!file || !file.type.startsWith('image/')) {
+        statusEl.textContent = 'Drop an image file.';
+        return;
+    }
+    files.set(keyOf(id, slot), file);
+    const url = URL.createObjectURL(file);
+    zone.classList.add('has');
+    zone.innerHTML = `<img src="${url}" alt="">`;
+    refreshSave();
+}
+function bindZone(row, zone) {
+    const input = zone.querySelector('input');
+    const id = row.dataset.id;
+    const slot = zone.dataset.slot;
+    input.addEventListener('change', () => takeFile(id, slot, input.files[0], zone));
+    zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+    zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+    zone.addEventListener('drop', e => {
+        e.preventDefault();
+        zone.classList.remove('over');
+        takeFile(id, slot, e.dataTransfer.files[0], zone);
+    });
+}
+
+fetch('site_content.json').then(r => r.json()).then(site => {
+    const missing = (site.papers || []).filter(paper => !(paper.composite || '').trim());
+    missing.sort((a, b) => (b.year || 0) - (a.year || 0) || (a.title || '').localeCompare(b.title || ''));
+    const body = document.getElementById('rows');
+    if (!missing.length) {
+        body.innerHTML = '<tr><td colspan="3">Every paper already has a composite image.</td></tr>';
+        return;
+    }
+    body.innerHTML = missing.map(paper => {
+        const drops = SLOTS.map(([slot, label]) => `<label class="drop" data-slot="${slot}">${label}<input type="file" accept="image/*"></label>`).join('');
+        const href = paper.url ? ` href="${esc(paper.url)}" target="_blank" rel="noopener"` : '';
+        return `<tr data-id="${esc(paper.id)}">
+            <td class="title"><a${href}>${esc(paper.title)}</a></td>
+            <td class="meta">${esc(paper.year || '')}</td>
+            <td><div class="shots">${drops}</div></td>
+        </tr>`;
+    }).join('');
+    body.querySelectorAll('tr[data-id]').forEach(row => row.querySelectorAll('.drop').forEach(zone => bindZone(row, zone)));
+    statusEl.textContent = `${missing.length} papers still need a composite image.`;
+});
+
+saveBtn.addEventListener('click', async () => {
+    const body = new FormData();
+    const complete = new Set();
+    const ids = new Set();
+    files.forEach((_, key) => ids.add(key.split('::')[0]));
+    ids.forEach(id => {
+        if (!SLOTS.every(([slot]) => files.has(keyOf(id, slot)))) return;
+        complete.add(id);
+        SLOTS.forEach(([slot]) => {
+            const file = files.get(keyOf(id, slot));
+            body.append(keyOf(id, slot), file, file.name);
+        });
+    });
+    saveBtn.disabled = true;
+    statusEl.textContent = 'Building composites…';
+    try {
+        const res = await fetch('/save-paper-shots', { method: 'POST', body });
+        const data = await res.json();
+        if (!res.ok || data.status !== 'ok') throw new Error(data.message || 'Save failed');
+        (data.updated || []).forEach(id => {
+            SLOTS.forEach(([slot]) => files.delete(keyOf(id, slot)));
+            const row = document.querySelector(`tr[data-id="${CSS.escape(id)}"]`);
+            if (row) row.remove();
+        });
+        const n = (data.updated || []).length;
+        statusEl.textContent = `Saved ${n} composite${n === 1 ? '' : 's'}.`;
+    } catch (err) {
+        statusEl.textContent = err.message;
+    }
+    refreshSave();
+});
+</script>
+<script src="theme.js"></script>
+</body>
+</html>

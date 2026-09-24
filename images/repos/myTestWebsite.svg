@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract avatar for Nicky Mathewson</title>
+  <desc id="desc">A playful illustrated portrait made from bold geometric shapes.</desc>
+  <defs>
+    <clipPath id="head"><path d="M195 192c12-103 106-163 224-138 116 25 164 122 124 241-18 55-52 98-103 128l-4 144-210-11 22-150c-49-41-62-112-53-214Z"/></clipPath>
+  </defs>
+  <path fill="#f4f0e8" d="M195 192c12-103 106-163 224-138 116 25 164 122 124 241-18 55-52 98-103 128l-4 144-210-11 22-150c-49-41-62-112-53-214Z"/>
+  <g clip-path="url(#head)">
+    <path fill="#f47762" d="M164 104h391v390H164z"/>
+    <path fill="#d8f35c" d="M376 22h211v570H376z"/>
+    <path fill="#3f64ee" d="M121 322 341 111l201 218-220 215z"/>
+    <path fill="#171717" d="M167 178c63-71 140-106 231-105-73 26-127 76-160 150-25 57-18 147 15 212-69-54-98-136-86-257Z"/>
+    <path fill="#f4f0e8" d="M271 297c32-31 82-33 111-1 19 21 16 53-3 71-34 32-101 22-119-16-10-21-6-39 11-54Z"/>
+    <circle cx="328" cy="324" r="11" fill="#171717"/>
+    <path fill="none" stroke="#171717" stroke-linecap="round" stroke-width="9" d="M385 319c34-20 70-13 91 12M316 407c37 24 75 22 108-5"/>
+    <path fill="#171717" d="M195 198c-9-64 39-112 93-132l-7 66-78 100zM432 57c77 17 107 67 114 129l-69-54z"/>
+  </g>
+  <path fill="none" stroke="#171717" stroke-width="9" d="M195 192c12-103 106-163 224-138 116 25 164 122 124 241-18 55-52 98-103 128l-4 144-210-11 22-150c-49-41-62-112-53-214Z"/>
+  <path fill="#d8f35c" stroke="#171717" stroke-width="9" d="m139 564 112 6-16 170-126-8z"/>
+  <path fill="#f47762" stroke="#171717" stroke-width="9" d="m442 550 115-20 33 175-125 22z"/>
+</svg>

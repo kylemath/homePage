@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 import os
 import time
 
+from add_paper_cards import add_paper_cards
+
 def parse_first_author(authors_string):
     """Parse authors string to extract first author and add 'et al.' if multiple authors."""
     if not authors_string or authors_string == 'Unknown Authors':
@@ -193,15 +195,21 @@ def main():
     
     if publications and len(publications) >= 50:  # Require at least 50 publications (Kyle has ~102)
         print(f"\nFound {len(publications)} total publications")
-        
+
+        # Homepage cards do not depend on the old publications HTML section.
+        added = add_paper_cards(publications)
+
         # Update HTML file
         success = update_html_with_publications(publications)
         if success:
             print(f"\nSuccessfully updated index.html with all {len(publications)} publications!")
+            print(f"Paper cards added: {added}")
             sys.exit(0)  # Success
         else:
             print("\nFailed to update HTML file")
-            sys.exit(1)  # Failure
+            print(f"Paper cards added: {added}")
+            print("HTML section is absent; paper cards were still applied, so this is not a failure.")
+            sys.exit(0)
     else:
         print(f"Insufficient publications found ({len(publications) if publications else 0}). Not updating to prevent overwriting good content.")
         sys.exit(1)  # Failure

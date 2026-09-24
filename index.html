@@ -99,32 +99,32 @@
         .focus-banner img { width: 148px; height: 96px; object-fit: cover; border-radius: 10px; flex-shrink: 0; background: var(--surface-3); }
         .focus-banner h2 { margin: 0 0 6px; font-size: 20px; letter-spacing: -0.02em; }
         .focus-banner p { margin: 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
-        .places { display: flex; flex-wrap: wrap; gap: 12px 4px; margin: 8px 0 4px; }
+        .places { display: flex; flex-wrap: wrap; gap: 8px 2px; margin: 4px 0 2px; }
         .place {
-            display: flex; flex-direction: column; align-items: center; gap: 6px;
-            width: 78px; text-decoration: none; color: var(--text-dim);
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+            width: 62px; text-decoration: none; color: var(--text-dim);
         }
         .place .orb {
-            width: 48px; height: 48px; border-radius: 50%; background: #fff;
+            width: 34px; height: 34px; border-radius: 50%; background: #fff;
             border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
             overflow: hidden; transition: transform .18s ease, border-color .18s ease;
         }
         .place img { width: 54%; height: 54%; object-fit: contain; display: block; }
         .place.wide img { width: 84%; height: 84%; }
-        .place .label { font-size: 11.5px; font-weight: 650; letter-spacing: -0.01em; text-align: center; line-height: 1.2; }
+        .place .label { font-size: 10px; font-weight: 650; letter-spacing: -0.01em; text-align: center; line-height: 1.15; }
         .place:hover .orb { transform: translateY(-2px); border-color: var(--border-strong); }
         .place:hover, .place:hover .label { color: var(--text); }
         .interests { margin: 2px 0 6px; padding: 14px 0 10px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .interests-label { margin: 0 0 10px; font-size: 11px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
-        .area-strip { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+        .area-strip { display: flex; flex-wrap: wrap; gap: 6px 10px; }
         .area-card {
-            flex: 1 1 220px; max-width: 280px;
-            display: flex; align-items: center; gap: 12px;
-            padding: 6px 12px 6px 6px; border-radius: 999px;
+            flex: 0 0 auto;
+            display: flex; align-items: center; gap: 10px;
+            padding: 3px 12px 3px 3px; border-radius: 999px;
             text-decoration: none; color: inherit; background: transparent;
         }
-        .area-card img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; display: block; background: var(--surface-3); }
-        .area-card span { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+        .area-card img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; display: block; background: var(--surface-3); }
+        .area-card span { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; white-space: nowrap; }
         .area-card:hover { background: var(--surface); }
         .area-card:hover span { color: var(--accent); }
         .area-card.on { background: var(--surface); box-shadow: inset 0 0 0 1px var(--border-strong); }
@@ -230,7 +230,7 @@ const TOPIC_FAMILIES = [
     { title: 'Perception', tint: '#c4a6f5', keys: ['illusions', 'artcolabs'] },
     { title: 'Brain tools', tint: '#8eb0ff', keys: ['webeeg', 'eegtools'] },
     { title: 'Math & machines', tint: '#e0b56a', keys: ['math', 'magicsquares', 'computingscience', 'deeplearningpages', 'generativeai', 'computationalinteligence'] },
-    { title: 'Web & making', tint: '#7dcaa3', keys: ['webosapps', 'webanimation', 'webtools', 'commandlinetools', '3dprint', 'games'] },
+    { title: 'Web & making', tint: '#7dcaa3', keys: ['webosapps', 'webanimation', 'webtools', 'commandlinetools', '3dprint', 'games', 'scratch'] },
     { title: 'Elsewhere', tint: '#7dccc4', keys: ['soccer', 'judaism', 'finances', 'consulting', 'productivity'] }
 ];
 const OTHER_FAMILY = { title: 'Other', tint: '#9aa0aa' };
@@ -382,7 +382,7 @@ function visibleAreas() {
     selectionItems().forEach(item => topicsOf(item).forEach(id => present.add(id)));
     return state.areas.filter(area => (area.topics || []).some(id => present.has(id)));
 }
-const WIDE_LINKS = new Set(['link-faculty', 'link-lab']);
+const WIDE_LINKS = new Set(['link-lab']);
 function placesHtml() {
     if (!state.links.length) return '';
     return `<div class="places">${state.links.map(item => {

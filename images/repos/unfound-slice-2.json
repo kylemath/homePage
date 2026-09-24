@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pdf2jpeg",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/pdf2jpeg/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/pdf2jpeg/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/pdf2jpeg/main/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/pdf2jpeg@main",
+      "https://kylemath.github.io/pdf2jpeg/"
+    ],
+    "closestMiss": "Repo is a bash script plus README. The README names output files page-1.jpg but those images are not in the tree, and the GitHub Pages URL 404s."
+  },
+  {
+    "id": "FractalViewerWebpage",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/fractal.html",
+      "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/mandelbulb.html",
+      "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/FractalViewerWebpage@main",
+      "https://kylemath.github.io/FractalViewerWebpage/",
+      "https://kylemath.github.io/FractalViewerWebpage/fractal.html"
+    ],
+    "closestMiss": "The repo is two canvas pages (Mandelbrot and a Three.js mandelbulb) with no stored image, favicon, or og:image, and GitHub Pages 404s."
+  },
+  {
+    "id": "JaneStreetDwarkeshPuzzle",
+    "urlsTried": [
+      "https://api.github.com/repos/kylemath/JaneStreetDwarkeshPuzzle/contents/",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/JaneStreetDwarkeshPuzzle@main",
+      "https://raw.githubusercontent.com/kylemath/JaneStreetDwarkeshPuzzle/main/screenshot.png",
+      "https://raw.githubusercontent.com/kylemath/JaneStreetDwarkeshPuzzle/main/puzzle",
+      "https://raw.githubusercontent.com/kylemath/JaneStreetDwarkeshPuzzle/main/noShit.py",
+      "https://kylemath.github.io/JaneStreetDwarkeshPuzzle/"
+    ],
+    "closestMiss": "Python puzzle solvers only. A zero-byte git entry named puzzle 404s as a raw file, and no image extension appears in the scripts."
+  },
+  {
+    "id": "artOfSoccerWarPlanning",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/artOfSoccerWarPlanning/main/index.html",
+      "https://raw.githubusercontent.com/kylemath/artOfSoccerWarPlanning/main/screenshot.png",
+      "https://raw.githubusercontent.com/kylemath/artOfSoccerWarPlanning/main/DEPLOYMENT_og.md",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/artOfSoccerWarPlanning@main",
+      "https://kylemath.github.io/artOfSoccerWarPlanning/",
+      "https://raw.githubusercontent.com/kylemath/artOfSoccerWar/main/screenshot.png"
+    ],
+    "closestMiss": "This repo's page is CSS text with a drawn soccer-ball div and no image file. A sibling repo, artOfSoccerWar, has a screenshot of a different '100 catch phrases' page, so it was not used."
+  },
+  {
+    "id": "psych403_Fall2022",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/psych403_Fall2022/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/psych403_Fall2022/main/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/psych403_Fall2022@main",
+      "https://raw.githubusercontent.com/kylemath/psych403_Fall2022/main/misc/SoccerGame.py",
+      "https://kylemath.github.io/psych403_Fall2022/"
+    ],
+    "closestMiss": "Nineteen files of assignment scripts and CSV/JSON data. README is a title only, and there is no image or favicon."
+  },
+  {
+    "id": "gmailPower",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/gmailPower/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/gmailPower/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/gmailPower/main/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/gmailPower@main",
+      "https://kylemath.github.io/gmailPower/"
+    ],
+    "closestMiss": "The repository is a single README of Gmail search and star notes, with no image, icon, or demo page."
+  },
+  {
+    "id": "pyoptical",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/pyoptical/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/pyoptical/master/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/pyoptical@master",
+      "https://kylemath.github.io/pyoptical/",
+      "http://sites.psych.ualberta.ca/kylemathewson/optical-imaging/"
+    ],
+    "closestMiss": "Tree is Python plus Imagent data (.mdf, .elp, .skp), not pictures. The optical-imaging lab URL in the README returns 404."
+  },
+  {
+    "id": "Muse_LSL_Environments",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/Muse_LSL_Environments/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/Muse_LSL_Environments/master/screenshot.png",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/Muse_LSL_Environments@master",
+      "https://raw.githubusercontent.com/kylemath/Muse_LSL_Environments/master/.gitmodules",
+      "https://data.jsdelivr.com/v1/packages/gh/kylemath/Muse-LSL-Matlab-Tools@master",
+      "https://kylemath.github.io/Muse_LSL_Environments/"
+    ],
+    "closestMiss": "Scripts and conda env files only. The vendored Muse-LSL-Matlab-Tools submodule also has no image, and the upstream muse-lsl logo was not used."
+  },
+  {
+    "id": "callingCenter",
+    "urlsTried": [
+      "https://api.github.com/repos/kylemath/callingCenter/contents/",
+      "https://github.com/kylemath/callingCenter",
+      "https://raw.githubusercontent.com/kylemath/callingCenter/main/screenshot.png",
+      "https://raw.githubusercontent.com/kylemath/callingCenter/gh-pages/index.html",
+      "https://kylemath.github.io/callingCenter/",
+      "http://kylemath.github.io/callingCenter",
+      "https://web.archive.org/cdx/search/cdx?url=kylemath.github.io/callingCenter*&output=json&limit=10"
+    ],
+    "closestMiss": "The GitHub repo and GitHub Pages URL both 404, and the Wayback CDX query timed out, so no page or icon could be recovered."
+  }
+]

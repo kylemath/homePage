@@ -1,0 +1,100 @@
+[
+  {
+    "id": "neuroAnimation",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/neuroAnimation/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/neuroAnimation/master/README.md",
+      "https://kylemath.github.io/neuroAnimation/",
+      "https://kylemath.github.io/neuroAnimation/index.html"
+    ],
+    "closestMiss": "Repo tree (main) is HTML/JS/CSS only across the hub and the three 3D demos; README and live page have no og:image, favicon, or image file."
+  },
+  {
+    "id": "ConciousnessTheoryCompareWebpage",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/ConciousnessTheoryCompareWebpage/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/ConciousnessTheoryCompareWebpage/master/README.md",
+      "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/",
+      "https://github.com/kylemath/ConciousnessTheoryCompareWebpage/blob/main/1.pdf"
+    ],
+    "closestMiss": "Live page is a Three.js layout with no images; the only other file, 1.pdf, is a 24-page text treatise with zero embedded figures."
+  },
+  {
+    "id": "topologicalDataAnalysisBiology",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/topologicalDataAnalysisBiology/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/topologicalDataAnalysisBiology/main/calcium_dynamics.gif",
+      "https://github.com/kylemath/topologicalDataAnalysisBiology"
+    ],
+    "closestMiss": "calcium_dynamics.gif is committed but is a 0-byte empty blob, and the Python sources contain no other image."
+  },
+  {
+    "id": "cryptoMemeCoinMint",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/cryptoMemeCoinMint/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/cryptoMemeCoinMint/master/README.md",
+      "https://kylemath.github.io/cryptoMemeCoinMint/",
+      "https://github.com/kylemath/cryptoMemeCoinMint"
+    ],
+    "closestMiss": "No README and no image files in client, contracts, or the Anchor memecoin tree; GitHub Pages 404s."
+  },
+  {
+    "id": "voyageAnalysis",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/voyageAnalysis/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/voyageAnalysis/master/README.md",
+      "https://kylemath.github.io/voyageAnalysis/",
+      "https://github.com/kylemath/voyageAnalysis"
+    ],
+    "closestMiss": "README and the two Python scripts have no figures; GitHub Pages 404s and the tree has no image files."
+  },
+  {
+    "id": "Mathewson2009",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/Mathewson2009/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/Mathewson2009/master/README.md",
+      "https://github.com/kylemath/Mathewson2009"
+    ],
+    "closestMiss": "Repo is five MATLAB phase-analysis scripts plus a one-line README; no figures, plots, or icons are committed."
+  },
+  {
+    "id": "SSAEP",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/SSAEP/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/SSAEP/main/README.md",
+      "https://kylemath.github.io/SSAEP/",
+      "https://github.com/kylemath/SSAEP"
+    ],
+    "closestMiss": "Only file on master is a 15-byte README ('miceeg'); no image, demo page, or wiki."
+  },
+  {
+    "id": "garmin_graphs",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/garmin_graphs/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/garmin_graphs/main/README.md",
+      "https://kylemath.github.io/garmin_graphs/",
+      "https://github.com/kylemath/garmin_graphs"
+    ],
+    "closestMiss": "MATLAB loaders plus .mat/.csv data, but no saved plot image; GitHub Pages 404s."
+  },
+  {
+    "id": "AudienceEEG",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/AudienceEEG/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/AudienceEEG/main/README.md",
+      "https://kylemath.github.io/AudienceEEG/",
+      "https://github.com/kylemath/AudienceEEG"
+    ],
+    "closestMiss": "README points at Google Drive for the EEG/video data; the repo itself is MATLAB only, with no figure or icon."
+  },
+  {
+    "id": "mySecondTestWebsite",
+    "urlsTried": [
+      "https://raw.githubusercontent.com/kylemath/mySecondTestWebsite/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/mySecondTestWebsite/master/README.md",
+      "https://kylemath.github.io/mySecondTestWebsite/",
+      "https://github.com/kylemath/mySecondTestWebsite"
+    ],
+    "closestMiss": "Empty GitHub repo with no commits; Pages 404s, and the only icons on the GitHub page are GitHub's own marks."
+  }
+]

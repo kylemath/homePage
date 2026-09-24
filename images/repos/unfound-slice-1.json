@@ -1,0 +1,53 @@
+[
+  {
+    "id": "testSep23",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/testSep23/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/testSep23/master/README.md",
+      "https://api.github.com/repos/kylemath/testSep23/git/trees/main?recursive=1",
+      "https://github.com/kylemath/testSep23"
+    ],
+    "closest_miss": "Repo tree is six text files (README, catalogue.json, testfile.md) and no image, favicon, or demo page."
+  },
+  {
+    "id": "abcovid",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/abcovid/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/abcovid/master/run.py",
+      "https://api.github.com/repos/kylemath/abcovid/contents/",
+      "https://github.com/kylemath/abcovid"
+    ],
+    "closest_miss": "run.py draws Alberta COVID case plots in a window but never writes an image file, and the repo has no png, jpg, or logo."
+  },
+  {
+    "id": "MathewsonMatlabTools",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/MathewsonMatlabTools/master/README.md",
+      "https://github.com/kylemath/MathewsonMatlabTools",
+      "https://github.com/kylemath/MathewsonMatlabTools/tree/master/EEG_analysis",
+      "https://github.com/kylemath/MathewsonMatlabTools/tree/master/CogToolbox-master/Matlab%20Demos"
+    ],
+    "closest_miss": "Only image in the tree is CogToolbox-master/Matlab Demos/camel_b.jpg, a third-party demo stimulus, not a project screenshot or logo."
+  },
+  {
+    "id": "FitnessMemory",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/FitnessMemory/master/README.md",
+      "https://raw.githubusercontent.com/kylemath/FitnessMemory/master/FitnessMemoryAnalysis.m",
+      "https://api.github.com/repos/kylemath/FitnessMemory/contents/",
+      "https://github.com/kylemath/FitnessMemory"
+    ],
+    "closest_miss": "Repo is only the analysis script and a one-line README; data and figures stay on a local drive and are not committed."
+  },
+  {
+    "id": "powerLawSoccerAnalysisPage",
+    "urls_tried": [
+      "https://api.github.com/repos/kylemath/powerLawSoccerAnalysisPage/contents/",
+      "https://github.com/kylemath/powerLawSoccerAnalysisPage",
+      "https://kylemath.github.io/powerLawSoccerAnalysisPage/",
+      "https://raw.githubusercontent.com/kylemath/powerLawSoccerAnalysisPage/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/powerLawSoccerAnalysisPage/master/README.md"
+    ],
+    "closest_miss": "GitHub page says the repository is empty, and the github.io URL 404s; the only og:image is GitHub's generated text card."
+  }
+]

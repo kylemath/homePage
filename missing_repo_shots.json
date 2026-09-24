@@ -1,0 +1,605 @@
+[
+  {
+    "id": "myTestWebsite",
+    "title": "myTestWebsite",
+    "oneLiner": "A test of a github page",
+    "demoUrl": "https://kylemath.github.io/myTestWebsite/",
+    "githubUrl": "https://github.com/kylemath/myTestWebsite",
+    "screenshot": "https://kylemath.github.io/myTestWebsite/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "testSep23",
+    "title": "TestSep23",
+    "oneLiner": "This is a test repo",
+    "demoUrl": "https://github.com/kylemath/testSep23",
+    "githubUrl": "https://github.com/kylemath/testSep23",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/testSep23/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "Psych302-305-KyleMathewson",
+    "title": "Psych302-305-KyleMathewson",
+    "oneLiner": "Test",
+    "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
+    "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+    "screenshot": "https://kylemath.github.io/Psych302-305-KyleMathewson/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "RobotInvites",
+    "title": "RobotInvites",
+    "oneLiner": "How do we invite these robots to a party?",
+    "demoUrl": "https://kylemath.github.io/RobotInvites",
+    "githubUrl": "https://github.com/kylemath/RobotInvites",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/RobotInvites/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "kylemath",
+    "title": "kylemath",
+    "oneLiner": "GitHub profile",
+    "demoUrl": "https://github.com/kylemath/kylemath",
+    "githubUrl": "https://github.com/kylemath/kylemath",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/kylemath/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "math6",
+    "title": "Math6",
+    "oneLiner": "Adaptive, gamified Grade 6 math tutor as a **website** and **installable PWA**. Curriculum follows seven organizing ideas: Number, Algebra, Geometry, Coordinate",
+    "demoUrl": "https://kylemath.github.io/math6",
+    "githubUrl": "https://github.com/kylemath/math6",
+    "screenshot": "https://kylemath.github.io/math6/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "p5.eegedu",
+    "title": "p5.eegedu",
+    "oneLiner": "A live coding environment in p5 which includes bluetooth transmitted brain activity as input variables",
+    "demoUrl": "https://kylemath.github.io/p5.eegedu/",
+    "githubUrl": "https://github.com/kylemath/p5.eegedu",
+    "screenshot": "https://kylemath.github.io/p5.eegedu/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "psych275-textbook",
+    "title": "psych275-textbook",
+    "oneLiner": "PSYCH 275 textbook: Brains, Minds, and Machines",
+    "demoUrl": "https://kylemath.github.io/psych275-textbook/",
+    "githubUrl": "https://github.com/kylemath/psych275-textbook",
+    "screenshot": "https://kylemath.github.io/psych275-textbook/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "neuroAnimation",
+    "title": "neuroAnimation",
+    "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
+    "demoUrl": "https://kylemath.github.io/neuroAnimation/",
+    "githubUrl": "https://github.com/kylemath/neuroAnimation",
+    "screenshot": "https://kylemath.github.io/neuroAnimation/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "MathPlayground",
+    "title": "MathPlayground",
+    "oneLiner": "Playground for Math Webapps and Tests",
+    "demoUrl": "https://github.com/kylemath/MathPlayground",
+    "githubUrl": "https://github.com/kylemath/MathPlayground",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/MathPlayground/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "pdf2jpeg",
+    "title": "Pdf2jpeg",
+    "oneLiner": "convert pdfs to jpegs",
+    "demoUrl": "https://github.com/kylemath/pdf2jpeg",
+    "githubUrl": "https://github.com/kylemath/pdf2jpeg",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/pdf2jpeg/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "BouncyBalls",
+    "title": "BouncyBalls",
+    "oneLiner": "Bouncing balls",
+    "demoUrl": "kylemath.github.io/BouncyBalls",
+    "githubUrl": "https://github.com/kylemath/BouncyBalls",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/BouncyBalls/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "GraphColouring",
+    "title": "GraphColouring",
+    "oneLiner": "Investigations into graph colouring solutions",
+    "demoUrl": "https://kylemath.github.io/GraphColouring",
+    "githubUrl": "https://github.com/kylemath/GraphColour",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "FreethrowEEG",
+    "title": "FreethrowEEG",
+    "oneLiner": "Recording EEG during freethrow basketball shooting",
+    "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+    "githubUrl": "https://github.com/kylemath/FreethrowEEG",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/FreethrowEEG/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "ReactionDiffusionMaze",
+    "title": "ReactionDiffusionMaze",
+    "oneLiner": "A slime maze of balls and diffusive media web app",
+    "demoUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
+    "githubUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/ReactionDiffusionMaze/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "Luo2024Extend",
+    "title": "Luo2024Extend",
+    "oneLiner": "Twitter PhD Project Extension Challange",
+    "demoUrl": "https://github.com/kylemath/Luo2024Extend",
+    "githubUrl": "https://github.com/kylemath/Luo2024Extend",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/Luo2024Extend/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "ConciousnessTheoryCompareWebpage",
+    "title": "ConciousnessTheoryCompareWebpage",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/",
+    "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
+    "screenshot": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "ClashRoyale",
+    "title": "ClashRoyale",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/ClashRoyale",
+    "githubUrl": "https://github.com/kylemath/ClashRoyale",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/ClashRoyale/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "FractalViewerWebpage",
+    "title": "FractalViewerWebpage",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/FractalViewerWebpage",
+    "githubUrl": "https://github.com/kylemath/FractalViewerWebpage",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "WordSelectionLLM",
+    "title": "WordSelectionLLM",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/WordSelectionLLM",
+    "githubUrl": "https://github.com/kylemath/WordSelectionLLM",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/WordSelectionLLM/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "topologicalDataAnalysisBiology",
+    "title": "topologicalDataAnalysisBiology",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/topologicalDataAnalysisBiology",
+    "githubUrl": "https://github.com/kylemath/topologicalDataAnalysisBiology",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/topologicalDataAnalysisBiology/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "pickingTVWebpage",
+    "title": "pickingTVWebpage",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/pickingTVWebpage",
+    "githubUrl": "https://github.com/kylemath/pickingTVWebpage",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/pickingTVWebpage/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "JaneStreetDwarkeshPuzzle",
+    "title": "JaneStreetDwarkeshPuzzle",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/JaneStreetDwarkeshPuzzle",
+    "githubUrl": "https://github.com/kylemath/JaneStreetDwarkeshPuzzle",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/JaneStreetDwarkeshPuzzle/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "HistoricGlenoraMapWebpage",
+    "title": "HistoricGlenoraMapWebpage",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/HistoricGlenoraMapWebpage",
+    "githubUrl": "https://github.com/kylemath/HistoricGlenoraMapWebpage",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/HistoricGlenoraMapWebpage/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "cryptoMemeCoinMint",
+    "title": "cryptoMemeCoinMint",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/cryptoMemeCoinMint",
+    "githubUrl": "https://github.com/kylemath/cryptoMemeCoinMint",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/cryptoMemeCoinMint/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "3dprint",
+    "title": "3dprint",
+    "oneLiner": "set of .stl files and other 3d files I find useful, no credit claimed",
+    "demoUrl": "https://github.com/kylemath/3dprint",
+    "githubUrl": "https://github.com/kylemath/3dprint",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/3dprint/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "artOfSoccerWarPlanning",
+    "title": "artOfSoccerWarPlanning",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
+    "githubUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/artOfSoccerWarPlanning/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "YoutubeMusicAlbumFilterChromePlugin",
+    "title": "YoutubeMusicAlbumFilterChromePlugin",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/YoutubeMusicAlbumFilterChromePlugin",
+    "githubUrl": "https://github.com/kylemath/YoutubeMusicAlbumFilterChromePlugin",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/YoutubeMusicAlbumFilterChromePlugin/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "reConstruction",
+    "title": "reConstruction",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/reConstruction",
+    "githubUrl": "https://github.com/kylemath/reConstruction",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/reConstruction/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "matlab_Psychtoolbox_course",
+    "title": "matlab_Psychtoolbox_course",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/matlab_Psychtoolbox_course",
+    "githubUrl": "https://github.com/kylemath/matlab_Psychtoolbox_course",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/matlab_Psychtoolbox_course/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "RetinotopyMatlabCode",
+    "title": "RetinotopyMatlabCode",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/RetinotopyMatlabCode",
+    "githubUrl": "https://github.com/kylemath/RetinotopyMatlabCode",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/RetinotopyMatlabCode/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "strokeEEG",
+    "title": "strokeEEG",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/strokeEEG",
+    "githubUrl": "https://github.com/kylemath/strokeEEG",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/strokeEEG/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "voyageAnalysis",
+    "title": "voyageAnalysis",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/voyageAnalysis",
+    "githubUrl": "https://github.com/kylemath/voyageAnalysis",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/voyageAnalysis/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "StoryTrees3",
+    "title": "StoryTrees3",
+    "oneLiner": "Story Trees 3 - RAVEN",
+    "demoUrl": "https://github.com/kylemath/StoryTrees3",
+    "githubUrl": "https://github.com/kylemath/StoryTrees3",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/StoryTrees3/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "psych403_Fall2022",
+    "title": "psych403_Fall2022",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/psych403_Fall2022",
+    "githubUrl": "https://github.com/kylemath/psych403_Fall2022",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/psych403_Fall2022/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "p5.eegedu.art",
+    "title": "p5.eegedu.art",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/p5.eegedu.art",
+    "githubUrl": "https://github.com/kylemath/p5.eegedu.art",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/p5.eegedu.art/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "StoryTrees2",
+    "title": "StoryTrees2",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/StoryTrees2",
+    "githubUrl": "https://github.com/kylemath/StoryTrees2",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/StoryTrees2/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "abcovid",
+    "title": "abcovid",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/abcovid",
+    "githubUrl": "https://github.com/kylemath/abcovid",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/abcovid/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "webcamHR",
+    "title": "webcamHR",
+    "oneLiner": "P5.js webcam HR",
+    "demoUrl": "https://github.com/kylemath/webcamHR",
+    "githubUrl": "https://github.com/kylemath/webcamHR",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/webcamHR/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "matlab_video_hr",
+    "title": "matlab_video_hr",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/matlab_video_hr",
+    "githubUrl": "https://github.com/kylemath/matlab_video_hr",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/matlab_video_hr/main/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "Mathewson2009",
+    "title": "Mathewson2009",
+    "oneLiner": "Phase analysis from Mathewson 2009",
+    "demoUrl": "https://github.com/kylemath/Mathewson2009",
+    "githubUrl": "https://github.com/kylemath/Mathewson2009",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/Mathewson2009/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "faceoff",
+    "title": "faceoff",
+    "oneLiner": "Latent GAN State Brain Surfing",
+    "demoUrl": "https://github.com/kylemath/faceoff",
+    "githubUrl": "https://github.com/kylemath/faceoff",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/faceoff/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "gmailPower",
+    "title": "gmailPower",
+    "oneLiner": "Power User for Gmail",
+    "demoUrl": "https://github.com/kylemath/gmailPower",
+    "githubUrl": "https://github.com/kylemath/gmailPower",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/gmailPower/main/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "WhisperingPines",
+    "title": "WhisperingPines",
+    "oneLiner": "Webcam Responsive AudioVisual Art",
+    "demoUrl": "https://github.com/kylemath/WhisperingPines",
+    "githubUrl": "https://github.com/kylemath/WhisperingPines",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/WhisperingPines/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "Apparition",
+    "title": "Apparition",
+    "oneLiner": "Apparition make a live video puppet with pix2pix based on old youtube videos",
+    "demoUrl": "https://github.com/kylemath/Apparition",
+    "githubUrl": "https://github.com/kylemath/Apparition",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/Apparition/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "DeepEEG",
+    "title": "DeepEEG",
+    "oneLiner": "Deep Learning with Tensor Flow for EEG MNE Epoch Objects",
+    "demoUrl": "https://github.com/kylemath/DeepEEG",
+    "githubUrl": "https://github.com/kylemath/DeepEEG",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/DeepEEG/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "pyoptical",
+    "title": "pyoptical",
+    "oneLiner": "Imagent optical imaging interface to MNE loading",
+    "demoUrl": "https://github.com/kylemath/pyoptical",
+    "githubUrl": "https://github.com/kylemath/pyoptical",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/pyoptical/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "375Data_2020",
+    "title": "375Data_2020",
+    "oneLiner": "Shared Datasets and analysis files for 375 Final Paper",
+    "demoUrl": "https://github.com/kylemath/375Data_2020",
+    "githubUrl": "https://github.com/kylemath/375Data_2020",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/375Data_2020/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "SSAEP",
+    "title": "SSAEP",
+    "oneLiner": "miceeg",
+    "demoUrl": "https://github.com/kylemath/SSAEP",
+    "githubUrl": "https://github.com/kylemath/SSAEP",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/SSAEP/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "MathewsonMatlabTools",
+    "title": "MathewsonMatlabTools",
+    "oneLiner": "Toolbox of tricks, gadgets, gizmos, and automated emailers",
+    "demoUrl": "https://github.com/kylemath/MathewsonMatlabTools",
+    "githubUrl": "https://github.com/kylemath/MathewsonMatlabTools",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/MathewsonMatlabTools/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "cross_colour",
+    "title": "cross_colour",
+    "oneLiner": "Overlay saturated crosshatch grid onto grayscale image for illusory colours",
+    "demoUrl": "https://github.com/kylemath/cross_colour",
+    "githubUrl": "https://github.com/kylemath/cross_colour",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/cross_colour/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "pyERP",
+    "title": "pyERP",
+    "oneLiner": "python ERP framework using MNE structures",
+    "demoUrl": "https://github.com/kylemath/pyERP",
+    "githubUrl": "https://github.com/kylemath/pyERP",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/pyERP/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "garmin_graphs",
+    "title": "garmin_graphs",
+    "oneLiner": "Load in data from garmin connect and plot over time in matlab",
+    "demoUrl": "https://github.com/kylemath/garmin_graphs",
+    "githubUrl": "https://github.com/kylemath/garmin_graphs",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/garmin_graphs/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "TimeFreqWorkshop",
+    "title": "TimeFreqWorkshop",
+    "oneLiner": "Presentation and code for time frequency workshop",
+    "demoUrl": "https://github.com/kylemath/TimeFreqWorkshop",
+    "githubUrl": "https://github.com/kylemath/TimeFreqWorkshop",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/TimeFreqWorkshop/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "necker_move",
+    "title": "necker_move",
+    "oneLiner": "moving necker cube",
+    "demoUrl": "https://github.com/kylemath/necker_move",
+    "githubUrl": "https://github.com/kylemath/necker_move",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/necker_move/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "micb",
+    "title": "micb",
+    "oneLiner": "Motion Induced Change Blindness - Yao, Wood, Simons 2019 - Psychtoolbox code ",
+    "demoUrl": "https://github.com/kylemath/micb",
+    "githubUrl": "https://github.com/kylemath/micb",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/micb/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "nomad",
+    "title": "nomad",
+    "oneLiner": "Near-infrared Optical Montage Automated Design",
+    "demoUrl": "https://github.com/kylemath/nomad",
+    "githubUrl": "https://github.com/kylemath/nomad",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/nomad/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "visual-illusions",
+    "title": "visual-illusions",
+    "oneLiner": "Can we teach a machine to classify visual illusions and generate new ones?",
+    "demoUrl": "https://github.com/kylemath/visual-illusions",
+    "githubUrl": "https://github.com/kylemath/visual-illusions",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/visual-illusions/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "Muse_LSL_Environments",
+    "title": "Muse_LSL_Environments",
+    "oneLiner": "A set of python environments for running MUSE LSL experiments, record data, visualize, and send markers, using Alex B. muse-lsl",
+    "demoUrl": "https://github.com/kylemath/Muse_LSL_Environments",
+    "githubUrl": "https://github.com/kylemath/Muse_LSL_Environments",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/Muse_LSL_Environments/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "MoralWordEEG",
+    "title": "MoralWordEEG",
+    "oneLiner": "Experiment, Materials, and Analysis code for Moral Word EEG project",
+    "demoUrl": "https://github.com/kylemath/MoralWordEEG",
+    "githubUrl": "https://github.com/kylemath/MoralWordEEG",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/MoralWordEEG/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "AudienceEEG",
+    "title": "AudienceEEG",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/AudienceEEG",
+    "githubUrl": "https://github.com/kylemath/AudienceEEG",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/AudienceEEG/master/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "FitnessMemory",
+    "title": "FitnessMemory",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/FitnessMemory",
+    "githubUrl": "https://github.com/kylemath/FitnessMemory",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/FitnessMemory/master/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "DuckBunny2",
+    "title": "DuckBunny2",
+    "oneLiner": "Analysis and results for duckbunny2 project",
+    "demoUrl": "https://github.com/kylemath/DuckBunny2",
+    "githubUrl": "https://github.com/kylemath/DuckBunny2",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/DuckBunny2/master/screenshot.png",
+    "slice": 2
+  },
+  {
+    "id": "Pyggy",
+    "title": "Pyggy",
+    "oneLiner": "Artificial Improvisation",
+    "demoUrl": "https://github.com/kylemath/Pyggy",
+    "githubUrl": "https://github.com/kylemath/Pyggy",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/Pyggy/master/screenshot.png",
+    "slice": 3
+  },
+  {
+    "id": "mySecondTestWebsite",
+    "title": "mySecondTestWebsite",
+    "oneLiner": "test 2",
+    "demoUrl": "https://github.com/kylemath/mySecondTestWebsite",
+    "githubUrl": "https://github.com/kylemath/mySecondTestWebsite",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/mySecondTestWebsite/main/screenshot.png",
+    "slice": 0
+  },
+  {
+    "id": "powerLawSoccerAnalysisPage",
+    "title": "powerLawSoccerAnalysisPage",
+    "oneLiner": "GitHub repository",
+    "demoUrl": "https://github.com/kylemath/powerLawSoccerAnalysisPage",
+    "githubUrl": "https://github.com/kylemath/powerLawSoccerAnalysisPage",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/powerLawSoccerAnalysisPage/main/screenshot.png",
+    "slice": 1
+  },
+  {
+    "id": "callingCenter",
+    "title": "CallingCenter",
+    "oneLiner": "A webpage to call individuals on a calling list one by one automatically",
+    "demoUrl": "http://kylemath.github.io/callingCenter",
+    "githubUrl": "https://github.com/kylemath/callingCenter",
+    "screenshot": "https://raw.githubusercontent.com/kylemath/callingCenter/main/screenshot.png",
+    "slice": 2
+  }
+]

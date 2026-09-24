@@ -1,0 +1,94 @@
+[
+  {
+    "id": "BouncyBalls",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/BouncyBalls/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/BouncyBalls/master/README.md",
+      "https://api.github.com/repos/kylemath/BouncyBalls/git/trees/main?recursive=1",
+      "https://kylemath.github.io/BouncyBalls/",
+      "https://kylemath.github.io/BouncyBalls/favicon.ico"
+    ],
+    "closest_miss": "Live page is a canvas animation with no og:image, content image, or favicon, and the repo tree has no image files."
+  },
+  {
+    "id": "WordSelectionLLM",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/WordSelectionLLM/main/README.md",
+      "https://api.github.com/repos/kylemath/WordSelectionLLM/git/trees/main?recursive=1",
+      "https://kylemath.github.io/WordSelectionLLM/",
+      "https://raw.githubusercontent.com/kylemath/WordSelectionLLM/main/index.html",
+      "https://raw.githubusercontent.com/kylemath/WordSelectionLLM/main/InteractivePaper/interactive_paper.html"
+    ],
+    "closest_miss": "GitHub Pages HTML is a styled explorer with canvas charts and no saved png, jpg, svg, or favicon."
+  },
+  {
+    "id": "HistoricGlenoraMapWebpage",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/HistoricGlenoraMapWebpage/main/README.md",
+      "https://api.github.com/repos/kylemath/HistoricGlenoraMapWebpage/git/trees/main?recursive=1",
+      "https://kylemath.github.io/HistoricGlenoraMapWebpage/",
+      "https://kylemath.github.io/HistoricGlenoraMapWebpage/favicon.ico",
+      "https://raw.githubusercontent.com/kylemath/HistoricGlenoraMapWebpage/main/index.html"
+    ],
+    "closest_miss": "Three.js and Mapbox page has no committed screenshot, logo, or favicon; map tiles are not a project image."
+  },
+  {
+    "id": "YoutubeMusicAlbumFilterChromePlugin",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/YoutubeMusicAlbumFilterChromePlugin/main/README.md",
+      "https://raw.githubusercontent.com/kylemath/YoutubeMusicAlbumFilterChromePlugin/main/manifest.json",
+      "https://raw.githubusercontent.com/kylemath/YoutubeMusicAlbumFilterChromePlugin/main/create_icons.md",
+      "https://raw.githubusercontent.com/kylemath/YoutubeMusicAlbumFilterChromePlugin/main/popup.html",
+      "https://api.github.com/repos/kylemath/YoutubeMusicAlbumFilterChromePlugin/git/trees/main?recursive=1"
+    ],
+    "closest_miss": "create_icons.md asks for icon16/48/128.png, but those files were never added and the manifest has no icon paths."
+  },
+  {
+    "id": "strokeEEG",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/strokeEEG/main/README.md",
+      "https://api.github.com/repos/kylemath/strokeEEG/git/trees/main?recursive=1",
+      "https://github.com/kylemath/strokeEEG"
+    ],
+    "closest_miss": "Repo is analysis scripts only; README points at an unlinked Google Drive data folder and no plot image is committed."
+  },
+  {
+    "id": "p5.eegedu.art",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/p5.eegedu.art/main/README.md",
+      "https://api.github.com/repos/kylemath/p5.eegedu.art/git/trees/main?recursive=1",
+      "https://api.github.com/repos/kylemath/p5.eegedu.art/git/trees/gallery?recursive=1",
+      "https://kylemath.github.io/p5.eegedu.art/",
+      "https://p5.eegedu.com/"
+    ],
+    "closest_miss": "Main and gallery branches are only .p5 sketches; p5.eegedu.com does not resolve and the github.io page 404s."
+  },
+  {
+    "id": "matlab_video_hr",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/matlab_video_hr/main/README.md",
+      "https://api.github.com/repos/kylemath/matlab_video_hr/git/trees/main?recursive=1",
+      "https://github.com/kylemath/matlab_video_hr"
+    ],
+    "closest_miss": "Repo is two MATLAB scripts and a README with no figure, logo, or demo page."
+  },
+  {
+    "id": "375Data_2020",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/375Data_2020/master/README.md",
+      "https://api.github.com/repos/kylemath/375Data_2020/git/trees/master?recursive=1",
+      "https://raw.githubusercontent.com/kylemath/375Data_2020/master/Group_data_analysis_375.ipynb",
+      "https://colab.research.google.com/assets/colab-badge.svg"
+    ],
+    "closest_miss": "Notebook has no saved plot outputs; the only README image is the generic Colab badge."
+  },
+  {
+    "id": "pyERP",
+    "urls_tried": [
+      "https://raw.githubusercontent.com/kylemath/pyERP/master/README.md",
+      "https://api.github.com/repos/kylemath/pyERP/git/trees/master?recursive=1",
+      "https://github.com/kylemath/pyERP"
+    ],
+    "closest_miss": "Python ERP helpers and a one-line README contain no image, logo, or demo page."
+  }
+]

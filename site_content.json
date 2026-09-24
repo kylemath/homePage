@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Kyle Elliott Mathewson, PhD",
-    "role": "Associate Professor, Psychology \u00b7 Director, APPLab \u00b7 University of Alberta",
+    "role": "Associate Professor, Psychology · Director, APPLab · University of Alberta",
     "email": "kmathews@ualberta.ca",
     "phone": "(780) 492-2662",
     "office": "P-455 Bio Science",
@@ -126,7 +126,7 @@
     {
       "id": "link-faculty",
       "kind": "link",
-      "logo": "images/logos/link-faculty.svg",
+      "logo": "images/logos/link-faculty.png",
       "title": "Faculty",
       "oneLiner": "UAlberta Directory",
       "url": "https://apps.ualberta.ca/directory/person/kmathews",
@@ -267,7 +267,7 @@
       "id": "exp-assoc",
       "kind": "role",
       "title": "Associate Professor",
-      "oneLiner": "Psychology, University of Alberta. Director, APPLab. 2019\u2013present.",
+      "oneLiner": "Psychology, University of Alberta. Director, APPLab. 2019–present.",
       "year": 2019,
       "url": "https://apps.ualberta.ca/directory/person/kmathews",
       "mark": "UA"
@@ -276,7 +276,7 @@
       "id": "exp-asst",
       "kind": "role",
       "title": "Assistant Professor",
-      "oneLiner": "Psychology, University of Alberta. Established APPLab. 2013\u20132019.",
+      "oneLiner": "Psychology, University of Alberta. Established APPLab. 2013–2019.",
       "year": 2013,
       "url": "https://apps.ualberta.ca/directory/person/kmathews",
       "mark": "UA"
@@ -285,7 +285,7 @@
       "id": "exp-beckman",
       "kind": "role",
       "title": "Postdoctoral Fellow",
-      "oneLiner": "Beckman Institute, University of Illinois. Fabiani & Gratton. 2011\u20132013.",
+      "oneLiner": "Beckman Institute, University of Illinois. Fabiani & Gratton. 2011–2013.",
       "year": 2011,
       "url": "https://beckman.illinois.edu/",
       "mark": "UI"
@@ -303,7 +303,7 @@
       "id": "exp-blueberry",
       "kind": "role",
       "title": "Chief Scientist",
-      "oneLiner": "Blueberry, Toronto. Scientific leadership, 2021\u20132023. Advisor, 2020\u20132021.",
+      "oneLiner": "Blueberry, Toronto. Scientific leadership, 2021–2023. Advisor, 2020–2021.",
       "year": 2021,
       "url": "https://www.linkedin.com/in/ky-mathewson-856279124/",
       "mark": "BB"
@@ -315,7 +315,7 @@
       "oneLiner": "Juventus Soccer Club, 2013 Boys. Player, Edmonton and District Soccer Association.",
       "year": 2013,
       "url": "https://juventus2013.netlify.app/",
-      "mark": "\u26bd"
+      "mark": "⚽"
     }
   ],
   "stages": [
@@ -421,7 +421,7 @@
     {
       "id": "paper-2025-abstract-tmp30-combining-the-los-angeles-motor-scale-and",
       "kind": "paper",
-      "title": "Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute\u00a0\u2026",
+      "title": "Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute …",
       "authors": "M Kate et al.",
       "year": 2025,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kJDgFkosVoMC",
@@ -488,7 +488,7 @@
     {
       "id": "paper-2022-recommendations-and-publication-guidelines-for-studies-u",
       "kind": "paper",
-      "title": "Recommendations and publication guidelines for studies using frequency domain and time\u2010frequency domain analyses of neural time series",
+      "title": "Recommendations and publication guidelines for studies using frequency domain and time‐frequency domain analyses of neural time series",
       "authors": "A Keil et al.",
       "year": 2022,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QsaTk4IG4EwC",
@@ -579,7 +579,7 @@
     {
       "id": "paper-2022-connecting-covert-attention-and-visual-perception-to-the",
       "kind": "paper",
-      "title": "Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using\u00a0\u2026",
+      "title": "Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using …",
       "authors": "SS Sheldon et al.",
       "year": 2022,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:aIdbFUkbNIkC",
@@ -769,7 +769,7 @@
     {
       "id": "paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest",
       "kind": "paper",
-      "title": "Electrophysiological correlates of hyperoxia during resting\u2010state EEG in awake human subjects",
+      "title": "Electrophysiological correlates of hyperoxia during resting‐state EEG in awake human subjects",
       "authors": "SAD Kizuk et al.",
       "year": 2019,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:FiDNX6EVdGUC",
@@ -870,7 +870,7 @@
     {
       "id": "paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab",
       "kind": "paper",
-      "title": "Two\u2010layered and stretchable e\u2010textile patches for wearable healthcare electronics",
+      "title": "Two‐layered and stretchable e‐textile patches for wearable healthcare electronics",
       "authors": "TG La et al.",
       "year": 2018,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3bvyWxjaHKcC",
@@ -1249,7 +1249,7 @@
     {
       "id": "paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa",
       "kind": "paper",
-      "title": "Providing views of the driving scene to drivers\u2019 conversation partners mitigates cell-phone-related distraction",
+      "title": "Providing views of the driving scene to drivers’ conversation partners mitigates cell-phone-related distraction",
       "authors": "JG Gaspar et al.",
       "year": 2014,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:owLR8QvbtFgC",
@@ -1399,7 +1399,7 @@
     {
       "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg",
       "kind": "paper",
-      "title": "WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED\u00a0\u2026",
+      "title": "WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED …",
       "authors": "KE Mathewson et al.",
       "year": 2011,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jU7OWUQzBzMC",
@@ -1410,7 +1410,7 @@
     {
       "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg-2",
       "kind": "paper",
-      "title": "Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical\u00a0\u2026",
+      "title": "Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical …",
       "authors": "KE Mathewson et al.",
       "year": 2011,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SjuI4pbJlxcC",
@@ -1488,7 +1488,7 @@
     {
       "id": "paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a",
       "kind": "paper",
-      "title": "To see or not to see: prestimulus \u03b1 phase predicts visual awareness",
+      "title": "To see or not to see: prestimulus α phase predicts visual awareness",
       "authors": "KE Mathewson et al.",
       "year": 2009,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C",
@@ -2144,7 +2144,15 @@
         "matlab_Psychtoolbox_course",
         "psych403_Fall2022",
         "news-these-headsets-are-changing-the-way-u-of-a-neuro",
-        "news-a-new-frame-of-mind-eeg-headsets-transform-learn"
+        "news-a-new-frame-of-mind-eeg-headsets-transform-learn",
+        "psych275-textbook",
+        "NeuroimagingNeurostimulationCourse",
+        "neuroAnimation",
+        "VibeScienceTalk",
+        "math6",
+        "EEGEdu",
+        "p5.eegedu",
+        "Brainimation"
       ]
     },
     {
@@ -2197,7 +2205,8 @@
         "paper-2018-a-ride-in-the-park-cycling-in-different-outdoor-environm",
         "paper-2016-taking-off-the-training-wheels-measuring-brain-activity",
         "news-being-outdoors-may-change-the-way-your-brain-wor",
-        "news-this-is-your-brain-this-is-your-brain-outdoors"
+        "news-this-is-your-brain-this-is-your-brain-outdoors",
+        "OfTwoMindsSoccer"
       ]
     },
     {
@@ -2353,7 +2362,9 @@
         "BrainsMindsMachinesTextbook",
         "ExileEnginePage",
         "LinoleumSecretHistory",
-        "FungioErgoSum"
+        "FungioErgoSum",
+        "psych275-textbook",
+        "artOfSoccerWar"
       ]
     },
     {
@@ -2393,7 +2404,12 @@
         "Luo2024Extend",
         "CatalanQuadratic",
         "JaneStreetDwarkeshPuzzle",
-        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares"
+        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares",
+        "GraphColouring",
+        "math6",
+        "magicSquare",
+        "FibrationTorusPuzzle",
+        "StokesFluidDynamics"
       ]
     },
     {
@@ -2404,7 +2420,8 @@
       "names": [
         "OpticalNeuralNet",
         "microgptJS",
-        "VisualSystemModel"
+        "VisualSystemModel",
+        "actualAttention"
       ]
     },
     {
@@ -2420,7 +2437,8 @@
         "3dprint",
         "voice2print",
         "IllumiStack",
-        "topographicModelsFromMapWebpage"
+        "topographicModelsFromMapWebpage",
+        "nehiyoMTB"
       ]
     },
     {
@@ -2432,7 +2450,9 @@
         "artOfSoccerWar",
         "OfTwoMindsSoccer",
         "powerLawSoccerAnalysisPage",
-        "artOfSoccerWarPlanning"
+        "artOfSoccerWarPlanning",
+        "soccerSim",
+        "soccerSimV2Physics"
       ]
     },
     {
@@ -2468,7 +2488,8 @@
         "ReactionDiffusionMaze",
         "microphoneSpectroramWebpage",
         "FractalViewerWebpage",
-        "sunMoon"
+        "sunMoon",
+        "neuroAnimation"
       ]
     },
     {
@@ -2482,7 +2503,11 @@
         "ModernWebDesign",
         "MidiRapper",
         "abcovid",
-        "YoutubeMusicAlbumFilterChromePlugin"
+        "YoutubeMusicAlbumFilterChromePlugin",
+        "ColourNamesPicker",
+        "RobotInvites",
+        "webcamHR",
+        "IllumiStack"
       ]
     },
     {
@@ -2498,7 +2523,9 @@
         "p5.eegedu",
         "EEGVideo",
         "EEGEdu",
-        "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma"
+        "paper-2022-abstract-tp56-low-cost-portable-electroencephalograph-ma",
+        "maestroV2",
+        "shooterFocus"
       ]
     },
     {
@@ -2511,7 +2538,8 @@
         "StoryTrees3",
         "WhisperingPines",
         "StoryTrees2",
-        "Apparition"
+        "Apparition",
+        "Pyggy"
       ]
     },
     {
@@ -2526,7 +2554,9 @@
         "soccerSim",
         "BrainCraft",
         "ClashRoyale",
-        "BrainGames"
+        "BrainGames",
+        "math6",
+        "MacbookSteeringGame"
       ]
     },
     {
@@ -2539,7 +2569,10 @@
         "ConciousnessTheoryCompareWebpage",
         "StokesFluidDynamics",
         "biophotons",
-        "flir"
+        "flir",
+        "ForwardLookingInfraredImagingTutorial",
+        "DeepEEG",
+        "actualAttention"
       ]
     },
     {
@@ -2550,7 +2583,8 @@
       "names": [
         "magicGemWeb",
         "MagicGemWebpage",
-        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares"
+        "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares",
+        "magicSquare"
       ]
     },
     {
@@ -2582,7 +2616,10 @@
         "homePage",
         "todoManager",
         "gmailPower",
-        "garmin_graphs"
+        "garmin_graphs",
+        "MidiHotkey",
+        "callingCenter",
+        "kylemath"
       ]
     },
     {
@@ -2592,7 +2629,15 @@
       "color": "#9aa0aa",
       "names": [
         "Generation",
-        "Pyggy"
+        "Pyggy",
+        "SoraVideoGen",
+        "voice2print",
+        "faceoff",
+        "Apparition",
+        "microgptJS",
+        "GALM",
+        "WordSelectionLLM",
+        "InterpretCognates"
       ]
     },
     {
@@ -2672,7 +2717,20 @@
         "paper-2017-high-and-dry-comparing-active-dry-eeg-electrodes-to-acti",
         "paper-2017-transitioning-eeg-experiments-away-from-the-laboratory-u",
         "news-these-headsets-are-changing-the-way-u-of-a-neuro",
-        "news-a-new-frame-of-mind-eeg-headsets-transform-learn"
+        "news-a-new-frame-of-mind-eeg-headsets-transform-learn",
+        "maestroV2"
+      ]
+    },
+    {
+      "id": "889b0bbc-044c-4d4d-b13c-9e9e544c6010",
+      "title": "Scratch",
+      "description": "Trial pages and repositories that are not a finished project.",
+      "color": "#9aa0aa",
+      "names": [
+        "myTestWebsite",
+        "testSep23",
+        "mySecondTestWebsite",
+        "Psych302-305-KyleMathewson"
       ]
     },
     {
@@ -2680,29 +2738,7 @@
       "title": "More projects",
       "description": "Not in a category yet.",
       "color": "#9aa0aa",
-      "names": [
-        "myTestWebsite",
-        "testSep23",
-        "Psych302-305-KyleMathewson",
-        "ColourNamesPicker",
-        "RobotInvites",
-        "MidiHotkey",
-        "kylemath",
-        "math6",
-        "magicSquare",
-        "psych275-textbook",
-        "neuroAnimation",
-        "GraphColouring",
-        "MacbookSteeringGame",
-        "VibeScienceTalk",
-        "NeuroimagingNeurostimulationCourse",
-        "maestroV2",
-        "ForwardLookingInfraredImagingTutorial",
-        "SoraVideoGen",
-        "mySecondTestWebsite",
-        "nehiyoMTB",
-        "callingCenter"
-      ]
+      "names": []
     },
     {
       "id": "flexible-electronics",

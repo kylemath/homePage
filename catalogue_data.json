@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-09-23T05:38:31.345368+00:00",
+  "generatedAt": "2026-09-24T05:56:31.773764+00:00",
   "items": [
+    {
+      "id": "myTestWebsite",
+      "title": "myTestWebsite",
+      "oneLiner": "A test of a github page",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/myTestWebsite/",
+      "githubUrl": "https://github.com/kylemath/myTestWebsite",
+      "screenshot": "https://kylemath.github.io/myTestWebsite/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-24T01:52:05",
+      "createdAt": "2026-09-24T00:29:35Z"
+    },
+    {
+      "id": "testSep23",
+      "title": "TestSep23",
+      "oneLiner": "This is a test repo",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/testSep23",
+      "githubUrl": "https://github.com/kylemath/testSep23",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/testSep23/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-24T00:27:46",
+      "createdAt": "2026-09-24T00:27:54Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-23T05:39:17",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "Psych302-305-KyleMathewson",
       "title": "Psych302-305-KyleMathewson",
@@ -40,22 +88,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-23T01:07:13",
       "createdAt": "2025-08-27T06:49:23Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-22T05:56:58",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "ColourNamesPicker",
@@ -2531,6 +2563,22 @@
       "repoTopics": [],
       "lastCommit": "2016-04-08T22:00:07",
       "createdAt": "2016-06-28T16:30:12Z"
+    },
+    {
+      "id": "mySecondTestWebsite",
+      "title": "mySecondTestWebsite",
+      "oneLiner": "test 2",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/mySecondTestWebsite",
+      "githubUrl": "https://github.com/kylemath/mySecondTestWebsite",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/mySecondTestWebsite/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": null,
+      "createdAt": "2026-09-24T00:30:48Z"
     },
     {
       "id": "powerLawSoccerAnalysisPage",

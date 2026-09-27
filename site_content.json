@@ -2,11 +2,11 @@
   "profile": {
     "name": "Kyle Elliott Mathewson, PhD",
     "role": "Associate Professor, Psychology · Director, APPLab · University of Alberta",
-    "email": "kmathews@ualberta.ca",
+    "email": "",
     "phone": "(780) 492-2662",
-    "office": "P-455 Bio Science",
+    "office": "",
     "headshot": "images/headshot.jpg",
-    "about": "I am an Associate Professor of Psychology at the University of Alberta and director of the Attention Perception and Performance Lab. The lab studies visual awareness, attention, learning, and memory, and builds portable brain-sensing tools that work outside a traditional lab. I previously trained with Monica Fabiani and Gabriele Gratton at the University of Illinois, and with Clay Holroyd at the University of Victoria."
+    "about": "**Overview**\n\nI am a neuroscience and psychology professor in Alberta. My work spans EEG research, university teaching, and independent projects in software, hardware, and mathematics.\n\n**Teaching and Research**\n\nI teach Biopsychology (PSYCH 275) and coding and neuroimaging (PSYCH 403), with an emphasis on conceptual understanding. My research focuses on EEG, attention, vision, and neural oscillations.\n\n**Projects**\n\nI build projects that link mathematics, neuroscience, engineering, and design: analysis tools, visualizations, embedded hardware, web applications, and physical models. I like to carry ideas through as working implementations and figures as well as written reports.\n\n**Personal**\n\nI live in Alberta with my wife and three children, and I build practical things at home as well."
   },
   "featured": [
     {

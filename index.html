@@ -36,7 +36,11 @@
         a.home:hover { opacity: 0.82; }
         h1 { font-size: 26px; letter-spacing: -0.02em; margin: 0 0 4px; }
         .role { color: var(--text-dim); margin: 0 0 8px; font-size: 14px; }
-        .about { margin: 0; color: var(--text-dim); font-size: 14.5px; line-height: 1.5; max-width: 760px; }
+        .about { color: var(--text-dim); font-size: 14.5px; line-height: 1.55; max-width: 760px; }
+        .about h2 { margin: 18px 0 6px; font-size: 12.5px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; color: var(--text); }
+        .about h2:first-child { margin-top: 2px; }
+        .about p { margin: 0 0 2px; }
+        .about p + p { margin-top: 10px; }
         .meta { margin-top: 8px; color: var(--text-faint); font-size: 13px; }
         .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 18px 0 12px; }
         .search { flex: 1; min-width: 220px; }
@@ -249,6 +253,13 @@ function chipTint(row, family) {
 
 function esc(s) {
     return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function aboutHtml(text) {
+    return String(text ?? '').trim().split(/\n\s*\n/).filter(Boolean).map(block => {
+        const heading = block.trim().match(/^\*\*(.+?)\*\*$/);
+        if (heading) return `<h2>${esc(heading[1])}</h2>`;
+        return `<p>${esc(block.trim())}</p>`;
+    }).join('');
 }
 function stamp(item) {
     const raw = item.lastCommit || item.createdAt || item.year || 0;
@@ -488,8 +499,7 @@ function renderIdentity(profile) {
         <div>
             <h1><a class="home" href="./" title="Back to the start">${esc(profile.name)}</a></h1>
             <p class="role">${esc(profile.role)}</p>
-            <p class="about">${esc(profile.about)}</p>
-            <p class="meta">${esc(profile.office)} · <a href="mailto:${esc(profile.email)}">${esc(profile.email)}</a></p>
+            <div class="about">${aboutHtml(profile.about)}</div>
         </div>`;
 }
 function countKind(kind) {

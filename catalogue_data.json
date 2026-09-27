@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T05:58:25.639044+00:00",
+  "generatedAt": "2026-09-27T03:03:31.677403+00:00",
   "items": [
     {
       "id": "homePage",
@@ -14,8 +14,32 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-09-25T05:58:23",
+      "lastCommit": "2026-09-27T03:01:44",
       "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "artOfSoccerWar",
+      "title": "ArtOfSoccerWar",
+      "oneLiner": "THE ART OF SOCCER WAR100 CATCH PHRASESFOR YOUTH CLUB COACHES AND PLAYERS",
+      "categories": [
+        "soccer",
+        "strategy",
+        "advice"
+      ],
+      "tags": [
+        "soccer",
+        "strategy",
+        "advice"
+      ],
+      "demoUrl": "https://kylemath.github.io/artOfSoccerWar/",
+      "githubUrl": "https://github.com/kylemath/artOfSoccerWar",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/artOfSoccerWar/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-26T21:05:56",
+      "createdAt": "2025-06-13T22:04:47Z"
     },
     {
       "id": "nehiyoMTB",
@@ -613,30 +637,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-20T17:05:48",
       "createdAt": "2025-12-28T07:21:38Z"
-    },
-    {
-      "id": "artOfSoccerWar",
-      "title": "ArtOfSoccerWar",
-      "oneLiner": "THE ART OF SOCCER WAR100 CATCH PHRASESFOR YOUTH CLUB COACHES AND PLAYERS",
-      "categories": [
-        "soccer",
-        "strategy",
-        "advice"
-      ],
-      "tags": [
-        "soccer",
-        "strategy",
-        "advice"
-      ],
-      "demoUrl": "https://kylemath.github.io/artOfSoccerWar/",
-      "githubUrl": "https://github.com/kylemath/artOfSoccerWar",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/artOfSoccerWar/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T17:03:35",
-      "createdAt": "2025-06-13T22:04:47Z"
     },
     {
       "id": "CableRack",
@@ -1992,22 +1992,6 @@
       "createdAt": "2024-12-17T07:25:17Z"
     },
     {
-      "id": "artOfSoccerWarPlanning",
-      "title": "artOfSoccerWarPlanning",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
-      "githubUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-04T17:02:54",
-      "createdAt": "2025-11-04T17:03:28Z"
-    },
-    {
       "id": "YoutubeMusicAlbumFilterChromePlugin",
       "title": "YoutubeMusicAlbumFilterChromePlugin",
       "oneLiner": "GitHub repository",
@@ -2641,6 +2625,22 @@
       "repoTopics": [],
       "lastCommit": null,
       "createdAt": "2025-11-14T08:21:42Z"
+    },
+    {
+      "id": "artOfSoccerWarPlanning",
+      "title": "artOfSoccerWarPlanning",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
+      "githubUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2025-11-04T17:02:54",
+      "createdAt": "2025-11-04T17:03:28Z"
     },
     {
       "id": "callingCenter",

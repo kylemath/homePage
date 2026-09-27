@@ -1,6 +1,140 @@
 {
-  "generatedAt": "2026-09-27T03:03:31.677403+00:00",
+  "generatedAt": "2026-09-27T06:24:21.342154+00:00",
   "items": [
+    {
+      "id": "neuroAnimation",
+      "title": "neuroAnimation",
+      "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/neuroAnimation/",
+      "githubUrl": "https://github.com/kylemath/neuroAnimation",
+      "screenshot": "https://kylemath.github.io/neuroAnimation/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:54:04",
+      "createdAt": "2026-08-31T21:18:02Z"
+    },
+    {
+      "id": "garmin_graphs",
+      "title": "garmin_graphs",
+      "oneLiner": "Load in data from garmin connect and plot over time in matlab",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/garmin_graphs",
+      "githubUrl": "https://github.com/kylemath/garmin_graphs",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/garmin_graphs/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:52:21",
+      "createdAt": "2018-10-27T20:12:06Z"
+    },
+    {
+      "id": "FractalViewerWebpage",
+      "title": "FractalViewerWebpage",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/FractalViewerWebpage",
+      "githubUrl": "https://github.com/kylemath/FractalViewerWebpage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:20:05",
+      "createdAt": "2025-11-14T07:16:31Z"
+    },
+    {
+      "id": "AudienceEEG",
+      "title": "AudienceEEG",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/AudienceEEG",
+      "githubUrl": "https://github.com/kylemath/AudienceEEG",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/AudienceEEG/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:09:49",
+      "createdAt": "2018-06-18T17:30:36Z"
+    },
+    {
+      "id": "ConciousnessTheoryCompareWebpage",
+      "title": "ConciousnessTheoryCompareWebpage",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/",
+      "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
+      "screenshot": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:09:33",
+      "createdAt": "2025-11-14T07:22:06Z"
+    },
+    {
+      "id": "BouncyBalls",
+      "title": "BouncyBalls",
+      "oneLiner": "Bouncing balls",
+      "categories": [
+        "bouncy balls",
+        "game"
+      ],
+      "tags": [
+        "bouncy balls",
+        "game"
+      ],
+      "demoUrl": "kylemath.github.io/BouncyBalls",
+      "githubUrl": "https://github.com/kylemath/BouncyBalls",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/BouncyBalls/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:05:08",
+      "createdAt": "2026-07-28T19:03:28Z"
+    },
+    {
+      "id": "abcovid",
+      "title": "abcovid",
+      "oneLiner": "GitHub repository",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/abcovid",
+      "githubUrl": "https://github.com/kylemath/abcovid",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/abcovid/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:04:51",
+      "createdAt": "2020-04-07T04:10:07Z"
+    },
+    {
+      "id": "375Data_2020",
+      "title": "375Data_2020",
+      "oneLiner": "Shared Datasets and analysis files for 375 Final Paper",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/375Data_2020",
+      "githubUrl": "https://github.com/kylemath/375Data_2020",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/375Data_2020/master/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T05:04:38",
+      "createdAt": "2020-03-21T23:49:36Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +148,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-09-27T03:01:44",
+      "lastCommit": "2026-09-27T03:04:06",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -359,22 +493,6 @@
       "createdAt": "2026-08-31T20:33:58Z"
     },
     {
-      "id": "neuroAnimation",
-      "title": "neuroAnimation",
-      "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/neuroAnimation/",
-      "githubUrl": "https://github.com/kylemath/neuroAnimation",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-31T21:18:02",
-      "createdAt": "2026-08-31T21:18:02Z"
-    },
-    {
       "id": "MusicPlayer",
       "title": "MusicPlayer",
       "oneLiner": "A web based player of local mp3s",
@@ -493,28 +611,6 @@
       "repoTopics": [],
       "lastCommit": "2026-08-31T02:15:10",
       "createdAt": "2026-08-31T02:14:43Z"
-    },
-    {
-      "id": "BouncyBalls",
-      "title": "BouncyBalls",
-      "oneLiner": "Bouncing balls",
-      "categories": [
-        "bouncy balls",
-        "game"
-      ],
-      "tags": [
-        "bouncy balls",
-        "game"
-      ],
-      "demoUrl": "kylemath.github.io/BouncyBalls",
-      "githubUrl": "https://github.com/kylemath/BouncyBalls",
-      "screenshot": "",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-07-29T17:34:40",
-      "createdAt": "2026-07-28T19:03:28Z"
     },
     {
       "id": "diagramRevamp",
@@ -815,6 +911,30 @@
       "createdAt": "2026-04-24T09:00:54Z"
     },
     {
+      "id": "gems",
+      "title": "Gems",
+      "oneLiner": "Gemstone explorer",
+      "categories": [
+        "simulation",
+        "webpage",
+        "gems"
+      ],
+      "tags": [
+        "simulation",
+        "webpage",
+        "gems"
+      ],
+      "demoUrl": "https://github.com/kylemath/gems",
+      "githubUrl": "https://github.com/kylemath/gems",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/gems/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-04-08T21:49:54",
+      "createdAt": "2026-04-08T21:50:00Z"
+    },
+    {
       "id": "EEGVideo",
       "title": "EEGVideo",
       "oneLiner": "Record EEG while watching a synced video",
@@ -1081,22 +1201,6 @@
       "repoTopics": [],
       "lastCommit": "2026-02-07T00:35:45",
       "createdAt": "2026-02-06T09:46:24Z"
-    },
-    {
-      "id": "ConciousnessTheoryCompareWebpage",
-      "title": "ConciousnessTheoryCompareWebpage",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/ConciousnessTheoryCompareWebpage/",
-      "githubUrl": "https://github.com/kylemath/ConciousnessTheoryCompareWebpage",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-01-31T05:44:55",
-      "createdAt": "2025-11-14T07:22:06Z"
     },
     {
       "id": "NumberBlocks",
@@ -1864,22 +1968,6 @@
       "createdAt": "2025-11-14T21:05:26Z"
     },
     {
-      "id": "FractalViewerWebpage",
-      "title": "FractalViewerWebpage",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FractalViewerWebpage",
-      "githubUrl": "https://github.com/kylemath/FractalViewerWebpage",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-14T08:24:18",
-      "createdAt": "2025-11-14T07:16:31Z"
-    },
-    {
       "id": "WordSelectionLLM",
       "title": "WordSelectionLLM",
       "oneLiner": "GitHub repository",
@@ -2153,22 +2241,6 @@
       "createdAt": "2022-01-17T13:19:14Z"
     },
     {
-      "id": "abcovid",
-      "title": "abcovid",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/abcovid",
-      "githubUrl": "https://github.com/kylemath/abcovid",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2021-04-29T23:58:33",
-      "createdAt": "2020-04-07T04:10:07Z"
-    },
-    {
       "id": "webcamHR",
       "title": "webcamHR",
       "oneLiner": "P5.js webcam HR",
@@ -2323,22 +2395,6 @@
       "createdAt": "2020-04-12T01:54:00Z"
     },
     {
-      "id": "375Data_2020",
-      "title": "375Data_2020",
-      "oneLiner": "Shared Datasets and analysis files for 375 Final Paper",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/375Data_2020",
-      "githubUrl": "https://github.com/kylemath/375Data_2020",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2020-03-23T14:39:01",
-      "createdAt": "2020-03-21T23:49:36Z"
-    },
-    {
       "id": "SSAEP",
       "title": "SSAEP",
       "oneLiner": "miceeg",
@@ -2401,22 +2457,6 @@
       "repoTopics": [],
       "lastCommit": "2019-07-07T03:11:06",
       "createdAt": "2019-03-31T02:13:33Z"
-    },
-    {
-      "id": "garmin_graphs",
-      "title": "garmin_graphs",
-      "oneLiner": "Load in data from garmin connect and plot over time in matlab",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/garmin_graphs",
-      "githubUrl": "https://github.com/kylemath/garmin_graphs",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2019-06-24T17:22:12",
-      "createdAt": "2018-10-27T20:12:06Z"
     },
     {
       "id": "TimeFreqWorkshop",
@@ -2529,22 +2569,6 @@
       "repoTopics": [],
       "lastCommit": "2018-07-03T19:18:05",
       "createdAt": "2018-06-13T05:15:01Z"
-    },
-    {
-      "id": "AudienceEEG",
-      "title": "AudienceEEG",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/AudienceEEG",
-      "githubUrl": "https://github.com/kylemath/AudienceEEG",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2018-06-21T14:11:39",
-      "createdAt": "2018-06-18T17:30:36Z"
     },
     {
       "id": "FitnessMemory",

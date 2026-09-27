@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-09-27T06:24:21.342154+00:00",
+  "generatedAt": "2026-09-27T06:30:48.231311+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T06:28:22",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "gems",
+      "title": "Gems",
+      "oneLiner": "Gemstone explorer",
+      "categories": [
+        "simulation",
+        "webpage",
+        "gems"
+      ],
+      "tags": [
+        "simulation",
+        "webpage",
+        "gems"
+      ],
+      "demoUrl": "https://github.com/kylemath/gems",
+      "githubUrl": "https://github.com/kylemath/gems",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/gems/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-27T06:23:17",
+      "createdAt": "2026-04-08T21:50:00Z"
+    },
     {
       "id": "neuroAnimation",
       "title": "neuroAnimation",
@@ -134,22 +174,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-27T05:04:38",
       "createdAt": "2020-03-21T23:49:36Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T03:04:06",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "artOfSoccerWar",
@@ -909,30 +933,6 @@
       "repoTopics": [],
       "lastCommit": "2026-04-30T02:32:56",
       "createdAt": "2026-04-24T09:00:54Z"
-    },
-    {
-      "id": "gems",
-      "title": "Gems",
-      "oneLiner": "Gemstone explorer",
-      "categories": [
-        "simulation",
-        "webpage",
-        "gems"
-      ],
-      "tags": [
-        "simulation",
-        "webpage",
-        "gems"
-      ],
-      "demoUrl": "https://github.com/kylemath/gems",
-      "githubUrl": "https://github.com/kylemath/gems",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/gems/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-04-08T21:49:54",
-      "createdAt": "2026-04-08T21:50:00Z"
     },
     {
       "id": "EEGVideo",

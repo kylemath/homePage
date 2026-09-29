@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-09-28T06:27:21.202552+00:00",
+  "generatedAt": "2026-09-29T06:40:49.407672+00:00",
   "items": [
+    {
+      "id": "MathPlayground",
+      "title": "MathPlayground",
+      "oneLiner": "Playground for Math Webapps and Tests",
+      "categories": [
+        "Math",
+        "demos",
+        "web"
+      ],
+      "tags": [
+        "Math",
+        "demos",
+        "web"
+      ],
+      "demoUrl": "https://github.com/kylemath/MathPlayground",
+      "githubUrl": "https://github.com/kylemath/MathPlayground",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MathPlayground/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-28T20:08:53",
+      "createdAt": "2026-08-31T04:10:17Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-28T06:28:03",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "Scheduler",
       "title": "Scheduler",
@@ -72,22 +112,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-28T03:31:53",
       "createdAt": "2025-08-27T06:47:45Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T22:00:35",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "VibeScienceTalk",
@@ -755,30 +779,6 @@
       "repoTopics": [],
       "lastCommit": "2026-08-31T04:13:00",
       "createdAt": "2026-02-27T07:20:14Z"
-    },
-    {
-      "id": "MathPlayground",
-      "title": "MathPlayground",
-      "oneLiner": "Playground for Math Webapps and Tests",
-      "categories": [
-        "Math",
-        "demos",
-        "web"
-      ],
-      "tags": [
-        "Math",
-        "demos",
-        "web"
-      ],
-      "demoUrl": "https://github.com/kylemath/MathPlayground",
-      "githubUrl": "https://github.com/kylemath/MathPlayground",
-      "screenshot": "images/repos/MathPlayground.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-31T04:10:11",
-      "createdAt": "2026-08-31T04:10:17Z"
     },
     {
       "id": "pdf2jpeg",

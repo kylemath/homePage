@@ -1,9 +1,4 @@
 {
-<<<<<<< HEAD
-  "generatedAt": "2026-09-28T03:57:23.554508+00:00",
-  "items": [
-    {
-=======
   "generatedAt": "2026-09-30T06:23:40.857607+00:00",
   "items": [
     {
@@ -71,7 +66,6 @@
       "createdAt": "2025-10-14T04:53:18Z"
     },
     {
->>>>>>> 531d1247b864ed0a3f78b702e5b1c565e50eb9eb
       "id": "GraphColouring",
       "title": "OptodeGraphColouring",
       "oneLiner": "Optical Imaging optode assigning app",
@@ -120,25 +114,6 @@
       "createdAt": "2025-08-27T06:47:45Z"
     },
     {
-<<<<<<< HEAD
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T22:00:35",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
-=======
->>>>>>> 531d1247b864ed0a3f78b702e5b1c565e50eb9eb
       "id": "VibeScienceTalk",
       "title": "VibeScienceTalk",
       "oneLiner": "Visual overview and outlines for talk on vibe science",
@@ -953,8 +928,6 @@
       "id": "KyleName",
       "title": "KyleName",
       "oneLiner": "An analysis of the name kyle and possible hebrew names for kyles",
-<<<<<<< HEAD
-=======
       "categories": [
         "naming",
         "writing",
@@ -1000,10 +973,9 @@
       "createdAt": "2025-10-19T06:05:32Z"
     },
     {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
->>>>>>> 531d1247b864ed0a3f78b702e5b1c565e50eb9eb
+      "id": "KyleName",
+      "title": "KyleName",
+      "oneLiner": "An analysis of the name kyle and possible hebrew names for kyles",
       "categories": [
         "naming",
         "writing",
@@ -1045,8 +1017,32 @@
       "kind": "longform",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-05-20T21:05:53",
-      "createdAt": "2025-10-19T06:05:32Z"
+      "lastCommit": "2026-05-20T17:05:48",
+      "createdAt": "2025-12-28T07:21:38Z"
+    },
+    {
+      "id": "CableRack",
+      "title": "CableRack",
+      "oneLiner": "A rack to plug in loose cable ends with various inserts",
+      "categories": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "tags": [
+        "3d print",
+        "cables",
+        "electronics"
+      ],
+      "demoUrl": "https://github.com/kylemath/CableRack",
+      "githubUrl": "https://github.com/kylemath/CableRack",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-05-14T23:44:08",
+      "createdAt": "2026-01-24T20:12:02Z"
     },
     {
       "id": "Slides4Class",
@@ -1681,6 +1677,30 @@
       "createdAt": "2025-12-27T03:21:51Z"
     },
     {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://kylemath.github.io/Brainimation/",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": null,
+      "createdAt": "2025-12-26T20:06:34Z"
+    },
+    {
       "id": "StokesFluidDynamics",
       "title": "StokesFluidDynamics",
       "oneLiner": "Interactive 3D simulations exploring Stokes' Theorem through fluid dynamics",
@@ -1824,8 +1844,6 @@
       "createdAt": "2019-11-28T19:14:15Z"
     },
     {
-<<<<<<< HEAD
-=======
       "id": "ModernWebDesign",
       "title": "ModernWebDesign",
       "oneLiner": "A showcase of modern web design elements in 2025",
@@ -2013,7 +2031,6 @@
       "createdAt": "2025-11-16T23:24:08Z"
     },
     {
->>>>>>> 531d1247b864ed0a3f78b702e5b1c565e50eb9eb
       "id": "groupPaint",
       "title": "GroupPaint",
       "oneLiner": "I web app example to make an IP based group paint app on web",
@@ -2840,906 +2857,6 @@
       "createdAt": "2026-09-24T00:30:48Z"
     },
     {
-<<<<<<< HEAD
-      "id": "OpticalNeuralNet",
-      "title": "OpticalNeuralNet",
-      "oneLiner": "Optical based neural network paper review",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/OpticalNeuralNet",
-      "githubUrl": "https://github.com/kylemath/OpticalNeuralNet",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/OpticalNeuralNet/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-05-14T23:31:23Z"
-    },
-    {
-      "id": "wifi",
-      "title": "Wifi",
-      "oneLiner": "Wifi and network tests",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/wifi",
-      "githubUrl": "https://github.com/kylemath/wifi",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/wifi/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-05-14T21:28:12Z"
-    },
-    {
-      "id": "Roledex",
-      "title": "Roledex",
-      "oneLiner": "Manage roledex of contacts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/Roledex",
-      "githubUrl": "https://github.com/kylemath/Roledex",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Roledex/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-05-14T21:23:52Z"
-    },
-    {
-      "id": "NavierStokesEnergyLandscape",
-      "title": "NavierStokesEnergyLandscape",
-      "oneLiner": "Investigation into the Navier Stokes problem",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/NavierStokesEnergyLandscape",
-      "githubUrl": "https://github.com/kylemath/NavierStokesEnergyLandscape",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/NavierStokesEnergyLandscape/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-05-14T21:19:54Z"
-    },
-    {
-      "id": "GhostbustersConceptPlay",
-      "title": "GhostbustersConceptPlay",
-      "oneLiner": "A screenplay on the origin of ghostbusters",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/GhostbustersConceptPlay",
-      "githubUrl": "https://github.com/kylemath/GhostbustersConceptPlay",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GhostbustersConceptPlay/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-05-14T21:07:06Z"
-    },
-    {
-      "id": "BrainGames",
-      "title": "BrainGames",
-      "oneLiner": "Brains for your games",
-      "categories": [
-        "eeg",
-        "web",
-        "games"
-      ],
-      "tags": [
-        "eeg",
-        "web",
-        "games"
-      ],
-      "demoUrl": "https://kylemath.github.io/BrianGames",
-      "githubUrl": "https://github.com/kylemath/BrainGames",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainGames/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-04-24T09:00:54Z"
-    },
-    {
-      "id": "EEGVideo",
-      "title": "EEGVideo",
-      "oneLiner": "Record EEG while watching a synced video",
-      "categories": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "tags": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "demoUrl": "https://github.com/kylemath/EEGVideo",
-      "githubUrl": "https://github.com/kylemath/EEGVideo",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-03-09T20:11:16Z"
-    },
-    {
-      "id": "ReactionDiffusionMaze",
-      "title": "ReactionDiffusionMaze",
-      "oneLiner": "A slime maze of balls and diffusive media web app",
-      "categories": [
-        "web",
-        "game",
-        "slime"
-      ],
-      "tags": [
-        "math",
-        "game"
-      ],
-      "demoUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
-      "githubUrl": "https://github.com/kylemath/ReactionDiffusionMaze",
-      "screenshot": "images/repos/ReactionDiffusionMaze.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-03-09T01:49:08Z"
-    },
-    {
-      "id": "LaserPointer",
-      "title": "LaserPointer",
-      "oneLiner": "Testing ideas to create a laser pointer mouse",
-      "categories": [
-        "webcam",
-        "app",
-        "mouse"
-      ],
-      "tags": [
-        "UX",
-        "python",
-        "tracker"
-      ],
-      "demoUrl": "https://github.com/kylemath/LaserPointer",
-      "githubUrl": "https://github.com/kylemath/LaserPointer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/LaserPointer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-03-09T00:42:48Z"
-    },
-    {
-      "id": "FibrationTorusPuzzle",
-      "title": "FibrationTorusPuzzle",
-      "oneLiner": "A 3d printable hopf fibration torus segmentation",
-      "categories": [
-        "3d print",
-        "torus",
-        "fibration"
-      ],
-      "tags": [
-        "scad",
-        "3dprint"
-      ],
-      "demoUrl": "https://github.com/kylemath/FibrationTorusPuzzle",
-      "githubUrl": "https://github.com/kylemath/FibrationTorusPuzzle",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FibrationTorusPuzzle/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-03-05T04:48:55Z"
-    },
-    {
-      "id": "InterpretCognates",
-      "title": "InterpretCognates",
-      "oneLiner": "Interpretability of Translational Invariants",
-      "categories": [
-        "linguistics",
-        "AI",
-        "interpret"
-      ],
-      "tags": [
-        "linguistics",
-        "AI",
-        "interpret"
-      ],
-      "demoUrl": "https://kylemath.github.io/InterpretCognates",
-      "githubUrl": "https://github.com/kylemath/InterpretCognates",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-02-25T07:40:21Z"
-    },
-    {
-      "id": "MacbookSteeringGame",
-      "title": "MacbookSteeringGame",
-      "oneLiner": "A test of acc and gyro in macbook with simple lean racing game",
-      "categories": [],
-      "tags": [
-        "game",
-        "racing",
-        "sensor"
-      ],
-      "demoUrl": "https://kylemath.github.io/accGyro",
-      "githubUrl": "https://github.com/kylemath/accGyro",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/accGyro/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-02-23T21:37:33Z"
-    },
-    {
-      "id": "NumberblockToysPrint",
-      "title": "NumberblockToysPrint",
-      "oneLiner": "Print out numberblock toys and faces",
-      "categories": [
-        "3dprint",
-        "numberblocks",
-        "toys"
-      ],
-      "tags": [
-        "3dprint",
-        "numberblocks",
-        "toys"
-      ],
-      "demoUrl": "https://kylemath.github.io/NumberblockToysPrint",
-      "githubUrl": "https://github.com/kylemath/NumberblockToysPrint",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/NumberblockToysPrint/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-02-17T21:53:05Z"
-    },
-    {
-      "id": "Luo2024Extend",
-      "title": "Luo2024Extend",
-      "oneLiner": "Twitter PhD Project Extension Challange",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/Luo2024Extend",
-      "githubUrl": "https://github.com/kylemath/Luo2024Extend",
-      "screenshot": "images/repos/Luo2024Extend.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-02-17T04:19:11Z"
-    },
-    {
-      "id": "OfTwoMindsSoccer",
-      "title": "OfTwoMindsSoccer",
-      "oneLiner": "Paper discussion of motor interference in soccer",
-      "categories": [
-        "soccer",
-        "neuro",
-        "paper"
-      ],
-      "tags": [
-        "soccer",
-        "neuro",
-        "paper"
-      ],
-      "demoUrl": "https://kylemath.github.io/OfTwoMindsSoccer/",
-      "githubUrl": "https://github.com/kylemath/OfTwoMindsSoccer",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/OfTwoMindsSoccer/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-02-12T05:05:36Z"
-    },
-    {
-      "id": "FlowFinding",
-      "title": "FlowFinding",
-      "oneLiner": "A set of web demos to study concepts around finding and quantum collapse",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/FlowFinding",
-      "githubUrl": "https://github.com/kylemath/FlowFinding",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FlowFinding/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-01-30T22:49:49Z"
-    },
-    {
-      "id": "Genes",
-      "title": "GeneTwinExplorer",
-      "oneLiner": "Exploring genetic data comparison and vis",
-      "categories": [
-        "genetics",
-        "webpage",
-        "medicine"
-      ],
-      "tags": [
-        "genetics",
-        "webpage",
-        "medicine"
-      ],
-      "demoUrl": "https://kylemath.github.io/Genes",
-      "githubUrl": "https://github.com/kylemath/Genes",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Genes/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-01-30T20:57:46Z"
-    },
-    {
-      "id": "CableRack",
-      "title": "CableRack",
-      "oneLiner": "A rack to plug in loose cable ends with various inserts",
-      "categories": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "tags": [
-        "3d print",
-        "cables",
-        "electronics"
-      ],
-      "demoUrl": "https://github.com/kylemath/CableRack",
-      "githubUrl": "https://github.com/kylemath/CableRack",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/CableRack/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-01-24T20:12:02Z"
-    },
-    {
-      "id": "Slides4Class",
-      "title": "Slides4Class",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/Slides4Class",
-      "githubUrl": "https://github.com/kylemath/Slides4Class",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Slides4Class/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-01-13T08:15:06Z"
-    },
-    {
-      "id": "GALM",
-      "title": "GALM",
-      "oneLiner": "Generative Adversarial Language Models",
-      "categories": [
-        "LLM",
-        "training",
-        "GAN"
-      ],
-      "tags": [
-        "LLM",
-        "training",
-        "GAN"
-      ],
-      "demoUrl": "https://github.com/kylemath/GALM",
-      "githubUrl": "https://github.com/kylemath/GALM",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GALM/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-29T04:50:18Z"
-    },
-    {
-      "id": "magicGemWeb",
-      "title": "MagicGemWeb",
-      "oneLiner": "A web catalogue of magicGem demos and apps",
-      "categories": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "tags": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "demoUrl": "https://kylemath.github.io/magicGemWeb/",
-      "githubUrl": "https://github.com/kylemath/magicGemWeb",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-28T07:21:38Z"
-    },
-    {
-      "id": "VisualSystemModel",
-      "title": "VisualSystemModel",
-      "oneLiner": "A webbased connectionist model of the early visual system with webcam input",
-      "categories": [
-        "brain",
-        "vision",
-        "web",
-        "simulation"
-      ],
-      "tags": [
-        "brain",
-        "vision",
-        "web",
-        "simulation"
-      ],
-      "demoUrl": "https://github.com/kylemath/VisualSystemModel",
-      "githubUrl": "https://github.com/kylemath/VisualSystemModel",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/VisualSystemModel/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-28T00:42:38Z"
-    },
-    {
-      "id": "soccerSimV2Physics",
-      "title": "SoccerSimV2Physics",
-      "oneLiner": "A simulator using real physics and players",
-      "categories": [
-        "simulation",
-        "soccer",
-        "web"
-      ],
-      "tags": [
-        "simulation",
-        "soccer",
-        "web"
-      ],
-      "demoUrl": "https://github.com/kylemath/soccerSimV2Physics",
-      "githubUrl": "https://github.com/kylemath/soccerSimV2Physics",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/soccerSimV2Physics/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-27T22:10:27Z"
-    },
-    {
-      "id": "BrainsMindsMachinesTextbook",
-      "title": "BrainsMindsMachinesTextbook",
-      "oneLiner": "A standalone textbook for Intro Neuroscience",
-      "categories": [
-        "neuroscience",
-        "writing",
-        "text"
-      ],
-      "tags": [
-        "neuroscience",
-        "writing",
-        "text"
-      ],
-      "demoUrl": "https://kylemath.github.io/BrainsMindsMachinesTextbook",
-      "githubUrl": "https://github.com/kylemath/BrainsMindsMachinesTextbook",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainsMindsMachinesTextbook/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-27T03:21:51Z"
-    },
-    {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://kylemath.github.io/Brainimation/",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "StokesFluidDynamics",
-      "title": "StokesFluidDynamics",
-      "oneLiner": "Interactive 3D simulations exploring Stokes' Theorem through fluid dynamics",
-      "categories": [
-        "physics",
-        "web demo",
-        "fluid",
-        "3d simulation"
-      ],
-      "tags": [
-        "physics",
-        "web demo",
-        "fluid",
-        "3d",
-        "three.js",
-        "smoke",
-        "membrane",
-        "fluid interface"
-      ],
-      "demoUrl": "https://kylemath.github.io/StokesFluidDynamics",
-      "githubUrl": "https://github.com/kylemath/StokesFluidDynamics",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/StokesFluidDynamics/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-25T23:16:31Z"
-    },
-    {
-      "id": "ModernWebDesign",
-      "title": "ModernWebDesign",
-      "oneLiner": "A showcase of modern web design elements in 2025",
-      "categories": [
-        "web",
-        "design",
-        "art"
-      ],
-      "tags": [
-        "web",
-        "design",
-        "art"
-      ],
-      "demoUrl": "https://kylemath.github.io/ModernWebDesign",
-      "githubUrl": "https://github.com/kylemath/ModernWebDesign",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/ModernWebDesign/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-03T20:53:35Z"
-    },
-    {
-      "id": "ExileEnginePage",
-      "title": "ExileEnginePage",
-      "oneLiner": "long form - how society manufacters genius through outcating",
-      "categories": [
-        "writing",
-        "outsider",
-        "inventor"
-      ],
-      "tags": [
-        "writing",
-        "outsider",
-        "inventor"
-      ],
-      "demoUrl": "https://kylemath.github.io/ExileEnginePage",
-      "githubUrl": "https://github.com/kylemath/ExileEnginePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/ExileEnginePage/main/screenshot.png",
-      "status": "published",
-      "kind": "longform",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-12-02T21:48:36Z"
-    },
-    {
-      "id": "StrokeMuseTestAnalysis",
-      "title": "StrokeMuseTestAnalysis",
-      "oneLiner": "A webpage to load and plot single subject data from stroke eeg monitor app",
-      "categories": [
-        "eeg",
-        "stroke",
-        "muse"
-      ],
-      "tags": [
-        "eeg",
-        "stroke",
-        "muse"
-      ],
-      "demoUrl": "https://github.com/kylemath/StrokeMuseTestAnalysis",
-      "githubUrl": "https://github.com/kylemath/StrokeMuseTestAnalysis",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/StrokeMuseTestAnalysis/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-30T05:44:05Z"
-    },
-    {
-      "id": "MagicGemWebpage",
-      "title": "MagicGemWebpage",
-      "oneLiner": "A web catalogue of all 880 4x4 magic gems",
-      "categories": [
-        "magic squares"
-      ],
-      "tags": [
-        "magic squares"
-      ],
-      "demoUrl": "https://kylemath.github.io/MagicGemWebpage",
-      "githubUrl": "https://github.com/kylemath/MagicGemWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MagicGemWebpage/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-29T10:27:20Z"
-    },
-    {
-      "id": "shooterFocus",
-      "title": "ShooterFocus",
-      "oneLiner": "A game where the focus level of the shooter affects the focus mode of the game",
-      "categories": [
-        "game",
-        "eeg",
-        "shooting"
-      ],
-      "tags": [
-        "game",
-        "eeg shooting"
-      ],
-      "demoUrl": "https://kylemath.github.io/shooterFocus/",
-      "githubUrl": "https://github.com/kylemath/shooterFocus",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/shooterFocus/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-21T22:22:05Z"
-    },
-    {
-      "id": "biophotons",
-      "title": "Biophotons",
-      "oneLiner": "Exploring measuring of human biophotons with PMTs",
-      "categories": [
-        "test"
-      ],
-      "tags": [
-        "test"
-      ],
-      "demoUrl": "https://kylemath.github.io/biophotons",
-      "githubUrl": "https://github.com/kylemath/biophotons",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/biophotons/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-17T18:48:14Z"
-    },
-    {
-      "id": "soccerSim",
-      "title": "SoccerSim",
-      "oneLiner": "Soccer simulator to find optimal positions given random variables and real interactions",
-      "categories": [
-        "soccer",
-        "simulator",
-        "webpage"
-      ],
-      "tags": [
-        "soccer",
-        "simulator",
-        "webpage"
-      ],
-      "demoUrl": "https://soccersim.up.railway.app",
-      "githubUrl": "https://github.com/kylemath/soccerSim",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/soccerSim/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-17T00:56:53Z"
-    },
-    {
-      "id": "instaFaceReadX",
-      "title": "InstaFaceReadX",
-      "oneLiner": "The world's first **gamified, youth-focused social media platform** that combines the best features of Instagram, Facebook, YouTube, Twitter, Reddit, TikTok, and Snapchat while giving users complete control over their algorithms through an engaging game-like experience designed specifically for Gen Z and Gen Alpha",
-      "categories": [
-        "socialMedia",
-        "webpage",
-        "demo"
-      ],
-      "tags": [
-        "socialMedia",
-        "webpage",
-        "demo"
-      ],
-      "demoUrl": "https://kylemath.github.io/InstaFaceReadX",
-      "githubUrl": "https://github.com/kylemath/InstaFaceReadX",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/InstaFaceReadX/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-16T23:24:08Z"
-    },
-    {
-      "id": "todoManager",
-      "title": "todoManager",
-      "oneLiner": "I simple lightweight html todo list manager example using localStorage or can be hosted locally with database",
-      "categories": [
-        "todo",
-        "work",
-        "schedule"
-      ],
-      "tags": [
-        "todo",
-        "work",
-        "schedule"
-      ],
-      "demoUrl": "https://kylemath.github.io/todoManager",
-      "githubUrl": "https://github.com/kylemath/todoManager",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/todoManager/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-16T23:04:03Z"
-    },
-    {
-      "id": "SoraVideoGen",
-      "title": "SoraVideoGen",
-      "oneLiner": "Generate Sora videos using the API on local webpage",
-      "categories": [
-        "AI",
-        "videos",
-        "generative"
-      ],
-      "tags": [
-        "AI",
-        "videos",
-        "generative"
-      ],
-      "demoUrl": "https://github.com/kylemath/Sora",
-      "githubUrl": "https://github.com/kylemath/Sora",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Sora/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-15T17:39:37Z"
-    },
-    {
-      "id": "MidiRapper",
-      "title": "MidiRapper",
-      "oneLiner": "Use a midi keyboard to say a set of entered words in different tones depending on which key is pressed to simulate rapping",
-      "categories": [
-        "fun",
-        "music"
-      ],
-      "tags": [
-        "fun",
-        "music"
-      ],
-      "demoUrl": "https://kylemath.github.io/MidiRapper",
-      "githubUrl": "https://github.com/kylemath/MidiRapper",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MidiRapper/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-15T01:20:22Z"
-    },
-    {
-      "id": "Generation",
-      "title": "Local AI Image Generator",
-      "oneLiner": "Local generation of images with diffusive model API calls and local hosting, python backend",
-      "categories": [
-        "AI",
-        "Generative",
-        "Images"
-      ],
-      "tags": [
-        "AI",
-        "Generative",
-        "Images"
-      ],
-      "demoUrl": "none",
-      "githubUrl": "https://github.com/kylemath/Generation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Generation/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-14T23:53:57Z"
-    },
-    {
-      "id": "ForwardLookingInfraredImagingTutorial",
-      "title": "ForwardLookingInfraredImagingTutorial",
-      "oneLiner": "Forward looking infrared imaging tutorial and demos",
-      "categories": [
-        "physics",
-        "equipment",
-        "imaging"
-      ],
-      "tags": [
-        "physics",
-        "equipment",
-        "imaging"
-      ],
-      "demoUrl": "https://kylemath.github.io/flir",
-      "githubUrl": "https://github.com/kylemath/flir",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/flir/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "ClashRoyale",
-      "title": "ClashRoyale",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/ClashRoyale",
-      "githubUrl": "https://github.com/kylemath/ClashRoyale",
-      "screenshot": "images/repos/ClashRoyale.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-14T21:05:26Z"
-    },
-    {
-      "id": "collisionDetectionForcefield",
-      "title": "collisionDetectionForcefield",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/collisionDetectionForcefield",
-      "githubUrl": "https://github.com/kylemath/collisionDetectionForcefield",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/collisionDetectionForcefield/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2025-11-14T20:20:26Z"
-    },
-    {
-=======
->>>>>>> 531d1247b864ed0a3f78b702e5b1c565e50eb9eb
       "id": "powerLawSoccerAnalysisPage",
       "title": "powerLawSoccerAnalysisPage",
       "oneLiner": "GitHub repository",

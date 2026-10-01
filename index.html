@@ -201,13 +201,14 @@
         <label class="sort">Sort
             <select id="sort">
                 <option value="recent">Recent</option>
+                <option value="category">Category</option>
                 <option value="name">Name</option>
                 <option value="year">Year</option>
             </select>
         </label>
         <div class="views">
-            <button type="button" data-view="rows" class="active">Rows</button>
-            <button type="button" data-view="cards">Cards</button>
+            <button type="button" data-view="rows">Rows</button>
+            <button type="button" data-view="cards" class="active">Cards</button>
             <button type="button" data-view="table">Table</button>
         </div>
         <a class="edit" href="sorter.html">Edit categories</a>
@@ -220,7 +221,7 @@
 </div>
 <script>
 const PREVIEW = 10;
-const state = { q: '', sort: 'recent', view: 'rows', kind: 'all', topic: 'all', area: null, areaTopics: null, itemTopics: new Map(), rows: [], areas: [], links: [], open: new Set(), tableKey: 'title', tableDir: 1 };
+const state = { q: '', sort: 'recent', view: 'cards', kind: 'all', topic: 'all', area: null, areaTopics: null, itemTopics: new Map(), rows: [], areas: [], links: [], open: new Set(), tableKey: 'title', tableDir: 1 };
 const TYPE_IDS = new Set(['links', 'papers', 'news', 'writing', 'experience']);
 const KIND_CHIPS = [
     {id: 'all', title: 'All', tint: '#f5f5f6'},
@@ -448,6 +449,7 @@ function render() {
     const loose = looseItems();
     if (state.view === 'cards' || state.view === 'table') {
         let items = collectedItems(activeRows).concat(loose);
+        if (state.sort !== 'category') items = sortItems(items);
         if (state.view === 'table') {
             items.sort((a, b) => {
                 const av = tableValue(a, state.tableKey);

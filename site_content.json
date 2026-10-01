@@ -2358,7 +2358,10 @@
       "description": "Books, essays, and long-form projects.",
       "color": "#b48ef0",
       "names": [
+        "CodexMycelius",
+        "devineFracture",
         "GhostbustersConceptPlay",
+        "KyleName",
         "BrainsMindsMachinesTextbook",
         "ExileEnginePage",
         "LinoleumSecretHistory",
@@ -2475,7 +2478,13 @@
       "description": "",
       "color": "#9aa0aa",
       "names": [
-        "cantillate"
+        "devineFracture",
+        "KyleName",
+        "gems",
+        "cantillate",
+        "bees",
+        "mitz",
+        "devarimWordsScripts"
       ]
     },
     {
@@ -2635,6 +2644,7 @@
         "faceoff",
         "Apparition",
         "microgptJS",
+        "VectorVerse",
         "GALM",
         "WordSelectionLLM",
         "InterpretCognates"
@@ -2659,6 +2669,7 @@
       "description": "",
       "color": "#9aa0aa",
       "names": [
+        "AttentionalBlinkNeuroReview",
         "cross_colour",
         "necker_move",
         "micb",
@@ -2755,7 +2766,7 @@
       ]
     }
   ],
-  "colsPerRow": "auto",
+  "colsPerRow": "8",
   "areas": [
     {
       "id": "awareness",

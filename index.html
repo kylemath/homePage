@@ -599,6 +599,11 @@ Promise.all([
             return true;
         });
         if (extra.length) {
+            extra.forEach(item => {
+                const key = String(item.id).toLowerCase();
+                if (!state.itemTopics.has(key)) state.itemTopics.set(key, new Set());
+                state.itemTopics.get(key).add('general');
+            });
             state.rows.push({id: 'general', title: (general && general.title) || 'More projects', description: (general && general.description) || '', color: '#9aa0aa', items: extra});
         }
         renderIdentity(site.profile);

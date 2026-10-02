@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-10-01T07:00:07.152448+00:00",
+  "generatedAt": "2026-10-02T06:48:53.891248+00:00",
   "items": [
+    {
+      "id": "neuroAnimation",
+      "title": "neuroAnimation",
+      "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/neuroAnimation/",
+      "githubUrl": "https://github.com/kylemath/neuroAnimation",
+      "screenshot": "https://kylemath.github.io/neuroAnimation/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-01T21:19:13",
+      "createdAt": "2026-08-31T21:18:02Z"
+    },
+    {
+      "id": "psych275-textbook",
+      "title": "psych275-textbook",
+      "oneLiner": "PSYCH 275 textbook: Brains, Minds, and Machines",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/psych275-textbook/",
+      "githubUrl": "https://github.com/kylemath/psych275-textbook",
+      "screenshot": "images/repos/psych275-textbook.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-01T15:27:30",
+      "createdAt": "2026-08-31T20:33:58Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +46,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-01T04:38:35",
+      "lastCommit": "2026-10-01T07:00:48",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -272,22 +304,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-27T06:23:17",
       "createdAt": "2026-04-08T21:50:00Z"
-    },
-    {
-      "id": "neuroAnimation",
-      "title": "neuroAnimation",
-      "oneLiner": "3D neuroscience mechanism demos (action potential, membrane, synapse)",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/neuroAnimation/",
-      "githubUrl": "https://github.com/kylemath/neuroAnimation",
-      "screenshot": "https://kylemath.github.io/neuroAnimation/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T05:54:04",
-      "createdAt": "2026-08-31T21:18:02Z"
     },
     {
       "id": "garmin_graphs",
@@ -757,22 +773,6 @@
       "logo": "images/repos/p5.eegedu.png"
     },
     {
-      "id": "psych275-textbook",
-      "title": "psych275-textbook",
-      "oneLiner": "PSYCH 275 textbook: Brains, Minds, and Machines",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/psych275-textbook/",
-      "githubUrl": "https://github.com/kylemath/psych275-textbook",
-      "screenshot": "images/repos/psych275-textbook.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-08-31T21:18:07",
-      "createdAt": "2026-08-31T20:33:58Z"
-    },
-    {
       "id": "MusicPlayer",
       "title": "MusicPlayer",
       "oneLiner": "A web based player of local mp3s",
@@ -1164,7 +1164,7 @@
       "oneLiner": "Recording EEG during freethrow basketball shooting",
       "categories": [],
       "tags": [],
-      "demoUrl": "https://github.com/kylemath/FreethrowEEG",
+      "demoUrl": "https://kylemath.github.io/FreethrowEEG/",
       "githubUrl": "https://github.com/kylemath/FreethrowEEG",
       "screenshot": "images/repos/FreethrowEEG-poster.jpg",
       "status": null,

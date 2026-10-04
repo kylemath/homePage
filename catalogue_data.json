@@ -1,6 +1,190 @@
 {
-  "generatedAt": "2026-10-03T06:11:43.519174+00:00",
+  "generatedAt": "2026-10-04T06:43:50.921512+00:00",
   "items": [
+    {
+      "id": "mathlib4-planemap",
+      "title": "mathlib4-planemap",
+      "oneLiner": "Public working copy of the PlaneMap five-colour development",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/mathlib4-planemap",
+      "githubUrl": "https://github.com/kylemath/mathlib4-planemap",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-04T02:28:54",
+      "createdAt": "2026-10-04T02:19:01Z"
+    },
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColouring",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-04T02:08:47",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "resume",
+      "title": "Resume",
+      "oneLiner": "Resume Generator",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "http://github.com/kylemath/resume/resume.pdf",
+      "githubUrl": "https://github.com/kylemath/resume",
+      "screenshot": "",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T23:00:26",
+      "createdAt": "2026-10-03T23:00:30Z"
+    },
+    {
+      "id": "NOMADjs",
+      "title": "NOMADjs",
+      "oneLiner": "NOMADjs - Optical Imaging optode assigning app",
+      "categories": [
+        "optical imaging",
+        "webapp",
+        "optodes"
+      ],
+      "tags": [
+        "montage",
+        "fnirs",
+        "eros"
+      ],
+      "demoUrl": "https://kylemath.github.io/NOMADjs/",
+      "githubUrl": "https://github.com/kylemath/NOMADjs",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/NOMADjs/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T21:21:41",
+      "createdAt": "2025-12-31T06:52:45Z"
+    },
+    {
+      "id": "Spheres",
+      "title": "Spheres",
+      "oneLiner": "Agent Collective Intelligence system",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/Spheres/",
+      "githubUrl": "https://github.com/kylemath/Spheres",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Spheres/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T21:10:36",
+      "createdAt": "2026-10-03T21:09:57Z"
+    },
+    {
+      "id": "cursor-launcher",
+      "title": "Cursor Launcher",
+      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
+      "categories": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "tags": [
+        "coding",
+        "workflow",
+        "cursor"
+      ],
+      "demoUrl": "https://github.com/kylemath/cursor-launcher",
+      "githubUrl": "https://github.com/kylemath/cursor-launcher",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T19:45:34",
+      "createdAt": "2026-02-04T23:08:58Z"
+    },
+    {
+      "id": "cantillate",
+      "title": "Cantillate",
+      "oneLiner": "Cantillation practice for torah reading",
+      "categories": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "tags": [
+        "webpage",
+        "audio",
+        "torah"
+      ],
+      "demoUrl": "https://kylemath.github.io/cantillate/",
+      "githubUrl": "https://github.com/kylemath/cantillate",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T19:38:59",
+      "createdAt": "2026-07-17T19:02:01Z"
+    },
+    {
+      "id": "abcovid",
+      "title": "Abcovid",
+      "oneLiner": "Track covid in alberta",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/abcovid",
+      "githubUrl": "https://github.com/kylemath/abcovid",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/abcovid/master/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T19:18:11",
+      "createdAt": "2020-04-07T04:10:07Z"
+    },
+    {
+      "id": "FractalViewerWebpage",
+      "title": "FractalViewerWebpage",
+      "oneLiner": "View Fractals on the web",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/FractalViewerWebpage/",
+      "githubUrl": "https://github.com/kylemath/FractalViewerWebpage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T19:15:56",
+      "createdAt": "2025-11-14T07:16:31Z"
+    },
+    {
+      "id": "EmailCollector",
+      "title": "EmailCollector",
+      "oneLiner": "Collect emails in json format'",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/EmailCollector",
+      "githubUrl": "https://github.com/kylemath/EmailCollector",
+      "screenshot": "",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-03T19:12:47",
+      "createdAt": "2026-10-03T19:10:09Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +198,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-02T06:49:29",
+      "lastCommit": "2026-10-03T06:12:32",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -114,30 +298,6 @@
       "createdAt": "2025-10-14T04:53:18Z"
     },
     {
-      "id": "GraphColouring",
-      "title": "OptodeGraphColouring",
-      "oneLiner": "Optical Imaging optode assigning app",
-      "categories": [
-        "optical imaging",
-        "webapp",
-        "optodes"
-      ],
-      "tags": [
-        "montage",
-        "fnirs",
-        "eros"
-      ],
-      "demoUrl": "https://github.com/kylemath/GraphColouring",
-      "githubUrl": "https://github.com/kylemath/NOMADjs-NearInfraredOpticalMontageAutomatedDesign",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-28T03:54:18",
-      "createdAt": "2025-12-31T06:52:45Z"
-    },
-    {
       "id": "CodexMycelius",
       "title": "Codex Mycelius",
       "oneLiner": "Sacred text of the fungal network",
@@ -228,22 +388,6 @@
       "createdAt": "2025-08-27T06:49:23Z"
     },
     {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColouring",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T19:32:29",
-      "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
       "id": "VectorVerse",
       "title": "VectorVerse",
       "oneLiner": "Compare embeddings of various phrases in a neural network model",
@@ -322,22 +466,6 @@
       "createdAt": "2018-10-27T20:12:06Z"
     },
     {
-      "id": "FractalViewerWebpage",
-      "title": "FractalViewerWebpage",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/FractalViewerWebpage",
-      "githubUrl": "https://github.com/kylemath/FractalViewerWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/FractalViewerWebpage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T05:20:05",
-      "createdAt": "2025-11-14T07:16:31Z"
-    },
-    {
       "id": "AudienceEEG",
       "title": "AudienceEEG",
       "oneLiner": "GitHub repository",
@@ -390,22 +518,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-27T05:05:08",
       "createdAt": "2026-07-28T19:03:28Z"
-    },
-    {
-      "id": "abcovid",
-      "title": "abcovid",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/abcovid",
-      "githubUrl": "https://github.com/kylemath/abcovid",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/abcovid/master/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-27T05:04:51",
-      "createdAt": "2020-04-07T04:10:07Z"
     },
     {
       "id": "375Data_2020",
@@ -508,22 +620,6 @@
       "logo": "images/repos/myTestWebsite.svg"
     },
     {
-      "id": "testSep23",
-      "title": "TestSep23",
-      "oneLiner": "This is a test repo",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/testSep23",
-      "githubUrl": "https://github.com/kylemath/testSep23",
-      "screenshot": "",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-24T00:27:46",
-      "createdAt": "2026-09-24T00:27:54Z"
-    },
-    {
       "id": "Psych302-305-KyleMathewson",
       "title": "Psych302-305-KyleMathewson",
       "oneLiner": "Test",
@@ -588,30 +684,6 @@
       "createdAt": "2026-09-20T03:47:31Z"
     },
     {
-      "id": "cantillate",
-      "title": "Cantillate",
-      "oneLiner": "Cantillation practice for torah reading",
-      "categories": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "tags": [
-        "webpage",
-        "audio",
-        "torah"
-      ],
-      "demoUrl": "https://kylemath.github.io/cantillate/",
-      "githubUrl": "https://github.com/kylemath/cantillate",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cantillate/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-18T21:13:42",
-      "createdAt": "2026-07-17T19:02:01Z"
-    },
-    {
       "id": "RobotInvites",
       "title": "RobotInvites",
       "oneLiner": "How do we invite these robots to a party?",
@@ -634,30 +706,6 @@
       "repoTopics": [],
       "lastCommit": "2026-09-17T06:03:23",
       "createdAt": "2026-09-17T05:55:23Z"
-    },
-    {
-      "id": "cursor-launcher",
-      "title": "Cursor Launcher",
-      "oneLiner": "An easy to launch web interface to open cursor workspaces with cards",
-      "categories": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "tags": [
-        "coding",
-        "workflow",
-        "cursor"
-      ],
-      "demoUrl": "https://github.com/kylemath/cursor-launcher",
-      "githubUrl": "https://github.com/kylemath/cursor-launcher",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/cursor-launcher/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-16T16:10:32",
-      "createdAt": "2026-02-04T23:08:58Z"
     },
     {
       "id": "MidiHotkey",
@@ -2835,22 +2883,6 @@
       "createdAt": "2016-06-28T16:30:12Z"
     },
     {
-      "id": "mySecondTestWebsite",
-      "title": "mySecondTestWebsite",
-      "oneLiner": "test 2",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/mySecondTestWebsite",
-      "githubUrl": "https://github.com/kylemath/mySecondTestWebsite",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-09-24T00:30:48Z"
-    },
-    {
       "id": "powerLawSoccerAnalysisPage",
       "title": "powerLawSoccerAnalysisPage",
       "oneLiner": "GitHub repository",
@@ -2865,6 +2897,38 @@
       "repoTopics": [],
       "lastCommit": null,
       "createdAt": "2025-11-14T08:21:42Z"
+    },
+    {
+      "id": "testSep23",
+      "title": "TestSep23",
+      "oneLiner": "This is a test repo",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/testSep23",
+      "githubUrl": "https://github.com/kylemath/testSep23",
+      "screenshot": "",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-09-24T00:27:46",
+      "createdAt": "2026-09-24T00:27:54Z"
+    },
+    {
+      "id": "mySecondTestWebsite",
+      "title": "mySecondTestWebsite",
+      "oneLiner": "test 2",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/mySecondTestWebsite",
+      "githubUrl": "https://github.com/kylemath/mySecondTestWebsite",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": null,
+      "createdAt": "2026-09-24T00:30:48Z"
     },
     {
       "id": "artOfSoccerWarPlanning",

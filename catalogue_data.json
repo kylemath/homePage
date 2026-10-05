@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-10-04T06:43:50.921512+00:00",
+  "generatedAt": "2026-10-05T06:38:49.151895+00:00",
   "items": [
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColouring",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-05T00:20:36",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-04T06:44:50",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "mathlib4-planemap",
       "title": "mathlib4-planemap",
@@ -16,22 +48,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-04T02:28:54",
       "createdAt": "2026-10-04T02:19:01Z"
-    },
-    {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColouring",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-04T02:08:47",
-      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
       "id": "resume",
@@ -184,22 +200,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-03T19:12:47",
       "createdAt": "2026-10-03T19:10:09Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-03T06:12:32",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "neuroAnimation",

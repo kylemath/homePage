@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T06:38:49.151895+00:00",
+  "generatedAt": "2026-10-06T07:20:13.585286+00:00",
   "items": [
     {
       "id": "GraphColouring",
@@ -7,14 +7,14 @@
       "oneLiner": "Investigations into graph colouring solutions",
       "categories": [],
       "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColouring",
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
       "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColouring/main/screenshot.png",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-05T00:20:36",
+      "lastCommit": "2026-10-05T21:56:36",
       "createdAt": "2026-05-14T20:51:23Z"
     },
     {
@@ -30,7 +30,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-04T06:44:50",
+      "lastCommit": "2026-10-05T06:39:25",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T07:20:13.585286+00:00",
+  "generatedAt": "2026-10-07T06:58:39.933004+00:00",
   "items": [
     {
       "id": "GraphColouring",
@@ -14,8 +14,24 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-05T21:56:36",
+      "lastCommit": "2026-10-07T06:54:21",
       "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "Psych302-305-KyleMathewson",
+      "title": "Psych302-305-KyleMathewson",
+      "oneLiner": "Test",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
+      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "screenshot": "images/repos/Psych302-305-KyleMathewson.jpg",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-07T01:14:04",
+      "createdAt": "2026-09-01T22:38:56Z"
     },
     {
       "id": "homePage",
@@ -30,7 +46,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-05T06:39:25",
+      "lastCommit": "2026-10-06T07:21:04",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -618,22 +634,6 @@
       "lastCommit": "2026-09-24T01:52:05",
       "createdAt": "2026-09-24T00:29:35Z",
       "logo": "images/repos/myTestWebsite.svg"
-    },
-    {
-      "id": "Psych302-305-KyleMathewson",
-      "title": "Psych302-305-KyleMathewson",
-      "oneLiner": "Test",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
-      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
-      "screenshot": "images/repos/Psych302-305-KyleMathewson.jpg",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-23T03:49:29",
-      "createdAt": "2026-09-01T22:38:56Z"
     },
     {
       "id": "bees",

@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-10-23T05:50:21.712498+00:00",
+  "generatedAt": "2026-10-24T05:31:48.962538+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-23T05:51:04",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "GraphColouring",
       "title": "GraphColouring",
@@ -16,22 +32,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-22T22:48:58",
       "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-22T05:52:10",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "Psych302-305-KyleMathewson",

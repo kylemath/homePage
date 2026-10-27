@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-10-26T05:51:33.948265+00:00",
+  "generatedAt": "2026-10-27T06:04:08.507164+00:00",
   "items": [
+    {
+      "id": "MusicPlayer",
+      "title": "MusicPlayer",
+      "oneLiner": "A web based player of local mp3s",
+      "categories": [
+        "music",
+        "web",
+        "player"
+      ],
+      "tags": [
+        "music",
+        "web",
+        "player"
+      ],
+      "demoUrl": "https://kylemath.github.io/KyTunes",
+      "githubUrl": "https://github.com/kylemath/KyTunes",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/KyTunes/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-26T20:06:21",
+      "createdAt": "2026-02-27T07:20:14Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +38,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-25T05:50:04",
+      "lastCommit": "2026-10-26T05:52:11",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -48,30 +72,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-21T18:39:53",
       "createdAt": "2026-09-01T22:38:56Z"
-    },
-    {
-      "id": "MusicPlayer",
-      "title": "MusicPlayer",
-      "oneLiner": "A web based player of local mp3s",
-      "categories": [
-        "music",
-        "web",
-        "player"
-      ],
-      "tags": [
-        "music",
-        "web",
-        "player"
-      ],
-      "demoUrl": "https://kylemath.github.io/KyTunes",
-      "githubUrl": "https://github.com/kylemath/KyTunes",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/KyTunes/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-19T18:17:43",
-      "createdAt": "2026-02-27T07:20:14Z"
     },
     {
       "id": "4Square",

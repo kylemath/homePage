@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-10-28T06:43:55.887917+00:00",
+  "generatedAt": "2026-10-29T06:51:31.713287+00:00",
   "items": [
+    {
+      "id": "pinmind",
+      "title": "PinMind",
+      "oneLiner": "Personal Pinterest and aesthetic taste engine that extracts visual DNA from uploaded images, defines your interests, and generates similar visual ideas.",
+      "categories": [
+        "ai",
+        "design",
+        "pinterest",
+        "visual-discovery",
+        "generative-art",
+        "web-app"
+      ],
+      "tags": [
+        "ai",
+        "design",
+        "pinterest",
+        "visual-discovery",
+        "generative-art",
+        "web-app"
+      ],
+      "demoUrl": "https://kylemath.github.io/pinmind",
+      "githubUrl": "https://github.com/kylemath/pinmind",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/pinmind/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-29T04:38:02",
+      "createdAt": "2026-10-29T04:37:53Z"
+    },
+    {
+      "id": "Psych302-305-KyleMathewson",
+      "title": "Psych302-305-KyleMathewson",
+      "oneLiner": "Test",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
+      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
+      "screenshot": "images/repos/Psych302-305-KyleMathewson.jpg",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-28T17:21:28",
+      "createdAt": "2026-09-01T22:38:56Z"
+    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -14,7 +60,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-27T06:04:49",
+      "lastCommit": "2026-10-28T06:44:46",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -56,22 +102,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-22T22:48:58",
       "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "Psych302-305-KyleMathewson",
-      "title": "Psych302-305-KyleMathewson",
-      "oneLiner": "Test",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/Psych302-305-KyleMathewson/",
-      "githubUrl": "https://github.com/kylemath/Psych302-305-KyleMathewson",
-      "screenshot": "images/repos/Psych302-305-KyleMathewson.jpg",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-21T18:39:53",
-      "createdAt": "2026-09-01T22:38:56Z"
     },
     {
       "id": "4Square",

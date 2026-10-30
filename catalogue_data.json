@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-10-29T06:51:31.713287+00:00",
+  "generatedAt": "2026-10-30T06:53:45.900452+00:00",
   "items": [
+    {
+      "id": "magicGem",
+      "title": "MagicGem",
+      "oneLiner": "Magic gems magic squares framework",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/magicGem",
+      "githubUrl": "https://github.com/kylemath/magicGem",
+      "screenshot": "",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-29T18:05:20",
+      "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "PsychUAlbertaClassGraph",
+      "title": "PsychUAlbertaClassGraph",
+      "oneLiner": "PsychUAlbertaClassGraph",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/PsychUAlbertaClassGraph/",
+      "githubUrl": "https://github.com/kylemath/PsychUAlbertaClassGraph",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-29T16:32:40",
+      "createdAt": "2026-10-29T16:30:57Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-29T06:52:24",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "pinmind",
       "title": "PinMind",
@@ -46,22 +94,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-28T17:21:28",
       "createdAt": "2026-09-01T22:38:56Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-28T06:44:46",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "MusicPlayer",

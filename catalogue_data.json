@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T06:53:45.900452+00:00",
+  "generatedAt": "2026-10-31T06:45:56.201294+00:00",
   "items": [
     {
       "id": "magicGem",
@@ -14,8 +14,24 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-29T18:05:20",
+      "lastCommit": "2026-10-30T21:47:41",
       "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-30T06:54:22",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "PsychUAlbertaClassGraph",
@@ -32,22 +48,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-29T16:32:40",
       "createdAt": "2026-10-29T16:30:57Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-29T06:52:24",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "pinmind",

@@ -1,22 +1,6 @@
 {
-  "generatedAt": "2026-11-02T07:26:30.123174+00:00",
+  "generatedAt": "2026-11-02T21:52:01.190839+00:00",
   "items": [
-    {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-31T22:03:32",
-      "createdAt": "2026-05-14T20:51:23Z"
-    },
     {
       "id": "homePage",
       "title": "homePage",
@@ -30,12 +14,74 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-31T06:46:32",
+      "lastCommit": "2026-11-02T21:49:30",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
+      "id": "magicSquare",
+      "title": "Magic Square",
+      "oneLiner": "Magic Square Physical Solver project.",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/magicSquare_physicalSolver",
+      "githubUrl": "https://github.com/kylemath/magicSquare_physicalSolver",
+      "screenshot": "https://kylemath.github.io/magicSquare_physicalSolver/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T21:44:36",
+      "createdAt": "2026-09-05T02:20:14Z"
+    },
+    {
+      "id": "MagicGemWebpage",
+      "title": "MagicGemWebpage",
+      "oneLiner": "A web catalogue of all 880 4x4 magic gems",
+      "categories": [
+        "magic squares"
+      ],
+      "tags": [
+        "magic squares"
+      ],
+      "demoUrl": "https://kylemath.github.io/MagicGemWebpage",
+      "githubUrl": "https://github.com/kylemath/MagicGemWebpage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/MagicGemWebpage/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T21:44:34",
+      "createdAt": "2025-11-29T10:27:20Z"
+    },
+    {
+      "id": "magicGemWeb",
+      "title": "MagicGemWeb",
+      "oneLiner": "A web catalogue of magicGem demos and apps",
+      "categories": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "tags": [
+        "math",
+        "web",
+        "interactive",
+        "magicGem"
+      ],
+      "demoUrl": "https://kylemath.github.io/magicGemWeb/",
+      "githubUrl": "https://github.com/kylemath/magicGemWeb",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T21:44:32",
+      "createdAt": "2025-12-28T07:21:38Z"
+    },
+    {
       "id": "magicGem",
-      "title": "Magic Gems",
+      "title": "Magic Gems: Geometry, Moments & Mechanics of Magic Squares",
       "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
       "categories": [
         "mathematics",
@@ -58,8 +104,64 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-10-30T21:47:41",
+      "lastCommit": "2026-11-02T21:44:05",
       "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "InterpretCognates",
+      "title": "InterpretCognates",
+      "oneLiner": "Interpretability of Translational Invariants",
+      "categories": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "tags": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "demoUrl": "https://kylemath.github.io/InterpretCognates",
+      "githubUrl": "https://github.com/kylemath/InterpretCognates",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T20:31:14",
+      "createdAt": "2026-02-25T07:40:21Z"
+    },
+    {
+      "id": "4Square",
+      "title": "4Square",
+      "oneLiner": "Fill the Hole: a Kempe-swap puzzle game about the Four Colour Theorem",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/4Square/",
+      "githubUrl": "https://github.com/kylemath/4Square",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T20:11:50",
+      "createdAt": "2026-10-11T08:02:00Z"
+    },
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-10-31T22:03:32",
+      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
       "id": "PsychUAlbertaClassGraph",
@@ -146,22 +248,6 @@
       "repoTopics": [],
       "lastCommit": "2026-10-26T20:06:21",
       "createdAt": "2026-02-27T07:20:14Z"
-    },
-    {
-      "id": "4Square",
-      "title": "4Square",
-      "oneLiner": "Fill the Hole: a Kempe-swap puzzle game about the Four Colour Theorem",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/4Square/",
-      "githubUrl": "https://github.com/kylemath/4Square",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-19T06:03:18",
-      "createdAt": "2026-10-11T08:02:00Z"
     },
     {
       "id": "nehiyoMTB",
@@ -950,22 +1036,6 @@
       "createdAt": "2026-09-05T02:28:29Z"
     },
     {
-      "id": "magicSquare",
-      "title": "Magic Square",
-      "oneLiner": "Magic Square Physical Solver project.",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/magicSquare_physicalSolver",
-      "githubUrl": "https://github.com/kylemath/magicSquare_physicalSolver",
-      "screenshot": "https://kylemath.github.io/magicSquare_physicalSolver/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-05T02:20:21",
-      "createdAt": "2026-09-05T02:20:14Z"
-    },
-    {
       "id": "p5.eegedu",
       "title": "p5.eegedu",
       "oneLiner": "A live coding environment in p5 which includes bluetooth transmitted brain activity as input variables",
@@ -1197,32 +1267,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-20T21:02:34",
       "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "magicGemWeb",
-      "title": "MagicGemWeb",
-      "oneLiner": "A web catalogue of magicGem demos and apps",
-      "categories": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "tags": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
-      ],
-      "demoUrl": "https://kylemath.github.io/magicGemWeb/",
-      "githubUrl": "https://github.com/kylemath/magicGemWeb",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T17:05:48",
-      "createdAt": "2025-12-28T07:21:38Z"
     },
     {
       "id": "CableRack",
@@ -1478,30 +1522,6 @@
       "repoTopics": [],
       "lastCommit": "2026-03-09T00:42:44",
       "createdAt": "2026-03-09T00:42:48Z"
-    },
-    {
-      "id": "InterpretCognates",
-      "title": "InterpretCognates",
-      "oneLiner": "Interpretability of Translational Invariants",
-      "categories": [
-        "linguistics",
-        "AI",
-        "interpret"
-      ],
-      "tags": [
-        "linguistics",
-        "AI",
-        "interpret"
-      ],
-      "demoUrl": "https://kylemath.github.io/InterpretCognates",
-      "githubUrl": "https://github.com/kylemath/InterpretCognates",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-06T23:25:53",
-      "createdAt": "2026-02-25T07:40:21Z"
     },
     {
       "id": "FibrationTorusPuzzle",
@@ -2118,26 +2138,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-01T19:50:55",
       "createdAt": "2025-11-14T23:53:57Z"
-    },
-    {
-      "id": "MagicGemWebpage",
-      "title": "MagicGemWebpage",
-      "oneLiner": "A web catalogue of all 880 4x4 magic gems",
-      "categories": [
-        "magic squares"
-      ],
-      "tags": [
-        "magic squares"
-      ],
-      "demoUrl": "https://kylemath.github.io/MagicGemWebpage",
-      "githubUrl": "https://github.com/kylemath/MagicGemWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MagicGemWebpage/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-30T20:07:37",
-      "createdAt": "2025-11-29T10:27:20Z"
     },
     {
       "id": "shooterFocus",
@@ -3035,94 +3035,6 @@
       "repoTopics": [],
       "lastCommit": null,
       "createdAt": "2025-11-14T08:21:42Z"
-    },
-    {
-      "id": "testSep23",
-      "title": "TestSep23",
-      "oneLiner": "This is a test repo",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/testSep23",
-      "githubUrl": "https://github.com/kylemath/testSep23",
-      "screenshot": "",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-09-24T00:27:46",
-      "createdAt": "2026-09-24T00:27:54Z"
-    },
-    {
-      "id": "mySecondTestWebsite",
-      "title": "mySecondTestWebsite",
-      "oneLiner": "test 2",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/mySecondTestWebsite",
-      "githubUrl": "https://github.com/kylemath/mySecondTestWebsite",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": null,
-      "createdAt": "2026-09-24T00:30:48Z"
-    },
-    {
-      "id": "artOfSoccerWarPlanning",
-      "title": "artOfSoccerWarPlanning",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
-      "githubUrl": "https://github.com/kylemath/artOfSoccerWarPlanning",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-04T17:02:54",
-      "createdAt": "2025-11-04T17:03:28Z"
-    },
-    {
-      "id": "callingCenter",
-      "title": "CallingCenter",
-      "oneLiner": "A webpage to call individuals on a calling list one by one automatically",
-      "categories": [
-        "webpage",
-        "calling",
-        "election"
-      ],
-      "tags": [
-        "webpage",
-        "calling",
-        "election"
-      ],
-      "demoUrl": "http://kylemath.github.io/callingCenter",
-      "githubUrl": "https://github.com/kylemath/callingCenter",
-      "screenshot": "",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-12-27T22:37:15",
-      "createdAt": "2025-12-27T22:37:09Z"
-    },
-    {
-      "id": "flir",
-      "title": "flir",
-      "oneLiner": "GitHub repository",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/flir",
-      "githubUrl": "https://github.com/kylemath/flir",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/flir/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2025-11-14T21:57:10",
-      "createdAt": "2025-11-14T21:57:02Z"
     }
   ]
 }

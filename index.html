@@ -560,7 +560,7 @@ Promise.all([
     fetch('site_content.json').then(r => r.json()),
     fetch('catalogue_data.json').then(r => r.json())
 ]).then(([site, catalogue]) => {
-    const projects = (catalogue.items || []).map(item => ({...item, kind: item.kind || 'project', url: item.demoUrl || item.githubUrl}));
+    const projects = (catalogue.items || []).filter(item => item.status !== 'archived' && !item.archived).map(item => ({...item, kind: item.kind || 'project', url: item.demoUrl || item.githubUrl}));
     const projectMap = byId(projects);
     state.areas = site.areas || [];
     state.links = site.links || [];

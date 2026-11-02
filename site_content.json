@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Kyle Elliott Mathewson, PhD",
-    "role": "Associate Professor, Psychology · Director, APPLab · University of Alberta",
+    "role": "Associate Professor, Psychology \u00b7 Director, APPLab \u00b7 University of Alberta",
     "email": "",
     "phone": "(780) 492-2662",
     "office": "",
@@ -267,7 +267,7 @@
       "id": "exp-assoc",
       "kind": "role",
       "title": "Associate Professor",
-      "oneLiner": "Psychology, University of Alberta. Director, APPLab. 2019–present.",
+      "oneLiner": "Psychology, University of Alberta. Director, APPLab. 2019\u2013present.",
       "year": 2019,
       "url": "https://apps.ualberta.ca/directory/person/kmathews",
       "mark": "UA"
@@ -276,7 +276,7 @@
       "id": "exp-asst",
       "kind": "role",
       "title": "Assistant Professor",
-      "oneLiner": "Psychology, University of Alberta. Established APPLab. 2013–2019.",
+      "oneLiner": "Psychology, University of Alberta. Established APPLab. 2013\u20132019.",
       "year": 2013,
       "url": "https://apps.ualberta.ca/directory/person/kmathews",
       "mark": "UA"
@@ -285,7 +285,7 @@
       "id": "exp-beckman",
       "kind": "role",
       "title": "Postdoctoral Fellow",
-      "oneLiner": "Beckman Institute, University of Illinois. Fabiani & Gratton. 2011–2013.",
+      "oneLiner": "Beckman Institute, University of Illinois. Fabiani & Gratton. 2011\u20132013.",
       "year": 2011,
       "url": "https://beckman.illinois.edu/",
       "mark": "UI"
@@ -303,7 +303,7 @@
       "id": "exp-blueberry",
       "kind": "role",
       "title": "Chief Scientist",
-      "oneLiner": "Blueberry, Toronto. Scientific leadership, 2021–2023. Advisor, 2020–2021.",
+      "oneLiner": "Blueberry, Toronto. Scientific leadership, 2021\u20132023. Advisor, 2020\u20132021.",
       "year": 2021,
       "url": "https://www.linkedin.com/in/ky-mathewson-856279124/",
       "mark": "BB"
@@ -315,7 +315,7 @@
       "oneLiner": "Juventus Soccer Club, 2013 Boys. Player, Edmonton and District Soccer Association.",
       "year": 2013,
       "url": "https://juventus2013.netlify.app/",
-      "mark": "⚽"
+      "mark": "\u26bd"
     }
   ],
   "stages": [
@@ -421,7 +421,7 @@
     {
       "id": "paper-2025-abstract-tmp30-combining-the-los-angeles-motor-scale-and",
       "kind": "paper",
-      "title": "Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute …",
+      "title": "Abstract TMP30: Combining the Los Angeles Motor Scale and the Muse Portable Electroencephalography System Improves the Accuracy of Large Vessel Occlusion Detection in Acute\u00a0\u2026",
       "authors": "M Kate et al.",
       "year": 2025,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:kJDgFkosVoMC",
@@ -488,7 +488,7 @@
     {
       "id": "paper-2022-recommendations-and-publication-guidelines-for-studies-u",
       "kind": "paper",
-      "title": "Recommendations and publication guidelines for studies using frequency domain and time‐frequency domain analyses of neural time series",
+      "title": "Recommendations and publication guidelines for studies using frequency domain and time\u2010frequency domain analyses of neural time series",
       "authors": "A Keil et al.",
       "year": 2022,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:QsaTk4IG4EwC",
@@ -579,7 +579,7 @@
     {
       "id": "paper-2022-connecting-covert-attention-and-visual-perception-to-the",
       "kind": "paper",
-      "title": "Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using …",
+      "title": "Connecting Covert Attention and Visual Perception to the Spatiotemporal Dynamics of Alpha Band Activity, Cross-Frequency Coupling (CFC), and Functional Connectivity using\u00a0\u2026",
       "authors": "SS Sheldon et al.",
       "year": 2022,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:aIdbFUkbNIkC",
@@ -769,7 +769,7 @@
     {
       "id": "paper-2019-electrophysiological-correlates-of-hyperoxia-during-rest",
       "kind": "paper",
-      "title": "Electrophysiological correlates of hyperoxia during resting‐state EEG in awake human subjects",
+      "title": "Electrophysiological correlates of hyperoxia during resting\u2010state EEG in awake human subjects",
       "authors": "SAD Kizuk et al.",
       "year": 2019,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:FiDNX6EVdGUC",
@@ -870,7 +870,7 @@
     {
       "id": "paper-2018-two-layered-and-stretchable-e-textile-patches-for-wearab",
       "kind": "paper",
-      "title": "Two‐layered and stretchable e‐textile patches for wearable healthcare electronics",
+      "title": "Two\u2010layered and stretchable e\u2010textile patches for wearable healthcare electronics",
       "authors": "TG La et al.",
       "year": 2018,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:3bvyWxjaHKcC",
@@ -1249,7 +1249,7 @@
     {
       "id": "paper-2014-providing-views-of-the-driving-scene-to-drivers-conversa",
       "kind": "paper",
-      "title": "Providing views of the driving scene to drivers’ conversation partners mitigates cell-phone-related distraction",
+      "title": "Providing views of the driving scene to drivers\u2019 conversation partners mitigates cell-phone-related distraction",
       "authors": "JG Gaspar et al.",
       "year": 2014,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:owLR8QvbtFgC",
@@ -1399,7 +1399,7 @@
     {
       "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg",
       "kind": "paper",
-      "title": "WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED …",
+      "title": "WHO'S CONTROLLING THE BRAKES? PULSED INHIBITORY ALPHA EEG CORRELATES WITH PREPARATORY ACTIVITY IN THE FRONTO-PARIETAL NETWORK MEASURED CONCURRENTLY WITH THE EVENT-RELATED\u00a0\u2026",
       "authors": "KE Mathewson et al.",
       "year": 2011,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:jU7OWUQzBzMC",
@@ -1410,7 +1410,7 @@
     {
       "id": "paper-2011-who-s-controlling-the-brakes-pulsed-inhibitory-alpha-eeg-2",
       "kind": "paper",
-      "title": "Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical …",
+      "title": "Who's controlling the brakes? Pulsed inhibitory alpha EEG is linked to preparatory activity in the fronto-parietal network measured concurrently with the event-related optical\u00a0\u2026",
       "authors": "KE Mathewson et al.",
       "year": 2011,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:SjuI4pbJlxcC",
@@ -1488,7 +1488,7 @@
     {
       "id": "paper-2009-to-see-or-not-to-see-prestimulus-phase-predicts-visual-a",
       "kind": "paper",
-      "title": "To see or not to see: prestimulus α phase predicts visual awareness",
+      "title": "To see or not to see: prestimulus \u03b1 phase predicts visual awareness",
       "authors": "KE Mathewson et al.",
       "year": 2009,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wgK6LCYAAAAJ&pagesize=100&citation_for_view=wgK6LCYAAAAJ:u5HHmVD_uO8C",
@@ -1977,6 +1977,7 @@
       "id": "f579b876-e26f-473c-ac80-1569cb5d72aa",
       "title": "MagicSquares",
       "names": [
+        "magicGem",
         "magicGemWeb",
         "MagicGemWebpage"
       ],
@@ -2401,6 +2402,7 @@
       "description": "",
       "color": "#9aa0aa",
       "names": [
+        "magicGem",
         "MathPlayground",
         "hadwigerNelson",
         "NavierStokesEnergyLandscape",
@@ -2590,6 +2592,7 @@
       "description": "",
       "color": "#9aa0aa",
       "names": [
+        "magicGem",
         "magicGemWeb",
         "MagicGemWebpage",
         "paper-2025-magic-gems-a-polyhedral-framework-for-magic-squares",

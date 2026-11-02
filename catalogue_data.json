@@ -35,13 +35,25 @@
     },
     {
       "id": "magicGem",
-      "title": "MagicGem",
-      "oneLiner": "Magic gems magic squares framework",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/magicGem",
+      "title": "Magic Gems",
+      "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
+      "categories": [
+        "mathematics",
+        "geometry",
+        "physics",
+        "interactive",
+        "3d-printing"
+      ],
+      "tags": [
+        "magic-squares",
+        "convex-polyhedra",
+        "rigid-body-mechanics",
+        "mathematical-sculpture",
+        "papercraft"
+      ],
+      "demoUrl": "https://kylemath.github.io/magicGem/",
       "githubUrl": "https://github.com/kylemath/magicGem",
-      "screenshot": "",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGem/main/paper_C_mechanics/figures/fig1_hero_gallery.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],

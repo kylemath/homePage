@@ -32,7 +32,7 @@ def get_github_repos(username, token=None):
         repos.extend(payload)
         page += 1
 
-    original_repos = [repo for repo in repos if not repo.get('fork', False)]
+    original_repos = [repo for repo in repos if not repo.get('fork', False) and not repo.get('archived', False)]
 
     for repo in original_repos:
         commits_url = f'https://api.github.com/repos/{username}/{repo["name"]}/commits'
@@ -242,7 +242,7 @@ def write_catalogue_file(entries: List[Dict]):
     github_ids = {entry['id'] for entry in entries}
     
     # Keep manual entries that aren't in GitHub
-    manual_entries = [e for e in existing_entries if e.get('id') not in github_ids]
+    manual_entries = [e for e in existing_entries if e.get('id') not in github_ids and not (e.get('githubUrl') or '').startswith(f'https://github.com/{USERNAME}/')]
     
     if manual_entries:
         print(f"📝 Preserving {len(manual_entries)} manually added entries")

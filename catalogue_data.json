@@ -1,83 +1,90 @@
 {
-  "generatedAt": "2026-11-02T21:52:01.190839+00:00",
+  "generatedAt": "2026-11-03T07:42:12.640140+00:00",
   "items": [
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
       "categories": [],
       "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-02T21:49:30",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
-      "id": "magicSquare",
-      "title": "Magic Square",
-      "oneLiner": "Magic Square Physical Solver project.",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/magicSquare_physicalSolver",
-      "githubUrl": "https://github.com/kylemath/magicSquare_physicalSolver",
-      "screenshot": "https://kylemath.github.io/magicSquare_physicalSolver/screenshot.png",
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-02T21:44:36",
-      "createdAt": "2026-09-05T02:20:14Z"
+      "lastCommit": "2026-11-03T06:02:28",
+      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
-      "id": "MagicGemWebpage",
-      "title": "MagicGemWebpage",
-      "oneLiner": "A web catalogue of all 880 4x4 magic gems",
+      "id": "EEGEdu",
+      "title": "EEGEdu",
+      "oneLiner": "An interactive website to learn about brain waves",
       "categories": [
-        "magic squares"
+        "eeg",
+        "education",
+        "neuroscience"
       ],
       "tags": [
-        "magic squares"
+        "eeg",
+        "education",
+        "neuroscience"
       ],
-      "demoUrl": "https://kylemath.github.io/MagicGemWebpage",
-      "githubUrl": "https://github.com/kylemath/MagicGemWebpage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/MagicGemWebpage/main/screenshot.png",
+      "demoUrl": "https://eegedu.com/",
+      "githubUrl": "https://github.com/kylemath/EEGEdu",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/screenshot.png",
       "status": "published",
-      "kind": "project",
+      "kind": "page",
       "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-02T21:44:34",
-      "createdAt": "2025-11-29T10:27:20Z"
+      "repoTopics": [
+        "bci",
+        "brain-waves",
+        "curriculum",
+        "data-analysis",
+        "data-visualization",
+        "ecg",
+        "educational",
+        "eeg",
+        "eeg-data",
+        "frequency-domain",
+        "js",
+        "muse",
+        "muse-data",
+        "muse-headsets",
+        "muse-lsl",
+        "neuroscience-methods",
+        "neurotech",
+        "openbci",
+        "plotting",
+        "react-native"
+      ],
+      "lastCommit": "2026-11-03T04:06:55",
+      "createdAt": "2019-11-28T19:14:15Z"
     },
     {
-      "id": "magicGemWeb",
-      "title": "MagicGemWeb",
-      "oneLiner": "A web catalogue of magicGem demos and apps",
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
       "categories": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
+        "eeg",
+        "coding",
+        "web"
       ],
       "tags": [
-        "math",
-        "web",
-        "interactive",
-        "magicGem"
+        "eeg",
+        "coding",
+        "web"
       ],
-      "demoUrl": "https://kylemath.github.io/magicGemWeb/",
-      "githubUrl": "https://github.com/kylemath/magicGemWeb",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGemWeb/main/screenshot.png",
+      "demoUrl": "https://kylemath.github.io/Brainimation/",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
       "status": "published",
-      "kind": "project",
+      "kind": "page",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-02T21:44:32",
-      "createdAt": "2025-12-28T07:21:38Z"
+      "lastCommit": "2026-11-03T03:52:05",
+      "createdAt": "2025-12-26T20:06:34Z"
     },
     {
       "id": "magicGem",
@@ -104,7 +111,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-02T21:44:05",
+      "lastCommit": "2026-11-03T01:17:39",
       "createdAt": "2025-12-04T22:41:02Z"
     },
     {
@@ -128,8 +135,24 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-02T20:31:14",
+      "lastCommit": "2026-11-02T22:21:46",
       "createdAt": "2026-02-25T07:40:21Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-02T21:52:51",
+      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "4Square",
@@ -146,22 +169,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-02T20:11:50",
       "createdAt": "2026-10-11T08:02:00Z"
-    },
-    {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-10-31T22:03:32",
-      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
       "id": "PsychUAlbertaClassGraph",
@@ -1245,30 +1252,6 @@
       "createdAt": "2025-10-19T06:05:32Z"
     },
     {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://kylemath.github.io/Brainimation/",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-05-20T21:02:34",
-      "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
       "id": "CableRack",
       "title": "CableRack",
       "oneLiner": "A rack to plug in loose cable ends with various inserts",
@@ -1997,51 +1980,6 @@
       "repoTopics": [],
       "lastCommit": "2025-12-04T21:48:27",
       "createdAt": "2025-11-14T21:57:02Z"
-    },
-    {
-      "id": "EEGEdu",
-      "title": "EEGEdu",
-      "oneLiner": "An interactive website to learn about brain waves",
-      "categories": [
-        "eeg",
-        "education",
-        "neuroscience"
-      ],
-      "tags": [
-        "eeg",
-        "education",
-        "neuroscience"
-      ],
-      "demoUrl": "https://eegedu.com/",
-      "githubUrl": "https://github.com/kylemath/EEGEdu",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGEdu/master/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [
-        "bci",
-        "brain-waves",
-        "curriculum",
-        "data-analysis",
-        "data-visualization",
-        "ecg",
-        "educational",
-        "eeg",
-        "eeg-data",
-        "frequency-domain",
-        "js",
-        "muse",
-        "muse-data",
-        "muse-headsets",
-        "muse-lsl",
-        "neuroscience-methods",
-        "neurotech",
-        "openbci",
-        "plotting",
-        "react-native"
-      ],
-      "lastCommit": "2025-12-04T20:21:50",
-      "createdAt": "2019-11-28T19:14:15Z"
     },
     {
       "id": "ModernWebDesign",

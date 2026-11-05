@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-11-04T07:21:48.671898+00:00",
+  "generatedAt": "2026-11-05T07:47:05.654821+00:00",
   "items": [
+    {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://kylemath.github.io/Brainimation/",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-05T06:39:25",
+      "createdAt": "2025-12-26T20:06:34Z"
+    },
     {
       "id": "Psych302-305-KyleMathewson",
       "title": "Psych302-305-KyleMathewson",
@@ -14,64 +38,56 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-04T05:18:13",
+      "lastCommit": "2026-11-05T05:53:11",
       "createdAt": "2026-09-01T22:38:56Z"
     },
     {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-04T04:04:41",
-      "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "InterpretCognates",
-      "title": "InterpretCognates",
-      "oneLiner": "Interpretability of Translational Invariants",
+      "id": "BrainGames",
+      "title": "BrainGames",
+      "oneLiner": "Brains for your games",
       "categories": [
-        "linguistics",
-        "AI",
-        "interpret"
+        "eeg",
+        "web",
+        "games"
       ],
       "tags": [
-        "linguistics",
-        "AI",
-        "interpret"
+        "eeg",
+        "web",
+        "games"
       ],
-      "demoUrl": "https://kylemath.github.io/InterpretCognates",
-      "githubUrl": "https://github.com/kylemath/InterpretCognates",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
+      "demoUrl": "https://kylemath.github.io/BrianGames",
+      "githubUrl": "https://github.com/kylemath/BrainGames",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainGames/main/screenshot.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-03T18:38:24",
-      "createdAt": "2026-02-25T07:40:21Z"
+      "lastCommit": "2026-11-05T05:43:52",
+      "createdAt": "2026-04-24T09:00:54Z"
     },
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
+      "id": "EEGVideo",
+      "title": "EEGVideo",
+      "oneLiner": "Record EEG while watching a synced video",
+      "categories": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "tags": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "demoUrl": "https://github.com/kylemath/EEGVideo",
+      "githubUrl": "https://github.com/kylemath/EEGVideo",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
+      "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-03T07:42:52",
-      "createdAt": "2025-06-03T17:54:09Z"
+      "lastCommit": "2026-11-05T05:35:28",
+      "createdAt": "2026-03-09T20:11:16Z"
     },
     {
       "id": "EEGEdu",
@@ -115,32 +131,64 @@
         "plotting",
         "react-native"
       ],
-      "lastCommit": "2026-11-03T04:06:55",
+      "lastCommit": "2026-11-05T05:34:05",
       "createdAt": "2019-11-28T19:14:15Z"
     },
     {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://kylemath.github.io/Brainimation/",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
       "status": "published",
-      "kind": "page",
+      "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-03T03:52:05",
-      "createdAt": "2025-12-26T20:06:34Z"
+      "lastCommit": "2026-11-04T14:37:10",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-04T07:22:40",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "InterpretCognates",
+      "title": "InterpretCognates",
+      "oneLiner": "Interpretability of Translational Invariants",
+      "categories": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "tags": [
+        "linguistics",
+        "AI",
+        "interpret"
+      ],
+      "demoUrl": "https://kylemath.github.io/InterpretCognates",
+      "githubUrl": "https://github.com/kylemath/InterpretCognates",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/InterpretCognates/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-03T18:38:24",
+      "createdAt": "2026-02-25T07:40:21Z"
     },
     {
       "id": "magicGem",
@@ -1386,54 +1434,6 @@
       "repoTopics": [],
       "lastCommit": "2026-05-03T20:32:40",
       "createdAt": "2025-02-25T19:04:30Z"
-    },
-    {
-      "id": "BrainGames",
-      "title": "BrainGames",
-      "oneLiner": "Brains for your games",
-      "categories": [
-        "eeg",
-        "web",
-        "games"
-      ],
-      "tags": [
-        "eeg",
-        "web",
-        "games"
-      ],
-      "demoUrl": "https://kylemath.github.io/BrianGames",
-      "githubUrl": "https://github.com/kylemath/BrainGames",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/BrainGames/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-04-30T02:32:56",
-      "createdAt": "2026-04-24T09:00:54Z"
-    },
-    {
-      "id": "EEGVideo",
-      "title": "EEGVideo",
-      "oneLiner": "Record EEG while watching a synced video",
-      "categories": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "tags": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "demoUrl": "https://github.com/kylemath/EEGVideo",
-      "githubUrl": "https://github.com/kylemath/EEGVideo",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-03-09T20:20:40",
-      "createdAt": "2026-03-09T20:11:16Z"
     },
     {
       "id": "NumberblockToysPrint",

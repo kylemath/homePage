@@ -1,6 +1,90 @@
 {
-  "generatedAt": "2026-11-05T07:47:05.654821+00:00",
+  "generatedAt": "2026-11-06T07:47:43.461116+00:00",
   "items": [
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-06T05:08:16",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "magicGem",
+      "title": "Magic Gems: Geometry, Moments & Mechanics of Magic Squares",
+      "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
+      "categories": [
+        "mathematics",
+        "geometry",
+        "physics",
+        "interactive",
+        "3d-printing"
+      ],
+      "tags": [
+        "magic-squares",
+        "convex-polyhedra",
+        "rigid-body-mechanics",
+        "mathematical-sculpture",
+        "papercraft"
+      ],
+      "demoUrl": "https://kylemath.github.io/magicGem/",
+      "githubUrl": "https://github.com/kylemath/magicGem",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGem/main/paper_C_mechanics/figures/fig1_hero_gallery.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-05T09:09:44",
+      "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "EEGVideo",
+      "title": "EEGVideo",
+      "oneLiner": "Record EEG while watching a synced video",
+      "categories": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "tags": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "demoUrl": "https://github.com/kylemath/EEGVideo",
+      "githubUrl": "https://github.com/kylemath/EEGVideo",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-05T08:10:46",
+      "createdAt": "2026-03-09T20:11:16Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-05T07:47:44",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "Brainimation",
       "title": "Brainimation",
@@ -66,30 +150,6 @@
       "createdAt": "2026-04-24T09:00:54Z"
     },
     {
-      "id": "EEGVideo",
-      "title": "EEGVideo",
-      "oneLiner": "Record EEG while watching a synced video",
-      "categories": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "tags": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "demoUrl": "https://github.com/kylemath/EEGVideo",
-      "githubUrl": "https://github.com/kylemath/EEGVideo",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-05T05:35:28",
-      "createdAt": "2026-03-09T20:11:16Z"
-    },
-    {
       "id": "EEGEdu",
       "title": "EEGEdu",
       "oneLiner": "An interactive website to learn about brain waves",
@@ -135,38 +195,6 @@
       "createdAt": "2019-11-28T19:14:15Z"
     },
     {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-04T14:37:10",
-      "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-04T07:22:40",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
       "id": "InterpretCognates",
       "title": "InterpretCognates",
       "oneLiner": "Interpretability of Translational Invariants",
@@ -189,34 +217,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-03T18:38:24",
       "createdAt": "2026-02-25T07:40:21Z"
-    },
-    {
-      "id": "magicGem",
-      "title": "Magic Gems: Geometry, Moments & Mechanics of Magic Squares",
-      "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
-      "categories": [
-        "mathematics",
-        "geometry",
-        "physics",
-        "interactive",
-        "3d-printing"
-      ],
-      "tags": [
-        "magic-squares",
-        "convex-polyhedra",
-        "rigid-body-mechanics",
-        "mathematical-sculpture",
-        "papercraft"
-      ],
-      "demoUrl": "https://kylemath.github.io/magicGem/",
-      "githubUrl": "https://github.com/kylemath/magicGem",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGem/main/paper_C_mechanics/figures/fig1_hero_gallery.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-03T01:17:39",
-      "createdAt": "2025-12-04T22:41:02Z"
     },
     {
       "id": "4Square",

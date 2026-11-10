@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T07:44:38.820122+00:00",
+  "generatedAt": "2026-11-10T08:05:28.392621+00:00",
   "items": [
     {
       "id": "GraphColouring",
@@ -14,64 +14,8 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-09T07:10:01",
+      "lastCommit": "2026-11-10T07:59:08",
       "createdAt": "2026-05-14T20:51:23Z"
-    },
-    {
-      "id": "4Square",
-      "title": "4Square",
-      "oneLiner": "Fill the Hole: a Kempe-swap puzzle game about the Four Colour Theorem",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/4Square/",
-      "githubUrl": "https://github.com/kylemath/4Square",
-      "screenshot": "",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-08T18:33:12",
-      "createdAt": "2026-10-11T08:02:00Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-08T07:01:19",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://kylemath.github.io/Brainimation/",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-08T05:58:35",
-      "createdAt": "2025-12-26T20:06:34Z"
     },
     {
       "id": "magicGem",
@@ -98,8 +42,64 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-05T09:09:44",
+      "lastCommit": "2026-11-09T21:00:11",
       "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-09T07:45:21",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
+    {
+      "id": "4Square",
+      "title": "4Square",
+      "oneLiner": "Fill the Hole: a Kempe-swap puzzle game about the Four Colour Theorem",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/4Square/",
+      "githubUrl": "https://github.com/kylemath/4Square",
+      "screenshot": "",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-08T18:33:12",
+      "createdAt": "2026-10-11T08:02:00Z"
+    },
+    {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://kylemath.github.io/Brainimation/",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-08T05:58:35",
+      "createdAt": "2025-12-26T20:06:34Z"
     },
     {
       "id": "EEGVideo",

@@ -1,21 +1,29 @@
 {
-  "generatedAt": "2026-11-11T07:35:04.251025+00:00",
+  "generatedAt": "2026-11-12T08:02:24.203743+00:00",
   "items": [
     {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
+      "id": "EEGVideo",
+      "title": "EEGVideo",
+      "oneLiner": "Record EEG while watching a synced video",
+      "categories": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "tags": [
+        "webpage",
+        "eeg",
+        "video"
+      ],
+      "demoUrl": "https://github.com/kylemath/EEGVideo",
+      "githubUrl": "https://github.com/kylemath/EEGVideo",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
       "status": "published",
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-11T07:30:54",
-      "createdAt": "2026-05-14T20:51:23Z"
+      "lastCommit": "2026-11-12T07:35:39",
+      "createdAt": "2026-03-09T20:11:16Z"
     },
     {
       "id": "Brainimation",
@@ -38,8 +46,24 @@
       "kind": "page",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-11T03:02:44",
+      "lastCommit": "2026-11-12T07:18:27",
       "createdAt": "2025-12-26T20:06:34Z"
+    },
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-11T08:18:48",
+      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
       "id": "homePage",
@@ -54,7 +78,7 @@
       "kind": "project",
       "topicHierarchy": [],
       "repoTopics": [],
-      "lastCommit": "2026-11-10T08:06:21",
+      "lastCommit": "2026-11-11T07:35:48",
       "createdAt": "2025-06-03T17:54:09Z"
     },
     {
@@ -100,30 +124,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-08T18:33:12",
       "createdAt": "2026-10-11T08:02:00Z"
-    },
-    {
-      "id": "EEGVideo",
-      "title": "EEGVideo",
-      "oneLiner": "Record EEG while watching a synced video",
-      "categories": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "tags": [
-        "webpage",
-        "eeg",
-        "video"
-      ],
-      "demoUrl": "https://github.com/kylemath/EEGVideo",
-      "githubUrl": "https://github.com/kylemath/EEGVideo",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/EEGVideo/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-05T08:10:46",
-      "createdAt": "2026-03-09T20:11:16Z"
     },
     {
       "id": "Psych302-305-KyleMathewson",

@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-11-13T07:41:23.634883+00:00",
+  "generatedAt": "2026-11-14T07:28:31.581334+00:00",
   "items": [
+    {
+      "id": "GraphColouring",
+      "title": "GraphColouring",
+      "oneLiner": "Investigations into graph colouring solutions",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
+      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-14T00:13:52",
+      "createdAt": "2026-05-14T20:51:23Z"
+    },
+    {
+      "id": "Brainimation",
+      "title": "Brainimation",
+      "oneLiner": "Live code editor hooked to brainwaves",
+      "categories": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "tags": [
+        "eeg",
+        "coding",
+        "web"
+      ],
+      "demoUrl": "https://kylemath.github.io/Brainimation/",
+      "githubUrl": "https://github.com/kylemath/Brainimation",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
+      "status": "published",
+      "kind": "page",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-13T23:53:07",
+      "createdAt": "2025-12-26T20:06:34Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-13T07:42:03",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "EEGVideo",
       "title": "EEGVideo",
@@ -24,62 +80,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-13T00:26:20",
       "createdAt": "2026-03-09T20:11:16Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-12T08:03:10",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
-      "id": "Brainimation",
-      "title": "Brainimation",
-      "oneLiner": "Live code editor hooked to brainwaves",
-      "categories": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "tags": [
-        "eeg",
-        "coding",
-        "web"
-      ],
-      "demoUrl": "https://kylemath.github.io/Brainimation/",
-      "githubUrl": "https://github.com/kylemath/Brainimation",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/Brainimation/main/screenshot.png",
-      "status": "published",
-      "kind": "page",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-12T07:18:27",
-      "createdAt": "2025-12-26T20:06:34Z"
-    },
-    {
-      "id": "GraphColouring",
-      "title": "GraphColouring",
-      "oneLiner": "Investigations into graph colouring solutions",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://kylemath.github.io/GraphColourDeductiveSolver",
-      "githubUrl": "https://github.com/kylemath/GraphColourDeductiveSolver",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/GraphColourDeductiveSolver/main/screenshot.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-11T08:18:48",
-      "createdAt": "2026-05-14T20:51:23Z"
     },
     {
       "id": "magicGem",

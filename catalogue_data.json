@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-11-15T07:39:48.090647+00:00",
+  "generatedAt": "2026-11-16T07:46:01.128665+00:00",
   "items": [
+    {
+      "id": "dualsense-diagnostic-workbench",
+      "title": "DualSense 3D Diagnostic & Calibration Workbench",
+      "oneLiner": "Zero-install 3D Three.js + WebHID diagnostic workbench, potentiometer carbon-track scanner, and NVS flash calibrator for PS5 DualSense controllers.",
+      "categories": [
+        "hardware",
+        "diagnostics",
+        "threejs",
+        "webhid",
+        "gaming"
+      ],
+      "tags": [
+        "hardware",
+        "diagnostics",
+        "threejs",
+        "webhid",
+        "gaming"
+      ],
+      "demoUrl": "https://kylemath.github.io/dualsense-diagnostic-workbench/",
+      "githubUrl": "https://github.com/kylemath/dualsense-diagnostic-workbench",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/dualsense-diagnostic-workbench/main/screenshot.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [
+        "dualsense",
+        "project-hardware",
+        "project-tools",
+        "threejs",
+        "webhid"
+      ],
+      "lastCommit": "2026-11-16T05:47:28",
+      "createdAt": "2026-11-16T05:35:46Z"
+    },
+    {
+      "id": "magicGem",
+      "title": "Magic Gems: Geometry, Moments & Mechanics of Magic Squares",
+      "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
+      "categories": [
+        "mathematics",
+        "geometry",
+        "physics",
+        "interactive",
+        "3d-printing"
+      ],
+      "tags": [
+        "magic-squares",
+        "convex-polyhedra",
+        "rigid-body-mechanics",
+        "mathematical-sculpture",
+        "papercraft"
+      ],
+      "demoUrl": "https://kylemath.github.io/magicGem/",
+      "githubUrl": "https://github.com/kylemath/magicGem",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGem/main/paper_C_mechanics/figures/fig1_hero_gallery.png",
+      "status": "published",
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-15T08:34:27",
+      "createdAt": "2025-12-04T22:41:02Z"
+    },
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-15T07:40:27",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "EEGEdu",
       "title": "EEGEdu",
@@ -71,22 +149,6 @@
       "createdAt": "2025-12-26T20:06:34Z"
     },
     {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-14T07:29:08",
-      "createdAt": "2025-06-03T17:54:09Z"
-    },
-    {
       "id": "GraphColouring",
       "title": "GraphColouring",
       "oneLiner": "Investigations into graph colouring solutions",
@@ -125,34 +187,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-13T00:26:20",
       "createdAt": "2026-03-09T20:11:16Z"
-    },
-    {
-      "id": "magicGem",
-      "title": "Magic Gems: Geometry, Moments & Mechanics of Magic Squares",
-      "oneLiner": "Three-paper mathematical monograph, exact verification suites, and interactive 3D physics & fabrication studios for lifted magic squares",
-      "categories": [
-        "mathematics",
-        "geometry",
-        "physics",
-        "interactive",
-        "3d-printing"
-      ],
-      "tags": [
-        "magic-squares",
-        "convex-polyhedra",
-        "rigid-body-mechanics",
-        "mathematical-sculpture",
-        "papercraft"
-      ],
-      "demoUrl": "https://kylemath.github.io/magicGem/",
-      "githubUrl": "https://github.com/kylemath/magicGem",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/magicGem/main/paper_C_mechanics/figures/fig1_hero_gallery.png",
-      "status": "published",
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-09T21:00:11",
-      "createdAt": "2025-12-04T22:41:02Z"
     },
     {
       "id": "4Square",

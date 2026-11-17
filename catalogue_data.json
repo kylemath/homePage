@@ -1,6 +1,22 @@
 {
-  "generatedAt": "2026-11-16T07:46:01.128665+00:00",
+  "generatedAt": "2026-11-17T08:55:12.660742+00:00",
   "items": [
+    {
+      "id": "homePage",
+      "title": "homePage",
+      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
+      "categories": [],
+      "tags": [],
+      "demoUrl": "https://github.com/kylemath/homePage",
+      "githubUrl": "https://github.com/kylemath/homePage",
+      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
+      "status": null,
+      "kind": "project",
+      "topicHierarchy": [],
+      "repoTopics": [],
+      "lastCommit": "2026-11-16T07:46:49",
+      "createdAt": "2025-06-03T17:54:09Z"
+    },
     {
       "id": "dualsense-diagnostic-workbench",
       "title": "DualSense 3D Diagnostic & Calibration Workbench",
@@ -62,22 +78,6 @@
       "repoTopics": [],
       "lastCommit": "2026-11-15T08:34:27",
       "createdAt": "2025-12-04T22:41:02Z"
-    },
-    {
-      "id": "homePage",
-      "title": "homePage",
-      "oneLiner": "Main homepage for kylemathewson.com and helper scripts",
-      "categories": [],
-      "tags": [],
-      "demoUrl": "https://github.com/kylemath/homePage",
-      "githubUrl": "https://github.com/kylemath/homePage",
-      "screenshot": "https://raw.githubusercontent.com/kylemath/homePage/main/screenshot.png",
-      "status": null,
-      "kind": "project",
-      "topicHierarchy": [],
-      "repoTopics": [],
-      "lastCommit": "2026-11-15T07:40:27",
-      "createdAt": "2025-06-03T17:54:09Z"
     },
     {
       "id": "EEGEdu",
